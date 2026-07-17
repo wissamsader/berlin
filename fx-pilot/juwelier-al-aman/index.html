@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;600&family=Besley:ital,wght@0,500;0,700;1,500&family=Readex+Pro:wght@300;400;500&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
+<style>.rev{opacity:1!important;transform:none!important;transition:none!important}
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{overflow-x:clip}
 :root{--navy:#101828;--navy2:#0B1220;--navy3:#182236;--gold:#C9A35C;--gold2:#E7C77E;--dust:#9A8B68;--ivory:#F1ECDF;--mut:#8A93AC;--line:rgba(201,163,92,.28)}
@@ -273,12 +273,20 @@ setTimeout(()=>document.querySelectorAll('.rev:not(.on)').forEach(el=>el.classLi
 <script src="../../_fx/gsap.min.js"></script><script src="../../_fx/ScrollTrigger.min.js"></script><script src="../../_fx/lenis.min.js"></script><script src="../../_fx/bits.js"></script>
 <script>FX.ready(function(){
  FX.lenis();
- FX.heroIntro(['header .lock','header h1','header .hsub','header .hmeta','header .hcta'],{photo:'header .photo img'});
- FX.parallax('header .photo img', 6);
+ FX.cursorGlow('rgba(201,163,92,.13)');
+ var play=FX.chars('header h1 .de, header h1 .art');
+ FX.curtain('#0B1220','AL AMAN · الأمان','#C9A35C');
+ FX.heroIntro(['header .hsub','header .hmeta','header .hcta'],{photo:'header .photo img',delay:1.0,at:.35});
+ play(1.1);
+ FX.parallax('header .photo img',6);
+ FX.clipReveal('.story img, .gal .gph img');
+ FX.batch('section h2',22);
+ FX.marquee('.serv','GOLD · ذهب · COLLIER · 21K · HERMANNSTRASSE','#C9A35C');
  FX.countUp('b.num');
- FX.shiny('.rateband h2 .de, .rateband h2 .art');
- FX.spotlight('.scell','rgba(217,169,63,.18)');
- FX.batch('.scell', 28);
+ FX.shiny('.story h2 .de, .story h2 .art');
+ FX.spotlight('.serv .scell','rgba(217,169,63,.18)');
+ FX.batch('.serv .scell',26);
+ FX.magnetic('.hcta a',18);
 });</script>
 </body>
 </html>

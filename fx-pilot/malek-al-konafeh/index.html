@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Young+Serif&family=Noto+Sans+Arabic:wght@400;500;700;900&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>header::before{display:none!important}header>*{position:relative;z-index:1}.fxbg{position:absolute;inset:0;background:url('img/01.jpg') center 32%/cover no-repeat;z-index:0}
+<style>.rev{opacity:1!important;transform:none!important;transition:none!important}header::before{display:none!important}header>*{position:relative;z-index:1}.fxbg{position:absolute;inset:0;background:url('img/01.jpg') center 32%/cover no-repeat;z-index:0}
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{overflow-x:clip}
 :root{--orange:#E07A1F;--orange2:#B85A12;--char:#2A1B14;--char2:#1C120D;--pist:#7C9457;--cream:#FBF3E7;--paper:#FFF9F0;--ink:#2A1B14;--mut:#8A7561;--line:#EBDCC4;--gold:#D9A84E}
@@ -276,12 +276,18 @@ setTimeout(()=>document.querySelectorAll('.rev:not(.on)').forEach(el=>el.classLi
 <script src="../../_fx/gsap.min.js"></script><script src="../../_fx/ScrollTrigger.min.js"></script><script src="../../_fx/lenis.min.js"></script><script src="../../_fx/bits.js"></script>
 <script>FX.ready(function(){
  FX.lenis();
- FX.heroIntro(['header .badge','header h1 .de:not([data-fxsplit])','header h1 .art','header .hsub','header .hmeta','header .pan-badge'],{photo:'header .fxbg'});
- FX.words('header h1 .de');
- FX.parallax('header .fxbg', 9);
+ var play=FX.chars('header h1');
+ FX.curtain('#1C120D','ملك الكنافة','#D9A84E');
+ FX.heroIntro(['header .badge','header .hsub','header .hmeta','header .pan-badge'],{photo:'header .fxbg',delay:1.0,at:.35});
+ play(1.05);
+ FX.parallax('header .fxbg',9);
+ FX.clipReveal('.story img','x');
+ FX.clipReveal('.high img, .sig img');
+ FX.batch('.gal .gcirc',44);
+ FX.batch('section h2',22);
+ FX.marquee('.gal','KNAFEH · كنافة · KUPFERFANNE · SEIT GENERATIONEN','#D9A84E');
  FX.countUp('b.num');
- FX.batch('.gcirc', 30);
- FX.spotlight('.scard','rgba(240,190,90,.16)');
+ FX.spotlight('.scard','rgba(217,168,78,.16)');
 });</script>
 </body>
 </html>

@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@200;400;700&family=Tajawal:wght@400;500;700&family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;1,400&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
+<style>.rev{opacity:1!important;transform:none!important;transition:none!important}@media(min-width:900px){.gal .ggrid{display:flex;gap:14px;width:max-content}.gal .ggrid img{height:64vh;width:auto;max-width:none}}
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{overflow-x:clip}
 :root{--ink:#1A1A22;--ink2:#242430;--ink3:#2C2733;--blush:#EAC9C0;--champ:#D9BE8F;--champ2:#EFDFB8;--cream:#F3ECE4;--mut:#B3A6A0;--line:#3B3542}
@@ -261,13 +261,20 @@ setTimeout(()=>document.querySelectorAll('.rev:not(.on)').forEach(el=>el.classLi
 <script src="../../_fx/gsap.min.js"></script><script src="../../_fx/ScrollTrigger.min.js"></script><script src="../../_fx/lenis.min.js"></script><script src="../../_fx/bits.js"></script>
 <script>FX.ready(function(){
  FX.lenis();
- FX.grain(.045);
- FX.heroIntro(['header .since','header h1','header .h1sub','header .hero-sub','header .hero-meta'],{photo:'header .bg'});
- FX.parallax('header .bg', 8);
+ FX.grain(.05);
+ var play=FX.chars('header h1 .de, header h1 .art');
+ FX.curtain('#12121A','QUEEN','#D9BE8F');
+ FX.heroIntro(['header .since','header .h1sub','header .hero-sub','header .hero-meta'],{photo:'header .bg',delay:1.0,at:.35});
+ play(1.1);
+ FX.parallax('header .bg',8);
+ FX.clipReveal('.kol .kcard img','x');
+ FX.clipReveal('.story figure img');
+ FX.pinRow('.gal','.gal .ggrid');
+ FX.batch('section h2',22);
+ FX.marquee('.story','BRAUT · SOIRÉE · ABIYE · كوين','#D9BE8F');
  FX.countUp('b[data-edit=rating]');
- FX.batch('.kcard', 36);
- FX.tilt('.kcard', 4);
- FX.spotlight('.wcard','rgba(214,178,116,.15)');
+ FX.tilt('.kol .kcard',4);
+ FX.spotlight('.why .wcard','rgba(217,190,143,.14)');
 });</script>
 </body>
 </html>
