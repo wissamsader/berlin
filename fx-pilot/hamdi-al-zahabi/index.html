@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamdi Al Zahabi Sweets — Pastry shop in Barbour, Beirut</title>
+<meta name="description" content="Hamdi Al Zahabi Sweets, Arabic sweets in Barbour, Beirut. Call +961 1 311 666.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Amiri:ital@0;1&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--burg:#4A1520;--burg2:#3A0F18;--gold:#D4AF5E;--gold2:#B8933F;--ivory:#F6EBDD;--rose:#7A2433}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+::selection{background:var(--gold);color:var(--burg2)}
+body{font-family:'Jost',sans-serif;background:var(--burg);color:var(--ivory);line-height:1.75;
+background-image:radial-gradient(rgba(212,175,94,.05) 1px,transparent 1.4px);background-size:22px 22px}
+.cz{font-family:'Cinzel',serif}
+.am{font-family:'Amiri',serif}
+nav{position:sticky;top:0;z-index:60;display:flex;justify-content:space-between;align-items:center;padding:16px 5vw;background:rgba(58,15,24,.94);backdrop-filter:blur(6px);border-bottom:1px solid rgba(212,175,94,.4)}
+nav .brand{font-family:'Cinzel',serif;font-weight:700;font-size:1.1rem;color:var(--gold);text-decoration:none;letter-spacing:.1em}
+nav .links{display:flex;gap:26px;align-items:center}
+nav .links a{color:var(--ivory);text-decoration:none;font-weight:500;font-size:.85rem;letter-spacing:.04em}
+nav .links a:hover{color:var(--gold)}
+nav .call{border:1px solid var(--gold);color:var(--gold) !important;padding:10px 26px;letter-spacing:.1em}
+nav .call:hover{background:var(--gold);color:var(--burg2) !important}
+/* hero jewel box */
+.hero{text-align:center;padding:90px 5vw 40px;position:relative}
+.hero .geo{width:92px;height:92px;margin:0 auto 26px;position:relative}
+.hero .geo svg{width:100%;height:100%}
+h1{font-family:'Cinzel',serif;font-weight:700;font-size:clamp(2.4rem,7.4vw,5.4rem);line-height:1.08;letter-spacing:.06em;color:var(--gold);text-shadow:0 2px 18px rgba(212,175,94,.25)}
+.hero .arb{font-family:'Amiri',serif;font-size:clamp(1.6rem,4vw,2.6rem);color:var(--ivory);margin-top:8px}
+.hero .mean{font-style:italic;font-family:'Amiri',serif;color:rgba(246,235,221,.7);font-size:1.15rem;margin-top:14px}
+.hero .tg{max-width:600px;margin:20px auto 0;color:rgba(246,235,221,.85);font-weight:300;font-size:1.06rem}
+.hero .row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:36px}
+.pill{border:1px solid rgba(212,175,94,.6);padding:10px 24px;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase}
+.pill.f{background:var(--gold);color:var(--burg2);font-weight:600}
+.cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.btn{font-weight:500;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:15px 36px;border:1px solid var(--ivory);color:var(--ivory);transition:all .2s}
+.btn:hover{background:var(--ivory);color:var(--burg2)}
+.btn.g{background:var(--gold);border-color:var(--gold);color:var(--burg2)}
+.btn.g:hover{background:var(--ivory);border-color:var(--ivory)}
+.btn.wa{background:#2f7146;border-color:#2f7146;color:#fff}
+/* hero tray */
+.tray{max-width:1180px;margin:44px auto 0;padding:0 5vw;position:relative}
+.tray .fr{border:1px solid var(--gold);padding:16px;position:relative}
+.tray .fr:before{content:"";position:absolute;inset:6px;border:1px solid rgba(212,175,94,.4);pointer-events:none}
+.tray img{width:100%;height:min(58vh,520px);object-fit:cover;display:block}
+.tray .lbl{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);background:var(--burg2);border:1px solid var(--gold);color:var(--gold);padding:10px 30px;font-family:'Cinzel',serif;letter-spacing:.22em;font-size:.8rem;white-space:nowrap}
+section{padding:100px 5vw}
+.wrap{max-width:1180px;margin:0 auto}
+.k{color:var(--gold);letter-spacing:.32em;text-transform:uppercase;font-size:.7rem;font-weight:600;display:block;margin-bottom:16px}
+/* vitrine (highlights) */
+.vit h2{font-family:'Cinzel',serif;font-size:clamp(2rem,4.8vw,3.4rem);text-align:center;color:var(--ivory);line-height:1.08}
+.vit h2 em{font-style:normal;color:var(--gold)}
+.vit .sub{text-align:center;color:rgba(246,235,221,.65);margin:14px 0 60px;font-family:'Amiri',serif;font-style:italic;font-size:1.15rem}
+.v-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.vc{border:1px solid rgba(212,175,94,.5);background:linear-gradient(180deg,rgba(212,175,94,.06),transparent);padding:14px 14px 28px;text-align:center;transition:border-color .2s,transform .2s}
+.vc:hover{border-color:var(--gold);transform:translateY(-6px)}
+.vc img{width:100%;height:230px;object-fit:cover;display:block}
+.vc .no{font-family:'Amiri',serif;font-style:italic;color:var(--gold);display:block;margin:18px 0 4px}
+.vc h3{font-family:'Cinzel',serif;font-size:1.2rem;letter-spacing:.04em}
+.vc p{font-size:.9rem;color:rgba(246,235,221,.75);margin-top:8px;padding:0 10px}
+/* gold divider */
+.div{display:flex;align-items:center;gap:18px;max-width:520px;margin:0 auto;padding:0 5vw}
+.div:before,.div:after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.div span{color:var(--gold);font-size:1.3rem}
+/* story */
+.story{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.story h2{font-family:'Cinzel',serif;font-size:clamp(1.9rem,4.4vw,3.1rem);line-height:1.14;margin-bottom:18px}
+.story h2 em{font-style:normal;color:var(--gold)}
+.story p{color:rgba(246,235,221,.82);max-width:54ch;margin-bottom:12px;font-weight:300}
+.story .ph{position:relative;border:1px solid var(--gold);padding:14px}
+.story .ph img{width:100%;height:460px;object-fit:cover;display:block}
+.story .medal{position:absolute;top:-30px;right:-24px;width:110px;height:110px;border-radius:50%;background:var(--gold);color:var(--burg2);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-weight:700;transform:rotate(9deg);box-shadow:0 14px 30px rgba(0,0,0,.45)}
+.story .medal b{font-size:1.05rem;line-height:1.15;text-align:center}
+/* gallery: gold frames */
+.gal{background:var(--burg2)}
+.gal h2{font-family:'Cinzel',serif;font-size:clamp(2rem,4.8vw,3.4rem);text-align:center;margin-bottom:10px}
+.gal h2 em{font-style:normal;color:var(--gold)}
+.gal .sub{text-align:center;color:rgba(246,235,221,.6);margin-bottom:54px;font-family:'Amiri',serif;font-style:italic;font-size:1.1rem}
+.g-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;max-width:1180px;margin:0 auto}
+.g-grid a{display:block;border:1px solid rgba(212,175,94,.55);padding:10px;transition:border-color .2s,transform .2s;background:rgba(74,21,32,.5)}
+.g-grid a:hover{border-color:var(--gold);transform:translateY(-5px)}
+.g-grid img{width:100%;height:250px;object-fit:cover;display:block}
+/* reviews */
+.rev h2{font-family:'Cinzel',serif;font-size:clamp(2rem,4.6vw,3.2rem);text-align:center;margin-bottom:56px}
+.rev h2 em{font-style:normal;color:var(--gold)}
+.r-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+.rc{border:1px solid rgba(212,175,94,.5);padding:34px 30px;background:linear-gradient(180deg,rgba(212,175,94,.05),transparent)}
+.rc .st{color:var(--gold);letter-spacing:5px;display:block;margin-bottom:16px;font-size:.85rem}
+.rc p{font-family:'Amiri',serif;font-size:1.18rem;line-height:1.8;font-style:italic;color:rgba(246,235,221,.92)}
+.rc .who{margin-top:16px;font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+/* visit */
+.visit{text-align:center;padding:110px 5vw}
+.visit h2{font-family:'Cinzel',serif;font-size:clamp(2.2rem,6vw,4.2rem);line-height:1.06}
+.visit h2 em{font-style:normal;color:var(--gold)}
+.visit .phone{font-family:'Cinzel',serif;font-size:clamp(1.7rem,4.4vw,2.7rem);color:var(--gold);text-decoration:none;display:inline-block;margin:28px 0 8px;border-bottom:1px solid var(--gold);padding-bottom:6px;letter-spacing:.04em}
+.visit .meta{color:rgba(246,235,221,.75);max-width:480px;margin:18px auto 36px;line-height:2;font-weight:300}
+.visit .cta{justify-content:center}
+footer{text-align:center;padding:26px 5vw 110px;font-size:.78rem;color:rgba(246,235,221,.5)}
+.mbar{display:none;position:fixed;z-index:70;gap:8px;left:0;right:0;bottom:0;background:#3A0F18;border-top:4px double #D4AF5E;padding:11px 12px calc(10px + env(safe-area-inset-bottom))}
+.mbar a{flex:1;text-align:center;padding:12px 4px;font-weight:600;font-size:.82rem;letter-spacing:.08em;text-decoration:none;color:var(--ivory);border:1px solid rgba(246,235,221,.3)}
+.mbar .c{background:var(--gold);color:var(--burg2);border-color:var(--gold)}
+.mbar .w{background:#2f7146;color:#fff;border-color:#2f7146}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+@media(max-width:920px){
+ nav .links a:not(.call){display:none}
+ .story{grid-template-columns:1fr;gap:44px}
+ .v-grid,.g-grid{grid-template-columns:1fr}
+ .mbar{display:flex}
+ footer{padding-bottom:150px}
+}
+@media(min-width:600px) and (max-width:920px){.v-grid,.g-grid{grid-template-columns:1fr 1fr}}
+.mbar a{background:transparent;border:1px solid #D4AF5E;border-radius:2px;color:#F6EBDD;letter-spacing:.14em;font-variant:small-caps}.mbar a.c{background:linear-gradient(160deg,#D4AF5E,#B8933F);color:#3A0F18;font-weight:700}
+*{-webkit-tap-highlight-color:transparent}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/*igbtn*/.bar a.g,.mbar a.g{display:inline-flex;align-items:center;justify-content:center;padding:10px 12px}.bar a.g svg,.mbar a.g svg{width:17px;height:17px;display:block}
+</style>
+<style>
+.medal{overflow:hidden}
+.medal::after{content:'';position:absolute;top:-20%;left:-70%;width:45%;height:140%;
+ background:linear-gradient(105deg,transparent,rgba(255,255,255,.7),transparent);transform:skewX(-18deg);
+ animation:fxglint 5.5s ease-in-out infinite}
+@keyframes fxglint{0%,74%{left:-70%}90%,100%{left:140%}}
+@media (prefers-reduced-motion: reduce){.medal::after,.burst,.stamp,.stampring,.medallion::after,.pan-badge::after,.sunpanel::before{animation:none!important}}</style></head>
+<body>
+
+<nav>
+ <a class="brand" href="#" data-edit="t1" data-edit-label="Button / link — HAMDI AL ZAHABI">HAMDI AL ZAHABI</a>
+ <div class="links">
+  <a href="#vitrine" data-edit="t2" data-edit-label="Button / link — The vitrine">The vitrine</a><a href="#story" data-edit="t3" data-edit-label="Button / link — The name">The name</a><a href="#gallery" data-edit="t4" data-edit-label="Button / link — Gallery">Gallery</a><a href="#visit" data-edit="t5" data-edit-label="Button / link — Visit">Visit</a>
+  <a class="call" href="tel:+9611311666" data-edit="t6" data-edit-label="Button / link — Call">Call</a>
+ </div>
+</nav>
+
+<header class="hero">
+ <div class="geo">
+  <svg viewBox="0 0 100 100" fill="none">
+   <rect x="20" y="20" width="60" height="60" stroke="#D4AF5E" stroke-width="1.6" transform="rotate(45 50 50)"/>
+   <rect x="30" y="30" width="40" height="40" stroke="#D4AF5E" stroke-width="1.2"/>
+   <rect x="38" y="38" width="24" height="24" stroke="#D4AF5E" stroke-width="1" transform="rotate(45 50 50)"/>
+   <circle cx="50" cy="50" r="5" fill="#D4AF5E"/>
+  </svg>
+ </div>
+ <h1 data-edit="t7" data-edit-label="Big title — HAMDI AL ZAHABI">HAMDI AL ZAHABI</h1>
+ <p class="arb" data-edit="t8" data-edit-label="Text — حلويات حمدي الذهبي">حلويات حمدي الذهبي</p>
+ <p class="mean" data-edit="t9" data-edit-label="Text — al-zahabi — “the golden one”">al-zahabi — “the golden one”</p>
+ <p class="tg" data-edit="t10" data-edit-label="Text — Knafeh, baklava and halawet el jibn fr…">Knafeh, baklava and halawet el jibn from the family they call The Golden.</p>
+ <div class="row">
+  <span class="pill f" data-edit="t11" data-edit-label="Text — ★ 4.4 · 220 reviews">★ 4.4 · 220 reviews</span>
+  <span class="pill" data-edit="t12" data-edit-label="Text — Barbour · Noueiri">Barbour · Noueiri</span>
+  <span class="pill" data-edit="t13" data-edit-label="Text — 7:30 AM — 10 PM daily">7:30 AM — 10 PM daily</span>
+ </div>
+ <div class="cta">
+  <a class="btn g" href="tel:+9611311666" data-edit="t14" data-edit-label="Button / link — Call +961 1 311 666">Call +961 1 311 666</a>
+  <a class="btn" href="https://maps.google.com/?cid=9733118991455317910" target="_blank" rel="noopener" data-edit="t15" data-edit-label="Button / link — Directions">Directions</a>
+ </div>
+</header>
+
+<div class="tray rv">
+ <div class="fr">
+  <img src="img/02.jpg" alt="Hamdi Al Zahabi Sweets sweets platter">
+  <span class="lbl" data-edit="t16" data-edit-label="Text — THE GOLDEN TRAY">THE GOLDEN TRAY</span>
+ </div>
+</div>
+
+<section class="vit" id="vitrine">
+ <div class="wrap">
+  <h2 class="rv">From the <em data-edit="t17" data-edit-label="Text — vitrine">vitrine</em></h2>
+  <p class="sub" data-edit="t18" data-edit-label="Text — Each piece made in-house, weighed in g…">Each piece made in-house, weighed in gold standards</p>
+  <div class="v-grid"><div class="vc rv"><img src="img/03.jpg" alt="Baklava, by the tray" loading="lazy"><span class="no" data-edit="t19" data-edit-label="Text — № 1 of the collection">№ 1 of the collection</span><h3 data-edit="t20" data-edit-label="Heading — Baklava, by the tray">Baklava, by the tray</h3><p data-edit="t21" data-edit-label="Text — Layered, buttered, glistening — sold b…">Layered, buttered, glistening — sold by the kilo, gone by the box.</p></div><div class="vc rv"><img src="img/04.jpg" alt="Maamoul & qarabij" loading="lazy"><span class="no" data-edit="t22" data-edit-label="Text — № 2 of the collection">№ 2 of the collection</span><h3 data-edit="t23" data-edit-label="Heading — Maamoul & qarabij">Maamoul & qarabij</h3><p data-edit="t24" data-edit-label="Text — Powdered rows of the classics, pressed…">Powdered rows of the classics, pressed in wooden moulds.</p></div><div class="vc rv"><img src="img/02.jpg" alt="Halawet el jibn" loading="lazy"><span class="no" data-edit="t25" data-edit-label="Text — № 3 of the collection">№ 3 of the collection</span><h3 data-edit="t26" data-edit-label="Heading — Halawet el jibn">Halawet el jibn</h3><p data-edit="t27" data-edit-label="Text — Soft cheese rolls with ashta — the pla…">Soft cheese rolls with ashta — the plate reviewers call perfect.</p></div></div>
+ </div>
+</section>
+
+<div class="div"><span>✦</span></div>
+
+<section id="story">
+ <div class="wrap story">
+  <div class="rv">
+   <span class="k" data-edit="t28" data-edit-label="Text — The name">The name</span>
+   <h2>A family called <em data-edit="t29" data-edit-label="Text — The Golden">The Golden</em>, for a reason</h2>
+   <p data-edit="t30" data-edit-label="Text — In Barbour, the Zahabi name — “the gol…">In Barbour, the Zahabi name — “the golden” — is a promise kept daily: trays of knafeh leaving the oven, baklava glistening in rows, maamoul b'ashta and qarabij weighed out with the extraordinary generosity the neighborhood swears by. Everything perfect, everything golden, 7:30 in the morning till 10 at night.</p>
+   <p data-edit="t31" data-edit-label="Text — Mad ashta, qarabij, maamoul b'ashta, k…">Mad ashta, qarabij, maamoul b'ashta, knafeh at dawn — the counter serves Noueiri and Barbour the way a goldsmith serves a bride: precisely, generously, and never in a hurry.</p>
+  </div>
+  <div class="ph rv">
+   <img src="img/03.jpg" alt="Hamdi Al Zahabi Sweets baklava">
+   <div class="medal"><b>SINCE<br>ALWAYS</b></div>
+  </div>
+ </div>
+</section>
+
+<section class="gal" id="gallery">
+ <h2 class="rv">The <em data-edit="t32" data-edit-label="Text — collection">collection</em></h2>
+ <p class="sub" data-edit="t33" data-edit-label="Text — Photographed over the counter glass">Photographed over the counter glass</p>
+ <div class="g-grid"><a href="img/03.jpg" target="_blank"><img src="img/03.jpg" alt="" loading="lazy"></a><a href="img/04.jpg" target="_blank"><img src="img/04.jpg" alt="" loading="lazy"></a><a href="img/05.jpg" target="_blank"><img src="img/05.jpg" alt="" loading="lazy"></a><a href="img/07.jpg" target="_blank"><img src="img/07.jpg" alt="" loading="lazy"></a><a href="img/08.jpg" target="_blank"><img src="img/08.jpg" alt="" loading="lazy"></a><a href="img/01.jpg" target="_blank"><img src="img/01.jpg" alt="" loading="lazy"></a></div>
+</section>
+
+<section class="rev">
+ <div class="wrap">
+  <h2 class="rv">Sworn <em data-edit="t34" data-edit-label="Text — testimonies">testimonies</em></h2>
+  <div class="r-grid"><div class="rc rv"><span class="st">★ ★ ★ ★ ★</span><p data-edit="t35" data-edit-label="Text — Amazing Arabic sweets! We're in love w…">Amazing Arabic sweets! We're in love with everything we tried — from knafeh to baklava to halawet el jibn to maamoul b ashta to maakroun! Everything tasted perfect!</p><div class="who" data-edit="t36" data-edit-label="Text — Rana Hodeib">Rana Hodeib</div></div><div class="rc rv"><span class="st">★ ★ ★ ★ ★</span><p data-edit="t37" data-edit-label="Text — Hamdi Al Zihabi brings Noueireh to lif…">Hamdi Al Zihabi brings Noueireh to life. The extraordinary generosity of staff, good prices, and unbeatable sweets — favourite being the Mad Ashta and Qarabij.</p><div class="who" data-edit="t38" data-edit-label="Text — SUNNY">SUNNY</div></div></div>
+ </div>
+</section>
+
+<section class="visit" id="visit">
+ <h2 class="rv">Sweetness has an <em data-edit="t39" data-edit-label="Text — address.">address.</em></h2>
+ <a class="phone" href="tel:+9611311666" data-edit="t40" data-edit-label="Button / link — +961 1 311 666">+961 1 311 666</a>
+ <p class="meta">Barbour (Noueiri), Beirut, Lebanon<br>Daily 7:30 AM - 10 PM</p>
+ <div class="cta">
+  <a class="btn" href="tel:+9611311666" data-edit="t41" data-edit-label="Button / link — Call +961 1 311 666">Call +961 1 311 666</a> <a class="btn ig" href="https://instagram.com/alzahabisweets" target="_blank" rel="noopener" data-edit="t42" data-edit-label="Button / link — Instagram">Instagram</a>
+  <a class="btn" href="https://maps.google.com/?cid=9733118991455317910" target="_blank" rel="noopener" data-edit="t43" data-edit-label="Button / link — Google Maps">Google Maps</a>
+ </div>
+</section>
+
+<div class="mbar">
+ <a class="c" href="tel:+9611311666" data-edit="t44" data-edit-label="Button / link — Call">Call</a>
+ <a class="g" href="https://instagram.com/alzahabisweets" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.4"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+ <a class="m" href="https://maps.google.com/?cid=9733118991455317910" target="_blank" rel="noopener" data-edit="t45" data-edit-label="Button / link — Map">Map</a>
+</div>
+
+<footer>© Hamdi Al Zahabi Sweets · Barbour, Beirut</footer>
+
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+setTimeout(function(){document.querySelectorAll('.rv:not(.in)').forEach(function(el){el.classList.add('in')})},1100);
+</script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Falafel Arax — falafel on Arax Street since 1949</title>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Rubik:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-x:clip}
+:root{--mint:#63C6B5;--cherry:#D8493E;--cream:#FFF6E8;--ink:#26302E;--chrome:#DCE3E1}
+body{font-family:'Rubik',sans-serif;background:var(--cream);color:var(--ink)}
+h1,h2,.disp{font-family:'Bowlby One',cursive;font-weight:400}
+/* ticket edge */
+.ticket-top{height:16px;background:radial-gradient(circle at 10px -4px,transparent 11px,var(--mint) 12px);background-size:24px 16px;background-repeat:repeat-x}
+/* hero */
+.hero{background:var(--mint);padding:8vh 6vw 10vh;position:relative;overflow:hidden}
+.hero .in2{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1fr .95fr;gap:5vw;align-items:center}
+.stub{background:var(--cream);border-radius:18px;padding:44px 40px;position:relative;box-shadow:0 24px 60px rgba(38,48,46,.25)}
+.stub:before,.stub:after{content:"";position:absolute;top:50%;width:34px;height:34px;border-radius:50%;background:var(--mint);transform:translateY(-50%)}
+.stub:before{left:-17px}.stub:after{right:-17px}
+.admit{letter-spacing:.3em;text-transform:uppercase;font-size:.7rem;font-weight:700;color:var(--cherry);border-bottom:2px dashed #d8cdb9;padding-bottom:14px;margin-bottom:22px;display:flex;justify-content:space-between}
+h1{font-size:clamp(2.4rem,5.4vw,4.2rem);line-height:1;color:var(--cherry);text-shadow:3px 3px 0 var(--ink)}
+h1 small{display:block;font-family:'Rubik';font-weight:700;font-size:.3em;color:var(--ink);text-shadow:none;letter-spacing:.26em;margin-top:14px}
+.tag{margin-top:20px;line-height:1.8;font-size:1.03rem;color:#4a5450}
+.burst{position:absolute;top:-26px;right:-20px;width:120px;height:120px;background:var(--cherry);border-radius:50%;display:grid;place-items:center;color:#fff;font-family:'Bowlby One';font-size:1rem;text-align:center;line-height:1.1;transform:rotate(12deg);box-shadow:0 10px 26px rgba(38,48,46,.3)}
+.hi{border-radius:18px;overflow:hidden;border:5px solid var(--ink);box-shadow:14px 14px 0 var(--cherry)}
+.hi img{width:100%;height:100%;min-height:420px;object-fit:cover;display:block}
+/* marquee */
+.mq{background:var(--ink);color:var(--cream);overflow:hidden;padding:13px 0}
+.mq .tt{display:flex;width:max-content;animation:mq 32s linear infinite;font-family:'Bowlby One';font-size:.9rem;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* story */
+.story{max-width:1140px;margin:0 auto;padding:100px 5vw;display:grid;grid-template-columns:.9fr 1fr;gap:6vw;align-items:center}
+.story .im img{width:100%;min-height:430px;object-fit:cover;border-radius:16px;border:5px solid var(--ink)}
+.story h2{font-size:clamp(1.8rem,3.6vw,2.7rem);line-height:1.12;margin-bottom:24px;color:var(--cherry)}
+.story h2 em{font-style:normal;color:var(--ink)}
+.story p{line-height:1.95;font-size:1.03rem;margin-bottom:18px;color:#4a5450}
+/* highlights */
+.hl{background:var(--chrome);padding:96px 5vw}
+.hl .in2{max-width:1140px;margin:0 auto}
+.hl h2{font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:44px;color:var(--ink)}
+.hlg{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:26px}
+.hc{background:var(--cream);border-radius:16px;overflow:hidden;border:3px solid var(--ink);box-shadow:8px 8px 0 var(--mint)}
+.hc img{width:100%;height:225px;object-fit:cover;display:block}
+.hc .bd{padding:22px}
+.hc .no{display:inline-block;background:var(--cherry);color:#fff;font-weight:700;letter-spacing:.16em;font-size:.7rem;padding:5px 12px;border-radius:4px;margin-bottom:12px}
+.hc h3{font-family:'Bowlby One';font-size:1.15rem;margin-bottom:9px}
+.hc p{font-size:.94rem;line-height:1.7;color:#4a5450}
+/* menu */
+.menu{max-width:960px;margin:0 auto;padding:100px 5vw}
+.menu h2{font-size:clamp(1.7rem,3.4vw,2.5rem);color:var(--cherry);margin-bottom:8px}
+.menu .sub{color:#6a7570;margin-bottom:42px;font-weight:500}
+.mrow{display:flex;justify-content:space-between;gap:16px;padding:14px 4px;border-bottom:2px dashed #d8cdb9;font-size:1.04rem;font-weight:500}
+.mrow .a{color:#8a958f}
+.mnote{margin-top:34px;background:var(--mint);border-radius:14px;padding:18px 24px;text-align:center;font-weight:700}
+/* gallery */
+.gal{padding:0 5vw 100px;max-width:1140px;margin:0 auto}
+.gal h2{font-size:1.5rem;margin-bottom:26px}
+.gg{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.gg a{display:block;border-radius:14px;overflow:hidden;border:3px solid var(--ink)}
+.gg img{width:100%;height:220px;object-fit:cover;display:block}
+/* reviews */
+.revs{background:var(--cherry);color:var(--cream);padding:96px 5vw}
+.revs .in2{max-width:1040px;margin:0 auto}
+.revs h2{font-size:clamp(1.6rem,3.2vw,2.3rem);margin-bottom:8px}
+.revs .meta{color:#ffd9d4;margin-bottom:40px;font-weight:500}
+.rg{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.rc{background:var(--cream);color:var(--ink);border-radius:14px;padding:26px;border:3px solid var(--ink)}
+.rc .st{color:var(--cherry);letter-spacing:.18em;font-size:.85rem}
+.rc p{margin:13px 0 15px;line-height:1.8;font-size:.96rem}
+.rc .who{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:#6a7570;font-weight:700}
+/* visit */
+.visit{max-width:1140px;margin:0 auto;padding:100px 5vw;display:grid;grid-template-columns:1fr 1fr;gap:6vw}
+.visit h2{font-size:clamp(1.7rem,3.4vw,2.5rem);color:var(--cherry);margin-bottom:24px}
+.vrow{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid #e2d8c4;font-size:.98rem}
+.hrs{font-weight:700;color:var(--cherry)}
+.btn{display:inline-block;background:var(--cherry);color:#fff;padding:17px 34px;border-radius:12px;font-family:'Bowlby One';letter-spacing:.08em;font-size:.85rem;text-decoration:none;margin-top:28px;border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink)}
+.map{border-radius:16px;overflow:hidden;min-height:340px;background:#ddd;border:4px solid var(--ink)}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+footer{background:var(--ink);color:rgba(255,246,232,.55);text-align:center;padding:34px 5vw 110px;font-size:.82rem}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+@media(max-width:880px){.hero .in2,.story,.visit{grid-template-columns:1fr}.burst{width:96px;height:96px;font-size:.85rem}}
+
+/* chrome diner */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:linear-gradient(180deg,#f2f5f4,#DCE3E1 45%,#b9c3c0);display:flex;justify-content:center;gap:12px;padding:10px 10px calc(10px + env(safe-area-inset-bottom));border-top:3px solid #26302E}
+.bar::before{content:'';position:absolute;top:-3px;left:0;right:0;height:3px;background:repeating-linear-gradient(90deg,#26302E 0 12px,#FFF6E8 12px 24px)}
+.bar a{text-decoration:none;font-family:'Bowlby One',cursive;font-size:13px;color:#fff;background:#D8493E;padding:12px 18px;border-radius:999px;box-shadow:0 0 0 2px #fff,0 0 14px rgba(216,73,62,.65)}
+.bar a.w{background:#63C6B5;color:#26302E;box-shadow:0 0 0 2px #fff,0 0 14px rgba(99,198,181,.7)}
+.bar a.m{background:#26302E;box-shadow:0 0 0 2px #fff}
+
+*{-webkit-tap-highlight-color:transparent}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/*igbtn*/.bar a.g,.mbar a.g{display:inline-flex;align-items:center;justify-content:center;padding:10px 12px}.bar a.g svg,.mbar a.g svg{width:17px;height:17px;display:block}
+</style><style>
+.burst{animation:fxbpulse 6s ease-in-out infinite}
+@keyframes fxbpulse{0%,86%,100%{transform:rotate(0deg) scale(1)}90%{transform:rotate(3deg) scale(1.07)}94%{transform:rotate(-2deg) scale(1.02)}}
+@media (prefers-reduced-motion: reduce){.medal::after,.burst,.stamp,.stampring,.medallion::after,.pan-badge::after,.sunpanel::before{animation:none!important}}</style></head><body>
+<section class="hero">
+ <div class="in2">
+  <div class="stub rv" style="opacity:1;transform:none">
+   <div class="admit"><span data-edit="t1" data-edit-label="Text — Admit one · falafel">Admit one · falafel</span><span data-edit="t2" data-edit-label="Text — Bourj Hammoud">Bourj Hammoud</span></div>
+   <h1>FALAFEL ARAX<small data-edit="t3" data-edit-label="Text — فلافل أراكس — منذ ١٩٤٩">فلافل أراكس — منذ ١٩٤٩</small></h1>
+   <p class="tag" data-edit="t4" data-edit-label="Text — Frying falafel on Arax Street since 19…">Frying falafel on Arax Street since 1949 — so long the street and the shop share a name.</p>
+   <div class="burst">SINCE<br>1949</div>
+  </div>
+  <div class="hi"><img src="img/06.jpg" alt="Falafel Arax counter"></div>
+ </div>
+</section>
+<div class="ticket-top"></div>
+<div class="mq"><div class="tt"><span data-edit="t5" data-edit-label="Text — FALAFEL ✦ TARATOR ✦ PICKLED PEPPERS ✦ …">FALAFEL ✦ TARATOR ✦ PICKLED PEPPERS ✦ BASTERMA ✦ SOUJOUK ✦ SINCE 1949 ✦ ARAX STREET ✦ DORA ✦ FALAFEL ✦ TARATOR ✦ PICKLED PEPPERS ✦ BASTERMA ✦ SOUJOUK ✦ SINCE 1949 ✦ ARAX STREET ✦ DORA ✦ </span></div></div>
+<section class="story">
+ <div class="im rv"><img src="img/01.jpg" alt="Falafel Arax storefront" loading="lazy"></div>
+ <div class="rv">
+  <h2>Est. 1949 — <em data-edit="t6" data-edit-label="Text — older than the street sign">older than the street sign</em></h2>
+  <p data-edit="t7" data-edit-label="Text — In 1949 Arsen Heybelian opened fifteen…">In 1949 Arsen Heybelian opened fifteen square meters of falafel in Bourj Hammoud; when the street was named Arax, the shop took the name and never let go. Seventy-five years later the counter still runs on yellow stools, pickled peppers and falafel fried hard — crispy shell, soft heart. There's even a namesake in Glendale, California now. The original never left Dora.</p>
+ </div>
+</section>
+<section class="hl">
+ <div class="in2">
+  <h2 class="rv" data-edit="t8" data-edit-label="Title — House specials — since Truman was pres…">House specials — since Truman was president</h2>
+  <div class="hlg"><div class="hc rv"><img src="img/02.jpg" alt="The classic wrap" loading="lazy"><div class="bd"><span class="no" data-edit="t9" data-edit-label="Text — TICKET 1">TICKET 1</span><h3 data-edit="t10" data-edit-label="Heading — The classic wrap">The classic wrap</h3><p data-edit="t11" data-edit-label="Text — Falafel, tarator, pickles, mint — fold…">Falafel, tarator, pickles, mint — folded the same way since 1949.</p></div></div><div class="hc rv"><img src="img/05.jpg" alt="The pepper counter" loading="lazy"><div class="bd"><span class="no" data-edit="t12" data-edit-label="Text — TICKET 2">TICKET 2</span><h3 data-edit="t13" data-edit-label="Heading — The pepper counter">The pepper counter</h3><p data-edit="t14" data-edit-label="Text — Pickled peppers and neon turnips stack…">Pickled peppers and neon turnips stacked in trays — pick your fighters.</p></div></div><div class="hc rv"><img src="img/07.jpg" alt="Armenian sides" loading="lazy"><div class="bd"><span class="no" data-edit="t15" data-edit-label="Text — TICKET 3">TICKET 3</span><h3 data-edit="t16" data-edit-label="Heading — Armenian sides">Armenian sides</h3><p data-edit="t17" data-edit-label="Text — Basterma, soujouk and sandwiches from …">Basterma, soujouk and sandwiches from the other side of the family recipe box.</p></div></div></div>
+ </div>
+</section>
+<section class="menu">
+ <h2 class="rv" data-edit="t18" data-edit-label="Title — The counter card">The counter card</h2>
+ <p class="sub rv" data-edit="t19" data-edit-label="Text — Daily 8 AM – 8 PM · today's prices at …">Daily 8 AM – 8 PM · today's prices at the counter</p>
+ <div class="rv">
+  <div class="mrow"><span data-edit="t20" data-edit-label="Text — Falafel sandwich">Falafel sandwich</span><span class="a" data-edit="t21" data-edit-label="Text — سندويش فلافل">سندويش فلافل</span></div>
+  <div class="mrow"><span data-edit="t22" data-edit-label="Text — Falafel plate with tarator">Falafel plate with tarator</span><span class="a" data-edit="t23" data-edit-label="Text — صحن فلافل مع طرطور">صحن فلافل مع طرطور</span></div>
+  <div class="mrow"><span data-edit="t24" data-edit-label="Text — Falafel by the dozen">Falafel by the dozen</span><span class="a" data-edit="t25" data-edit-label="Text — فلافل بالدزينة">فلافل بالدزينة</span></div>
+  <div class="mrow"><span data-edit="t26" data-edit-label="Text — Basterma sandwich">Basterma sandwich</span><span class="a" data-edit="t27" data-edit-label="Text — سندويش بسطرما">سندويش بسطرما</span></div>
+  <div class="mrow"><span data-edit="t28" data-edit-label="Text — Soujouk sandwich">Soujouk sandwich</span><span class="a" data-edit="t29" data-edit-label="Text — سندويش سجق">سندويش سجق</span></div>
+  <div class="mrow"><span data-edit="t30" data-edit-label="Text — Pickles &amp; peppers counter">Pickles &amp; peppers counter</span><span class="a" data-edit="t31" data-edit-label="Text — كبيس ومخللات">كبيس ومخللات</span></div>
+ </div>
+ <div class="mnote rv" data-edit="t32" data-edit-label="Text — 🌶 Ask for the pickled peppers. Trust t…">🌶 Ask for the pickled peppers. Trust the last 75 years on this one.</div>
+</section>
+<section class="gal">
+ <h2 class="rv" data-edit="t33" data-edit-label="Title — The Dora original">The Dora original</h2>
+ <div class="gg rv"><a href="img/02.jpg" target="_blank"><img src="img/02.jpg" alt="" loading="lazy"></a><a href="img/03.jpg" target="_blank"><img src="img/03.jpg" alt="" loading="lazy"></a><a href="img/04.jpg" target="_blank"><img src="img/04.jpg" alt="" loading="lazy"></a><a href="img/05.jpg" target="_blank"><img src="img/05.jpg" alt="" loading="lazy"></a><a href="img/07.jpg" target="_blank"><img src="img/07.jpg" alt="" loading="lazy"></a><a href="img/08.jpg" target="_blank"><img src="img/08.jpg" alt="" loading="lazy"></a><a href="img/09.jpg" target="_blank"><img src="img/09.jpg" alt="" loading="lazy"></a></div>
+</section>
+<section class="revs">
+ <div class="in2">
+  <h2 class="rv" data-edit="t34" data-edit-label="Title — The verdict since 1949">The verdict since 1949</h2>
+  <div class="meta rv" data-edit="t35" data-edit-label="Text — ★ 4.1 · 134 Google reviews">★ 4.1 · 134 Google reviews</div>
+  <div class="rg"><div class="rc rv"><span class="st">★★★★★</span><p data-edit="t36" data-edit-label="Text — If you're looking for a great juicy fa…">If you're looking for a great juicy falafel sandwich in Beirut, this is the right place. The outside is crispy, the inside is cooked and soft. Best falafel in Lebanon.</p><div class="who" data-edit="t37" data-edit-label="Text — Aline Keyrouz">Aline Keyrouz</div></div><div class="rc rv"><span class="st">★★★★★</span><p data-edit="t38" data-edit-label="Text — Well run with a cashier and a well kep…">Well run with a cashier and a well kept, clean, open kitchen. Good location and cosy atmosphere for counter seating or quick grab-and-go.</p><div class="who" data-edit="t39" data-edit-label="Text — T. GeBrim">T. GeBrim</div></div><div class="rc rv"><span class="st">★★★★★</span><p data-edit="t40" data-edit-label="Text — Falafel Arax is one of the oldest plac…">Falafel Arax is one of the oldest places that sells Falafel in the Country! The ingredients are fresh and healthy.</p><div class="who" data-edit="t41" data-edit-label="Text — Johnny Estephan">Johnny Estephan</div></div></div>
+ </div>
+</section>
+<section class="visit">
+ <div class="rv">
+  <h2 data-edit="t42" data-edit-label="Title — Visit us">Visit us</h2>
+  <div class="vrow"><b data-edit="t43" data-edit-label="Text — Address">Address</b><span data-edit="t44" data-edit-label="Text — Arax Street / Dora roundabout, Bourj H…">Arax Street / Dora roundabout, Bourj Hammoud</span></div>
+  <div class="vrow"><b data-edit="t45" data-edit-label="Text — Phone">Phone</b><a href="tel:+9611264884" style="color:var(--cherry);font-weight:700" data-edit="t46" data-edit-label="Button / link — +961 1 264 884">+961 1 264 884</a></div>
+  <div class="vrow"><b data-edit="t47" data-edit-label="Text — Every day">Every day</b><span class="hrs" data-edit="t48" data-edit-label="Text — 8 AM – 8 PM">8 AM – 8 PM</span></div>
+  <div class="vrow"><b data-edit="t49" data-edit-label="Text — Seating">Seating</b><span data-edit="t50" data-edit-label="Text — counter stools · quick grab-and-go">counter stools · quick grab-and-go</span></div>
+  <a class="btn" href="tel:+9611264884" data-edit="t51" data-edit-label="Button / link — Call +961 1 264 884">Call +961 1 264 884</a> <a class="btn ig" href="https://instagram.com/falafelarax.lb" target="_blank" rel="noopener" data-edit="t52" data-edit-label="Button / link — Instagram">Instagram</a>
+ </div>
+ <div class="map rv"><iframe src="https://www.google.com/maps?cid=16954117952587504305&output=embed" loading="lazy" title="Map"></iframe></div>
+</section>
+<footer>FALAFEL ARAX · est. 1949 · Bourj Hammoud</footer>
+<div class="bar"><a class="g" href="https://instagram.com/falafelarax.lb" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.4"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg></a><a class="c" href="tel:+9611264884" data-edit="t53" data-edit-label="Button / link — ☎ CALL">☎ CALL</a><a class="m" href="https://maps.google.com/?cid=16954117952587504305" target="_blank" rel="noopener" data-edit="t54" data-edit-label="Button / link — ➜ MAP">➜ MAP</a></div>
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+setTimeout(function(){document.querySelectorAll('.rv:not(.in)').forEach(function(el){el.classList.add('in')})},1100);
+</script>
+</body></html>
