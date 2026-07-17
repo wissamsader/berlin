@@ -8,7 +8,7 @@
 <meta name="description" content="TakTak Barbershop auf der Sonnenallee: Herren, Damen und Kinder unter einem Dach. Kontakt und Termine nur per Instagram-DM.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Handjet:wght@400;700&family=Martian+Mono:wght@400;500;700&family=Noto+Sans+Arabic:wght@400;500;700;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Changa:wght@600;800&family=Martian+Mono:wght@400;500;700&family=Noto+Sans+Arabic:wght@400;500;700;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{overflow-x:clip}
@@ -24,12 +24,12 @@ html:not(.ar) .art{display:none!important}
 .wrap{max-width:1120px;margin:0 auto;padding-inline:5vw}
 .k{font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--cyan);font-weight:800;font-family:'Martian Mono',monospace}
 h2{font-family:'Martian Mono',monospace;font-size:clamp(24px,3.6vw,38px);line-height:1.3;font-weight:500;margin:12px 0 18px;color:#fff}
-h2 .art{font-family:'Handjet','Noto Sans Arabic',sans-serif;font-size:1.35em;color:var(--cyan);font-weight:700}
+h2 .art{font-family:'Changa','Noto Sans Arabic',sans-serif;font-size:1.35em;color:var(--cyan);font-weight:700}
 .rev{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
 .rev.on{opacity:1;transform:none}
 /* ── hero: full-bleed purple-neon interior, waveform ticks ── */
 header{position:relative;min-height:clamp(640px,92svh,860px);max-height:900px;display:flex;align-items:flex-end;background:var(--black)}
-header::before{content:'';position:absolute;inset:0;background:url('img/01.jpg') center 42%/cover no-repeat}
+header::before{content:'';position:absolute;inset:0;background:url('img/02.jpg') center 42%/cover no-repeat}
 header::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,6,18,.35) 0%,rgba(10,6,18,.15) 30%,rgba(10,6,18,.75) 72%,var(--black) 100%)}
 .ticks{position:absolute;z-index:2;inset-inline:0;bottom:0;height:52px;display:flex;align-items:flex-end;gap:5px;padding:0 5vw;opacity:.55}
 .ticks i{flex:1;max-width:6px;background:var(--cyan);border-radius:2px 2px 0 0;animation:tk 1.8s ease-in-out infinite alternate}
@@ -40,7 +40,7 @@ header::after{content:'';position:absolute;inset:0;background:linear-gradient(18
 .badge{display:inline-flex;align-items:center;gap:9px;border:1.5px solid var(--cyan);color:var(--cyan);border-radius:30px;padding:7px 16px;font-size:12px;font-weight:700;letter-spacing:.05em;background:rgba(10,6,18,.5);margin-bottom:18px;font-family:'Martian Mono',monospace}
 .badge i{width:7px;height:7px;border-radius:50%;background:var(--cyan);font-style:normal;box-shadow:0 0 10px var(--cyan)}
 h1{font-family:'Martian Mono',monospace;font-weight:700;font-size:clamp(40px,7.4vw,86px);line-height:1.05;color:#fff;text-shadow:0 0 30px rgba(122,43,224,.6)}
-.lsub{font-family:'Handjet','Noto Sans Arabic',sans-serif;font-weight:700;font-size:clamp(24px,3.2vw,36px);color:var(--cyan);margin-top:6px}
+.lsub{font-family:'Changa','Noto Sans Arabic',sans-serif;font-weight:800;font-size:clamp(24px,3.2vw,36px);color:var(--cyan);margin-top:6px}
 .hsub{margin-top:16px;max-width:54ch;font-size:clamp(15px,1.9vw,18.5px);color:#D9CFF0}
 .hmeta{margin-top:20px;display:flex;flex-wrap:wrap;gap:9px 22px;font-size:13.5px;color:#B7A9D8}
 .hmeta b{color:#fff}
@@ -57,7 +57,7 @@ html.ar .story img{box-shadow:-14px 14px 0 -4px var(--purple)}
 .hcard img{height:180px;width:100%;object-fit:cover}
 .hcard .hb{padding:16px 18px 20px}
 .hcard h3{font-family:'Martian Mono',monospace;font-weight:500;font-size:16px;color:var(--cyan);margin-bottom:6px}
-.hcard h3 .art{font-family:'Handjet','Noto Sans Arabic',sans-serif;font-size:1.35em;color:#fff}
+.hcard h3 .art{font-family:'Changa','Noto Sans Arabic',sans-serif;font-size:1.35em;color:#fff}
 .hcard p{font-size:13.4px;color:var(--mut)}
 .tile{background:linear-gradient(165deg,var(--purple2),var(--purple3));position:relative}
 .tile::before{content:'';position:absolute;inset:0;background:radial-gradient(circle 2px at 14px 14px,rgba(51,240,224,.3) 97%,transparent) 0 0/26px 26px;opacity:.6}
@@ -72,7 +72,7 @@ html.ar .story img{box-shadow:-14px 14px 0 -4px var(--purple)}
 .wcard{background:var(--purple3);padding:clamp(28px,4vw,44px) clamp(22px,3vw,34px)}
 .wcard .wn{font-family:'Martian Mono',monospace;font-size:12px;color:var(--cyan);opacity:.8;margin-bottom:12px;display:block}
 .wcard h3{font-family:'Martian Mono',monospace;font-weight:500;font-size:clamp(17px,2vw,20px);margin-bottom:8px;color:#fff}
-.wcard h3 .art{font-family:'Handjet','Noto Sans Arabic',sans-serif;font-size:1.3em;color:var(--cyan)}
+.wcard h3 .art{font-family:'Changa','Noto Sans Arabic',sans-serif;font-size:1.3em;color:var(--cyan)}
 .wcard p{font-size:14px;color:#D6CCEE}
 /* gallery */
 .gal{padding:20px 0 90px}
