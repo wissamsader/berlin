@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Fleischerei Yousef Abu Haija — Sonnenallee 80, Neukölln</title>
+<meta name="description" content="Fleischerei Yousef Abu Haija auf der Sonnenallee: halal Rind, Kalb, Lamm und Geflügel, frisch geschnitten an der Theke.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@800&family=Big+Shoulders+Display:wght@700;800;900&family=Noto+Sans+Arabic:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{overflow-x:clip}
+:root{--steel:#6E7B86;--tile:#F4F6F7;--paper:#FBFBFA;--red:#7E1F17;--red2:#5C140F;--ink:#232B30;--mut:#5C6870;--line:#DDE3E6}
+body{background:var(--paper);color:var(--ink);font:16px/1.75 'IBM Plex Sans',sans-serif}
+html.ar body{font-family:'Noto Sans Arabic',sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.art{unicode-bidi:isolate;font-family:'Noto Sans Arabic',sans-serif}
+html.ar .de{display:none!important}
+html:not(.ar) .art{display:none!important}
+.num{direction:ltr;unicode-bidi:isolate;display:inline-block}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:5vw}
+.k{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:700}
+html.ar .k{letter-spacing:0;font-weight:800}
+h2{font-family:'Big Shoulders Display',sans-serif;font-size:clamp(32px,4.8vw,50px);line-height:1.15;font-weight:800;margin:12px 0 18px;text-transform:uppercase;letter-spacing:-.01em}
+html.ar h2{font-family:'Vazirmatn',sans-serif;font-weight:800;text-transform:none;font-size:clamp(27px,4vw,42px)}
+.rev{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.rev.on{opacity:1;transform:none}
+/* split hero — butcher portrait + tiled steel panel */
+header{position:relative;min-height:clamp(620px,92svh,840px);max-height:860px;display:grid;grid-template-columns:1fr 1fr}
+.hphoto{position:relative;overflow:clip;background:url('img/02.jpg') center 24%/cover no-repeat}
+.hphoto::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent 60%,rgba(35,43,48,.5))}
+.htype{background:
+ repeating-linear-gradient(0deg,transparent 0 58px,rgba(110,123,134,.28) 58px 60px),
+ repeating-linear-gradient(90deg,transparent 0 118px,rgba(110,123,134,.28) 118px 120px),
+ var(--tile);
+ position:relative;display:flex;flex-direction:column;justify-content:center;padding:56px 4.4vw;color:var(--ink)}
+.mark{width:104px;height:104px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-content:center;text-align:center;box-shadow:0 16px 30px -12px rgba(126,31,23,.55);margin-bottom:22px}
+.mark b{font-family:'Vazirmatn',sans-serif;font-weight:800;font-size:24px;display:block}
+.mark i{font-style:normal;font-size:7.5px;letter-spacing:.16em;font-weight:700;opacity:.85}
+h1{font-family:'Vazirmatn',sans-serif;font-weight:800;font-size:clamp(38px,5.6vw,64px);line-height:1.14;color:var(--ink)}
+.latsub{font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(14px,1.8vw,20px);letter-spacing:.1em;color:var(--red);margin-top:6px;text-transform:uppercase}
+.hero-sub{margin-top:16px;font-size:clamp(14.5px,1.7vw,17px);max-width:36ch;color:#3D454A}
+.hero-meta{margin-top:22px;display:flex;flex-direction:column;gap:8px;font-size:13.5px;color:var(--mut)}
+.hero-meta b{color:var(--ink)}
+/* story */
+.story{display:grid;grid-template-columns:1.05fr .95fr;gap:6vw;align-items:center;padding:100px 0 78px}
+.story p{color:#3D454A;margin-bottom:14px}
+.story img{border-radius:10px;aspect-ratio:4/5;object-fit:cover;border:1px solid var(--line);box-shadow:16px 16px 0 -6px var(--steel)}
+html.ar .story img{box-shadow:-16px 16px 0 -6px var(--steel)}
+/* highlights / sortiment grid */
+.high{padding:16px 0 20px}
+.hgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.hcard{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:clip;display:flex;flex-direction:column;box-shadow:0 12px 26px -20px rgba(35,43,48,.35)}
+.hcard img{height:170px;width:100%;object-fit:cover}
+.hcard .hb{padding:16px 16px 20px;border-top:5px solid var(--red)}
+.hcard h3{font-size:15.5px;font-weight:700;margin-bottom:6px}
+.hcard p{font-size:12.6px;color:var(--mut)}
+.tile{background:var(--ink);color:var(--tile);position:relative}
+.tile::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(135deg,rgba(244,246,247,.05) 0 10px,transparent 10px 20px)}
+.tile .hb{position:relative;padding-top:26px;border-top:5px solid var(--steel)}
+.tile h3{color:#fff}
+.tile p{color:#AEB8C0}
+/* cold room strip */
+.why{background:var(--ink);color:var(--tile);padding:88px 0;position:relative;overflow:clip}
+.why::before{content:'';position:absolute;inset:0;opacity:.06;background-image:repeating-linear-gradient(0deg,#fff 0 1px,transparent 1px 60px),repeating-linear-gradient(90deg,#fff 0 1px,transparent 1px 120px)}
+.why .wrap{position:relative}
+.why h2{color:#fff}
+.wgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:28px}
+.wchip{border:1px solid rgba(244,246,247,.16);border-radius:4px;padding:26px 22px;background:rgba(244,246,247,.04);border-inline-start:4px solid var(--red)}
+.wchip h3{font-size:18px;font-weight:700;margin-bottom:8px}
+.wchip p{font-size:13.4px;color:#AEB8C0}
+/* sortiment tag panel */
+.tags{margin:96px 0 20px;background:#fff;border:1.5px solid var(--ink);border-radius:4px;padding:clamp(28px,5vw,54px)}
+.tags h2{text-align:center}
+.tagnote{text-align:center;max-width:60ch;margin:0 auto 28px;color:#3D454A;font-size:14.5px}
+.pills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:30px}
+.pill{border:1.5px solid var(--steel);border-radius:30px;padding:9px 20px;font-size:13.5px;font-weight:600;color:var(--ink)}
+.tagcta{text-align:center}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--red);color:#fff;font-weight:700;border-radius:6px;padding:14px 26px;text-decoration:none;margin:6px 8px 0 0;font-size:14.5px}
+html.ar .btn{margin:6px 0 0 8px}
+.btn.o{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn svg{width:17px;height:17px}
+/* reviews */
+.revs{padding:92px 0}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.rcard{background:var(--tile);border:1px solid var(--line);border-radius:4px;padding:22px;border-inline-start:5px solid var(--steel)}
+.stars{color:var(--red);letter-spacing:2px;font-size:14px}
+.rcard p{font-size:14px;color:#3D454A;margin:12px 0 14px;font-style:italic}
+.rcard .who{font-size:12.6px;color:var(--mut)}
+.gband{margin-top:30px;text-align:center;font-size:15px;color:var(--mut)}
+.gband b{color:var(--ink);font-size:23px}
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:6vw;padding:20px 0 130px;align-items:center}
+.visit img{border-radius:10px;object-fit:cover;width:100%;aspect-ratio:5/4;border:1px solid var(--line)}
+.hours{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:8px}
+.hours td{padding:10px 0;border-bottom:1px dashed var(--line);color:#3D454A}
+.hours td:last-child{text-align:end;color:var(--ink);font-weight:700}
+.vinfo .adr{font-size:20px;font-weight:700;color:var(--ink);margin:6px 0 12px}
+.vinfo p{color:#3D454A;margin-bottom:12px}
+footer{padding:42px 5vw 150px;text-align:center;color:#8D9A9F;font-size:12.5px;border-top:1px solid var(--line)}
+/* cleaver-notch sticky bar */
+.bar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;display:flex;gap:9px;background:var(--ink);padding:8px;border-radius:10px;box-shadow:0 22px 48px -18px rgba(0,0,0,.55);animation:barin .7s cubic-bezier(.2,.9,.3,1.18) .3s both}
+@keyframes barin{from{transform:translateX(-50%) translateY(112px)}to{transform:translateX(-50%) translateY(0)}}
+.bar a{text-decoration:none;display:flex;align-items:center;gap:8px;padding:14px 20px;font-weight:700;font-size:13.5px;color:#fff;clip-path:polygon(0 0,100% 0,100% 100%,14px 100%,0 calc(100% - 14px))}
+html.ar .bar a{clip-path:polygon(0 0,100% 0,100% calc(100% - 14px),calc(100% - 14px) 100%,0 100%)}
+.bar a.call{background:var(--red)}
+.bar a.map{background:var(--steel)}
+.bar a.fb{padding:14px;background:#37424A}
+.bar svg{width:16px;height:16px;display:block}
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));right:14px;z-index:80;cursor:pointer;border:1.5px solid var(--tile);font-weight:700;font-size:11.5px;letter-spacing:.1em;padding:9px 14px;border-radius:4px;line-height:1;background:var(--ink);color:var(--tile);font-family:'IBM Plex Sans',sans-serif}
+@media(max-width:860px){
+ header{grid-template-columns:1fr;min-height:auto}
+ .hphoto{min-height:44svh}
+ .htype{padding:44px 6vw 56px}
+ .story{grid-template-columns:1fr;gap:30px;padding-top:64px}
+ .hgrid{grid-template-columns:1fr 1fr}
+ .wgrid{grid-template-columns:1fr}
+ .rgrid{grid-template-columns:1fr}
+ .visit{grid-template-columns:1fr}
+ .visit img{aspect-ratio:16/10}
+ .pills{gap:8px}
+}
+@media(max-width:480px){.hgrid{grid-template-columns:1fr}}
+/* wrap guard */ .wrap{padding-inline:5vw!important}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+<style>.mark{overflow:hidden}
+.mark::after{content:'';position:absolute;top:-20%;left:-70%;width:42%;height:140%;
+ background:linear-gradient(105deg,transparent,rgba(255,245,240,.45),transparent);transform:skewX(-18deg);
+ animation:fxglint 13s ease-in-out infinite}
+@keyframes fxglint{0%,86%{left:-70%}97%,100%{left:140%}}
+@media (prefers-reduced-motion: reduce){.mark::after{animation:none}}</style></head>
+<body>
+
+<button class="lgx" onclick="const h=document.documentElement,a=h.classList.toggle('ar');h.dir=a?'rtl':'ltr';h.lang=a?'ar':'de'" aria-label="العربية / Deutsch"><span class="de" data-edit="t1" data-edit-label="Text — ع">ع</span><span class="art" data-edit="t2" data-edit-label="Text — DE">DE</span></button>
+
+<header>
+ <div class="hphoto"></div>
+ <div class="htype">
+  <div class="mark"><b data-edit="t3" data-edit-label="Text — يوسف">يوسف</b><i data-edit="t4" data-edit-label="Text — SONNENALLEE 80">SONNENALLEE 80</i></div>
+  <h1><span class="de" data-edit="t5" data-edit-label="Text — Fleischerei Yousef">Fleischerei Yousef</span><span class="art" data-edit="t6" data-edit-label="Text — ملحمة اليوسف">ملحمة اليوسف</span></h1>
+  <div class="latsub"><span class="de" data-edit="t7" data-edit-label="Text — Abu Haija · Halal-Metzgerei">Abu Haija · Halal-Metzgerei</span><span class="art" data-edit="t8" data-edit-label="Text — أبو هيجا · ملحمة حلال">أبو هيجا · ملحمة حلال</span></div>
+  <p class="hero-sub"><span class="de" data-edit="t9" data-edit-label="Text — Halal Rind, Kalb, Lamm und Geflügel — …">Halal Rind, Kalb, Lamm und Geflügel — frisch geschnitten an der Theke, seit Jahren Vertrauensadresse auf der Sonnenallee.</span><span class="art" data-edit="t10" data-edit-label="Text — لحم بقر وعجل وغنم ودجاج حلال — يُقطَّع…">لحم بقر وعجل وغنم ودجاج حلال — يُقطَّع طازجاً عند الواجهة، عنوان ثقة على زونن‌ألي منذ سنوات.</span></p>
+  <div class="hero-meta">
+   <span>★ <b class="num" data-edit="rating">4,4</b> <span class="de" data-edit="t11" data-edit-label="Text — auf Google ·">auf Google ·</span><span class="art" data-edit="t12" data-edit-label="Text — على غوغل ·">على غوغل ·</span> <b class="num" data-edit="revcount">278</b> <span class="de" data-edit="t13" data-edit-label="Text — Bewertungen">Bewertungen</span><span class="art" data-edit="t14" data-edit-label="Text — تقييم">تقييم</span></span>
+   <span data-edit="addr">Sonnenallee 80, 12045 Berlin</span>
+  </div>
+ </div>
+</header>
+
+<section class="story wrap">
+ <div class="rev">
+  <span class="k"><span class="de" data-edit="t15" data-edit-label="Text — Unsere Theke">Unsere Theke</span><span class="art" data-edit="t16" data-edit-label="Text — عند الواجهة">عند الواجهة</span></span>
+  <h2><span class="de" data-edit="t17" data-edit-label="Text — Vertrauen, Stück für Stück verdient.">Vertrauen, Stück für Stück verdient.</span><span class="art" data-edit="t18" data-edit-label="Text — ثقةٌ تُكتسب قطعةً قطعة.">ثقةٌ تُكتسب قطعةً قطعة.</span></h2>
+  <p><span class="de" data-edit="s1de">Fleischerei Yousef ist eine feste Adresse auf der Sonnenallee: halal geschlachtetes Rind, Kalb, Lamm und Geflügel, frisch geschnitten direkt an der Theke. Wer einmal hier war, kommt wieder — das sagen die Bewertungen so klar wie die Kundschaft vor Ort.</span><span class="art" data-edit="s1ar">ملحمة اليوسف عنوانٌ ثابت على زونن‌ألي: لحم بقر وعجل وغنم ودجاج حلال، يُقطَّع طازجاً أمام الزبون مباشرةً. من يزرها مرة يعود إليها — هذا ما تقوله التقييمات بوضوح، كما يقوله الزبائن أنفسهم.</span></p>
+  <p><span class="de" data-edit="s2de">An der Theke wird erklärt, nicht nur verkauft: welches Stück sich fürs Grillen eignet, wie fein das Hack gewolft werden soll, was zum Sonntagsbraten passt. Ein Ort, an dem man Fleisch noch nach Wunsch bekommt.</span><span class="art" data-edit="s2ar">عند الواجهة يُشرح الأمر ولا يُباع فقط: أي قطعة تصلح للشواء، وكم يجب أن يكون اللحم المفروم ناعماً، وماذا يناسب طبخة الأحد. مكانٌ لا يزال يُقدّم اللحم حسب الطلب.</span></p>
+ </div>
+ <img class="rev" src="img/05.jpg" alt="Fleischerei Yousef — Schaufenster an der Sonnenallee">
+</section>
+
+<section class="high wrap">
+ <span class="k"><span class="de" data-edit="t19" data-edit-label="Text — Unser Sortiment">Unser Sortiment</span><span class="art" data-edit="t20" data-edit-label="Text — تشكيلتنا">تشكيلتنا</span></span>
+ <h2 class="rev"><span class="de" data-edit="t21" data-edit-label="Text — Was an der Theke liegt">Was an der Theke liegt</span><span class="art" data-edit="t22" data-edit-label="Text — ماذا تجدون عند الواجهة">ماذا تجدون عند الواجهة</span></h2>
+ <div class="hgrid">
+  <div class="hcard rev"><img src="img/02.jpg" alt="Marinierte Spieße auf dem Grill"><div class="hb"><h3><span class="de" data-edit="t23" data-edit-label="Text — BBQ-Vorbereitung">BBQ-Vorbereitung</span><span class="art" data-edit="t24" data-edit-label="Text — تحضير للشواء">تحضير للشواء</span></h3><p><span class="de" data-edit="t25" data-edit-label="Text — Mariniert und aufgespießt — vorbereite…">Mariniert und aufgespießt — vorbereitet für den eigenen Grill zu Hause.</span><span class="art" data-edit="t26" data-edit-label="Text — متبّل ومشكوك على السيخ — جاهز لشوايتكم…">متبّل ومشكوك على السيخ — جاهز لشوايتكم في البيت.</span></p></div></div>
+  <div class="hcard tile rev"><div class="hb"><h3><span class="de" data-edit="t27" data-edit-label="Text — Halal-Schnitte nach Wunsch">Halal-Schnitte nach Wunsch</span><span class="art" data-edit="t28" data-edit-label="Text — قطع حلال حسب الطلب">قطع حلال حسب الطلب</span></h3><p><span class="de" data-edit="t29" data-edit-label="Text — Rind, Kalb, Lamm und Geflügel — geschn…">Rind, Kalb, Lamm und Geflügel — geschnitten genau so, wie ihr es braucht.</span><span class="art" data-edit="t30" data-edit-label="Text — بقر وعجل وغنم ودجاج — تُقطَّع تماماً ك…">بقر وعجل وغنم ودجاج — تُقطَّع تماماً كما تحتاجون.</span></p></div></div>
+  <div class="hcard tile rev"><div class="hb"><h3><span class="de" data-edit="t31" data-edit-label="Text — Wochenend-Angebote">Wochenend-Angebote</span><span class="art" data-edit="t32" data-edit-label="Text — عروض نهاية الأسبوع">عروض نهاية الأسبوع</span></h3><p><span class="de" data-edit="t33" data-edit-label="Text — Wechselnde Angebote an der Theke — fra…">Wechselnde Angebote an der Theke — fragt einfach nach.</span><span class="art" data-edit="t34" data-edit-label="Text — عروضٌ متجددة عند الواجهة — اسألونا مبا…">عروضٌ متجددة عند الواجهة — اسألونا مباشرةً.</span></p></div></div>
+  <div class="hcard rev"><img src="img/01.jpg" alt="Gewürze und Tee im Regal"><div class="hb"><h3><span class="de" data-edit="t35" data-edit-label="Text — Gewürze &amp; Feinkost">Gewürze &amp; Feinkost</span><span class="art" data-edit="t36" data-edit-label="Text — بهارات ومؤونة">بهارات ومؤونة</span></h3><p><span class="de" data-edit="t37" data-edit-label="Text — Tee, Gewürze und kleine Extras für die…">Tee, Gewürze und kleine Extras für die Küche zu Hause.</span><span class="art" data-edit="t38" data-edit-label="Text — شاي وبهارات وإضافات صغيرة لمطبخ البيت.">شاي وبهارات وإضافات صغيرة لمطبخ البيت.</span></p></div></div>
+ </div>
+</section>
+
+<section class="why">
+ <div class="wrap">
+  <span class="k" style="color:#AEB8C0"><span class="de" data-edit="t39" data-edit-label="Text — Warum Yousef">Warum Yousef</span><span class="art" data-edit="t40" data-edit-label="Text — لماذا اليوسف">لماذا اليوسف</span></span>
+  <h2 class="rev"><span class="de" data-edit="t41" data-edit-label="Text — Frisch heißt: heute geschnitten.">Frisch heißt: heute geschnitten.</span><span class="art" data-edit="t42" data-edit-label="Text — طازجٌ يعني: قُطِع اليوم.">طازجٌ يعني: قُطِع اليوم.</span></h2>
+  <div class="wgrid">
+   <div class="wchip rev"><h3><span class="de" data-edit="t43" data-edit-label="Text — Halal, garantiert">Halal, garantiert</span><span class="art" data-edit="t44" data-edit-label="Text — حلال، مضمون">حلال، مضمون</span></h3><p><span class="de" data-edit="t45" data-edit-label="Text — Jedes Stück Fleisch ist halal geschlac…">Jedes Stück Fleisch ist halal geschlachtet — ohne Ausnahme.</span><span class="art" data-edit="t46" data-edit-label="Text — كل قطعة لحم مذبوحة حلالاً — بلا استثنا…">كل قطعة لحم مذبوحة حلالاً — بلا استثناء.</span></p></div>
+   <div class="wchip rev"><h3>★ <span class="num" data-edit="t47" data-edit-label="Text — 4,4">4,4</span> <span class="de" data-edit="t48" data-edit-label="Text — bei">bei</span><span class="art" data-edit="t49" data-edit-label="Text — من">من</span> <span class="num" data-edit="t50" data-edit-label="Text — 278">278</span> <span class="de" data-edit="t51" data-edit-label="Text — Bewertungen">Bewertungen</span><span class="art" data-edit="t52" data-edit-label="Text — تقييماً">تقييماً</span></h3><p><span class="de" data-edit="t53" data-edit-label="Text — Eine der bestbewerteten Fleischereien …">Eine der bestbewerteten Fleischereien auf der Sonnenallee.</span><span class="art" data-edit="t54" data-edit-label="Text — من أعلى الملاحم تقييماً على زونن‌ألي.">من أعلى الملاحم تقييماً على زونن‌ألي.</span></p></div>
+   <div class="wchip rev"><h3><span class="de" data-edit="t55" data-edit-label="Text — Mitten auf der Sonnenallee">Mitten auf der Sonnenallee</span><span class="art" data-edit="t56" data-edit-label="Text — في قلب زونن‌ألي">في قلب زونن‌ألي</span></h3><p><span class="de" data-edit="t57" data-edit-label="Text — Direkt im Herzen des Kiezes — leicht z…">Direkt im Herzen des Kiezes — leicht zu Fuß zu erreichen.</span><span class="art" data-edit="t58" data-edit-label="Text — في قلب الحيّ مباشرةً — يسهل الوصول إلي…">في قلب الحيّ مباشرةً — يسهل الوصول إليها سيراً.</span></p></div>
+  </div>
+ </div>
+</section>
+
+<div class="wrap">
+<section class="tags rev">
+ <span class="k" style="display:block;text-align:center"><span class="de" data-edit="t59" data-edit-label="Text — Das volle Sortiment">Das volle Sortiment</span><span class="art" data-edit="t60" data-edit-label="Text — التشكيلة الكاملة">التشكيلة الكاملة</span></span>
+ <h2><span class="de" data-edit="t61" data-edit-label="Text — Vom Rind bis zur Wurst">Vom Rind bis zur Wurst</span><span class="art" data-edit="t62" data-edit-label="Text — من البقر إلى النقانق">من البقر إلى النقانق</span></h2>
+ <p class="tagnote"><span class="de" data-edit="t63" data-edit-label="Text — Feste Preise nennen wir gern direkt an…">Feste Preise nennen wir gern direkt an der Theke oder am Telefon — je nach Stück, Menge und Anlass.</span><span class="art" data-edit="t64" data-edit-label="Text — نذكر الأسعار الثابتة عند الواجهة أو عب…">نذكر الأسعار الثابتة عند الواجهة أو عبر الهاتف مباشرةً — بحسب القطعة والكمية والمناسبة.</span></p>
+ <div class="pills">
+  <span class="pill"><span class="de" data-edit="t65" data-edit-label="Text — Rind &amp; Kalb">Rind &amp; Kalb</span><span class="art" data-edit="t66" data-edit-label="Text — بقر وعجل">بقر وعجل</span></span>
+  <span class="pill"><span class="de" data-edit="t67" data-edit-label="Text — Lamm &amp; Hammel">Lamm &amp; Hammel</span><span class="art" data-edit="t68" data-edit-label="Text — غنم وخاروف">غنم وخاروف</span></span>
+  <span class="pill"><span class="de" data-edit="t69" data-edit-label="Text — Geflügel">Geflügel</span><span class="art" data-edit="t70" data-edit-label="Text — دجاج">دجاج</span></span>
+  <span class="pill"><span class="de" data-edit="t71" data-edit-label="Text — Hack &amp; Kofta">Hack &amp; Kofta</span><span class="art" data-edit="t72" data-edit-label="Text — مفروم وكفتة">مفروم وكفتة</span></span>
+  <span class="pill"><span class="de" data-edit="t73" data-edit-label="Text — Wurst &amp; Feinkost">Wurst &amp; Feinkost</span><span class="art" data-edit="t74" data-edit-label="Text — نقانق ومؤونة">نقانق ومؤونة</span></span>
+  <span class="pill"><span class="de" data-edit="t75" data-edit-label="Text — BBQ-Vorbereitung">BBQ-Vorbereitung</span><span class="art" data-edit="t76" data-edit-label="Text — تحضير للشواء">تحضير للشواء</span></span>
+ </div>
+ <div class="tagcta">
+  <a class="btn" href="tel:+493060902102">✆ <span class="de" data-edit="t77" data-edit-label="Text — Anrufen &amp; fragen">Anrufen &amp; fragen</span><span class="art" data-edit="t78" data-edit-label="Text — اتصلوا واسألوا">اتصلوا واسألوا</span></a>
+ </div>
+</section>
+</div>
+
+<section class="revs wrap">
+ <span class="k"><span class="de" data-edit="t79" data-edit-label="Text — Stimmen">Stimmen</span><span class="art" data-edit="t80" data-edit-label="Text — قالوا عنا">قالوا عنا</span></span>
+ <h2 class="rev"><span class="de" data-edit="t81" data-edit-label="Text — Aus den Google-Bewertungen">Aus den Google-Bewertungen</span><span class="art" data-edit="t82" data-edit-label="Text — من تقييمات غوغل">من تقييمات غوغل</span></h2>
+ <div class="rgrid">
+  <div class="rcard rev"><div class="stars">★★★★★</div><p dir="ltr" data-edit="t83" data-edit-label="Text — 'This is a really amazing shop and but…">"This is a really amazing shop and butchery. You can get all halal products and buy the best meat and BBQ in Berlin. I came across this store by coincidence and since then it is my destination for meat."</p><div class="who" data-edit="t84" data-edit-label="Text — Nasser Owaidani · Google">Nasser Owaidani · Google</div></div>
+  <div class="rcard rev"><div class="stars">★★★★★</div><p dir="ltr" data-edit="t85" data-edit-label="Text — 'Best halal and fresh meat I found in …">"Best halal and fresh meat I found in Berlin, and customer support is impeccable."</p><div class="who" data-edit="t86" data-edit-label="Text — Ilyes Boudissa · Google">Ilyes Boudissa · Google</div></div>
+  <div class="rcard rev"><div class="stars">★★★★★</div><p dir="ltr" data-edit="t87" data-edit-label="Text — 'Great flavors, super friendly service…">"Great flavors, super friendly service, good offers. Highly recommended."</p><div class="who" data-edit="t88" data-edit-label="Text — Ghassan Afram · Google">Ghassan Afram · Google</div></div>
+ </div>
+ <p class="gband">★ <b data-edit="rating2">4,4</b> / 5 — <span class="num" data-edit="revcount2">278</span> <span class="de" data-edit="t89" data-edit-label="Text — Bewertungen auf Google">Bewertungen auf Google</span><span class="art" data-edit="t90" data-edit-label="Text — تقييم على غوغل">تقييم على غوغل</span></p>
+</section>
+
+<section class="visit wrap">
+ <img class="rev" src="img/03.jpg" alt="Fleischerei Yousef — Auslage mit Obst und Gemüse">
+ <div class="vinfo rev">
+  <span class="k"><span class="de" data-edit="t91" data-edit-label="Text — Öffnungszeiten &amp; Lage">Öffnungszeiten &amp; Lage</span><span class="art" data-edit="t92" data-edit-label="Text — الدوام والموقع">الدوام والموقع</span></span>
+  <h2><span class="de" data-edit="t93" data-edit-label="Text — Mitten auf der Sonnenallee">Mitten auf der Sonnenallee</span><span class="art" data-edit="t94" data-edit-label="Text — في قلب زونن‌ألي">في قلب زونن‌ألي</span></h2>
+  <p class="adr" data-edit="addr2" dir="ltr">Sonnenallee 80, 12045 Berlin</p>
+  <table class="hours">
+   <tr><td><span class="de" data-edit="t95" data-edit-label="Text — Montag">Montag</span><span class="art" data-edit="t96" data-edit-label="Text — الاثنين">الاثنين</span></td><td><span class="num" data-edit="h-mo">9–20</span></td></tr>
+   <tr><td><span class="de" data-edit="t97" data-edit-label="Text — Dienstag">Dienstag</span><span class="art" data-edit="t98" data-edit-label="Text — الثلاثاء">الثلاثاء</span></td><td><span class="num" data-edit="h-di">9–20</span></td></tr>
+   <tr><td><span class="de" data-edit="t99" data-edit-label="Text — Mittwoch">Mittwoch</span><span class="art" data-edit="t100" data-edit-label="Text — الأربعاء">الأربعاء</span></td><td><span class="num" data-edit="h-mi">9–20</span></td></tr>
+   <tr><td><span class="de" data-edit="t101" data-edit-label="Text — Donnerstag">Donnerstag</span><span class="art" data-edit="t102" data-edit-label="Text — الخميس">الخميس</span></td><td><span class="num" data-edit="h-do">9–20</span></td></tr>
+   <tr><td><span class="de" data-edit="t103" data-edit-label="Text — Freitag">Freitag</span><span class="art" data-edit="t104" data-edit-label="Text — الجمعة">الجمعة</span></td><td><span class="num" data-edit="h-fr">9–20</span></td></tr>
+   <tr><td><span class="de" data-edit="t105" data-edit-label="Text — Samstag">Samstag</span><span class="art" data-edit="t106" data-edit-label="Text — السبت">السبت</span></td><td><span class="num" data-edit="h-sa">9–20</span></td></tr>
+   <tr><td><span class="de" data-edit="t107" data-edit-label="Text — Sonntag">Sonntag</span><span class="art" data-edit="t108" data-edit-label="Text — الأحد">الأحد</span></td><td><span class="de" data-edit="h-so">geschlossen</span><span class="art" data-edit="t109" data-edit-label="Text — مغلق">مغلق</span></td></tr>
+  </table>
+  <p style="margin-top:14px"><span class="de" data-edit="t110" data-edit-label="Text — Telefon:">Telefon:</span><span class="art" data-edit="t111" data-edit-label="Text — هاتف:">هاتف:</span> <b class="num" data-edit="phone">+49 30 60902102</b></p>
+  <a class="btn" href="tel:+493060902102">✆ <span class="de" data-edit="t112" data-edit-label="Text — Anrufen">Anrufen</span><span class="art" data-edit="t113" data-edit-label="Text — اتصال">اتصال</span></a>
+  <a class="btn o" href="https://www.google.com/maps?cid=10513149439405849357" target="_blank" rel="noopener">◈ <span class="de" data-edit="t114" data-edit-label="Text — Route öffnen">Route öffnen</span><span class="art" data-edit="t115" data-edit-label="Text — افتحوا الخريطة">افتحوا الخريطة</span></a>
+  <a class="btn o" href="https://www.facebook.com/p/%D9%85%D9%84%D8%AD%D9%85%D8%A9-%D8%A7%D9%84%D9%8A%D9%88%D8%B3%D9%81-Fleischerei-Yousef-100057530736396/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg><span class="de" data-edit="t116" data-edit-label="Text — Facebook">Facebook</span><span class="art" data-edit="t117" data-edit-label="Text — فيسبوك">فيسبوك</span></a>
+ </div>
+</section>
+
+<footer><span data-edit="footer">Fleischerei Yousef Abu Haija · Sonnenallee 80, 12045 Berlin · <span class="num" data-edit="t118" data-edit-label="Text — +49 30 60902102">+49 30 60902102</span></span></footer>
+
+<div class="bar">
+ <a class="call" href="tel:+493060902102"><span class="de" data-edit="t119" data-edit-label="Text — Anrufen">Anrufen</span><span class="art" data-edit="t120" data-edit-label="Text — اتصال">اتصال</span></a>
+ <a class="map" href="https://www.google.com/maps?cid=10513149439405849357" target="_blank" rel="noopener"><span class="de" data-edit="t121" data-edit-label="Text — Karte">Karte</span><span class="art" data-edit="t122" data-edit-label="Text — الخريطة">الخريطة</span></a>
+ <a class="fb" href="https://www.facebook.com/p/%D9%85%D9%84%D8%AD%D9%85%D8%A9-%D8%A7%D9%84%D9%8A%D9%88%D8%B3%D9%81-Fleischerei-Yousef-100057530736396/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+</div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+setTimeout(()=>document.querySelectorAll('.rev:not(.on)').forEach(el=>el.classList.add('on')),1100);
+</script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Abou Sami Beirut — broasted &amp; grills since 1987</title>
+<link href="https://fonts.googleapis.com/css2?family=Graduate&family=Barlow:wght@400;600;800&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-x:clip}
+:root{--red:#D93A2B;--must:#EDB531;--off:#FBF5E9;--ink:#26201A}
+body{font-family:'Barlow',sans-serif;background:var(--off);color:var(--ink)}
+h1,h2,.var{font-family:'Graduate',serif}
+/* gingham liner */
+.gingham{background:
+ repeating-linear-gradient(0deg,rgba(217,58,43,.16) 0 12px,transparent 12px 24px),
+ repeating-linear-gradient(90deg,rgba(217,58,43,.16) 0 12px,transparent 12px 24px),var(--off)}
+/* hero */
+.hero{position:relative;min-height:92vh;display:grid;grid-template-columns:1fr .95fr;align-items:center;padding:8vh 6vw;gap:5vw}
+.hero.gingham{}
+.varsity{display:inline-flex;align-items:center;gap:14px;background:var(--ink);color:var(--must);padding:10px 22px;border-radius:8px;font-family:'Graduate';font-size:.95rem;margin-bottom:26px}
+h1{font-size:clamp(2.4rem,5.8vw,4.6rem);line-height:1.02;color:var(--red);text-shadow:2px 2px 0 var(--ink)}
+h1 small{display:block;font-family:'Cairo';font-weight:700;font-size:.34em;color:var(--ink);text-shadow:none;margin-top:12px}
+.tag{margin-top:22px;font-size:1.1rem;line-height:1.8;color:#4c443a;max-width:48ch;font-weight:600}
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.stats span{background:#fff;border:3px solid var(--ink);border-radius:10px;padding:12px 20px;font-weight:800;box-shadow:5px 5px 0 var(--must)}
+.hi{position:relative}
+.hi img{width:100%;min-height:440px;object-fit:cover;border-radius:20px;border:5px solid var(--ink);box-shadow:16px 16px 0 var(--red);display:block}
+.hi .est{position:absolute;top:-24px;left:-18px;background:var(--must);border:4px solid var(--ink);border-radius:50%;width:118px;height:118px;display:grid;place-items:center;font-family:'Graduate';text-align:center;font-size:.95rem;line-height:1.15;transform:rotate(-10deg)}
+/* story */
+.story{max-width:1140px;margin:0 auto;padding:100px 5vw;display:grid;grid-template-columns:1fr .9fr;gap:6vw;align-items:center}
+.story h2{font-size:clamp(1.8rem,3.6vw,2.7rem);line-height:1.12;margin-bottom:24px;color:var(--ink)}
+.story h2 em{font-style:normal;color:var(--red)}
+.story p{line-height:1.95;font-size:1.04rem;margin-bottom:18px;color:#4c443a}
+.story .im img{width:100%;min-height:420px;object-fit:cover;border-radius:18px;border:5px solid var(--ink)}
+/* highlights — basket cards */
+.hl{padding:96px 5vw}
+.hl.gingham{}
+.hl .in2{max-width:1140px;margin:0 auto}
+.hl h2{font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:44px;text-align:center;color:var(--red);text-shadow:1.5px 1.5px 0 var(--ink)}
+.hlg{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:26px}
+.hc{background:#fff;border-radius:14px;overflow:hidden;border:4px solid var(--ink);box-shadow:0 14px 34px rgba(38,32,26,.14)}
+.hc img{width:100%;height:230px;object-fit:cover;display:block}
+.hc .bd{padding:22px}
+.hc .no{font-family:'Graduate';color:var(--red);font-size:1rem}
+.hc h3{font-family:'Graduate';font-size:1.1rem;margin:8px 0}
+.hc p{font-size:.94rem;line-height:1.7;color:#5b5246}
+/* menu */
+.menu{background:var(--ink);color:var(--off);padding:100px 5vw}
+.menu .in2{max-width:980px;margin:0 auto}
+.menu h2{font-size:clamp(1.8rem,3.6vw,2.6rem);color:var(--must);text-align:center;margin-bottom:8px}
+.menu .sub{text-align:center;color:rgba(251,245,233,.6);margin-bottom:46px}
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px 48px}
+.mrow{display:flex;justify-content:space-between;gap:14px;padding:13px 4px;border-bottom:1px dashed rgba(251,245,233,.25);font-size:1.02rem;font-weight:600}
+.mrow .a{font-family:'Cairo';color:rgba(251,245,233,.55);font-weight:400}
+.mnote{margin-top:38px;text-align:center;background:var(--red);border-radius:12px;padding:18px 24px;font-weight:800;border:3px solid var(--must)}
+/* gallery */
+.gal{padding:100px 5vw 90px;max-width:1140px;margin:0 auto}
+.gal h2{font-size:1.5rem;margin-bottom:26px;color:var(--red);text-shadow:1px 1px 0 var(--ink)}
+.gg{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.gg a{display:block;border-radius:12px;overflow:hidden;border:4px solid var(--ink)}
+.gg img{width:100%;height:220px;object-fit:cover;display:block}
+/* reviews */
+.revs{background:var(--must);padding:96px 5vw}
+.revs .in2{max-width:1040px;margin:0 auto}
+.revs h2{font-size:clamp(1.7rem,3.4vw,2.4rem);margin-bottom:8px;color:var(--ink)}
+.revs .meta{margin-bottom:40px;font-weight:800}
+.rg{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.rc{background:var(--off);border-radius:14px;padding:26px;border:4px solid var(--ink)}
+.rc .st{color:var(--red);letter-spacing:.18em;font-size:.85rem}
+.rc p{margin:13px 0 15px;line-height:1.8;font-size:.96rem}
+.rc .who{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:#8a7f6d;font-weight:800}
+/* visit */
+.visit{max-width:1140px;margin:0 auto;padding:100px 5vw;display:grid;grid-template-columns:1fr 1fr;gap:6vw}
+.visit h2{font-size:clamp(1.7rem,3.4vw,2.5rem);color:var(--red);text-shadow:1px 1px 0 var(--ink);margin-bottom:24px}
+.vrow{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid #e5dcc8;font-size:.98rem}
+.hrs{font-weight:800;color:var(--red)}
+.btn{display:inline-block;background:var(--red);color:#fff;padding:17px 34px;border-radius:10px;font-family:'Graduate';font-size:.9rem;text-decoration:none;margin-top:28px;border:3px solid var(--ink);box-shadow:6px 6px 0 var(--must)}
+.map{border-radius:16px;overflow:hidden;min-height:340px;background:#ddd;border:5px solid var(--ink)}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+footer{background:var(--ink);color:rgba(251,245,233,.5);text-align:center;padding:34px 5vw 110px;font-size:.82rem}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+@media(max-width:880px){.hero{grid-template-columns:1fr}.story,.visit{grid-template-columns:1fr}.mgrid{grid-template-columns:1fr}}
+
+/* varsity pennants */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:#FBF5E9;display:flex;justify-content:center;gap:10px;padding:12px 10px calc(11px + env(safe-area-inset-bottom));border-top:3px solid #26201A}
+.bar a{text-decoration:none;font-family:'Graduate',serif;font-size:13px;letter-spacing:.06em;color:#FBF5E9;background:#D93A2B;padding:12px 26px 12px 16px;clip-path:polygon(0 0,100% 0,88% 50%,100% 100%,0 100%)}
+.bar a.w{background:#1d7a43}
+.bar a.m{background:#EDB531;color:#26201A}
+
+*{-webkit-tap-highlight-color:transparent}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/*igbtn*/.bar a.g,.mbar a.g{display:inline-flex;align-items:center;justify-content:center;padding:10px 12px}.bar a.g svg,.mbar a.g svg{width:17px;height:17px;display:block}
+</style><style>.est{overflow:hidden}
+.est::after{content:'';position:absolute;top:-20%;left:-70%;width:42%;height:140%;
+ background:linear-gradient(105deg,transparent,rgba(255,252,240,.5),transparent);transform:skewX(-18deg);
+ animation:fxglint 13s ease-in-out infinite}
+@keyframes fxglint{0%,86%{left:-70%}97%,100%{left:140%}}
+@media (prefers-reduced-motion: reduce){.est::after{animation:none}}</style></head><body>
+<section class="hero gingham">
+ <div>
+  <div class="varsity" data-edit="t1" data-edit-label="Text — ABOU SAMI · CLASS OF '87">ABOU SAMI · CLASS OF '87</div>
+  <h1>THE BROASTED THE NEIGHBORHOOD GREW UP ON<small data-edit="t2" data-edit-label="Text — أبو سامي — برج أبي حيدر · منذ ١٩٨٧">أبو سامي — برج أبي حيدر · منذ ١٩٨٧</small></h1>
+  <p class="tag" data-edit="t3" data-edit-label="Text — Broasted chicken, grills and comfort p…">Broasted chicken, grills and comfort plates — feeding Borj Abi Haidar since 1987.</p>
+  <div class="stats"><span data-edit="t4" data-edit-label="Text — ★ 4.1">★ 4.1</span><span data-edit="t5" data-edit-label="Text — 267 reviews">267 reviews</span><span data-edit="t6" data-edit-label="Text — Curbside pickup">Curbside pickup</span><span data-edit="t7" data-edit-label="Text — Delivery">Delivery</span></div>
+ </div>
+ <div class="hi"><img src="img/01.jpg" alt="Abou Sami Beirut"><div class="est">SINCE<br>1987</div></div>
+</section>
+<section class="story">
+ <div class="rv">
+  <h2>Since '87 — <em data-edit="t8" data-edit-label="Text — the neighborhood table">the neighborhood table</em></h2>
+  <p data-edit="t9" data-edit-label="Text — Abou Sami has been the neighborhood an…">Abou Sami has been the neighborhood answer to 'what are we eating?' since 1987. Broasted chicken with the spice mix people try to reverse-engineer, potato wedges, fattoush, philly sandwiches, grilled lamb — a menu with no theme except things people actually crave. Clean room, big portions, curbside pickup, and consistency reviewers call out by name.</p>
+ </div>
+ <div class="im rv"><img src="img/06.jpg" alt="the broasted box" loading="lazy"></div>
+</section>
+<section class="hl gingham">
+ <div class="in2">
+  <h2 class="rv" data-edit="t10" data-edit-label="Title — THE STARTING LINEUP">THE STARTING LINEUP</h2>
+  <div class="hlg"><div class="hc rv"><img src="img/06.jpg" alt="The broasted box" loading="lazy"><div class="bd"><span class="no" data-edit="t11" data-edit-label="Text — ’87">’87</span><h3 data-edit="t12" data-edit-label="Heading — The broasted box">The broasted box</h3><p data-edit="t13" data-edit-label="Text — Perfect spice mix, crackling crust, bi…">Perfect spice mix, crackling crust, big portion — the must-try per every review.</p></div></div><div class="hc rv"><img src="img/02.jpg" alt="The rotisserie" loading="lazy"><div class="bd"><span class="no" data-edit="t14" data-edit-label="Text — ’87">’87</span><h3 data-edit="t15" data-edit-label="Heading — The rotisserie">The rotisserie</h3><p data-edit="t16" data-edit-label="Text — Chickens turning since morning — the s…">Chickens turning since morning — the smell that owns the main street.</p></div></div><div class="hc rv"><img src="img/03.jpg" alt="Grills & plates" loading="lazy"><div class="bd"><span class="no" data-edit="t17" data-edit-label="Text — ’87">’87</span><h3 data-edit="t18" data-edit-label="Heading — Grills & plates">Grills & plates</h3><p data-edit="t19" data-edit-label="Text — Tawouk, kafta, fattoush and wedges — t…">Tawouk, kafta, fattoush and wedges — the full comfort lineup.</p></div></div></div>
+ </div>
+</section>
+<section class="menu">
+ <div class="in2">
+  <h2 class="rv" data-edit="t20" data-edit-label="Title — THE BIG BOARD">THE BIG BOARD</h2>
+  <p class="sub rv" data-edit="t21" data-edit-label="Text — The crowd favorites · today's prices a…">The crowd favorites · today's prices at the counter &amp; on the phone</p>
+  <div class="mgrid rv">
+   <div class="mrow"><span data-edit="t22" data-edit-label="Text — Broasted chicken — the classic box">Broasted chicken — the classic box</span><span class="a" data-edit="t23" data-edit-label="Text — بروستد">بروستد</span></div>
+   <div class="mrow"><span data-edit="t24" data-edit-label="Text — Grilled chicken">Grilled chicken</span><span class="a" data-edit="t25" data-edit-label="Text — دجاج مشوي">دجاج مشوي</span></div>
+   <div class="mrow"><span data-edit="t26" data-edit-label="Text — Tawouk sandwich">Tawouk sandwich</span><span class="a" data-edit="t27" data-edit-label="Text — طاووق">طاووق</span></div>
+   <div class="mrow"><span data-edit="t28" data-edit-label="Text — Philly sandwich">Philly sandwich</span><span class="a" data-edit="t29" data-edit-label="Text — فيلي">فيلي</span></div>
+   <div class="mrow"><span data-edit="t30" data-edit-label="Text — Grilled lamb">Grilled lamb</span><span class="a" data-edit="t31" data-edit-label="Text — لحم مشوي">لحم مشوي</span></div>
+   <div class="mrow"><span data-edit="t32" data-edit-label="Text — Pepperoni pizza">Pepperoni pizza</span><span class="a" data-edit="t33" data-edit-label="Text — بيتزا">بيتزا</span></div>
+   <div class="mrow"><span data-edit="t34" data-edit-label="Text — Fattoush">Fattoush</span><span class="a" data-edit="t35" data-edit-label="Text — فتوش">فتوش</span></div>
+   <div class="mrow"><span data-edit="t36" data-edit-label="Text — Potato wedges">Potato wedges</span><span class="a" data-edit="t37" data-edit-label="Text — بطاطا ودجز">بطاطا ودجز</span></div>
+  </div>
+  <div class="mnote rv" data-edit="t38" data-edit-label="Text — 🍗 The broasted potato is not a side. I…">🍗 The broasted potato is not a side. It's a reason.</div>
+ </div>
+</section>
+<section class="gal">
+ <h2 class="rv" data-edit="t39" data-edit-label="Title — FROM THE PASS">FROM THE PASS</h2>
+ <div class="gg rv"><a href="img/02.jpg" target="_blank"><img src="img/02.jpg" alt="" loading="lazy"></a><a href="img/03.jpg" target="_blank"><img src="img/03.jpg" alt="" loading="lazy"></a><a href="img/04.jpg" target="_blank"><img src="img/04.jpg" alt="" loading="lazy"></a><a href="img/05.jpg" target="_blank"><img src="img/05.jpg" alt="" loading="lazy"></a><a href="img/07.jpg" target="_blank"><img src="img/07.jpg" alt="" loading="lazy"></a></div>
+</section>
+<section class="revs">
+ <div class="in2">
+  <h2 class="rv" data-edit="t40" data-edit-label="Title — THE HOME CROWD">THE HOME CROWD</h2>
+  <div class="meta rv" data-edit="t41" data-edit-label="Text — ★ 4.1 · 267 Google reviews">★ 4.1 · 267 Google reviews</div>
+  <div class="rg"><div class="rc rv"><span class="st">★★★★★</span><p data-edit="t42" data-edit-label="Text — Ordered from Abou Sami several times n…">Ordered from Abou Sami several times now, and love their consistency with the quality of food. It's simple comfort food. Highly recommend their fattoush, potato wedges, broasted and grilled chicken.</p><div class="who" data-edit="t43" data-edit-label="Text — Atikah Ismail">Atikah Ismail</div></div><div class="rc rv"><span class="st">★★★★★</span><p data-edit="t44" data-edit-label="Text — Very clean place and the food was deli…">Very clean place and the food was delicious! Everything looked fresh and nicely presented. I really enjoyed my time there.</p><div class="who" data-edit="t45" data-edit-label="Text — hiba srouji">hiba srouji</div></div><div class="rc rv"><span class="st">★★★★★</span><p data-edit="t46" data-edit-label="Text — Trying the broasted chicken was a plea…">Trying the broasted chicken was a pleasant experience. Perfect broasted mix of spices, big portion, and the broasted potato was great! It's definitely a must try.</p><div class="who" data-edit="t47" data-edit-label="Text — Ahmad EL Mir">Ahmad EL Mir</div></div></div>
+ </div>
+</section>
+<section class="visit">
+ <div class="rv">
+  <h2 data-edit="t48" data-edit-label="Title — VISIT US">VISIT US</h2>
+  <div class="vrow"><b data-edit="t49" data-edit-label="Text — Address">Address</b><span data-edit="t50" data-edit-label="Text — Borj Abi Haidar main street, Beirut, L…">Borj Abi Haidar main street, Beirut, Lebanon</span></div>
+  <div class="vrow"><b data-edit="t51" data-edit-label="Text — Phone">Phone</b><a href="tel:+9611302017" style="color:var(--red);font-weight:800" data-edit="t52" data-edit-label="Button / link — +961 1 302 017">+961 1 302 017</a></div>
+  <div class="vrow"><b data-edit="t53" data-edit-label="Text — Every day">Every day</b><span class="hrs" data-edit="t54" data-edit-label="Text — 8 AM – 11 PM">8 AM – 11 PM</span></div>
+  <div class="vrow"><b data-edit="t55" data-edit-label="Text — Pickup">Pickup</b><span data-edit="t56" data-edit-label="Text — curbside &amp; no-contact delivery">curbside &amp; no-contact delivery</span></div>
+  <a class="btn" href="tel:+9611302017" data-edit="t57" data-edit-label="Button / link — Call +961 1 302 017">Call +961 1 302 017</a> <a class="btn ig" href="https://instagram.com/abousami_" target="_blank" rel="noopener" data-edit="t58" data-edit-label="Button / link — Instagram">Instagram</a>
+ </div>
+ <div class="map rv"><iframe src="https://www.google.com/maps?cid=13243086349641128228&output=embed" loading="lazy" title="Map"></iframe></div>
+</section>
+<footer>ABOU SAMI BEIRUT · Borj Abi Haidar · since 1987</footer>
+<div class="bar"><a class="g" href="https://instagram.com/abousami_" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.4"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg></a><a class="c" href="tel:+9611302017" data-edit="t59" data-edit-label="Button / link — ☎ CALL">☎ CALL</a><a class="m" href="https://maps.google.com/?cid=13243086349641128228" target="_blank" rel="noopener" data-edit="t60" data-edit-label="Button / link — ➤ MAP">➤ MAP</a></div>
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+setTimeout(function(){document.querySelectorAll('.rv:not(.in)').forEach(function(el){el.classList.add('in')})},1100);
+</script>
+</body></html>

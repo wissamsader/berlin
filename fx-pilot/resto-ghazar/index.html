@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resto Ghazar — Armenian restaurant in Bourj Hammoud</title>
+<meta name="description" content="Resto Ghazar, Armenian restaurant in Bourj Hammoud, Beirut. Call +961 1 242 708.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
+<style>
+:root{--red:#A8341F;--red2:#8C2A18;--char:#26211E;--sand:#EFE3D0;--sand2:#F7EFE2;--gold:#D9A441}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+::selection{background:var(--red);color:#fff}
+body{font-family:'Bricolage Grotesque',sans-serif;background:var(--sand2);color:var(--char);line-height:1.68}
+.ser{font-family:'Source Serif 4',serif}
+nav{position:sticky;top:0;z-index:60;display:flex;justify-content:space-between;align-items:center;padding:16px 5vw;background:rgba(247,239,226,.94);backdrop-filter:blur(6px);border-bottom:2px solid var(--char)}
+nav .brand{font-weight:800;font-size:1.2rem;color:var(--red);text-decoration:none}
+nav .links{display:flex;gap:24px;align-items:center}
+nav .links a{color:var(--char);text-decoration:none;font-weight:600;font-size:.85rem}
+nav .links a:hover{color:var(--red)}
+nav .call{background:var(--red);color:#fff !important;padding:10px 24px;border-radius:99px}
+/* hero: arch panel */
+.hero{max-width:1240px;margin:0 auto;padding:64px 5vw 20px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.hero .kick{display:inline-flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;font-size:.74rem;color:var(--red)}
+.hero .kick:before{content:"";width:30px;height:2px;background:var(--gold)}
+h1{font-weight:800;font-size:clamp(2.9rem,7.6vw,5.6rem);line-height:.95;letter-spacing:-.02em;margin:16px 0 8px}
+h1 em{font-family:'Source Serif 4',serif;font-style:italic;font-weight:500;color:var(--red)}
+.hero .arm{font-size:1.1rem;color:var(--gold);font-weight:700;letter-spacing:.06em;margin-bottom:14px}
+.hero p.tg{color:rgba(38,33,30,.8);max-width:50ch}
+.hero .chips{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0 28px}
+.chip{border:2px solid var(--char);border-radius:99px;padding:8px 18px;font-weight:700;font-size:.8rem;background:#fff}
+.chip.r{background:var(--red);border-color:var(--red);color:#fff}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{font-weight:800;font-size:.9rem;text-decoration:none;padding:14px 32px;border-radius:99px;border:2px solid var(--char);color:var(--char);background:transparent;transition:all .16s}
+.btn:hover{background:var(--char);color:var(--sand2)}
+.btn.r{background:var(--red);border-color:var(--red);color:#fff}
+.btn.r:hover{background:var(--red2);border-color:var(--red2)}
+.btn.wa{background:#237a46;border-color:#237a46;color:#fff}
+.hero .archwrap{position:relative}
+.hero .arch{width:100%;height:540px;object-fit:cover;display:block;border-radius:260px 260px 24px 24px;border:4px solid var(--char);box-shadow:14px 14px 0 var(--red)}
+.hero .coast{position:absolute;bottom:-26px;left:-26px;width:130px;height:130px;border-radius:50%;background:var(--gold);border:3px solid var(--char);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:800;font-size:.78rem;line-height:1.25;transform:rotate(-9deg);padding:14px}
+/* pattern divider */
+.pat{height:26px;background:repeating-linear-gradient(90deg,var(--red) 0 26px,var(--sand) 26px 30px,var(--gold) 30px 44px,var(--sand) 44px 48px);border-top:2px solid var(--char);border-bottom:2px solid var(--char);margin-top:56px}
+section{padding:96px 5vw}
+.wrap{max-width:1240px;margin:0 auto}
+.k{font-weight:700;letter-spacing:.24em;text-transform:uppercase;font-size:.74rem;color:var(--red);display:block;margin-bottom:12px}
+/* dish coasters */
+.dishes{background:var(--red);color:var(--sand2)}
+.dishes h2{font-weight:800;font-size:clamp(2.1rem,4.8vw,3.5rem);text-align:center;line-height:1}
+.dishes h2 em{font-family:'Source Serif 4',serif;font-style:italic;font-weight:500;color:var(--gold)}
+.dishes .sub{text-align:center;color:rgba(247,239,226,.8);margin:12px 0 56px}
+.d-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:34px}
+.dc{text-align:center}
+.dc .im{width:min(100%,290px);aspect-ratio:1;border-radius:50%;overflow:hidden;margin:0 auto;border:4px solid var(--sand2);box-shadow:0 16px 34px rgba(0,0,0,.3)}
+.dc img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.dc:hover img{transform:scale(1.07)}
+.dc h3{font-weight:800;font-size:1.35rem;margin-top:20px}
+.dc .no{font-family:'Source Serif 4',serif;font-style:italic;color:var(--gold)}
+.dc p{font-size:.92rem;color:rgba(247,239,226,.82);max-width:34ch;margin:6px auto 0}
+/* story */
+.story{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.story h2{font-weight:800;font-size:clamp(2.1rem,4.6vw,3.4rem);line-height:1.02;margin-bottom:18px}
+.story h2 em{font-family:'Source Serif 4',serif;font-style:italic;font-weight:500;color:var(--red)}
+.story p{color:rgba(38,33,30,.82);max-width:56ch;margin-bottom:12px}
+.story .board{background:#fff;border:2px solid var(--char);border-radius:18px;padding:22px 26px;margin-top:22px;box-shadow:8px 8px 0 var(--gold)}
+.story .board b{display:block;font-weight:800;margin-bottom:4px;color:var(--red)}
+.story .board span{font-size:.9rem;color:rgba(38,33,30,.75)}
+.story .ph img{width:100%;height:480px;object-fit:cover;display:block;border-radius:24px;border:4px solid var(--char);box-shadow:-14px 14px 0 var(--red)}
+/* gallery: mosaic tiles */
+.gal{background:var(--sand)}
+.gal h2{font-weight:800;font-size:clamp(2.1rem,4.8vw,3.5rem);text-align:center;margin-bottom:8px}
+.gal h2 em{font-family:'Source Serif 4',serif;font-style:italic;font-weight:500;color:var(--red)}
+.gal .sub{text-align:center;color:rgba(38,33,30,.7);margin-bottom:48px}
+.g-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px;max-width:1240px;margin:0 auto}
+.g-grid a{border-radius:16px;overflow:hidden;border:3px solid var(--char);display:block;position:relative}
+.g-grid a:nth-child(5n+1){grid-row:span 2}
+.g-grid a:nth-child(7n+3){grid-column:span 2}
+.g-grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}
+.g-grid a:hover img{transform:scale(1.06)}
+/* reviews */
+.rev h2{font-weight:800;font-size:clamp(2.1rem,4.6vw,3.4rem);margin-bottom:46px}
+.rev h2 em{font-family:'Source Serif 4',serif;font-style:italic;font-weight:500;color:var(--red)}
+.r-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px}
+.rc{background:#fff;border:2px solid var(--char);border-radius:20px;padding:28px;position:relative;box-shadow:6px 6px 0 rgba(38,33,30,.12)}
+.rc:before{content:"“";font-family:'Source Serif 4',serif;font-size:3.4rem;color:var(--gold);line-height:0;display:block;margin:18px 0 2px}
+.rc p{font-size:.98rem;line-height:1.7}
+.rc .who{margin-top:14px;font-weight:800;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
+/* visit */
+.visit{background:var(--char);color:var(--sand2);text-align:center;padding:110px 5vw}
+.visit h2{font-weight:800;font-size:clamp(2.4rem,6.6vw,4.8rem);line-height:.98}
+.visit h2 em{font-family:'Source Serif 4',serif;font-style:italic;font-weight:500;color:var(--gold)}
+.visit .phone{font-weight:800;font-size:clamp(1.9rem,4.8vw,3rem);color:var(--sand2);text-decoration:none;display:inline-block;margin:26px 0 8px;border-bottom:4px solid var(--red)}
+.visit .meta{color:rgba(247,239,226,.75);max-width:480px;margin:16px auto 34px;line-height:2}
+.visit .cta{justify-content:center}
+.visit .btn{border-color:var(--sand2);color:var(--sand2)}
+.visit .btn:hover{background:var(--sand2);color:var(--char)}
+footer{text-align:center;padding:26px 5vw 110px;font-size:.8rem;color:rgba(38,33,30,.6);background:var(--sand2)}
+.mbar{display:none;position:fixed;z-index:70;gap:8px;left:0;right:0;bottom:0;background:#EFE3D0;padding:12px 12px calc(11px + env(safe-area-inset-bottom))}
+.mbar a{flex:1;text-align:center;padding:12px 4px;border-radius:99px;font-weight:800;font-size:.88rem;text-decoration:none;color:var(--char)}
+.mbar .c{background:var(--red);color:#fff}
+.mbar .w{background:#237a46;color:#fff}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media(max-width:920px){
+ nav .links a:not(.call){display:none}
+ .hero{grid-template-columns:1fr;gap:40px}
+ .hero .arch{height:420px}
+ .story{grid-template-columns:1fr;gap:40px}
+ .d-grid{grid-template-columns:1fr;gap:44px}
+ .g-grid{grid-template-columns:1fr 1fr;grid-auto-rows:170px}
+ .mbar{display:flex}
+ footer{padding-bottom:150px}
+}
+.mbar::before{content:'';position:absolute;top:0;left:0;right:0;height:6px;background:repeating-linear-gradient(90deg,#A8341F 0 14px,#D9A441 14px 22px,#26211E 22px 28px)}.mbar{padding-top:16px}.mbar a{background:#F7EFE2;border:1.5px solid #26211E;border-radius:1px;color:#26211E;letter-spacing:.1em}.mbar a.c{background:#A8341F;color:#F7EFE2;border-color:#A8341F}
+*{-webkit-tap-highlight-color:transparent}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/*igbtn*/.bar a.g,.mbar a.g{display:inline-flex;align-items:center;justify-content:center;padding:10px 12px}.bar a.g svg,.mbar a.g svg{width:17px;height:17px;display:block}
+</style>
+<style>.coast{overflow:hidden}
+.coast::after{content:'';position:absolute;top:-20%;left:-70%;width:42%;height:140%;
+ background:linear-gradient(105deg,transparent,rgba(255,250,235,.55),transparent);transform:skewX(-18deg);
+ animation:fxglint 14s ease-in-out infinite}
+@keyframes fxglint{0%,86%{left:-70%}97%,100%{left:140%}}
+@media (prefers-reduced-motion: reduce){.coast::after{animation:none}}</style></head>
+<body>
+
+<nav>
+ <a class="brand" href="#" data-edit="t1" data-edit-label="Button / link — Resto Ghazar">Resto Ghazar</a>
+ <div class="links">
+  <a href="#dishes" data-edit="t2" data-edit-label="Button / link — The dishes">The dishes</a><a href="#story" data-edit="t3" data-edit-label="Button / link — Story">Story</a><a href="#gallery" data-edit="t4" data-edit-label="Button / link — Photos">Photos</a><a href="#visit" data-edit="t5" data-edit-label="Button / link — Visit">Visit</a>
+  <a class="call" href="tel:+9611242708" data-edit="t6" data-edit-label="Button / link — Call">Call</a>
+ </div>
+</nav>
+
+<header class="hero">
+ <div>
+  <span class="kick" data-edit="t7" data-edit-label="Text — Bourj Hammoud · Armenian kitchen">Bourj Hammoud · Armenian kitchen</span>
+  <h1>Resto <em data-edit="t8" data-edit-label="Text — Ghazar">Ghazar</em></h1>
+  <p class="arm" data-edit="t9" data-edit-label="Text — ԳԱԶԱՐ · مطعم غازار">ԳԱԶԱՐ · مطعم غازار</p>
+  <p class="tg ser" data-edit="t10" data-edit-label="Text — Manti, itch and kebbe with cheese — Ar…">Manti, itch and kebbe with cheese — Armenian home cooking in the heart of Bourj Hammoud.</p>
+  <div class="chips">
+   <span class="chip r" data-edit="t11" data-edit-label="Text — ★ 4.7 · 421 reviews">★ 4.7 · 421 reviews</span>
+   <span class="chip" data-edit="t12" data-edit-label="Text — Bourj Hammoud">Bourj Hammoud</span>
+   <span class="chip" data-edit="t13" data-edit-label="Text — Sunday lunch till 4">Sunday lunch till 4</span>
+  </div>
+  <div class="cta">
+   <a class="btn r" href="tel:+9611242708" data-edit="t14" data-edit-label="Button / link — Call +961 1 242 708">Call +961 1 242 708</a>
+   <a class="btn" href="https://maps.google.com/?cid=13185506498255631476" target="_blank" rel="noopener" data-edit="t15" data-edit-label="Button / link — Find us ↗">Find us ↗</a>
+  </div>
+ </div>
+ <div class="archwrap rv">
+  <img class="arch" src="img/01.jpg" alt="Manti at Resto Ghazar">
+  <div class="coast" data-edit="t16" data-edit-label="Text — HOME-STYLE ARMENIAN">HOME-STYLE ARMENIAN</div>
+ </div>
+</header>
+
+<div class="pat"></div>
+
+<section class="dishes" id="dishes">
+ <div class="wrap">
+  <h2 class="rv">Order these <em data-edit="t17" data-edit-label="Text — first">first</em></h2>
+  <p class="sub" data-edit="t18" data-edit-label="Text — The plates Bourj Hammoud argues least …">The plates Bourj Hammoud argues least about</p>
+  <div class="d-grid"><div class="dc rv"><div class="im"><img src="img/01.jpg" alt="Manti in clay" loading="lazy"></div><span class="no" data-edit="t19" data-edit-label="Text — plate № 1">plate № 1</span><h3 data-edit="t20" data-edit-label="Heading — Manti in clay">Manti in clay</h3><p data-edit="t21" data-edit-label="Text — Tiny boats of dough, baked crisp, drow…">Tiny boats of dough, baked crisp, drowned in yogurt and paprika butter.</p></div><div class="dc rv"><div class="im"><img src="img/02.jpg" alt="Itch & mhammara" loading="lazy"></div><span class="no" data-edit="t22" data-edit-label="Text — plate № 2">plate № 2</span><h3 data-edit="t23" data-edit-label="Heading — Itch & mhammara">Itch & mhammara</h3><p data-edit="t24" data-edit-label="Text — The tangy bulgur classic beside its ho…">The tangy bulgur classic beside its hot pepper-walnut cousin.</p></div><div class="dc rv"><div class="im"><img src="img/06.jpg" alt="Kebbe with cheese" loading="lazy"></div><span class="no" data-edit="t25" data-edit-label="Text — plate № 3">plate № 3</span><h3 data-edit="t26" data-edit-label="Heading — Kebbe with cheese">Kebbe with cheese</h3><p data-edit="t27" data-edit-label="Text — The standout the reviews argue about —…">The standout the reviews argue about — order it before they sell out.</p></div></div>
+ </div>
+</section>
+
+<section id="story">
+ <div class="wrap story">
+  <div class="rv">
+   <span class="k" data-edit="t28" data-edit-label="Text — The house">The house</span>
+   <h2>Armenian food the way <em data-edit="t29" data-edit-label="Text — homes">homes</em> make it</h2>
+   <p data-edit="t30" data-edit-label="Text — Tucked into the lively streets of Bour…">Tucked into the lively streets of Bourj Hammoud, Resto Ghazar cooks the Armenian classics the way the neighborhood's grandmothers would grade them: manti crisped in clay, itch with proper tang, soujouk with fire in it, kebbe with cheese that shouldn't be legal. Bold, comforting, generous.</p>
+   <p data-edit="t31" data-edit-label="Text — Everything is generous, everything is …">Everything is generous, everything is honest, and the daily chalkboard outside decides what the kitchen is proudest of today.</p>
+   <div class="board"><b data-edit="t32" data-edit-label="Text — Today's board">Today's board</b><span data-edit="t33" data-edit-label="Text — Kharouf mehshi · salad + soft drink — …">Kharouf mehshi · salad + soft drink — the kind of handwritten offer that never makes it to an app. You have to walk past.</span></div>
+  </div>
+  <div class="ph rv"><img src="img/08.jpg" alt="Resto Ghazar interior"></div>
+ </div>
+</section>
+
+<section class="gal" id="gallery">
+ <h2 class="rv">From the <em data-edit="t34" data-edit-label="Text — kitchen">kitchen</em></h2>
+ <p class="sub" data-edit="t35" data-edit-label="Text — Manti, su böreği, lahmajun — all photo…">Manti, su böreği, lahmajun — all photographed at the restaurant</p>
+ <div class="g-grid"><a href="img/02.jpg" target="_blank"><img src="img/02.jpg" alt="" loading="lazy"></a><a href="img/03.jpg" target="_blank"><img src="img/03.jpg" alt="" loading="lazy"></a><a href="img/06.jpg" target="_blank"><img src="img/06.jpg" alt="" loading="lazy"></a><a href="img/07.jpg" target="_blank"><img src="img/07.jpg" alt="" loading="lazy"></a><a href="img/11.jpg" target="_blank"><img src="img/11.jpg" alt="" loading="lazy"></a><a href="img/12.jpg" target="_blank"><img src="img/12.jpg" alt="" loading="lazy"></a><a href="img/16.jpg" target="_blank"><img src="img/16.jpg" alt="" loading="lazy"></a><a href="img/04.jpg" target="_blank"><img src="img/04.jpg" alt="" loading="lazy"></a></div>
+</section>
+
+<section class="rev">
+ <div class="wrap">
+  <span class="k" data-edit="t36" data-edit-label="Text — Word on the street">Word on the street</span>
+  <h2>What the neighborhood <em data-edit="t37" data-edit-label="Text — says">says</em></h2>
+  <div class="r-grid"><div class="rc rv"><p data-edit="t38" data-edit-label="Text — A great spot for authentic Armenian fo…">A great spot for authentic Armenian food tucked away in the lively streets of Bourj Hammoud. The menu is packed with bold, comforting flavors. Standout dishes include the itch, mhammara, kebbe with cheese.</p><div class="who" data-edit="t39" data-edit-label="Text — Gino Haddad">Gino Haddad</div></div><div class="rc rv"><p data-edit="t40" data-edit-label="Text — Absolutely amazing experience! The tas…">Absolutely amazing experience! The taste of the food was outstanding — every dish.</p><div class="who" data-edit="t41" data-edit-label="Text — Hani Haddad">Hani Haddad</div></div></div>
+ </div>
+</section>
+
+<section class="visit" id="visit">
+ <h2 class="rv">Come hungry to <em data-edit="t42" data-edit-label="Text — Bourj Hammoud.">Bourj Hammoud.</em></h2>
+ <a class="phone" href="tel:+9611242708" data-edit="t43" data-edit-label="Button / link — +961 1 242 708">+961 1 242 708</a>
+ <p class="meta">Bourj Hammoud, Lebanon (VGRQ+JQM)<br>Mon-Sat 12 - 11:30 PM; Sun 12 - 4 PM</p>
+ <div class="cta">
+  <a class="btn" href="tel:+9611242708" data-edit="t44" data-edit-label="Button / link — Call +961 1 242 708">Call +961 1 242 708</a> <a class="btn ig" href="https://instagram.com/restoghazar" target="_blank" rel="noopener" data-edit="t45" data-edit-label="Button / link — Instagram">Instagram</a>
+  <a class="btn" href="https://maps.google.com/?cid=13185506498255631476" target="_blank" rel="noopener" data-edit="t46" data-edit-label="Button / link — Google Maps ↗">Google Maps ↗</a>
+ </div>
+</section>
+
+<div class="mbar">
+ <a class="c" href="tel:+9611242708" data-edit="t47" data-edit-label="Button / link — Call">Call</a>
+ <a class="g" href="https://instagram.com/restoghazar" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.4"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+ <a class="m" href="https://maps.google.com/?cid=13185506498255631476" target="_blank" rel="noopener" data-edit="t48" data-edit-label="Button / link — Map">Map</a>
+</div>
+
+<footer>© Resto Ghazar · Bourj Hammoud, Lebanon</footer>
+
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+setTimeout(function(){document.querySelectorAll('.rv:not(.in)').forEach(function(el){el.classList.add('in')})},1100);
+</script>
+</body>
+</html>
