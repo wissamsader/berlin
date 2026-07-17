@@ -150,7 +150,9 @@ footer{padding:44px 5vw 160px;text-align:center;color:#9C9376;font-size:13px;bor
 /* wrap guard */ .wrap{padding-inline:5vw!important}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
-</head>
+<style data-fx-orn>.sunpanel::before{animation:fxsunspin 90s linear infinite}
+@keyframes fxsunspin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion: reduce){.sunpanel::before{animation:none}}</style></head>
 <body>
 
 <button class="lgx" onclick="const h=document.documentElement,a=h.classList.toggle('ar');h.dir=a?'rtl':'ltr';h.lang=a?'ar':'de'" aria-label="العربية / Deutsch"><span class="de" data-edit="t1" data-edit-label="Text — عربي">عربي</span><span class="art" data-edit="t2" data-edit-label="Text — DE">DE</span></button>

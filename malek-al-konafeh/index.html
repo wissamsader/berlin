@@ -140,7 +140,10 @@ footer{padding:42px 5vw 138px;text-align:center;color:#A6957F;font-size:12.5px;b
 /* wrap guard */ .wrap{padding-inline:5vw!important}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
-</head>
+<style data-fx-orn>.pan-badge{overflow:hidden}
+.pan-badge::after{content:'';position:absolute;top:-20%;left:-70%;width:45%;height:140%;background:linear-gradient(105deg,transparent,rgba(255,246,220,.75),transparent);transform:skewX(-18deg);animation:fxglint 11s ease-in-out infinite}
+@keyframes fxglint{0%,82%{left:-70%}96%,100%{left:140%}}
+@media (prefers-reduced-motion: reduce){.pan-badge::after{animation:none}}</style></head>
 <body>
 
 <button class="lgx" onclick="const h=document.documentElement,a=h.classList.toggle('ar');h.dir=a?'rtl':'ltr';h.lang=a?'ar':'de'" aria-label="العربية / Deutsch"><span class="de" data-edit="t1" data-edit-label="Text — ع">ع</span><span class="art" data-edit="t2" data-edit-label="Text — DE">DE</span></button>

@@ -124,7 +124,9 @@ footer b{color:var(--cream)}
 /* wrap guard */ .wrap{padding-inline:5vw!important}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
-</head>
+<style data-fx-orn>svg.rosesvg{transform-origin:50% 60%;animation:fxsway 14s ease-in-out infinite}
+@keyframes fxsway{0%,100%{transform:rotate(-1.1deg)}50%{transform:rotate(1.1deg)}}
+@media (prefers-reduced-motion: reduce){svg.rosesvg{animation:none}}</style></head>
 <body>
 
 <button class="lgx" onclick="const h=document.documentElement,a=h.classList.toggle('ar');h.dir=a?'rtl':'ltr';h.lang=a?'ar':'de'" aria-label="العربية / Deutsch"><span class="de" data-edit="t1" data-edit-label="Text — ع&nbsp; العربية">ع&nbsp; العربية</span><span class="art" data-edit="t2" data-edit-label="Text — DE&nbsp; Deutsch">DE&nbsp; Deutsch</span></button>

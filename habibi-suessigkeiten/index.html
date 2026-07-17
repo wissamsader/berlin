@@ -124,7 +124,9 @@ footer{padding:42px 5vw 140px;text-align:center;color:#B98D96;font-size:12.5px;b
 /* wrap guard */ .wrap{padding-inline:5vw!important}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
-</head>
+<style data-fx-orn>svg.heart{transform-origin:50% 55%;animation:fxheart 9s ease-in-out infinite}
+@keyframes fxheart{0%,86%,100%{transform:scale(1)}89%{transform:scale(1.035)}92%{transform:scale(1)}95%{transform:scale(1.022)}}
+@media (prefers-reduced-motion: reduce){svg.heart{animation:none}}</style></head>
 <body>
 
 <button class="lgx" onclick="const h=document.documentElement,a=h.classList.toggle('ar');h.dir=a?'rtl':'ltr';h.lang=a?'ar':'de'" aria-label="العربية / Deutsch"><span class="de" data-edit="t1" data-edit-label="Text — ع">ع</span><span class="art" data-edit="t2" data-edit-label="Text — DE">DE</span></button>

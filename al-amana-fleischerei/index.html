@@ -137,7 +137,9 @@ footer{padding:42px 5vw 132px;text-align:center;color:#8A9490;font-size:12.5px;b
 /* wrap guard */ .wrap{padding-inline:5vw!important}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
-</head>
+<style data-fx-orn>.seal::after{content:'';position:absolute;inset:0;border-radius:50%;overflow:hidden;background:linear-gradient(105deg,transparent 42%,rgba(122,31,43,.10) 50%,transparent 58%) no-repeat;background-size:300% 100%;background-position:130% 0;animation:fxsealglint 14s ease-in-out infinite}
+@keyframes fxsealglint{0%,86%{background-position:130% 0}97%,100%{background-position:-90% 0}}
+@media (prefers-reduced-motion: reduce){.seal::after{animation:none}}</style></head>
 <body>
 
 <button class="lgx" onclick="const h=document.documentElement,a=h.classList.toggle('ar');h.dir=a?'rtl':'ltr';h.lang=a?'ar':'de'" aria-label="العربية / Deutsch"><span class="de" data-edit="t1" data-edit-label="Text — ع">ع</span><span class="art" data-edit="t2" data-edit-label="Text — DE">DE</span></button>
