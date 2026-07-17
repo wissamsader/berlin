@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Falafel Jakoub — Weserstraße 14, Neukölln</title>
+<meta name="description" content="Falafel, Schawarma & Halloumi am Weserkiez — frisch frittiert, mit Mango- und Haselnusssauce.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&family=Rubik+Mono+One&family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{overflow-x:clip}
+:root{--ink:#171310;--paper:#FAF6EE;--mango:#F49B33;--haze:#7A4E2D;--line:#e5dccb;--mut:#6f6353}
+body{background:var(--paper);color:var(--ink);font:16px/1.75 'Rubik',sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.art{unicode-bidi:isolate;font-family:'Noto Sans Arabic',sans-serif}
+html.ar .de{display:none!important}
+html:not(.ar) .art{display:none!important}
+html.ar body{font-family:'Noto Sans Arabic',sans-serif}
+.num{direction:ltr;unicode-bidi:isolate;display:inline-block}
+.wrap{max-width:1100px;margin:0 auto;padding-inline:5vw}
+.mono{font-family:'Rubik Mono One',monospace}
+.k{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--haze);font-weight:600}
+html.ar .k{letter-spacing:0}
+.rev{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.rev.on{opacity:1;transform:none}
+.checker{height:16px;background:repeating-conic-gradient(#161310 0 25%,#faf6ee 0 50%) 0 0/32px 32px}
+/* hero — the wrap on their checkered floor */
+header{position:relative;min-height:clamp(600px,94svh,860px);display:flex;align-items:flex-end}
+header .bg{position:absolute;inset:0;background:url('img/03.jpg') center 58%/cover no-repeat}
+header .bg::after{content:'';position:absolute;inset:0;background:linear-gradient(185deg,rgba(23,19,16,.18) 30%,rgba(23,19,16,.62) 68%,rgba(23,19,16,.9))}
+.hero-in{position:relative;width:100%;max-width:1100px;margin:0 auto;padding:0 5vw 74px;color:#fdf9f0}
+.since{display:inline-flex;align-items:center;gap:9px;background:rgba(23,19,16,.55);border:1.5px solid var(--mango);color:var(--mango);border-radius:4px;padding:8px 14px;font-size:12px;letter-spacing:.12em;font-weight:600;margin-bottom:18px}
+html.ar .since{letter-spacing:0}
+.since i{width:9px;height:9px;background:conic-gradient(#161310 0 25%,#fff 0 50%,#161310 0 75%,#fff 0) ;display:inline-block}
+h1{font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(46px,8.6vw,96px);line-height:1.14}
+.latsub{font-family:'Rubik Mono One',monospace;font-size:clamp(13px,2vw,19px);letter-spacing:.18em;color:var(--mango);margin-top:8px}
+.hero-sub{margin-top:14px;font-size:clamp(15px,1.9vw,19px);max-width:58ch;color:#efe6d6}
+.hero-meta{margin-top:22px;display:flex;gap:10px 26px;flex-wrap:wrap;font-size:13.5px;color:#d8ccb8}
+.hero-meta b{color:#fff}
+header .checker{position:absolute;inset-inline:0;bottom:0}
+/* story */
+.story{display:grid;grid-template-columns:1.05fr .95fr;gap:6vw;align-items:center;padding:100px 0 76px}
+.story img{border-radius:8px;aspect-ratio:4/5;object-fit:cover;border:1px solid var(--line);box-shadow:14px 14px 0 -6px var(--mango)}
+.story h2{font-size:clamp(28px,4.2vw,44px);line-height:1.28;margin:12px 0 18px;font-weight:800}
+.story p{color:#4d4335;margin-bottom:14px}
+/* sauce strip */
+.sauces{background:var(--ink);color:#f6efe2;padding:84px 0}
+.sauces h2{font-size:clamp(26px,3.8vw,40px);font-weight:800;margin:10px 0 30px}
+.sgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.sw{border-radius:14px 40px 14px 40px;padding:30px 28px;position:relative;overflow:hidden}
+.sw.m{background:linear-gradient(140deg,#f8ab4d,#e2851b);color:#2a1703}
+.sw.h{background:linear-gradient(140deg,#8a5a37,#5f3a1e);color:#f9efe2}
+.sw h3{font-size:23px;font-weight:800;margin-bottom:8px}
+.sw p{font-size:14.5px;opacity:.92}
+.sw::after{content:'';position:absolute;inset-inline-end:-24px;top:-24px;width:86px;height:86px;border-radius:50%;background:rgba(255,255,255,.18)}
+/* highlights */
+.high{padding:92px 0 20px}
+.high h2{font-size:clamp(26px,3.8vw,40px);font-weight:800;margin:10px 0 30px}
+.hgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.hcard{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:0 10px 26px -18px rgba(23,19,16,.45)}
+.hcard img{height:210px;width:100%;object-fit:cover}
+.hcard .hb{padding:18px 18px 22px;border-top:6px solid var(--mango)}
+.hcard h3{font-size:19px;font-weight:800;margin-bottom:6px}
+.hcard p{font-size:13.8px;color:var(--mut)}
+/* menu */
+.menu{margin:96px 0 40px;background:#fff;border:1.5px solid var(--ink);border-radius:12px;padding:clamp(26px,5vw,54px);position:relative}
+.menu::before,.menu::after{content:'';position:absolute;inset-inline:14px;height:10px;background:repeating-conic-gradient(#161310 0 25%,#fff 0 50%) 0 0/20px 20px;opacity:.9}
+.menu::before{top:10px}.menu::after{bottom:10px}
+.menu h2{font-size:clamp(30px,4.6vw,46px);font-weight:800;text-align:center;margin-bottom:6px}
+.menu .note{text-align:center;color:var(--mut);font-size:13.5px;margin-bottom:34px}
+.mcols{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 44px;max-width:860px;margin:0 auto}
+.msec{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--haze);font-weight:600;margin:18px 0 6px}
+html.ar .msec{letter-spacing:0}
+.mi{display:flex;justify-content:space-between;gap:14px;align-items:baseline;border-bottom:1px dashed #ddd2bd;padding-block:9px;font-size:15px}
+.mi b{font-family:'Rubik Mono One',monospace;font-size:13px;color:#b06510;white-space:nowrap}
+.mi small{display:block;color:var(--mut);font-size:12.5px;font-weight:400}
+.mfoot{text-align:center;margin-top:28px;color:var(--mut);font-size:13.5px}
+/* gallery */
+.gal{padding:40px 0 70px}
+.gal h2{font-size:clamp(26px,3.8vw,40px);font-weight:800;margin:10px 0 26px}
+.ggrid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:200px;gap:14px}
+.ggrid img{width:100%;height:100%;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
+/* reviews */
+.revs{background:var(--ink);color:#f6efe2;padding:88px 0}
+.revs h2{font-size:clamp(26px,3.8vw,40px);font-weight:800;margin-bottom:28px}
+.rgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.rcard{background:#221c16;border:1px solid #3a3128;border-radius:10px;padding:24px;border-inline-start:5px solid var(--mango)}
+.stars-row{color:var(--mango);letter-spacing:2px;font-size:14px}
+.rcard p{font-size:14.8px;color:#e8dfcd;margin:12px 0 14px;font-style:italic}
+.rcard .who{font-size:13px;color:#a89a83}
+.gbadge{margin-top:30px;text-align:center;font-size:15px;color:#cbbfa9}
+.gbadge b{color:#fff;font-size:22px}
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:6vw;padding:96px 0 130px;align-items:start}
+.visit h2{font-size:clamp(26px,3.8vw,40px);font-weight:800;margin:8px 0 20px}
+.hours{width:100%;border-collapse:collapse;font-size:14.5px}
+.hours td{padding:9px 0;border-bottom:1px dashed #d9cfba;color:#5a4f3f}
+.hours td:last-child{text-align:end;color:var(--ink);font-weight:600}
+.vinfo p{margin-bottom:14px;color:#5a4f3f}
+.vinfo .adr{font-size:20px;font-weight:800;color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--ink);color:#fff;font-weight:600;border-radius:8px;padding:14px 24px;text-decoration:none;margin:6px 8px 0 0;font-size:14.5px}
+html.ar .btn{margin:6px 0 0 8px}
+.btn.o{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn svg{width:17px;height:17px}
+footer{padding:42px 5vw 140px;text-align:center;color:#9a8d76;font-size:12.5px;border-top:1px solid var(--line)}
+/* sauce-swatch bar */
+.bar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;display:flex;align-items:center;gap:8px;background:#fffdf7;border:1.5px solid var(--ink);border-radius:999px;padding:9px 10px 9px;box-shadow:0 20px 40px -18px rgba(23,19,16,.55);animation:barin .7s cubic-bezier(.2,.9,.3,1.18) .3s both}
+.bar::before{content:'';position:absolute;top:-1.5px;inset-inline:26px;height:7px;background:repeating-conic-gradient(#161310 0 25%,#fffdf7 0 50%) 0 0/14px 14px;border-radius:4px}
+@keyframes barin{from{transform:translateX(-50%) translateY(110px)}to{transform:translateX(-50%) translateY(0)}}
+.bar a{display:flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:14px;padding:11px 20px;border-radius:16px 22px 16px 22px}
+.bar a.call{background:linear-gradient(135deg,#f8ab4d,#e2851b);color:#2a1703;position:relative;overflow:hidden}
+.bar a.call::after{content:'';position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.5) 46%,transparent 60%);transform:translateX(-120%);animation:sheen 5.5s ease 2s infinite}
+@keyframes sheen{0%{transform:translateX(-120%)}34%{transform:translateX(130%)}100%{transform:translateX(130%)}}
+.bar a.map{background:linear-gradient(135deg,#8a5a37,#5f3a1e);color:#f9efe2}
+.bar a.ig,.bar a.fb{padding:11px;border:1.5px solid var(--ink);border-radius:14px 18px 14px 18px;color:var(--ink)}
+.bar svg{width:17px;height:17px;display:block}
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));right:14px;z-index:80;cursor:pointer;border:1.5px solid #fff;font-weight:700;font-size:11.5px;letter-spacing:.1em;padding:9px 14px;border-radius:4px;line-height:1;background:rgba(23,19,16,.66);color:#fff;font-family:'Rubik',sans-serif}
+@media(max-width:860px){
+ .story{grid-template-columns:1fr;gap:30px;padding-top:64px}
+ .sgrid,.hgrid,.rgrid,.mcols,.visit{grid-template-columns:1fr}
+ .ggrid{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
+ .mcols{gap:0 0}
+ .bar a{padding:10px 14px;font-size:13px}
+}
+/* wrap guard */ .wrap{padding-inline:5vw!important}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<button class="lgx" onclick="const h=document.documentElement,a=h.classList.toggle('ar');h.dir=a?'rtl':'ltr';h.lang=a?'ar':'de'" aria-label="العربية / Deutsch"><span class="de" data-edit="t1" data-edit-label="Text — ع">ع</span><span class="art" data-edit="t2" data-edit-label="Text — DE">DE</span></button>
+
+<header>
+ <div class="bg"></div>
+ <div class="hero-in">
+  <span class="since"><i></i><span class="de" data-edit="t3" data-edit-label="Text — Weserkiez · Neukölln">Weserkiez · Neukölln</span><span class="art" data-edit="t4" data-edit-label="Text — فيزر شتراسه · نويكولن">فيزر شتراسه · نويكولن</span></span>
+  <h1 data-edit="t5" data-edit-label="Big title — فلافل يعقوب">فلافل يعقوب</h1>
+  <div class="latsub" data-edit="t6" data-edit-label="Text — FALAFEL JAKOUB">FALAFEL JAKOUB</div>
+  <p class="hero-sub"><span class="de" data-edit="t7" data-edit-label="Text — Falafel, Schawarma und Halloumi auf de…">Falafel, Schawarma und Halloumi auf dem schwarz-weißen Schachbrettboden der Weserstraße — frisch frittiert, in warmes Fladenbrot gewickelt.</span><span class="art" data-edit="t8" data-edit-label="Text — فلافل وشاورما وحلومي فوق أرضية الشطرنج…">فلافل وشاورما وحلومي فوق أرضية الشطرنج الشهيرة في فيزر شتراسه — تُقلى طازجة وتُلَفّ بخبزٍ ساخن.</span></p>
+  <div class="hero-meta">
+   <span>★ <b data-edit="rating">4,6</b> <span class="de" data-edit="t9" data-edit-label="Text — auf Google ·">auf Google ·</span><span class="art" data-edit="t10" data-edit-label="Text — على غوغل ·">على غوغل ·</span> <b class="num" data-edit="revcount">910</b> <span class="de" data-edit="t11" data-edit-label="Text — Bewertungen">Bewertungen</span><span class="art" data-edit="t12" data-edit-label="Text — تقييم">تقييم</span></span>
+   <span data-edit="addr">Weserstraße 14, 12047 Berlin</span>
+  </div>
+ </div>
+ <div class="checker" aria-hidden="true"></div>
+</header>
+
+<section class="story wrap">
+ <div class="rev">
+  <span class="k"><span class="de" data-edit="t13" data-edit-label="Text — Unsere Ecke">Unsere Ecke</span><span class="art" data-edit="t14" data-edit-label="Text — زاويتنا">زاويتنا</span></span>
+  <h2><span class="de">Das Schachbrett<br>an der Weserstraße.</span><span class="art">رقعة الشطرنج<br>في فيزر شتراسه.</span></h2>
+  <p><span class="de" data-edit="s1de">Wer einmal hier war, erkennt den Boden sofort wieder: schwarz-weiße Kacheln, Bierbänke vor der Tür, der Duft von frisch frittierten Falafeln bis auf den Gehweg. Bei Falafel Jakoub wird nichts warmgehalten — die Bällchen gehen direkt aus dem Öl ins Brot.</span><span class="art" data-edit="s1ar">من زارنا مرةً يعرف الأرضية فوراً: بلاطٌ أبيض وأسود، مقاعد خشبية أمام الباب، ورائحة الفلافل الطازجة تصل إلى الرصيف. عند فلافل يعقوب لا شيء يُسَخَّن — تخرج الحبّات من الزيت إلى الخبز مباشرةً.</span></p>
+  <p><span class="de" data-edit="s2de">Dazu die zwei Saucen, über die halb Neukölln redet: Mango und Haselnuss. Süß trifft nussig, dazu Knoblauch, wenn ihr mögt — und plötzlich schmeckt ein Falafel-Sandwich nach mehr als nur Mittagspause.</span><span class="art" data-edit="s2ar">ومعها الصلصتان اللتان يتحدث عنهما نصف نويكولن: المانغو والبندق. حلوٌ يلتقي بالمكسّرات، وثوم لمن أراد — فإذا بساندويش الفلافل يصير حكاية لا مجرد استراحة غداء.</span></p>
+ </div>
+ <img class="rev" src="img/11.jpg" alt="Falafel Jakoub — Laden an der Weserstraße">
+</section>
+
+<section class="sauces">
+ <div class="wrap">
+  <span class="k" style="color:#f8ab4d"><span class="de" data-edit="t15" data-edit-label="Text — Die Signatur">Die Signatur</span><span class="art" data-edit="t16" data-edit-label="Text — التوقيع">التوقيع</span></span>
+  <h2 class="rev"><span class="de" data-edit="t17" data-edit-label="Text — Zwei Saucen. Ein Kult.">Zwei Saucen. Ein Kult.</span><span class="art" data-edit="t18" data-edit-label="Text — صلصتان… وعشقٌ واحد.">صلصتان… وعشقٌ واحد.</span></h2>
+  <div class="sgrid">
+   <div class="sw m rev"><h3><span class="de" data-edit="t19" data-edit-label="Text — Mango">Mango</span><span class="art" data-edit="t20" data-edit-label="Text — مانغو">مانغو</span></h3><p><span class="de" data-edit="t21" data-edit-label="Text — Fruchtig-süß über knusprigen Falafeln …">Fruchtig-süß über knusprigen Falafeln — die Sauce, für die Stammgäste extra wiederkommen.</span><span class="art" data-edit="t22" data-edit-label="Text — حلوة بنكهة الفاكهة فوق فلافل مقرمشة — …">حلوة بنكهة الفاكهة فوق فلافل مقرمشة — الصلصة التي يعود لأجلها الزبائن خصيصاً.</span></p></div>
+   <div class="sw h rev"><h3><span class="de" data-edit="t23" data-edit-label="Text — Haselnuss">Haselnuss</span><span class="art" data-edit="t24" data-edit-label="Text — بندق">بندق</span></h3><p><span class="de" data-edit="t25" data-edit-label="Text — Warm, nussig, tief — zusammen mit der …">Warm, nussig, tief — zusammen mit der Mango das Duo, das unser Sandwich unverwechselbar macht.</span><span class="art" data-edit="t26" data-edit-label="Text — دافئة وعميقة بطعم البندق — مع المانغو …">دافئة وعميقة بطعم البندق — مع المانغو ثنائيٌ يجعل ساندويشنا لا يُنسى.</span></p></div>
+  </div>
+ </div>
+</section>
+
+<section class="high wrap">
+ <span class="k"><span class="de" data-edit="t27" data-edit-label="Text — Frisch gemacht">Frisch gemacht</span><span class="art" data-edit="t28" data-edit-label="Text — طازج دائماً">طازج دائماً</span></span>
+ <h2 class="rev"><span class="de" data-edit="t29" data-edit-label="Text — Drei Gründe herzukommen">Drei Gründe herzukommen</span><span class="art" data-edit="t30" data-edit-label="Text — ثلاثة أسباب للمجيء">ثلاثة أسباب للمجيء</span></h2>
+ <div class="hgrid">
+  <div class="hcard rev"><img src="img/10.jpg" alt="Falafel-Teller"><div class="hb"><h3><span class="de" data-edit="t31" data-edit-label="Text — Falafel, außen dunkelgold">Falafel, außen dunkelgold</span><span class="art" data-edit="t32" data-edit-label="Text — فلافل ذهبية مقرمشة">فلافل ذهبية مقرمشة</span></h3><p><span class="de" data-edit="t33" data-edit-label="Text — Aus Kichererbsenbrei, bestellweise fri…">Aus Kichererbsenbrei, bestellweise frittiert — mit Salat, Pickles und Hummus auf dem Teller.</span><span class="art" data-edit="t34" data-edit-label="Text — من الحمّص المطحون، تُقلى عند الطلب — م…">من الحمّص المطحون، تُقلى عند الطلب — مع سلطة ومخلّلات وحمّص في الصحن.</span></p></div></div>
+  <div class="hcard rev"><img src="img/09.jpg" alt="Gegrilltes Wrap"><div class="hb"><h3><span class="de" data-edit="t35" data-edit-label="Text — Wraps vom Kontaktgrill">Wraps vom Kontaktgrill</span><span class="art" data-edit="t36" data-edit-label="Text — لفائف محمّصة على الصاج">لفائف محمّصة على الصاج</span></h3><p><span class="de" data-edit="t37" data-edit-label="Text — Schawarma, Halloumi oder Falafel — gew…">Schawarma, Halloumi oder Falafel — gewickelt, gepresst, mit Röststreifen und viel Füllung.</span><span class="art" data-edit="t38" data-edit-label="Text — شاورما أو حلومي أو فلافل — تُلَفّ وتُك…">شاورما أو حلومي أو فلافل — تُلَفّ وتُكبس حتى تتحمّر وتمتلئ عن آخرها.</span></p></div></div>
+  <div class="hcard rev"><img src="img/05.jpg" alt="Falafel frisch im Öl"><div class="hb"><h3><span class="de" data-edit="t39" data-edit-label="Text — Vor euren Augen">Vor euren Augen</span><span class="art" data-edit="t40" data-edit-label="Text — أمام عيونكم">أمام عيونكم</span></h3><p><span class="de" data-edit="t41" data-edit-label="Text — Die Küche arbeitet offen: Teig, Zange,…">Die Küche arbeitet offen: Teig, Zange, heißes Öl — hier sieht jeder, wie frisch „frisch“ wirklich ist.</span><span class="art" data-edit="t42" data-edit-label="Text — مطبخ مفتوح: عجينة وملقط وزيت حامٍ — هن…">مطبخ مفتوح: عجينة وملقط وزيت حامٍ — هنا يرى الجميع معنى «الطازج» الحقيقي.</span></p></div></div>
+ </div>
+</section>
+
+<div class="wrap">
+<section class="menu rev">
+ <h2><span class="de" data-edit="t43" data-edit-label="Text — Die Karte">Die Karte</span><span class="art" data-edit="t44" data-edit-label="Text — اللائحة">اللائحة</span></h2>
+ <p class="note"><span class="de" data-edit="t45" data-edit-label="Text — Auszug aus unserer Karte am Laden — al…">Auszug aus unserer Karte am Laden — alle Preise in Euro.</span><span class="art" data-edit="t46" data-edit-label="Text — مختارات من لائحة المحل — الأسعار باليو…">مختارات من لائحة المحل — الأسعار باليورو.</span></p>
+ <div class="mcols">
+  <div>
+   <div class="msec"><span class="de" data-edit="t47" data-edit-label="Text — Sandwich">Sandwich</span><span class="art" data-edit="t48" data-edit-label="Text — سندويش">سندويش</span></div>
+   <div class="mi"><span data-edit="t49" data-edit-label="Text — Falafel">Falafel</span><b class="num" data-edit="p1">3,50</b></div>
+   <div class="mi"><span data-edit="t50" data-edit-label="Text — Schawarma">Schawarma</span><b class="num" data-edit="p2">4,00</b></div>
+   <div class="mi"><span data-edit="t51" data-edit-label="Text — Halloumi-Käse">Halloumi-Käse</span><b class="num" data-edit="p3">4,00</b></div>
+   <div class="mi"><span data-edit="t52" data-edit-label="Text — Shich-Tavuk">Shich-Tavuk</span><b class="num" data-edit="p4">4,50</b></div>
+   <div class="mi"><span data-edit="t53" data-edit-label="Text — Kafta">Kafta</span><b class="num" data-edit="p5">4,50</b></div>
+   <div class="mi"><span data-edit="t54" data-edit-label="Text — Hummus">Hummus</span><b class="num" data-edit="p6">2,50</b></div>
+   <div class="mi"><span data-edit="t55" data-edit-label="Text — Baba Ghanoush">Baba Ghanoush</span><b class="num" data-edit="p7">3,00</b></div>
+   <div class="msec"><span class="de" data-edit="t56" data-edit-label="Text — Zweier-Kombi">Zweier-Kombi</span><span class="art" data-edit="t57" data-edit-label="Text — كومبو ثنائي">كومبو ثنائي</span></div>
+   <div class="mi"><span data-edit="t58" data-edit-label="Text — Falafel-Halloumi">Falafel-Halloumi</span><b class="num" data-edit="p8">4,50</b></div>
+   <div class="mi"><span data-edit="t59" data-edit-label="Text — Falafel-Baba Ghanoush">Falafel-Baba Ghanoush</span><b class="num" data-edit="p9">4,00</b></div>
+  </div>
+  <div>
+   <div class="msec"><span class="de" data-edit="t60" data-edit-label="Text — Tellergerichte">Tellergerichte</span><span class="art" data-edit="t61" data-edit-label="Text — صحون">صحون</span></div>
+   <div class="mi"><span>Falafel <small><span class="de" data-edit="t62" data-edit-label="Text — frittierte Bällchen aus Kichererbsenbr…">frittierte Bällchen aus Kichererbsenbrei</span><span class="art" data-edit="t63" data-edit-label="Text — أقراص مقلية من الحمّص المطحون">أقراص مقلية من الحمّص المطحون</span></small></span><b class="num" data-edit="p10">7,00</b></div>
+   <div class="mi"><span>Schawarma <small><span class="de" data-edit="t64" data-edit-label="Text — Hähnchen vom Spieß mit Pommes">Hähnchen vom Spieß mit Pommes</span><span class="art" data-edit="t65" data-edit-label="Text — دجاج من السيخ مع بطاطا">دجاج من السيخ مع بطاطا</span></small></span><b class="num" data-edit="p11">7,50</b></div>
+   <div class="mi"><span>Jakoub-Teller <small data-edit="t66" data-edit-label="Text — „Arabische Art“">„Arabische Art“</small></span><b class="num" data-edit="p12">8,00</b></div>
+   <div class="mi"><span>Weser-Teller <small><span class="de" data-edit="t67" data-edit-label="Text — gemischte Platte für 2 Personen">gemischte Platte für 2 Personen</span><span class="art" data-edit="t68" data-edit-label="Text — صحن مشكّل لشخصين">صحن مشكّل لشخصين</span></small></span><b class="num" data-edit="p13">14,00</b></div>
+   <div class="msec"><span class="de" data-edit="t69" data-edit-label="Text — Dreier-Kombi-Teller">Dreier-Kombi-Teller</span><span class="art" data-edit="t70" data-edit-label="Text — صحن ثلاثي">صحن ثلاثي</span></div>
+   <div class="mi"><span data-edit="t71" data-edit-label="Text — Falafel-Shawarma-Halloumi">Falafel-Shawarma-Halloumi</span><b class="num" data-edit="p14">9,00</b></div>
+  </div>
+ </div>
+ <p class="mfoot"><span class="de" data-edit="t72" data-edit-label="Text — Für Allergiker: fragt uns direkt am Tr…">Für Allergiker: fragt uns direkt am Tresen — wir erklären jede Sauce.</span><span class="art" data-edit="t73" data-edit-label="Text — لأصحاب الحساسية: اسألونا عند الطاولة —…">لأصحاب الحساسية: اسألونا عند الطاولة — نشرح كل صلصة بكل سرور.</span></p>
+</section>
+</div>
+
+<section class="gal wrap">
+ <span class="k"><span class="de" data-edit="t74" data-edit-label="Text — Vom Kiez">Vom Kiez</span><span class="art" data-edit="t75" data-edit-label="Text — من الحيّ">من الحيّ</span></span>
+ <h2 class="rev"><span class="de" data-edit="t76" data-edit-label="Text — Zwischen Tresen und Bierbank">Zwischen Tresen und Bierbank</span><span class="art" data-edit="t77" data-edit-label="Text — بين الطاولة والمقعد الخشبي">بين الطاولة والمقعد الخشبي</span></h2>
+ <div class="ggrid rev">
+  <img src="img/01.jpg" alt="Falafel Jakoub bei Nacht">
+  <img src="img/07.jpg" alt="Frische Theke">
+  <img src="img/04.jpg" alt="Hummus-Platte">
+  <img src="img/12.jpg" alt="Gemüse und Saucen in der Auslage">
+  <img src="img/08.jpg" alt="Gastraum mit Backsteinwand">
+  <img src="img/06.jpg" alt="Wrap auf die Hand">
+ </div>
+</section>
+
+<section class="revs">
+ <div class="wrap">
+  <span class="k" style="color:#f8ab4d"><span class="de" data-edit="t78" data-edit-label="Text — Stimmen">Stimmen</span><span class="art" data-edit="t79" data-edit-label="Text — قالوا عنا">قالوا عنا</span></span>
+  <h2 class="rev"><span class="de" data-edit="t80" data-edit-label="Text — Aus den Google-Bewertungen">Aus den Google-Bewertungen</span><span class="art" data-edit="t81" data-edit-label="Text — من تقييمات غوغل">من تقييمات غوغل</span></h2>
+  <div class="rgrid">
+   <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t82" data-edit-label="Text — “I must come here every time I visit B…">“I must come here every time I visit Berlin, that's how much I love this place. Falafels are so good, the sandwich is delicious with mango and hazelnut sauces. The employees are very kind.”</p><div class="who" data-edit="t83" data-edit-label="Text — Rafi Makaro · Google">Rafi Makaro · Google</div></div>
+   <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t84" data-edit-label="Text — “I love coming here for a shawarma &am…">“I love coming here for a shawarma &amp; baba ganoush wrap! Everything is freshly made, tastes delicious, especially with some garlic sauce, and the guys are so friendly.”</p><div class="who" data-edit="t85" data-edit-label="Text — Sebastian · Google">Sebastian · Google</div></div>
+  </div>
+  <p class="gbadge">★ <b data-edit="rating2">4,6</b> / 5 — <span class="num" data-edit="revcount2">910</span> <span class="de" data-edit="t86" data-edit-label="Text — Bewertungen auf Google">Bewertungen auf Google</span><span class="art" data-edit="t87" data-edit-label="Text — تقييم على غوغل">تقييم على غوغل</span></p>
+ </div>
+</section>
+
+<section class="visit wrap">
+ <div class="rev">
+  <span class="k"><span class="de" data-edit="t88" data-edit-label="Text — Öffnungszeiten">Öffnungszeiten</span><span class="art" data-edit="t89" data-edit-label="Text — أوقات الدوام">أوقات الدوام</span></span>
+  <h2><span class="de" data-edit="t90" data-edit-label="Text — Bis spät in die Nacht">Bis spät in die Nacht</span><span class="art" data-edit="t91" data-edit-label="Text — حتى وقتٍ متأخر">حتى وقتٍ متأخر</span></h2>
+  <table class="hours">
+   <tr><td><span class="de" data-edit="t92" data-edit-label="Text — Montag">Montag</span><span class="art" data-edit="t93" data-edit-label="Text — الاثنين">الاثنين</span></td><td><span class="num" data-edit="h-mo">11:30–24</span></td></tr>
+   <tr><td><span class="de" data-edit="t94" data-edit-label="Text — Dienstag">Dienstag</span><span class="art" data-edit="t95" data-edit-label="Text — الثلاثاء">الثلاثاء</span></td><td><span class="num" data-edit="h-di">11:30–24</span></td></tr>
+   <tr><td><span class="de" data-edit="t96" data-edit-label="Text — Mittwoch">Mittwoch</span><span class="art" data-edit="t97" data-edit-label="Text — الأربعاء">الأربعاء</span></td><td><span class="num" data-edit="h-mi">11:30–24</span></td></tr>
+   <tr><td><span class="de" data-edit="t98" data-edit-label="Text — Donnerstag">Donnerstag</span><span class="art" data-edit="t99" data-edit-label="Text — الخميس">الخميس</span></td><td><span class="num" data-edit="h-do">11:30–24</span></td></tr>
+   <tr><td><span class="de" data-edit="t100" data-edit-label="Text — Freitag">Freitag</span><span class="art" data-edit="t101" data-edit-label="Text — الجمعة">الجمعة</span></td><td><span class="num" data-edit="h-fr">11:30–1</span></td></tr>
+   <tr><td><span class="de" data-edit="t102" data-edit-label="Text — Samstag">Samstag</span><span class="art" data-edit="t103" data-edit-label="Text — السبت">السبت</span></td><td><span class="num" data-edit="h-sa">11:30–1</span></td></tr>
+   <tr><td><span class="de" data-edit="t104" data-edit-label="Text — Sonntag">Sonntag</span><span class="art" data-edit="t105" data-edit-label="Text — الأحد">الأحد</span></td><td><span class="num" data-edit="h-so">11:30–24</span></td></tr>
+  </table>
+ </div>
+ <div class="vinfo rev">
+  <span class="k"><span class="de" data-edit="t106" data-edit-label="Text — Hierher">Hierher</span><span class="art" data-edit="t107" data-edit-label="Text — الوصول إلينا">الوصول إلينا</span></span>
+  <h2><span class="de" data-edit="t108" data-edit-label="Text — Mitten im Weserkiez">Mitten im Weserkiez</span><span class="art" data-edit="t109" data-edit-label="Text — في قلب حيّ الفيزر">في قلب حيّ الفيزر</span></h2>
+  <p class="adr" data-edit="addr2">Weserstraße 14, 12047 Berlin</p>
+  <p><span class="de" data-edit="t110" data-edit-label="Text — Ruft kurz durch, wenn ihr größer beste…">Ruft kurz durch, wenn ihr größer bestellen wollt:</span><span class="art" data-edit="t111" data-edit-label="Text — للاطلبيات الكبيرة اتصلوا بنا مسبقاً:">للاطلبيات الكبيرة اتصلوا بنا مسبقاً:</span> <b class="num" data-edit="phone">+49 30 914 815 76</b></p>
+  <a class="btn" href="tel:+493091481576">✆ <span class="de" data-edit="t112" data-edit-label="Text — Anrufen">Anrufen</span><span class="art" data-edit="t113" data-edit-label="Text — اتصال">اتصال</span></a>
+  <a class="btn o" href="https://www.google.com/maps?cid=2759962479764124136" target="_blank" rel="noopener">◈ <span class="de" data-edit="t114" data-edit-label="Text — Route öffnen">Route öffnen</span><span class="art" data-edit="t115" data-edit-label="Text — افتحوا الخريطة">افتحوا الخريطة</span></a>
+  <a class="btn o" href="https://www.instagram.com/falafeljakoub/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg><span class="de" data-edit="t116" data-edit-label="Text — Instagram">Instagram</span><span class="art" data-edit="t117" data-edit-label="Text — إنستغرام">إنستغرام</span></a>
+  <a class="btn o" href="https://www.facebook.com/falafel.jakoub/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg><span class="de" data-edit="t118" data-edit-label="Text — Facebook">Facebook</span><span class="art" data-edit="t119" data-edit-label="Text — فيسبوك">فيسبوك</span></a>
+ </div>
+</section>
+
+<footer><span data-edit="footer">Falafel Jakoub · Weserstraße 14, 12047 Berlin · +49 30 914 815 76</span></footer>
+
+<div class="bar">
+ <a class="call" href="tel:+493091481576"><b><span class="de" data-edit="t120" data-edit-label="Text — Anrufen">Anrufen</span><span class="art" data-edit="t121" data-edit-label="Text — اتصال">اتصال</span></b></a>
+ <a class="map" href="https://www.google.com/maps?cid=2759962479764124136" target="_blank" rel="noopener"><span class="de" data-edit="t122" data-edit-label="Text — Karte">Karte</span><span class="art" data-edit="t123" data-edit-label="Text — الخريطة">الخريطة</span></a>
+ <a class="ig" href="https://www.instagram.com/falafeljakoub/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg></a>
+ <a class="fb" href="https://www.facebook.com/falafel.jakoub/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+</div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+setTimeout(()=>document.querySelectorAll('.rev:not(.on)').forEach(el=>el.classList.add('on')),1100);
+</script>
+</body>
+</html>

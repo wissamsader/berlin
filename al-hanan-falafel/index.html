@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Al Hanan — معجنات الحنان · Sonnenallee 134, Berlin-Neukölln</title>
+<meta name="description" content="Al Hanan auf der Sonnenallee — Falafel, Schawarma und Halloumi, laut Google eine der besten Falafel-Adressen Europas. Frisch vom Spieß und aus der Pfanne.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;700&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Noto+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{overflow-x:clip}
+:root{--tomato:#C4331B;--tomato2:#9C2811;--cream:#FBF3E5;--creamd:#F0E1C3;--green:#5B7A3A;--greend:#3F5A26;--ink:#2A1F16;--mut:#7C6A54;--line:#ECDFC3}
+body{background:var(--cream);color:var(--ink);font:16.5px/1.75 'Schibsted Grotesk',sans-serif}
+html.ar body{font-family:'Noto Sans Arabic',sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:5vw}
+.disp{font-family:'Readex Pro','Schibsted Grotesk',sans-serif;font-weight:700}
+.k{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--tomato);font-weight:700;display:inline-flex;align-items:center;gap:10px}
+.k::before{content:'';width:26px;height:2px;background:var(--tomato)}
+html.ar .de{display:none!important}
+html:not(.ar) .art{display:none!important}
+.art{unicode-bidi:isolate}
+.num{direction:ltr;unicode-bidi:isolate;display:inline-block}
+.rev{opacity:0;transform:translateY(24px);transition:opacity .75s ease,transform .75s ease}
+.rev.on{opacity:1;transform:none}
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));right:12px;z-index:90;cursor:pointer;border:1.5px solid var(--cream);background:rgba(196,51,27,.94);color:var(--cream);font-weight:700;font-size:11.5px;letter-spacing:.12em;padding:9px 15px;border-radius:999px;line-height:1;font-family:'Noto Sans Arabic','Schibsted Grotesk',sans-serif;box-shadow:0 6px 18px -8px rgba(42,31,22,.5)}
+/* hero — split: platter photo + tomato mosaic panel with pan badge */
+header{position:relative;display:grid;grid-template-columns:1.05fr .95fr;min-height:clamp(600px,92svh,880px);max-height:880px}
+.hphoto{position:relative;overflow:hidden;background:#1c1108}
+.hphoto img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;opacity:.94}
+.hpanel{position:relative;background:var(--tomato);color:var(--cream);display:flex;flex-direction:column;justify-content:center;padding:60px clamp(28px,5.5vw,68px);overflow:hidden}
+.hpanel::before{content:'';position:absolute;inset:0;opacity:.14;background-image:repeating-linear-gradient(45deg,var(--cream) 0 2px,transparent 2px 24px),repeating-linear-gradient(-45deg,var(--cream) 0 2px,transparent 2px 24px);background-size:24px 24px;pointer-events:none}
+.panbadge{position:absolute;width:clamp(116px,13vw,164px);height:clamp(116px,13vw,164px);border-radius:50%;overflow:hidden;border:6px solid var(--cream);box-shadow:0 22px 44px -16px rgba(0,0,0,.55);top:6%;inset-inline-start:-64px;z-index:3;background:#1c1108}
+.panbadge img{width:100%;height:100%;object-fit:cover}
+.hero-in{position:relative;z-index:2}
+.since{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--cream);color:var(--cream);border-radius:4px;padding:8px 16px;font-size:12px;letter-spacing:.12em;font-weight:600;text-transform:uppercase;background:rgba(0,0,0,.18)}
+.since i{width:7px;height:7px;background:var(--cream);display:inline-block;transform:rotate(45deg)}
+h1{font-size:clamp(48px,7.4vw,88px);line-height:1.05;margin-top:18px;text-shadow:0 3px 22px rgba(0,0,0,.25)}
+.latcap{font-size:clamp(13px,1.6vw,16px);letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:#FBE4D6;margin-top:8px}
+.hero-sub{margin-top:16px;font-size:clamp(15px,1.9vw,18px);max-width:44ch;color:#FCEEE1}
+.hero-meta{margin-top:22px;display:flex;gap:8px 22px;flex-wrap:wrap;font-size:13.5px;color:#F6D8C6}
+.hero-meta b{color:var(--cream);font-weight:700}
+.star{color:#FFD98A}
+/* story */
+.story{display:grid;grid-template-columns:1.05fr .95fr;gap:6vw;align-items:center;padding-block:100px 76px}
+.story h2{font-size:clamp(30px,4.4vw,46px);line-height:1.22;margin:14px 0 20px}
+.story p{color:#4A3B2A;margin-bottom:15px;max-width:60ch}
+.simgs{position:relative;padding-block-end:56px}
+.simgs img{border-radius:8px;border:1px solid var(--line);box-shadow:0 24px 50px -30px rgba(156,40,17,.4)}
+.simgs .a{aspect-ratio:4/5;object-fit:cover}
+.simgs .b{position:absolute;width:56%;inset-inline-end:-4%;bottom:0;aspect-ratio:5/4;object-fit:cover;outline:6px solid var(--cream)}
+/* highlights */
+.high{padding-block:20px 30px}
+.high h2{font-size:clamp(28px,3.8vw,40px);margin:12px 0 34px}
+.hgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.hcard{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:0 18px 40px -30px rgba(156,40,17,.35)}
+.hcard img{height:186px;width:100%;object-fit:cover}
+.hcard .hb{padding:18px 18px 22px;border-top:3px solid var(--tomato)}
+.hcard h3{font-size:18px;margin-bottom:8px;color:var(--tomato2);font-weight:700}
+.hcard p{font-size:13.6px;color:var(--mut)}
+/* signature band */
+.band{margin-block:90px;background:var(--greend);color:var(--cream);position:relative;overflow:hidden}
+.band .bimg{position:absolute;inset:0;background:url('img/06.jpg') center/cover;opacity:.18}
+.band-in{position:relative;max-width:1120px;margin:0 auto;padding:72px 5vw;display:grid;grid-template-columns:1.2fr .8fr;gap:5vw;align-items:center}
+.band h2{font-size:clamp(28px,4vw,44px);line-height:1.25}
+.band p{margin-top:14px;color:#E4E8DA;max-width:52ch}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(251,243,229,.22);border:1px solid rgba(251,243,229,.22)}
+.stat{background:var(--greend);padding:20px 14px;text-align:center}
+.stat b{display:block;font-size:clamp(20px,3vw,30px);color:#FFD98A;font-weight:700}
+.stat span{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#CFDABF}
+/* gallery */
+.gal{padding-block:26px 66px}
+.gal h2{font-size:clamp(28px,3.8vw,40px);margin:12px 0 30px}
+.ggrid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:180px;gap:14px}
+.ggrid img{width:100%;height:100%;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
+.ggrid img:first-child{grid-column:span 2;grid-row:span 2}
+/* menu */
+.menu{margin:20px 0 90px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:clamp(28px,5vw,60px);position:relative;box-shadow:0 30px 60px -40px rgba(156,40,17,.4)}
+.menu::before{content:'';position:absolute;inset-inline:0;top:0;height:6px;background:repeating-linear-gradient(90deg,var(--tomato) 0 18px,var(--green) 18px 36px);border-radius:10px 10px 0 0}
+.menu h2{font-size:clamp(28px,4.4vw,44px);text-align:center;margin-bottom:8px;color:var(--tomato2)}
+.menu .cat{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--green);margin:30px 0 12px}
+.menu .cat:first-of-type{margin-top:4px}
+.menu .note{text-align:center;color:var(--mut);font-size:13.5px;margin-bottom:30px}
+.mlist{max-width:720px;margin:0 auto}
+.mi{display:flex;justify-content:space-between;gap:16px;align-items:baseline;margin-bottom:6px;padding-bottom:11px;border-bottom:1px dashed var(--line)}
+.mi+.mi{padding-top:5px}
+.mi .nm{font-weight:600;font-size:15.8px}
+.mi b{font-weight:700;color:var(--tomato2);white-space:nowrap;font-size:15.8px}
+.mfoot{text-align:center;margin-top:26px;color:var(--mut);font-size:13.5px}
+/* reviews */
+.revs{padding-block:10px 80px}
+.revs h2{font-size:clamp(28px,3.8vw,40px);margin:12px 0 32px}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rcard{background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px;position:relative}
+.rcard::before{content:'';position:absolute;top:0;inset-inline-start:0;width:44px;height:3px;background:var(--tomato)}
+.stars-row{color:var(--tomato);letter-spacing:3px;font-size:14px}
+.rcard p{font-size:14.4px;color:#4A3B2A;margin:14px 0 16px;font-style:italic}
+.rcard .who{font-size:13px;color:var(--mut)}
+.gbadge{margin-top:30px;text-align:center;color:var(--mut);font-size:14.5px}
+.gbadge b{color:var(--tomato2);font-size:18px}
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:6vw;padding-block:10px 130px;align-items:start}
+.visit h2{font-size:clamp(28px,3.8vw,40px);margin:10px 0 22px}
+.hours{width:100%;border-collapse:collapse;font-size:15px}
+.hours td{padding:10px 0;border-bottom:1px dashed var(--line);color:#4A3B2A}
+.hours td:last-child{text-align:end;color:var(--ink);font-weight:600}
+.vinfo p{margin-bottom:15px;color:#4A3B2A}
+.vinfo .adr{font-size:20px;font-weight:700;color:var(--tomato2)}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--tomato);color:var(--cream);font-weight:600;border-radius:6px;padding:14px 26px;text-decoration:none;margin:8px 10px 0 0;font-size:15px}
+html.ar .btn{margin:8px 0 0 10px}
+.btn.o{background:transparent;color:var(--tomato2);border:1.5px solid var(--tomato)}
+.btn svg{width:17px;height:17px}
+footer{padding:44px 5vw 160px;text-align:center;color:#9C8A70;font-size:13px;border-top:1px solid var(--line)}
+/* sticky bar — pita pocket with falafel-ball buttons */
+.bar{position:fixed;inset-inline:0;bottom:0;z-index:80;padding:14px clamp(10px,4vw,26px) calc(10px + env(safe-area-inset-bottom));background:var(--cream);border-top:1.5px solid var(--creamd);box-shadow:0 -18px 40px -22px rgba(42,31,22,.35);display:flex;align-items:center;justify-content:center;gap:clamp(8px,2.2vw,16px);animation:pitaup .8s cubic-bezier(.2,.85,.3,1.1) both .25s}
+.bar::before{content:'';position:absolute;top:-20px;inset-inline:10%;height:40px;background:var(--cream);border-radius:50% 50% 0 0/100% 100% 0 0;box-shadow:0 -4px 10px -6px rgba(42,31,22,.25);z-index:-1}
+@keyframes pitaup{from{transform:translateY(110%)}to{transform:none}}
+.bar a{display:flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:13.5px;color:var(--tomato2);padding:12px 16px;border-radius:999px;background:#fff;border:1.5px solid var(--creamd)}
+.bar a.call{position:relative;background:radial-gradient(circle at 32% 28%,#7A4222,var(--tomato2) 70%);color:var(--cream);padding:15px 24px;box-shadow:0 10px 22px -10px rgba(156,40,17,.7)}
+.bar a.call::after{content:'';position:absolute;inset:-6px;border-radius:999px;border:1.5px solid rgba(196,51,27,.5);animation:ballpulse 2.6s ease-out infinite}
+@keyframes ballpulse{0%{transform:scale(.92);opacity:.9}70%{transform:scale(1.14);opacity:0}100%{opacity:0}}
+.bar a.soc{padding:12px 13px;background:var(--green);color:var(--cream);border-color:var(--green)}
+.bar a svg{width:16px;height:16px;display:block}
+@media(max-width:860px){
+ header{grid-template-columns:1fr;grid-template-rows:46svh auto}
+ .hphoto{min-height:46svh}
+ .hpanel{padding:52px 6vw 48px}
+ .panbadge{top:-56px;inset-inline-start:24px;width:104px;height:104px}
+ .story{grid-template-columns:1fr;gap:34px;padding-top:66px}
+ .hgrid{grid-template-columns:repeat(2,1fr)}
+ .rgrid{grid-template-columns:1fr}
+ .band-in{grid-template-columns:1fr;padding-block:56px}
+ .ggrid{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
+ .visit{grid-template-columns:1fr}
+ .bar{flex-wrap:nowrap}
+ .bar a .bl{display:none}
+ .bar a.call{flex:1;justify-content:center}
+ .bar a.call .bl{display:inline}
+}
+/* wrap guard */ .wrap{padding-inline:5vw!important}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<button class="lgx" onclick="const h=document.documentElement,a=h.classList.toggle('ar');h.dir=a?'rtl':'ltr';h.lang=a?'ar':'de'" aria-label="العربية / Deutsch"><span class="de" data-edit="t1" data-edit-label="Text — عربي">عربي</span><span class="art" data-edit="t2" data-edit-label="Text — DE">DE</span></button>
+
+<header>
+ <div class="hphoto"><img src="img/09.jpg" alt="Großer Mezze-Teller mit Falafel, Hummus und Schawarma"></div>
+ <div class="hpanel">
+  <div class="panbadge"><img src="img/06.jpg" alt="Runde Falafel-Platte mit Hummus und Tabouleh"></div>
+  <div class="hero-in">
+   <span class="since"><i></i><span class="de" data-edit="t3" data-edit-label="Text — Sonnenallee 134 · seit Jahren im Kiez">Sonnenallee 134 · seit Jahren im Kiez</span><span class="art" data-edit="t4" data-edit-label="Text — زونن‌ألي ١٣٤ · منذ سنوات في الحي">زونن‌ألي ١٣٤ · منذ سنوات في الحي</span></span>
+   <h1 class="disp"><span class="de" data-edit="t5" data-edit-label="Text — Al Hanan">Al Hanan</span><span class="art" data-edit="t6" data-edit-label="Text — الحنان">الحنان</span></h1>
+   <p class="latcap"><span class="de" data-edit="t7" data-edit-label="Text — معجنات الحنان · Falafel · Schawarma · …">معجنات الحنان · Falafel · Schawarma · Halloumi</span><span class="art" data-edit="t8" data-edit-label="Text — Al Hanan · فلافل وشاورما وحلومي">Al Hanan · فلافل وشاورما وحلومي</span></p>
+   <p class="hero-sub"><span class="de" data-edit="t9" data-edit-label="Text — Für Stammgäste die beste Falafel weit …">Für Stammgäste die beste Falafel weit über Neukölln hinaus — dazu Manakisch und Backwaren aus eigener Herstellung.</span><span class="art" data-edit="t10" data-edit-label="Text — فلافل يقصدها الناس من خارج نويكولن — إ…">فلافل يقصدها الناس من خارج نويكولن — إلى جانب المعجنات والمخبوزات من صنعنا الخاص.</span></p>
+   <div class="hero-meta">
+    <span class="star">★ <b data-edit="rating">4,8</b></span>
+    <span><span class="num" data-edit="revcount">653</span> <span class="de" data-edit="t11" data-edit-label="Text — Google-Bewertungen">Google-Bewertungen</span><span class="art" data-edit="t12" data-edit-label="Text — تقييم على غوغل">تقييم على غوغل</span></span>
+   </div>
+  </div>
+ </div>
+</header>
+
+<section class="story wrap">
+ <div class="rev">
+  <span class="k"><span class="de" data-edit="t13" data-edit-label="Text — Unsere Geschichte">Unsere Geschichte</span><span class="art" data-edit="t14" data-edit-label="Text — حكايتنا">حكايتنا</span></span>
+  <h2 class="disp"><span class="de">Klein von außen,<br>groß im Ruf.</span><span class="art">صغيرٌ من الخارج،<br>كبيرٌ في السمعة.</span></h2>
+  <p><span class="de" data-edit="story1">Auf der Sonnenallee 134 steht seit Jahren ein kleiner Laden mit großem Ruf: fünf Sterne auf der eigenen Leuchtreklame, und Google-Bewertungen, die Al Hanan zu den besten Falafel-Adressen Europas zählen. Drinnen ist es eng, warm und ein bisschen wie zu Hause — alte Fotos von Straßenszenen an der Wand, eine Gitarre, ein Kelim-Sofa in der Ecke.</span><span class="art" data-edit="story1ar">منذ سنوات، يقف في شارع زونن‌ألي رقم ١٣٤ محلٌّ صغير بسمعةٍ كبيرة: خمس نجوم على لافتته المضيئة، وتقييمات غوغل التي تضع الحنان بين أفضل عناوين الفلافل في أوروبا. من الداخل المكان دافئ وضيّق وقريب من البيت — صور قديمة لمشاهد من الشارع على الجدار، غيتار معلّق، وأريكة كليم في الزاوية.</span></p>
+  <p><span class="de" data-edit="story2">Gemacht wird, was auf dem großen Menü-Board über der Theke steht: Falafel und Schawarma vom Spieß, Halloumi warm aus der Pfanne, dazu Hummus, Salate und eigene Backwaren nach levantinischer Art. Fast 700 Bewertungen und 4,8 Sterne sind das Ergebnis von Konstanz, nicht von Zufall.</span><span class="art" data-edit="story2ar">يُحضَّر هنا ما تراه على لوحة القائمة الكبيرة فوق الطاولة: فلافل وشاورما من السيخ، حلوم دافئ من المقلاة، إلى جانب الحمص والسلطات ومعجناتنا الخاصة على الطريقة الشامية. قرابة ٧٠٠ تقييم و٤٫٨ نجوم هي نتيجة الثبات، لا الصدفة.</span></p>
+ </div>
+ <div class="simgs rev">
+  <img class="a" src="img/13.jpg" alt="Storefront Al Hanan mit fünf Sternen auf der Sonnenallee">
+  <img class="b" src="img/07.jpg" alt="Gemütlicher Sitzbereich im Inneren">
+ </div>
+</section>
+
+<section class="high wrap">
+ <span class="k"><span class="de" data-edit="t15" data-edit-label="Text — Von der Theke">Von der Theke</span><span class="art" data-edit="t16" data-edit-label="Text — من على الطاولة">من على الطاولة</span></span>
+ <h2 class="disp rev"><span class="de" data-edit="t17" data-edit-label="Text — Vier Gründe zu kommen">Vier Gründe zu kommen</span><span class="art" data-edit="t18" data-edit-label="Text — أربعة أسباب للمجيء">أربعة أسباب للمجيء</span></h2>
+ <div class="hgrid">
+  <div class="hcard rev"><img src="img/04.jpg" alt="Falafel-Teller mit Pommes, Hummus und Salat"><div class="hb"><h3><span class="de" data-edit="t19" data-edit-label="Text — Falafel-Teller">Falafel-Teller</span><span class="art" data-edit="t20" data-edit-label="Text — صحن فلافل">صحن فلافل</span></h3><p><span class="de" data-edit="t21" data-edit-label="Text — Knusprig frittiert, mit Hummus, Salat …">Knusprig frittiert, mit Hummus, Salat und warmem Brot — laut Google eine der besten Falafeln Europas.</span><span class="art" data-edit="t22" data-edit-label="Text — مقرمشة من الخارج، تُقدَّم مع الحمص وال…">مقرمشة من الخارج، تُقدَّم مع الحمص والسلطة والخبز الساخن — من أفضل الفلافل في أوروبا بحسب غوغل.</span></p></div></div>
+  <div class="hcard rev"><img src="img/12.jpg" alt="Schawarma-Spieß über der Glut"><div class="hb"><h3><span class="de" data-edit="t23" data-edit-label="Text — Schawarma vom Spieß">Schawarma vom Spieß</span><span class="art" data-edit="t24" data-edit-label="Text — شاورما من السيخ">شاورما من السيخ</span></h3><p><span class="de" data-edit="t25" data-edit-label="Text — Hähnchen und Lamm, langsam am offenen …">Hähnchen und Lamm, langsam am offenen Spieß gegart und frisch aufgeschnitten.</span><span class="art" data-edit="t26" data-edit-label="Text — دجاج ولحم يُشويان ببطء على السيخ المفت…">دجاج ولحم يُشويان ببطء على السيخ المفتوح ويُقطَّعان طازجَين.</span></p></div></div>
+  <div class="hcard rev"><img src="img/02.jpg" alt="Mezze-Teller mit Falafel und Hummus auf Mosaikteller"><div class="hb"><h3><span class="de" data-edit="t27" data-edit-label="Text — Mezze-Teller">Mezze-Teller</span><span class="art" data-edit="t28" data-edit-label="Text — صحن مقبّلات">صحن مقبّلات</span></h3><p><span class="de" data-edit="t29" data-edit-label="Text — Hummus, Falafel und frische Beilagen, …">Hummus, Falafel und frische Beilagen, großzügig auf einem großen Teller angerichtet.</span><span class="art" data-edit="t30" data-edit-label="Text — حمص وفلافل ومقبّلات طازجة، تُقدَّم بسخ…">حمص وفلافل ومقبّلات طازجة، تُقدَّم بسخاء على طبقٍ كبير.</span></p></div></div>
+  <div class="hcard rev"><img src="img/03.jpg" alt="Falafel-Wrap zum Mitnehmen"><div class="hb"><h3><span class="de" data-edit="t31" data-edit-label="Text — Frisch im Fladenbrot">Frisch im Fladenbrot</span><span class="art" data-edit="t32" data-edit-label="Text — لفائف طازجة">لفائف طازجة</span></h3><p><span class="de" data-edit="t33" data-edit-label="Text — Falafel oder Schawarma, warm eingewick…">Falafel oder Schawarma, warm eingewickelt zum Mitnehmen — der Klassiker für zwischendurch.</span><span class="art" data-edit="t34" data-edit-label="Text — فلافل أو شاورما ملفوفة ساخنة للطريق — …">فلافل أو شاورما ملفوفة ساخنة للطريق — الكلاسيكية السريعة.</span></p></div></div>
+ </div>
+</section>
+
+<div class="band rev">
+ <div class="bimg" aria-hidden="true"></div>
+ <div class="band-in">
+  <div>
+   <span class="k" style="color:#FFD98A"><span class="de" data-edit="t35" data-edit-label="Text — Für die Runde">Für die Runde</span><span class="art" data-edit="t36" data-edit-label="Text — للجمعة">للجمعة</span></span>
+   <h2 class="disp"><span class="de" data-edit="t37" data-edit-label="Text — Ein Teller für alle.">Ein Teller für alle.</span><span class="art" data-edit="t38" data-edit-label="Text — صحنٌ يكفي الجميع.">صحنٌ يكفي الجميع.</span></h2>
+   <p><span class="de" data-edit="t39" data-edit-label="Text — Für Gruppen und Familien deckt Al Hana…">Für Gruppen und Familien deckt Al Hanan große Platten — vegetarisch oder mit Fleisch, für zwei oder vier Personen.</span><span class="art" data-edit="t40" data-edit-label="Text — لِلمجموعات والعائلات، يُعدّ الحنان صحو…">لِلمجموعات والعائلات، يُعدّ الحنان صحوناً كبيرة — نباتية أو باللحم، لشخصين أو لأربعة.</span></p>
+  </div>
+  <div class="stats">
+   <div class="stat"><b data-edit="rating2">4,8</b><span data-edit="t41" data-edit-label="Text — ★ Google">★ Google</span></div>
+   <div class="stat"><b class="num" data-edit="revcount2">653</b><span><span class="de" data-edit="t42" data-edit-label="Text — Bewertungen">Bewertungen</span><span class="art" data-edit="t43" data-edit-label="Text — تقييم">تقييم</span></span></div>
+   <div class="stat"><b><span class="num" data-edit="t44" data-edit-label="Text — 25 €">25 €</span></b><span><span class="de" data-edit="t45" data-edit-label="Text — Teller für 2, vegetarisch">Teller für 2, vegetarisch</span><span class="art" data-edit="t46" data-edit-label="Text — صحن لشخصين، نباتي">صحن لشخصين، نباتي</span></span></div>
+  </div>
+ </div>
+</div>
+
+<section class="gal wrap">
+ <span class="k"><span class="de" data-edit="t47" data-edit-label="Text — Vom Laden">Vom Laden</span><span class="art" data-edit="t48" data-edit-label="Text — من المحل">من المحل</span></span>
+ <h2 class="disp rev"><span class="de" data-edit="t49" data-edit-label="Text — Ein Blick hinter die Theke">Ein Blick hinter die Theke</span><span class="art" data-edit="t50" data-edit-label="Text — نظرة خلف الطاولة">نظرة خلف الطاولة</span></h2>
+ <div class="ggrid rev">
+  <img src="img/10.jpg" alt="Menü-Board über der Theke mit Schawarma-Spieß">
+  <img src="img/05.jpg" alt="Schild معجنات الحنان mit Backwaren">
+  <img src="img/08.jpg" alt="Falafel-Wrap mit Tee und Getränken">
+  <img src="img/11.jpg" alt="Leuchtreklame Alhanan bei Nacht">
+ </div>
+</section>
+
+<div class="wrap">
+<section class="menu rev" id="karte">
+ <h2 class="disp"><span class="de" data-edit="t51" data-edit-label="Text — Sandwiches &amp; Teller">Sandwiches &amp; Teller</span><span class="art" data-edit="t52" data-edit-label="Text — سندويشات وصحون">سندويشات وصحون</span></h2>
+ <p class="note"><span class="de" data-edit="t53" data-edit-label="Text — Von der Karte im Laden — Auswahl.">Von der Karte im Laden — Auswahl.</span><span class="art" data-edit="t54" data-edit-label="Text — من قائمة المحل — اختيارات.">من قائمة المحل — اختيارات.</span></p>
+ <div class="mlist">
+  <p class="cat"><span class="de" data-edit="t55" data-edit-label="Text — Sandwiches">Sandwiches</span><span class="art" data-edit="t56" data-edit-label="Text — سندويشات">سندويشات</span></p>
+  <div class="mi"><span class="nm" data-edit="t57" data-edit-label="Text — Falafel · فلافل">Falafel · فلافل</span><b class="num" data-edit="m1">4,00 €</b></div>
+  <div class="mi"><span class="nm" data-edit="t58" data-edit-label="Text — Schawarma · شاورما">Schawarma · شاورما</span><b class="num" data-edit="m2">5,00 €</b></div>
+  <div class="mi"><span class="nm" data-edit="t59" data-edit-label="Text — Halloumi · حلومي">Halloumi · حلومي</span><b class="num" data-edit="m3">4,50 €</b></div>
+  <div class="mi"><span class="nm" data-edit="t60" data-edit-label="Text — Kafta · كفتة">Kafta · كفتة</span><b class="num" data-edit="m4">5,00 €</b></div>
+  <div class="mi"><span class="nm" data-edit="t61" data-edit-label="Text — Hähnchenbrust · صدر دجاج">Hähnchenbrust · صدر دجاج</span><b class="num" data-edit="m5">5,50 €</b></div>
+  <p class="cat"><span class="de" data-edit="t62" data-edit-label="Text — Tellergerichte — mit Hummus, Salat und…">Tellergerichte — mit Hummus, Salat und Brot</span><span class="art" data-edit="t63" data-edit-label="Text — صحون — مع حمص وسلطة وخبز">صحون — مع حمص وسلطة وخبز</span></p>
+  <div class="mi"><span class="nm" data-edit="t64" data-edit-label="Text — Falafel-Teller · صحن فلافل">Falafel-Teller · صحن فلافل</span><b class="num" data-edit="m6">6,50 €</b></div>
+  <div class="mi"><span class="nm" data-edit="t65" data-edit-label="Text — Schawarma-Teller, mit Reis oder Kartof…">Schawarma-Teller, mit Reis oder Kartoffeln · صحن شاورما</span><b class="num" data-edit="m7">7,50 €</b></div>
+  <div class="mi"><span class="nm" data-edit="t66" data-edit-label="Text — Hähnchenbrust-Teller, mit Reis und Kar…">Hähnchenbrust-Teller, mit Reis und Kartoffeln · صحن صدر دجاج</span><b class="num" data-edit="m8">8,00 €</b></div>
+  <p class="cat"><span class="de" data-edit="t67" data-edit-label="Text — Spezialitäten">Spezialitäten</span><span class="art" data-edit="t68" data-edit-label="Text — أطباق خاصة">أطباق خاصة</span></p>
+  <div class="mi"><span class="nm" data-edit="t69" data-edit-label="Text — Al-Hanan-Teller, für 2 · صحن الحنان لش…">Al-Hanan-Teller, für 2 · صحن الحنان لشخصين</span><b class="num" data-edit="m9">25,00 – 30,00 €</b></div>
+  <div class="mi"><span class="nm" data-edit="t70" data-edit-label="Text — Al-Hanan-Teller, für 4 · صحن الحنان لأ…">Al-Hanan-Teller, für 4 · صحن الحنان لأربعة</span><b class="num" data-edit="m10">35,00 – 40,00 €</b></div>
+  <div class="mi"><span class="nm" data-edit="t71" data-edit-label="Text — Hummus-Teller · صحن حمص">Hummus-Teller · صحن حمص</span><b class="num" data-edit="m11">5,00 €</b></div>
+  <div class="mi"><span class="nm" data-edit="t72" data-edit-label="Text — Tabouleh-Teller · صحن تبولة">Tabouleh-Teller · صحن تبولة</span><b class="num" data-edit="m12">5,00 €</b></div>
+ </div>
+ <p class="mfoot"><span class="de" data-edit="t73" data-edit-label="Text — Dazu Boxen, Saucen und frisch gepresst…">Dazu Boxen, Saucen und frisch gepresste Säfte — die volle Karte hängt im Laden.</span><span class="art" data-edit="t74" data-edit-label="Text — وهناك أيضاً علب وصلصات وعصائر طازجة — …">وهناك أيضاً علب وصلصات وعصائر طازجة — القائمة الكاملة معلّقة في المحل.</span></p>
+</section>
+</div>
+
+<section class="revs wrap">
+ <span class="k"><span class="de" data-edit="t75" data-edit-label="Text — Stimmen">Stimmen</span><span class="art" data-edit="t76" data-edit-label="Text — قالوا عنا">قالوا عنا</span></span>
+ <h2 class="disp rev"><span class="de" data-edit="t77" data-edit-label="Text — Aus den Google-Bewertungen">Aus den Google-Bewertungen</span><span class="art" data-edit="t78" data-edit-label="Text — من تقييمات غوغل">من تقييمات غوغل</span></h2>
+ <div class="rgrid">
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t79" data-edit-label="Text — 'Best falafel I had in Europe all summ…">"Best falafel I had in Europe all summer and maybe the best from the many years I have been to Germany. Quality, flavor and price were all nice, plus the guys working there were friendly and multilingual."</p><div class="who" data-edit="t80" data-edit-label="Text — Mackers · Google">Mackers · Google</div></div>
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t81" data-edit-label="Text — 'They have the best falafel I've tried…">"They have the best falafel I've tried in Berlin, maybe in my top 3 spots in the world actually."</p><div class="who" data-edit="t82" data-edit-label="Text — Pronins · Google">Pronins · Google</div></div>
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t83" data-edit-label="Text — 'Outstanding! I ordered a vegetarian p…">"Outstanding! I ordered a vegetarian party platter for a small private gathering, and we got more than expected! The amount of food was huge, great variety, and the taste was excellent."</p><div class="who" data-edit="t84" data-edit-label="Text — Anna Lacerta · Google">Anna Lacerta · Google</div></div>
+ </div>
+ <p class="gbadge">★ <b data-edit="rating3">4,8 / 5</b> — <span class="num" data-edit="revcount3">653</span> <span class="de" data-edit="t85" data-edit-label="Text — Bewertungen auf Google">Bewertungen auf Google</span><span class="art" data-edit="t86" data-edit-label="Text — تقييم على غوغل">تقييم على غوغل</span></p>
+</section>
+
+<section class="visit wrap">
+ <div class="rev">
+  <span class="k"><span class="de" data-edit="t87" data-edit-label="Text — Öffnungszeiten">Öffnungszeiten</span><span class="art" data-edit="t88" data-edit-label="Text — الدوام">الدوام</span></span>
+  <h2 class="disp"><span class="de" data-edit="t89" data-edit-label="Text — Sieben Tage die Woche">Sieben Tage die Woche</span><span class="art" data-edit="t90" data-edit-label="Text — سبعة أيام في الأسبوع">سبعة أيام في الأسبوع</span></h2>
+  <table class="hours">
+   <tr><td><span class="de" data-edit="t91" data-edit-label="Text — Montag">Montag</span><span class="art" data-edit="t92" data-edit-label="Text — الاثنين">الاثنين</span></td><td><span class="num" data-edit="h-mo">11 – 23</span></td></tr>
+   <tr><td><span class="de" data-edit="t93" data-edit-label="Text — Dienstag">Dienstag</span><span class="art" data-edit="t94" data-edit-label="Text — الثلاثاء">الثلاثاء</span></td><td><span class="num" data-edit="h-di">11 – 23</span></td></tr>
+   <tr><td><span class="de" data-edit="t95" data-edit-label="Text — Mittwoch">Mittwoch</span><span class="art" data-edit="t96" data-edit-label="Text — الأربعاء">الأربعاء</span></td><td><span class="num" data-edit="h-mi">11 – 22:30</span></td></tr>
+   <tr><td><span class="de" data-edit="t97" data-edit-label="Text — Donnerstag">Donnerstag</span><span class="art" data-edit="t98" data-edit-label="Text — الخميس">الخميس</span></td><td><span class="num" data-edit="h-do">11 – 22:30</span></td></tr>
+   <tr><td><span class="de" data-edit="t99" data-edit-label="Text — Freitag">Freitag</span><span class="art" data-edit="t100" data-edit-label="Text — الجمعة">الجمعة</span></td><td><span class="num" data-edit="h-fr">11 – 23:30</span></td></tr>
+   <tr><td><span class="de" data-edit="t101" data-edit-label="Text — Samstag">Samstag</span><span class="art" data-edit="t102" data-edit-label="Text — السبت">السبت</span></td><td><span class="num" data-edit="h-sa">11 – 23:30</span></td></tr>
+   <tr><td><span class="de" data-edit="t103" data-edit-label="Text — Sonntag">Sonntag</span><span class="art" data-edit="t104" data-edit-label="Text — الأحد">الأحد</span></td><td><span class="num" data-edit="h-so">11 – 22</span></td></tr>
+  </table>
+ </div>
+ <div class="vinfo rev">
+  <span class="k"><span class="de" data-edit="t105" data-edit-label="Text — Hierher">Hierher</span><span class="art" data-edit="t106" data-edit-label="Text — الموقع">الموقع</span></span>
+  <h2 class="disp"><span class="de" data-edit="t107" data-edit-label="Text — Auf der Sonnenallee">Auf der Sonnenallee</span><span class="art" data-edit="t108" data-edit-label="Text — على زونن‌ألي">على زونن‌ألي</span></h2>
+  <p class="adr" data-edit="addr2">Sonnenallee 134, 12059 Berlin</p>
+  <p><span class="de" data-edit="t109" data-edit-label="Text — Für Bestellungen und große Platten ruf…">Für Bestellungen und große Platten ruft uns an —</span><span class="art" data-edit="t110" data-edit-label="Text — للطلبات والصحون الكبيرة اتصلوا بنا —">للطلبات والصحون الكبيرة اتصلوا بنا —</span> <span class="num" data-edit="phone">+49 30 4595 8285</span></p>
+  <a class="btn" href="tel:+493045958285"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.5 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span class="de" data-edit="t111" data-edit-label="Text — Anrufen">Anrufen</span><span class="art" data-edit="t112" data-edit-label="Text — اتصلوا بنا">اتصلوا بنا</span></a>
+  <a class="btn o" href="https://www.google.com/maps?cid=14949525035127286733" target="_blank" rel="noopener"><span class="de" data-edit="t113" data-edit-label="Text — Route öffnen">Route öffnen</span><span class="art" data-edit="t114" data-edit-label="Text — افتحوا الخريطة">افتحوا الخريطة</span></a>
+  <a class="btn o" href="https://www.facebook.com/Al-Hanan-290905884338411/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Facebook</a>
+ </div>
+</section>
+
+<footer><span data-edit="footer">Al Hanan · معجنات الحنان · Sonnenallee 134, 12059 Berlin · <span class="num" data-edit="t115" data-edit-label="Text — +49 30 4595 8285">+49 30 4595 8285</span></span></footer>
+
+<div class="bar">
+ <a class="call" href="tel:+493045958285"><span class="de" data-edit="t116" data-edit-label="Text — Anrufen">Anrufen</span><span class="art" data-edit="t117" data-edit-label="Text — اتصلوا">اتصلوا</span></a>
+ <a href="#karte" onclick="document.getElementById('karte').scrollIntoView({behavior:'smooth'});return false;">☰ <span class="bl"><span class="de" data-edit="t118" data-edit-label="Text — Karte">Karte</span><span class="art" data-edit="t119" data-edit-label="Text — القائمة">القائمة</span></span></a>
+ <a href="https://www.google.com/maps?cid=14949525035127286733" target="_blank" rel="noopener">◈ <span class="bl"><span class="de" data-edit="t120" data-edit-label="Text — Maps">Maps</span><span class="art" data-edit="t121" data-edit-label="Text — الخريطة">الخريطة</span></span></a>
+ <a class="soc" href="https://www.facebook.com/Al-Hanan-290905884338411/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+</div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+setTimeout(()=>document.querySelectorAll('.rev:not(.on)').forEach(el=>el.classList.add('on')),1100);
+</script>
+</body>
+</html>

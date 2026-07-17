@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Azzam Salon — Sonnenallee 52, Berlin-Neukölln · Herrensalon bis 22 Uhr</title>
+<meta name="description" content="Azzam Salon auf der Sonnenallee — Haarschnitt, Bart, Hydrafacial, Laser & Hijama. Sechs Tage die Woche bis 22 Uhr.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500;700&family=Cormorant+Infant:ital,wght@0,500;0,600;0,700;1,500&family=Tajawal:wght@400;500;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{overflow-x:clip}
+:root{--noir:#121008;--noir2:#1b170c;--pane:#211c10;--gold:#c9a35c;--gold2:#e8cf9a;--smoke:#b7ac97;--cream:#f3ead7;--line:#39301c}
+body{background:var(--noir);color:var(--cream);font:16px/1.85 'Jost','Tajawal',sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:5vw}
+h1,h2,h3{font-family:'Cormorant Infant',serif;font-weight:600}
+h1 .art,h2 .art,h3 .art{font-family:'Markazi Text',serif;font-weight:700;line-height:1.25}
+.k{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:600;font-family:'Jost','Tajawal',sans-serif}
+.art{unicode-bidi:isolate}
+.num{direction:ltr;unicode-bidi:isolate}
+html.ar .de{display:none!important}
+html:not(.ar) .art{display:none!important}
+html.ar body{font-family:'Tajawal',sans-serif}
+.rev{opacity:0;transform:translateY(24px);transition:opacity .75s ease,transform .75s ease}
+.rev.on{opacity:1;transform:none}
+/* language chip — gold bottle cap */
+.lgx{position:fixed;top:calc(14px + env(safe-area-inset-top));right:14px;z-index:90;cursor:pointer;border:1.5px solid var(--gold);background:rgba(18,16,8,.82);color:var(--gold2);font:700 12px/1 'Tajawal',sans-serif;letter-spacing:.12em;padding:10px 15px;border-radius:4px 14px 4px 14px;backdrop-filter:blur(6px)}
+/* hero — gold sign nocturne */
+header{position:relative;min-height:96svh;display:flex;align-items:flex-end}
+header .bg{position:absolute;inset:0;background:url('img/01.jpg') center 32%/cover no-repeat}
+header .bg::after{content:'';position:absolute;inset:0;background:linear-gradient(185deg,rgba(18,16,8,.30),rgba(18,16,8,.55) 52%,var(--noir) 96%)}
+header .haze{position:absolute;inset:0;background:radial-gradient(60% 42% at 50% 30%,rgba(201,163,92,.20),transparent 70%);mix-blend-mode:screen;animation:haze 7s ease-in-out infinite alternate}
+@keyframes haze{from{opacity:.5}to{opacity:1}}
+.hero-in{position:relative;width:100%;max-width:1120px;margin:0 auto;padding:0 5vw 62px}
+.since{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--gold);border-radius:2px;padding:8px 16px;font-size:12.5px;letter-spacing:.14em;font-weight:600;color:var(--gold2);background:rgba(18,16,8,.66);margin-bottom:20px}
+.since i{width:6px;height:6px;background:var(--gold);transform:rotate(45deg)}
+h1{font-size:clamp(50px,8.6vw,102px);line-height:1.02;color:var(--cream)}
+h1 .art{font-size:clamp(54px,9vw,110px);color:var(--cream)}
+.h1sub{font-family:'Cormorant Infant',serif;font-weight:500;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);font-size:clamp(13px,1.7vw,19px);margin-top:8px}
+.hero-sub{margin-top:16px;font-size:clamp(15px,1.9vw,19px);color:#d8cfba;max-width:58ch}
+.hero-meta{margin-top:22px;display:flex;gap:10px 26px;flex-wrap:wrap;font-size:13.5px;color:var(--smoke)}
+.hero-meta b{color:var(--gold2);font-weight:600}
+/* story */
+.story{display:grid;grid-template-columns:1.08fr .92fr;gap:6vw;align-items:center;padding:100px 0 76px}
+.story .ph{position:relative}
+.story img{border-radius:6px;aspect-ratio:4/5;object-fit:cover;border:1px solid var(--line)}
+.story .ph::after{content:'';position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--gold);border-radius:6px;pointer-events:none;opacity:.5}
+.story h2{font-size:clamp(30px,4.4vw,48px);line-height:1.16;margin:14px 0 20px;color:var(--cream)}
+.story p{color:#cfc5ae;margin-bottom:15px;font-size:15.5px}
+/* services — cologne shelf */
+.serv{padding:26px 0 30px}
+.serv h2{font-size:clamp(30px,4.2vw,46px);margin:12px 0 8px}
+.serv .lead{color:var(--smoke);max-width:60ch;margin-bottom:34px;font-size:15px}
+.sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.scard{background:linear-gradient(175deg,var(--pane),var(--noir2));border:1px solid var(--line);border-radius:6px;padding:26px 24px 24px;position:relative;overflow:hidden}
+.scard::before{content:'';position:absolute;inset-inline-start:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--gold),transparent 80%)}
+.scard .bt{width:34px;height:34px;border:1.5px solid var(--gold);border-radius:10px 10px 3px 3px;position:relative;margin-bottom:16px}
+.scard .bt::before{content:'';position:absolute;top:-9px;left:50%;transform:translateX(-50%);width:12px;height:7px;background:var(--gold);border-radius:2px 2px 0 0}
+.scard h3{font-size:22px;color:var(--gold2);margin-bottom:8px}
+.scard h3 .art{font-size:24px}
+.scard p{font-size:13.8px;color:var(--smoke);line-height:1.75}
+.pnote{margin-top:26px;border:1px dashed var(--line);border-radius:6px;padding:16px 20px;color:var(--smoke);font-size:14px;text-align:center}
+.pnote b{color:var(--gold2);font-weight:600}
+/* 22 Uhr band */
+.late{margin:90px 0 0;background:linear-gradient(120deg,var(--noir2),var(--pane) 55%,var(--noir2));border-block:1px solid var(--line);padding:66px 0}
+.late .in{display:grid;grid-template-columns:auto 1fr;gap:6vw;align-items:center;max-width:1120px;margin:0 auto;padding-inline:5vw}
+.late .big{font-family:'Cormorant Infant',serif;font-size:clamp(84px,13vw,150px);line-height:.9;color:var(--gold);font-weight:700}
+.late .big small{display:block;font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--smoke);font-family:'Jost','Tajawal',sans-serif;margin-top:12px;font-weight:500}
+.late h2{font-size:clamp(26px,3.6vw,40px);margin-bottom:12px}
+.late p{color:#cfc5ae;max-width:56ch;font-size:15.5px}
+.facts{display:flex;gap:12px 34px;flex-wrap:wrap;margin-top:22px;font-size:13.5px;color:var(--smoke)}
+.facts span{display:flex;align-items:center;gap:9px}
+.facts i{width:7px;height:7px;background:var(--gold);transform:rotate(45deg);flex:none}
+/* gallery */
+.gal{padding:90px 0 30px}
+.gal h2{font-size:clamp(30px,4.2vw,46px);margin:12px 0 30px}
+.ggrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ggrid figure{position:relative;border-radius:6px;overflow:hidden;border:1px solid var(--line)}
+.ggrid img{width:100%;height:340px;object-fit:cover;transition:transform .8s ease}
+.ggrid figure:hover img{transform:scale(1.045)}
+.ggrid figcaption{position:absolute;inset-inline:0;bottom:0;padding:14px 16px 12px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold2);background:linear-gradient(180deg,transparent,rgba(18,16,8,.85))}
+/* review */
+.revs{padding:70px 0 80px}
+.revs .box{display:grid;grid-template-columns:1fr .9fr;gap:16px;align-items:stretch}
+.quote{background:var(--pane);border:1px solid var(--line);border-radius:6px;padding:34px 34px 30px;position:relative}
+.quote::before{content:'“';font-family:'Cormorant Infant',serif;font-size:110px;line-height:.6;color:var(--gold);position:absolute;top:30px;inset-inline-start:26px;opacity:.35}
+.quote p{font-style:italic;color:#e2d9c4;font-size:16.5px;position:relative;margin-top:16px}
+.quote .who{margin-top:18px;font-size:13px;color:var(--smoke);font-style:normal}
+.rate{background:linear-gradient(160deg,var(--noir2),var(--pane));border:1px solid var(--gold);border-radius:6px;padding:34px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.rate .st{color:var(--gold);letter-spacing:6px;font-size:19px}
+.rate .n{font-family:'Cormorant Infant',serif;font-size:78px;line-height:1;color:var(--cream);margin:10px 0 4px;font-weight:700}
+.rate p{color:var(--smoke);font-size:13.5px}
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:6vw;padding:16px 0 130px;align-items:start}
+.visit h2{font-size:clamp(28px,3.8vw,42px);margin:12px 0 20px}
+.hours{width:100%;border-collapse:collapse;font-size:14.5px}
+.hours td{padding:10px 0;border-bottom:1px dashed var(--line);color:#cfc5ae}
+.hours td:last-child{text-align:end;color:var(--cream)}
+.vinfo p{margin-bottom:14px;color:#cfc5ae}
+.vinfo .adr{font-size:21px;font-family:'Cormorant Infant',serif;color:var(--cream)}
+.vinfo .adr .art{font-family:'Markazi Text',serif}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--gold);color:#181206;font-weight:600;border-radius:3px;padding:14px 24px;text-decoration:none;margin:8px 10px 0 0;font-size:14.5px;font-family:'Jost','Tajawal',sans-serif}
+.btn.o{background:transparent;color:var(--cream);border:1px solid var(--line)}
+.btn svg{width:16px;height:16px}
+footer{padding:44px 5vw 132px;text-align:center;color:#6f6752;font-size:12.5px;border-top:1px solid var(--line)}
+/* velvet-rope bar — stanchions + rope curve */
+.bar{position:fixed;left:50%;transform:translateX(-50%);bottom:0;z-index:60;width:min(560px,94vw);padding:20px 26px calc(12px + env(safe-area-inset-bottom));display:flex;gap:10px;justify-content:center;background:radial-gradient(120% 160% at 50% 0%,#241d0e,#15110a 70%);border:1px solid var(--line);border-bottom:0;border-radius:16px 16px 0 0;box-shadow:0 -18px 50px -18px rgba(0,0,0,.85);animation:ropein .8s cubic-bezier(.2,.85,.3,1.1) both .25s}
+@keyframes ropein{from{transform:translateX(-50%) translateY(110px)}to{transform:translateX(-50%) translateY(0)}}
+.bar::before,.bar::after{content:'';position:absolute;top:-13px;width:9px;height:30px;background:linear-gradient(180deg,var(--gold2),var(--gold) 45%,#8a6c33);border-radius:5px 5px 2px 2px;box-shadow:0 -8px 0 -2.5px var(--gold)}
+.bar::before{left:14px}
+.bar::after{right:14px}
+.bar .rope{position:absolute;top:-12px;left:18px;right:18px;height:22px;pointer-events:none}
+.bar .rope path{stroke:var(--gold);stroke-width:2.4;fill:none;stroke-dasharray:3 3.6}
+.bar a{display:flex;align-items:center;gap:8px;padding:13px 18px;border-radius:3px;font:600 14px/1 'Jost','Tajawal',sans-serif;text-decoration:none;color:var(--cream);border:1px solid var(--line);letter-spacing:.02em}
+.bar a.wa{background:var(--gold);color:#181206;border-color:var(--gold);box-shadow:0 0 0 0 rgba(201,163,92,.5);animation:ropepulse 2.6s ease-out infinite}
+@keyframes ropepulse{0%{box-shadow:0 0 0 0 rgba(201,163,92,.45)}70%{box-shadow:0 0 0 13px rgba(201,163,92,0)}100%{box-shadow:0 0 0 0 rgba(201,163,92,0)}}
+.bar svg{width:17px;height:17px;flex:none}
+@media(max-width:860px){
+ .story,.visit{grid-template-columns:1fr;gap:30px}
+ .story{padding-top:64px}
+ .sgrid,.ggrid{grid-template-columns:1fr}
+ .ggrid img{height:64vw}
+ .late .in{grid-template-columns:1fr;gap:26px}
+ .revs .box{grid-template-columns:1fr}
+ .bar{width:100vw;border-radius:14px 14px 0 0;padding-inline:12px;gap:8px}
+ .bar a{padding:13px 13px;font-size:13px}
+ .visit{padding-bottom:150px}
+}
+/* wrap guard */ .wrap{padding-inline:5vw!important}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<button class="lgx" onclick="const h=document.documentElement,a=h.classList.toggle('ar');h.dir=a?'rtl':'ltr';h.lang=a?'ar':'de'" aria-label="العربية / Deutsch"><span class="de" data-edit="t1" data-edit-label="Text — ع">ع</span><span class="art" data-edit="t2" data-edit-label="Text — DE">DE</span></button>
+
+<header>
+ <div class="bg"></div>
+ <div class="haze" aria-hidden="true"></div>
+ <div class="hero-in">
+  <span class="since"><i></i><span class="de" data-edit="t3" data-edit-label="Text — Sonnenallee 52 · Neukölln — bis 22 Uhr…">Sonnenallee 52 · Neukölln — bis 22 Uhr geöffnet</span><span class="art" data-edit="t4" data-edit-label="Text — زونن‌ألي ٥٢ · نويكولن — مفتوح حتى العا…">زونن‌ألي ٥٢ · نويكولن — مفتوح حتى العاشرة ليلاً</span></span>
+  <h1><span class="de" data-edit="t5" data-edit-label="Text — Azzam Salon">Azzam Salon</span><span class="art" data-edit="t6" data-edit-label="Text — صالون عزام">صالون عزام</span></h1>
+  <div class="h1sub"><span class="de" data-edit="t7" data-edit-label="Text — صالون عزام · Herrensalon">صالون عزام · Herrensalon</span><span class="art" data-edit="t8" data-edit-label="Text — AZZAM SALON · صالون رجالي">AZZAM SALON · صالون رجالي</span></div>
+  <p class="hero-sub"><span class="de" data-edit="t9" data-edit-label="Text — Schwarz, Gold und ein Laden, der nicht…">Schwarz, Gold und ein Laden, der nicht stillsteht: Haarschnitt, Bart und Pflege auf der Sonnenallee — sechs Tage die Woche, bis spät in den Abend.</span><span class="art" data-edit="t10" data-edit-label="Text — أسودٌ وذهب، وصالونٌ لا يهدأ: قصّة شعرٍ…">أسودٌ وذهب، وصالونٌ لا يهدأ: قصّة شعرٍ ولحيةٌ وعناية على شارع العرب — ستة أيامٍ في الأسبوع حتى ساعةٍ متأخّرة من المساء.</span></p>
+  <div class="hero-meta">
+   <span>★ <b data-edit="rating">4,8</b> · <span data-edit="revcount">53</span> <span class="de" data-edit="t11" data-edit-label="Text — Google-Bewertungen">Google-Bewertungen</span><span class="art" data-edit="t12" data-edit-label="Text — تقييماً على غوغل">تقييماً على غوغل</span></span>
+   <span data-edit="addr">Sonnenallee 52, 12045 Berlin</span>
+   <span><span class="de" data-edit="t13" data-edit-label="Text — Mo–Sa bis 22 Uhr">Mo–Sa bis 22 Uhr</span><span class="art" data-edit="t14" data-edit-label="Text — الاثنين–السبت حتى ٢٢:٠٠">الاثنين–السبت حتى ٢٢:٠٠</span></span>
+  </div>
+ </div>
+</header>
+
+<section class="story wrap">
+ <div class="rev">
+  <span class="k"><span class="de" data-edit="t15" data-edit-label="Text — Der Salon">Der Salon</span><span class="art" data-edit="t16" data-edit-label="Text — الصالون">الصالون</span></span>
+  <h2><span class="de">Das goldene Schild<br>der Sonnenallee.</span><span class="art">اللافتة الذهبية<br>على شارع العرب.</span></h2>
+  <p><span class="de" data-edit="story1">Abends leuchtet der Name zweimal über dem schwarzen Schaufenster — einmal in lateinischen, einmal in arabischen Buchstaben. Drinnen: Marmor, warmes Licht, eine Reihe Ledersessel und Klingen, die den ganzen Tag zu tun haben. Azzam ist kein Durchlauf-Barbier, sondern ein Salon, in dem man sich Zeit für den Kopf nimmt, der ihn trägt.</span><span class="art" data-edit="story1ar">في المساء يُضيء الاسم مرّتين فوق الواجهة السوداء — مرّةً بالحروف اللاتينية ومرّةً بالعربية. في الداخل: رخامٌ وضوءٌ دافئ وصفُّ كراسٍ جلدية وشفراتٌ لا تهدأ طوال اليوم. عزام ليس حلاقاً عابراً، بل صالونٌ يأخذ وقته مع كلّ رأسٍ يجلس على كرسيّه.</span></p>
+  <p><span class="de" data-edit="story2">Vom klassischen Schnitt über Bartkontur bis Hydrafacial, Laser und Hijama — was am Schaufenster steht, wird drinnen ernst genommen. Und weil Neukölln spät lebt, steht die Tür bis 22 Uhr offen: nach der Arbeit, nach dem Essen, vor dem Wochenende.</span><span class="art" data-edit="story2ar">من القصّة الكلاسيكية إلى تحديد اللحية، ومن الهيدرافيشل إلى الليزر والحجامة — ما هو مكتوبٌ على الواجهة يُؤخذ في الداخل على محمل الجدّ. ولأنّ نويكولن تسهر، يبقى الباب مفتوحاً حتى العاشرة: بعد الدوام، بعد العشاء، وقبل نهاية الأسبوع.</span></p>
+ </div>
+ <div class="ph rev"><img src="img/02.jpg" alt="Barbier bei der Arbeit im Azzam Salon"></div>
+</section>
+
+<section class="serv wrap">
+ <span class="k"><span class="de" data-edit="t17" data-edit-label="Text — Leistungen">Leistungen</span><span class="art" data-edit="t18" data-edit-label="Text — خدماتنا">خدماتنا</span></span>
+ <h2 class="rev"><span class="de" data-edit="t19" data-edit-label="Text — Was am Stuhl passiert">Was am Stuhl passiert</span><span class="art" data-edit="t20" data-edit-label="Text — ماذا يحدث على الكرسي">ماذا يحدث على الكرسي</span></h2>
+ <p class="lead"><span class="de" data-edit="t21" data-edit-label="Text — Alles, was auf der schwarzen Fassade s…">Alles, was auf der schwarzen Fassade steht — von der Schere bis zur Schröpftherapie.</span><span class="art" data-edit="t22" data-edit-label="Text — كلّ ما هو مكتوبٌ على الواجهة السوداء —…">كلّ ما هو مكتوبٌ على الواجهة السوداء — من المقصّ إلى الحجامة.</span></p>
+ <div class="sgrid">
+  <div class="scard rev"><div class="bt" aria-hidden="true"></div><h3><span class="de" data-edit="t23" data-edit-label="Text — Haarschnitt">Haarschnitt</span><span class="art" data-edit="t24" data-edit-label="Text — قصّة شعر">قصّة شعر</span></h3><p><span class="de" data-edit="t25" data-edit-label="Text — Klassisch, modern oder Fade — sauber a…">Klassisch, modern oder Fade — sauber ausgeführt, mit Blick für Details und einer Kontur, die hält.</span><span class="art" data-edit="t26" data-edit-label="Text — كلاسيكية أو عصرية أو متدرّجة — تنفيذٌ …">كلاسيكية أو عصرية أو متدرّجة — تنفيذٌ نظيف، وعينٌ على التفاصيل، وحدودٌ تبقى مرتّبة.</span></p></div>
+  <div class="scard rev"><div class="bt" aria-hidden="true"></div><h3><span class="de" data-edit="t27" data-edit-label="Text — Bartrasur & Kontur">Bartrasur & Kontur</span><span class="art" data-edit="t28" data-edit-label="Text — حلاقة اللحية وتحديدها">حلاقة اللحية وتحديدها</span></h3><p><span class="de" data-edit="t29" data-edit-label="Text — Rasur, Bartkontur und Pflege — die Lin…">Rasur, Bartkontur und Pflege — die Linie, an der man einen guten Barbier erkennt.</span><span class="art" data-edit="t30" data-edit-label="Text — حلاقةٌ وتحديدٌ وعناية — الخطُّ الذي يُ…">حلاقةٌ وتحديدٌ وعناية — الخطُّ الذي يُعرَف منه الحلاق الجيّد.</span></p></div>
+  <div class="scard rev"><div class="bt" aria-hidden="true"></div><h3><span class="de" data-edit="t31" data-edit-label="Text — Haar & Bart färben">Haar & Bart färben</span><span class="art" data-edit="t32" data-edit-label="Text — صبغ الشعر واللحية">صبغ الشعر واللحية</span></h3><p><span class="de" data-edit="t33" data-edit-label="Text — Farbe und Tönung für Kopf und Bart — n…">Farbe und Tönung für Kopf und Bart — natürlich abgestimmt statt einfach dunkel.</span><span class="art" data-edit="t34" data-edit-label="Text — صبغٌ وتدريجُ لونٍ للرأس واللحية — بدرج…">صبغٌ وتدريجُ لونٍ للرأس واللحية — بدرجةٍ طبيعية مدروسة لا سواداً صرفاً.</span></p></div>
+  <div class="scard rev"><div class="bt" aria-hidden="true"></div><h3><span class="de" data-edit="t35" data-edit-label="Text — Hydrafacial">Hydrafacial</span><span class="art" data-edit="t36" data-edit-label="Text — هيدرافيشل وتنظيف بشرة">هيدرافيشل وتنظيف بشرة</span></h3><p><span class="de" data-edit="t37" data-edit-label="Text — Tiefenreinigung fürs Gesicht — frische…">Tiefenreinigung fürs Gesicht — frische Haut nach langen Berliner Wochen.</span><span class="art" data-edit="t38" data-edit-label="Text — تنظيفٌ عميق للوجه — بشرةٌ منتعشة بعد أ…">تنظيفٌ عميق للوجه — بشرةٌ منتعشة بعد أسابيع برلين الطويلة.</span></p></div>
+  <div class="scard rev"><div class="bt" aria-hidden="true"></div><h3><span class="de" data-edit="t39" data-edit-label="Text — Laser-Haarentfernung">Laser-Haarentfernung</span><span class="art" data-edit="t40" data-edit-label="Text — إزالة الشعر بالليزر">إزالة الشعر بالليزر</span></h3><p><span class="de" data-edit="t41" data-edit-label="Text — Dauerhafte Haarentfernung mit Laser — …">Dauerhafte Haarentfernung mit Laser — diskret und professionell im Salon.</span><span class="art" data-edit="t42" data-edit-label="Text — إزالةٌ دائمة للشعر بالليزر — بخصوصيةٍ …">إزالةٌ دائمة للشعر بالليزر — بخصوصيةٍ واحترافٍ داخل الصالون.</span></p></div>
+  <div class="scard rev"><div class="bt" aria-hidden="true"></div><h3><span class="de" data-edit="t43" data-edit-label="Text — Hijama (Schröpfen)">Hijama (Schröpfen)</span><span class="art" data-edit="t44" data-edit-label="Text — حجامة">حجامة</span></h3><p><span class="de" data-edit="t45" data-edit-label="Text — Traditionelles Schröpfen nach Termin —…">Traditionelles Schröpfen nach Termin — eine Praxis, die viele Stammgäste genau hier suchen.</span><span class="art" data-edit="t46" data-edit-label="Text — الحجامة التقليدية بموعدٍ مسبق — عادةٌ …">الحجامة التقليدية بموعدٍ مسبق — عادةٌ يقصدنا كثيرون من أجلها.</span></p></div>
+ </div>
+ <p class="pnote rev"><span class="de" data-edit="pricenote">Auch am Haus: Behandlung bei kreisrundem Haarausfall (علاج الثعلبة). <b data-edit="t47" data-edit-label="Text — Preise im Salon — fragen Sie am Stuhl.">Preise im Salon — fragen Sie am Stuhl.</b></span><span class="art" data-edit="pricenote-ar">وعندنا أيضاً: علاج الثعلبة كما هو معلَنٌ على الواجهة. <b data-edit="t48" data-edit-label="Text — الأسعار في الصالون — اسألوا عند الكرسي…">الأسعار في الصالون — اسألوا عند الكرسي.</b></span></p>
+</section>
+
+<section class="late rev">
+ <div class="in">
+  <div class="big"><span class="num" data-edit="t49" data-edit-label="Text — 22:00">22:00</span><small><span class="de" data-edit="t50" data-edit-label="Text — Mo–Sa geöffnet bis">Mo–Sa geöffnet bis</span><span class="art" data-edit="t51" data-edit-label="Text — مفتوح حتى — الاثنين إلى السبت">مفتوح حتى — الاثنين إلى السبت</span></small></div>
+  <div>
+   <h2><span class="de" data-edit="t52" data-edit-label="Text — Licht im Laden, wenn andere zumachen.">Licht im Laden, wenn andere zumachen.</span><span class="art" data-edit="t53" data-edit-label="Text — الضوء مشتعلٌ عندنا حين يُطفئه الآخرون.">الضوء مشتعلٌ عندنا حين يُطفئه الآخرون.</span></h2>
+   <p><span class="de" data-edit="t54" data-edit-label="Text — Der halbe Kiez kommt nach Feierabend: …">Der halbe Kiez kommt nach Feierabend: ab 9:30 Uhr morgens bis 22 Uhr abends stehen die Stühle bereit — ohne Hektik, auch spät noch mit voller Sorgfalt.</span><span class="art" data-edit="t55" data-edit-label="Text — نصفُ الحيّ يأتي بعد الدوام: من التاسعة…">نصفُ الحيّ يأتي بعد الدوام: من التاسعة والنصف صباحاً حتى العاشرة ليلاً الكراسي جاهزة — بلا استعجال، وبعنايةٍ كاملة حتى في ساعات المساء الأخيرة.</span></p>
+   <div class="facts">
+    <span><i></i><span class="de" data-edit="t56" data-edit-label="Text — 6 Tage die Woche">6 Tage die Woche</span><span class="art" data-edit="t57" data-edit-label="Text — ستة أيام في الأسبوع">ستة أيام في الأسبوع</span></span>
+    <span><i></i><span class="de" data-edit="t58" data-edit-label="Text — mitten auf der Sonnenallee">mitten auf der Sonnenallee</span><span class="art" data-edit="t59" data-edit-label="Text — في قلب زونن‌ألي">في قلب زونن‌ألي</span></span>
+    <span><i></i><span class="de" data-edit="t60" data-edit-label="Text — WhatsApp für Termine">WhatsApp für Termine</span><span class="art" data-edit="t61" data-edit-label="Text — واتساب للمواعيد">واتساب للمواعيد</span></span>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="gal wrap">
+ <span class="k"><span class="de" data-edit="t62" data-edit-label="Text — Einblicke">Einblicke</span><span class="art" data-edit="t63" data-edit-label="Text — من الداخل">من الداخل</span></span>
+ <h2 class="rev"><span class="de" data-edit="t64" data-edit-label="Text — Marmor, Gold & Klingen">Marmor, Gold & Klingen</span><span class="art" data-edit="t65" data-edit-label="Text — رخامٌ وذهبٌ وشفرات">رخامٌ وذهبٌ وشفرات</span></h2>
+ <div class="ggrid">
+  <figure class="rev"><img src="img/04.jpg" alt="Salon-Interieur mit Ledersesseln"><figcaption><span class="de" data-edit="t66" data-edit-label="Text — Der Salon">Der Salon</span><span class="art" data-edit="t67" data-edit-label="Text — الصالون">الصالون</span></figcaption></figure>
+  <figure class="rev"><img src="img/05.jpg" alt="Frischer Fade-Schnitt mit Bart"><figcaption><span class="de" data-edit="t68" data-edit-label="Text — Der Schnitt">Der Schnitt</span><span class="art" data-edit="t69" data-edit-label="Text — القصّة">القصّة</span></figcaption></figure>
+  <figure class="rev"><img src="img/03.jpg" alt="Am Spiegel im Azzam Salon"><figcaption><span class="de" data-edit="t70" data-edit-label="Text — Am Spiegel">Am Spiegel</span><span class="art" data-edit="t71" data-edit-label="Text — أمام المرآة">أمام المرآة</span></figcaption></figure>
+ </div>
+</section>
+
+<section class="revs wrap">
+ <span class="k"><span class="de" data-edit="t72" data-edit-label="Text — Stimmen">Stimmen</span><span class="art" data-edit="t73" data-edit-label="Text — قالوا عنّا">قالوا عنّا</span></span>
+ <h2 class="rev" style="font-size:clamp(30px,4.2vw,46px);margin:12px 0 30px"><span class="de" data-edit="t74" data-edit-label="Text — Aus den Google-Bewertungen">Aus den Google-Bewertungen</span><span class="art" data-edit="t75" data-edit-label="Text — من تقييمات غوغل">من تقييمات غوغل</span></h2>
+ <div class="box">
+  <div class="quote rev">
+   <p data-edit="t76" data-edit-label="Text — 'I visited Azzam Salon today and I'm a…">"I visited Azzam Salon today and I'm absolutely thrilled! The team is incredibly friendly, the atmosphere is pleasant, and I immediately felt welcome. My haircut was done exactly as I wanted — clean, precise, and with great attention to detail."</p>
+   <div class="who" data-edit="t77" data-edit-label="Text — Ahmad El-Ghazi · Google">Ahmad El-Ghazi · Google</div>
+  </div>
+  <div class="rate rev">
+   <div class="st">★★★★★</div>
+   <div class="n" data-edit="rating2">4,8</div>
+   <p><span data-edit="revcount2">53</span> <span class="de" data-edit="t78" data-edit-label="Text — Google-Bewertungen">Google-Bewertungen</span><span class="art" data-edit="t79" data-edit-label="Text — تقييماً على غوغل">تقييماً على غوغل</span></p>
+  </div>
+ </div>
+</section>
+
+<section class="visit wrap">
+ <div class="rev">
+  <span class="k"><span class="de" data-edit="t80" data-edit-label="Text — Öffnungszeiten">Öffnungszeiten</span><span class="art" data-edit="t81" data-edit-label="Text — أوقات الدوام">أوقات الدوام</span></span>
+  <h2><span class="de" data-edit="t82" data-edit-label="Text — Wann Sie uns finden">Wann Sie uns finden</span><span class="art" data-edit="t83" data-edit-label="Text — متى تجدوننا">متى تجدوننا</span></h2>
+  <table class="hours">
+   <tr><td><span class="de" data-edit="t84" data-edit-label="Text — Montag">Montag</span><span class="art" data-edit="t85" data-edit-label="Text — الاثنين">الاثنين</span></td><td data-edit="h-mo"><span class="num" data-edit="t86" data-edit-label="Text — 9:30–22:00">9:30–22:00</span></td></tr>
+   <tr><td><span class="de" data-edit="t87" data-edit-label="Text — Dienstag">Dienstag</span><span class="art" data-edit="t88" data-edit-label="Text — الثلاثاء">الثلاثاء</span></td><td data-edit="h-di"><span class="num" data-edit="t89" data-edit-label="Text — 9:30–22:00">9:30–22:00</span></td></tr>
+   <tr><td><span class="de" data-edit="t90" data-edit-label="Text — Mittwoch">Mittwoch</span><span class="art" data-edit="t91" data-edit-label="Text — الأربعاء">الأربعاء</span></td><td data-edit="h-mi"><span class="num" data-edit="t92" data-edit-label="Text — 9:30–22:00">9:30–22:00</span></td></tr>
+   <tr><td><span class="de" data-edit="t93" data-edit-label="Text — Donnerstag">Donnerstag</span><span class="art" data-edit="t94" data-edit-label="Text — الخميس">الخميس</span></td><td data-edit="h-do"><span class="num" data-edit="t95" data-edit-label="Text — 9:30–22:00">9:30–22:00</span></td></tr>
+   <tr><td><span class="de" data-edit="t96" data-edit-label="Text — Freitag">Freitag</span><span class="art" data-edit="t97" data-edit-label="Text — الجمعة">الجمعة</span></td><td data-edit="h-fr"><span class="num" data-edit="t98" data-edit-label="Text — 9:30–22:00">9:30–22:00</span></td></tr>
+   <tr><td><span class="de" data-edit="t99" data-edit-label="Text — Samstag">Samstag</span><span class="art" data-edit="t100" data-edit-label="Text — السبت">السبت</span></td><td data-edit="h-sa"><span class="num" data-edit="t101" data-edit-label="Text — 9:30–22:00">9:30–22:00</span></td></tr>
+   <tr><td><span class="de" data-edit="t102" data-edit-label="Text — Sonntag">Sonntag</span><span class="art" data-edit="t103" data-edit-label="Text — الأحد">الأحد</span></td><td data-edit="h-so"><span class="de" data-edit="t104" data-edit-label="Text — geschlossen">geschlossen</span><span class="art" data-edit="t105" data-edit-label="Text — مغلق">مغلق</span></td></tr>
+  </table>
+ </div>
+ <div class="vinfo rev">
+  <span class="k"><span class="de" data-edit="t106" data-edit-label="Text — Besuch & Termin">Besuch & Termin</span><span class="art" data-edit="t107" data-edit-label="Text — الزيارة والموعد">الزيارة والموعد</span></span>
+  <h2><span class="de" data-edit="t108" data-edit-label="Text — Sonnenallee 52">Sonnenallee 52</span><span class="art" data-edit="t109" data-edit-label="Text — زونن‌ألي ٥٢">زونن‌ألي ٥٢</span></h2>
+  <p class="adr" data-edit="addr2">Sonnenallee 52, 12045 Berlin</p>
+  <p><span class="de" data-edit="t110" data-edit-label="Text — Einfach vorbeikommen — oder den Termin…">Einfach vorbeikommen — oder den Termin kurz per WhatsApp sichern, dann wartet der Stuhl schon.</span><span class="art" data-edit="t111" data-edit-label="Text — تفضّلوا مباشرةً — أو احجزوا موعدكم برس…">تفضّلوا مباشرةً — أو احجزوا موعدكم برسالة واتساب قصيرة، فيكون الكرسي بانتظاركم.</span></p>
+  <a class="btn" href="https://wa.me/491791041692?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%B5%D8%A7%D9%84%D9%88%D9%86%20%D8%B9%D8%B2%D8%A7%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%D9%91%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9.3 8.4 8.6 8.6 0 0 1-3.7-1L3 20l1.2-4.8a8.4 8.4 0 1 1 16.8-3.7z"/></svg><span class="de" data-edit="t112" data-edit-label="Text — WhatsApp schreiben">WhatsApp schreiben</span><span class="art" data-edit="t113" data-edit-label="Text — راسلونا واتساب">راسلونا واتساب</span></a>
+  <a class="btn o" href="tel:+491791041692"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13 1 .37 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.33 1.8.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg><span class="num" data-edit="t114" data-edit-label="Text — +49 179 1041692">+49 179 1041692</span></a>
+  <a class="btn o" href="https://www.google.com/maps?cid=14206815162331556970" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span class="de" data-edit="t115" data-edit-label="Text — Route auf Google Maps">Route auf Google Maps</span><span class="art" data-edit="t116" data-edit-label="Text — الطريق على خرائط غوغل">الطريق على خرائط غوغل</span></a>
+ </div>
+</section>
+
+<footer><span data-edit="footer">Azzam Salon · Sonnenallee 52, 12045 Berlin · </span><span class="num" data-edit="t117" data-edit-label="Text — +49 179 1041692">+49 179 1041692</span></footer>
+
+<div class="bar">
+ <svg class="rope" viewBox="0 0 520 22" preserveAspectRatio="none" aria-hidden="true"><path d="M4 2 Q 260 30 516 2"/></svg>
+ <a class="wa" href="https://wa.me/491791041692?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%B5%D8%A7%D9%84%D9%88%D9%86%20%D8%B9%D8%B2%D8%A7%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%D9%91%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9.3 8.4 8.6 8.6 0 0 1-3.7-1L3 20l1.2-4.8a8.4 8.4 0 1 1 16.8-3.7z"/></svg><span class="de" data-edit="t118" data-edit-label="Text — Termin">Termin</span><span class="art" data-edit="t119" data-edit-label="Text — موعد">موعد</span></a>
+ <a href="tel:+491791041692"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13 1 .37 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.33 1.8.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg><span class="de" data-edit="t120" data-edit-label="Text — Anrufen">Anrufen</span><span class="art" data-edit="t121" data-edit-label="Text — اتصال">اتصال</span></a>
+ <a href="https://www.google.com/maps?cid=14206815162331556970" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span class="de" data-edit="t122" data-edit-label="Text — Karte">Karte</span><span class="art" data-edit="t123" data-edit-label="Text — الخريطة">الخريطة</span></a>
+</div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+setTimeout(()=>document.querySelectorAll('.rev:not(.on)').forEach(el=>el.classList.add('on')),1100);
+</script>
+</body>
+</html>
