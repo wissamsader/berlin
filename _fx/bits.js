@@ -27,7 +27,7 @@
     '.fxmq span{display:inline-block;padding-inline:.35em;font-weight:800;letter-spacing:.05em;-webkit-text-stroke:1.5px var(--fxmq,#c9a227);color:transparent}',
     '.fxmq span.fill{color:var(--fxmq,#c9a227);-webkit-text-stroke:0}',
     '.fxcursor{position:fixed;left:0;top:0;z-index:998;width:340px;height:340px;margin:-170px 0 0 -170px;pointer-events:none;border-radius:50%;background:radial-gradient(circle,var(--fxglow,rgba(217,169,63,.16)),transparent 65%);opacity:0}',
-    '.fxchar{display:inline-block;will-change:transform}',
+    '.fxchar{display:inline-block}',
     '.fxw{display:inline-block;white-space:nowrap}'
   ].join('');
   var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
@@ -47,7 +47,7 @@
 
   FX.lenis = function () {
     if (!FINE || !window.Lenis) return null;
-    var l = new Lenis({ lerp: 0.1 });
+    var l = new Lenis({ lerp: 0.12 });
     l.on('scroll', ScrollTrigger.update);
     gsap.ticker.add(function (t) { l.raf(t * 1000); });
     gsap.ticker.lagSmoothing(0);
@@ -195,18 +195,23 @@
     var tl = gsap.timeline({ defaults: { ease: 'power3.out' }, delay: opts.delay || 0 });
     if (opts.photo) {
       var ph = document.querySelector(opts.photo);
-      if (ph) tl.fromTo(ph, { scale: 1.12 }, { scale: 1, duration: 1.8, ease: 'power2.out' }, 0);
+      if (ph) tl.fromTo(ph, { scale: 1.12 }, { scale: 1, duration: 1.8, ease: 'power2.out',
+        onComplete: function () { gsap.set(ph, { clearProps: 'transform' }); } }, 0);
     }
     steps.forEach(function (sel, i) {
       var els = q(sel); if (!els.length) return;
-      tl.from(els, { autoAlpha: 0, y: 30, duration: .9, stagger: .08 }, (opts.at || .1) + i * .12);
+      tl.from(els, { autoAlpha: 0, y: 30, duration: .9, stagger: .08,
+        onComplete: function () { gsap.set(els, { clearProps: 'transform,opacity,visibility' }); } }, (opts.at || .1) + i * .12);
     });
     return tl;
   };
-  FX.parallax = function (sel, pct) {
+  FX.parallax = function (sel, pct) {             /* translate-only: never scales (scale = blurry photos) */
     q(sel).forEach(function (el) {
-      gsap.fromTo(el, { yPercent: -pct, scale: 1 + pct / 45 }, {
-        yPercent: pct, ease: 'none',
+      if (getComputedStyle(el).position === 'absolute') {
+        el.style.top = (-pct) + '%'; el.style.bottom = (-pct) + '%';
+      } else return;                               /* in-flow imgs: skip rather than scale */
+      gsap.fromTo(el, { yPercent: -pct * .6 }, {
+        yPercent: pct * .6, ease: 'none',
         scrollTrigger: { trigger: el.closest('header,section') || el, start: 'top top', end: 'bottom top', scrub: true }
       });
     });
@@ -506,7 +511,10 @@
     els.forEach(function (el) { gsap.set(el, { autoAlpha: 0, y: y || 24 }); });
     ScrollTrigger.batch(els, {
       start: 'top 90%', once: true,
-      onEnter: function (b) { gsap.to(b, { autoAlpha: 1, y: 0, duration: .9, ease: 'power2.out', stagger: .09 }); }
+      onEnter: function (b) {
+        gsap.to(b, { autoAlpha: 1, y: 0, duration: .9, ease: 'power2.out', stagger: .09,
+          onComplete: function () { gsap.set(b, { clearProps: 'transform,opacity,visibility' }); } });
+      }
     });
   };
 
