@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Leffet Shawarma — the wrap, till 1 AM</title>
+<link href="https://fonts.googleapis.com/css2?family=Changa:wght@500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-x:clip}
+:root{--org:#FF7A1A;--char:#17130F;--smoke:#241E17;--cream:#FFF3E4}
+body{font-family:'Space Grotesk',sans-serif;background:var(--char);color:var(--cream)}
+h1,h2,h3,.disp{font-family:'Changa',sans-serif}
+/* spiral hero */
+.hero{min-height:96vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:6vh 6vw;gap:4vw;position:relative;overflow:hidden}
+.spiral{position:absolute;right:-24vw;top:50%;transform:translateY(-50%);width:70vw;height:70vw;border-radius:50%;background:repeating-radial-gradient(circle,var(--org) 0 9px,transparent 9px 44px);opacity:.12;animation:spin 60s linear infinite;pointer-events:none}
+@keyframes spin{to{transform:translateY(-50%) rotate(360deg)}}
+.vert{position:absolute;left:2vw;top:50%;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl;font-family:'Changa';font-size:clamp(3rem,7vw,6rem);font-weight:800;color:transparent;-webkit-text-stroke:2px rgba(255,122,26,.4);letter-spacing:.1em;pointer-events:none}
+.hp{position:relative;z-index:2;padding-left:8vw}
+.neon{display:inline-block;color:var(--org);border:3px solid var(--org);border-radius:12px;padding:10px 22px;font-family:'Changa';font-weight:700;letter-spacing:.2em;font-size:.85rem;margin-bottom:26px;box-shadow:0 0 22px rgba(255,122,26,.45),inset 0 0 14px rgba(255,122,26,.2);text-transform:uppercase}
+h1{font-size:clamp(3rem,7.5vw,6rem);line-height:.95;font-weight:800;text-transform:uppercase}
+h1 span{color:var(--org)}
+.tag{margin-top:22px;font-size:1.1rem;line-height:1.8;color:rgba(255,243,228,.85);max-width:46ch}
+.wa-cta{margin-top:32px;display:inline-flex;align-items:center;gap:12px;background:#1FA855;color:#fff;border-radius:14px;padding:16px 28px;font-weight:700;text-decoration:none;font-size:1rem;box-shadow:0 14px 34px rgba(31,168,85,.35)}
+.late{margin-top:18px;font-size:.85rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,243,228,.55)}
+.hi{position:relative;z-index:2;border-radius:24px;overflow:hidden;border:4px solid var(--org);box-shadow:0 0 44px rgba(255,122,26,.35)}
+.hi img{width:100%;height:100%;min-height:440px;object-fit:cover;display:block}
+/* ticker */
+.mq{background:var(--org);color:var(--char);overflow:hidden;padding:13px 0;transform:rotate(-1deg) scale(1.02)}
+.mq .tt{display:flex;width:max-content;animation:mq 28s linear infinite;font-family:'Changa';font-weight:800;font-size:1rem;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* story */
+.story{max-width:1100px;margin:0 auto;padding:110px 5vw;display:grid;grid-template-columns:1fr .85fr;gap:6vw;align-items:center}
+.story h2{font-size:clamp(2rem,4vw,3rem);line-height:1.05;font-weight:800;margin-bottom:24px;text-transform:uppercase}
+.story h2 em{font-style:normal;color:var(--org)}
+.story p{line-height:1.95;font-size:1.04rem;margin-bottom:18px;color:rgba(255,243,228,.82)}
+.story .im img{width:100%;min-height:400px;object-fit:cover;border-radius:20px;border:3px solid rgba(255,122,26,.5)}
+/* highlights */
+.hl{background:var(--smoke);padding:100px 5vw}
+.hl .in2{max-width:1100px;margin:0 auto}
+.hl h2{font-size:clamp(1.8rem,3.6vw,2.7rem);font-weight:800;text-transform:uppercase;margin-bottom:44px}
+.hl h2 span{color:var(--org)}
+.hlg{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px}
+.hc{background:rgba(255,243,228,.045);border:1px solid rgba(255,122,26,.3);border-radius:18px;overflow:hidden}
+.hc img{width:100%;height:220px;object-fit:cover;display:block}
+.hc .bd{padding:22px}
+.hc .no{color:var(--org);font-family:'Changa';font-weight:700;font-size:1rem}
+.hc h3{font-size:1.25rem;font-weight:700;margin:8px 0}
+.hc p{font-size:.94rem;line-height:1.7;color:rgba(255,243,228,.7)}
+/* menu */
+.menu{max-width:900px;margin:0 auto;padding:110px 5vw;text-align:center}
+.menu h2{font-size:clamp(1.9rem,3.8vw,2.8rem);font-weight:800;text-transform:uppercase;margin-bottom:8px}
+.menu .sub{color:var(--org);font-weight:500;margin-bottom:48px}
+.mrow{display:flex;justify-content:space-between;gap:16px;padding:16px 6px;border-bottom:1px solid rgba(255,243,228,.14);font-size:1.08rem;text-align:left}
+.mrow .n{font-weight:700}
+.mrow .a{color:rgba(255,243,228,.5)}
+.mnote{margin-top:40px;border:2px dashed var(--org);border-radius:16px;padding:20px 26px;font-size:.98rem;color:rgba(255,243,228,.85)}
+.mnote b{color:var(--org)}
+/* gallery */
+.gal{padding:0 5vw 110px;max-width:1100px;margin:0 auto}
+.gal h2{font-weight:800;text-transform:uppercase;font-size:1.6rem;margin-bottom:26px}
+.gg{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.gg a{display:block;border-radius:16px;overflow:hidden;border:2px solid rgba(255,122,26,.4)}
+.gg img{width:100%;height:250px;object-fit:cover;display:block}
+/* reviews */
+.revs{background:var(--org);color:var(--char);padding:100px 5vw}
+.revs .in2{max-width:1040px;margin:0 auto}
+.revs h2{font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:800;text-transform:uppercase;margin-bottom:8px}
+.revs .meta{margin-bottom:42px;font-weight:700}
+.rg{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.rc{background:var(--char);color:var(--cream);border-radius:18px;padding:26px}
+.rc .st{color:var(--org);letter-spacing:.18em;font-size:.85rem}
+.rc p{margin:13px 0 15px;line-height:1.8;font-size:.97rem}
+.rc .who{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,243,228,.6);font-weight:700}
+/* visit */
+.visit{max-width:1100px;margin:0 auto;padding:110px 5vw;display:grid;grid-template-columns:1fr 1fr;gap:6vw}
+.visit h2{font-size:clamp(1.9rem,3.8vw,2.8rem);font-weight:800;text-transform:uppercase;margin-bottom:24px}
+.vrow{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid rgba(255,243,228,.15);font-size:.98rem}
+.hrs{font-weight:700;color:var(--org)}
+.btn{display:inline-block;background:var(--org);color:var(--char);padding:17px 36px;border-radius:14px;font-family:'Changa';font-weight:800;letter-spacing:.06em;font-size:1rem;text-decoration:none;margin-top:28px;text-transform:uppercase}
+.btn.wa{background:#1FA855;color:#fff}
+.map{border-radius:20px;overflow:hidden;min-height:340px;background:#222;border:3px solid rgba(255,122,26,.5)}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+footer{text-align:center;padding:34px 5vw 110px;font-size:.82rem;color:rgba(255,243,228,.4)}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+@media(max-width:880px){.hero{grid-template-columns:1fr}.vert{display:none}.hp{padding-left:0}.story,.visit{grid-template-columns:1fr}}
+
+/* neon wrap */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:#17130F;display:flex;justify-content:center;gap:14px;padding:12px 10px calc(12px + env(safe-area-inset-bottom));border-top:1px solid #241E17}
+.bar a{position:relative;text-decoration:none;font-family:'Changa',sans-serif;font-weight:700;font-size:14px;letter-spacing:.06em;color:#FF7A1A;border:2px solid #FF7A1A;border-radius:4px;padding:11px 20px;transform:skewX(-6deg);overflow:hidden}
+.bar a span{display:inline-block;transform:skewX(6deg)}
+.bar a.c{color:#17130F;background:#FF7A1A;animation:lefneon 2.2s ease-in-out infinite}
+@keyframes lefneon{0%,100%{box-shadow:0 0 8px rgba(255,122,26,.7)}50%{box-shadow:0 0 22px rgba(255,122,26,1)}}
+.bar a.w{color:#FFF3E4;border-color:#FFF3E4}
+
+*{-webkit-tap-highlight-color:transparent}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/*igbtn*/.bar a.g,.mbar a.g{display:inline-flex;align-items:center;justify-content:center;padding:10px 12px}.bar a.g svg,.mbar a.g svg{width:17px;height:17px;display:block}
+</style><style>.neon{animation:fxneon 7s ease-in-out infinite}
+@keyframes fxneon{0%,100%{box-shadow:0 0 14px rgba(255,140,0,.25),inset 0 0 8px rgba(255,140,0,.12)}50%{box-shadow:0 0 30px rgba(255,140,0,.5),inset 0 0 14px rgba(255,140,0,.22)}}
+@media (prefers-reduced-motion: reduce){.neon{animation:none}}</style></head><body>
+<section class="hero">
+ <div class="spiral"></div>
+ <div class="vert" data-edit="t1" data-edit-label="Text — LEFFET·SHAWARMA">LEFFET·SHAWARMA</div>
+ <div class="hp">
+  <span class="neon" data-edit="t2" data-edit-label="Text — Open till 1 AM · Hamra · till 1 AM">Open till 1 AM · Hamra · till 1 AM</span>
+  <h1>THE<br><span data-edit="t3" data-edit-label="Text — WRAP.">WRAP.</span></h1>
+  <p class="tag" data-edit="t4" data-edit-label="Text — One perfect wrap, rolled till 1 AM — o…">One perfect wrap, rolled till 1 AM — order it on WhatsApp before you even stand up.</p>
+  <a class="wa-cta" href="https://wa.me/96170111330?text=Hi!%20I%27d%20like%20to%20order%20a%20shawarma%20wrap%20%F0%9F%8C%AF" target="_blank" rel="noopener" data-edit="t5" data-edit-label="Button / link — 🌯 Order on WhatsApp">🌯 Order on WhatsApp</a>
+  <div class="late" data-edit="t6" data-edit-label="Text — ★ 4.7 on Google · 32 reviews">★ 4.7 on Google · 32 reviews</div>
+ </div>
+ <div class="hi"><img src="img/01.jpg" alt="Leffet Shawarma"></div>
+</section>
+<div class="mq"><div class="tt"><span data-edit="t7" data-edit-label="Text — لفّة ✦ CHICKEN ✦ MEAT ✦ FRIES ✦ TOUM ✦…">لفّة ✦ CHICKEN ✦ MEAT ✦ FRIES ✦ TOUM ✦ TILL 1 AM ✦ WHATSAPP ORDERS ✦ لفّة ✦ CHICKEN ✦ MEAT ✦ FRIES ✦ TOUM ✦ TILL 1 AM ✦ WHATSAPP ORDERS ✦ </span></div></div>
+<section class="story">
+ <div class="rv">
+  <h2>لفّة. <em data-edit="t8" data-edit-label="Text — The wrap. That's the menu.">The wrap. That's the menu.</em></h2>
+  <p data-edit="t9" data-edit-label="Text — Leffet does one thing and the name adm…">Leffet does one thing and the name admits it: the wrap. Chicken or meat shawarma rolled tight, toasted, and handed over a counter that glows orange till one in the morning. The shop already runs its orders on WhatsApp — message, pick up, done. Simple food, done right, very late.</p>
+ </div>
+ <div class="im rv"><img src="img/02.jpg" alt="the box" loading="lazy"></div>
+</section>
+<section class="hl">
+ <div class="in2">
+  <h2 class="rv">Three reasons it's <span data-edit="t10" data-edit-label="Text — always busy">always busy</span></h2>
+  <div class="hlg"><div class="hc rv"><img src="img/02.jpg" alt="The meat leffeh" loading="lazy"><div class="bd"><span class="no" data-edit="t11" data-edit-label="Text — ➰ 1">➰ 1</span><h3 data-edit="t12" data-edit-label="Heading — The meat leffeh">The meat leffeh</h3><p data-edit="t13" data-edit-label="Text — Reviewers' verdict: the meat one is 'd…">Reviewers' verdict: the meat one is 'delicious and a must try'.</p></div></div><div class="hc rv"><img src="img/04.jpg" alt="Rolled to order" loading="lazy"><div class="bd"><span class="no" data-edit="t14" data-edit-label="Text — ➰ 2">➰ 2</span><h3 data-edit="t15" data-edit-label="Heading — Rolled to order">Rolled to order</h3><p data-edit="t16" data-edit-label="Text — Nothing sits waiting — the spit is car…">Nothing sits waiting — the spit is carved when you message.</p></div></div><div class="hc rv"><img src="img/03.jpg" alt="Open till 1 AM" loading="lazy"><div class="bd"><span class="no" data-edit="t17" data-edit-label="Text — ➰ 3">➰ 3</span><h3 data-edit="t18" data-edit-label="Heading — Open till 1 AM">Open till 1 AM</h3><p data-edit="t19" data-edit-label="Text — The late-night counter for the Hamra s…">The late-night counter for the Hamra stretch of hungry.</p></div></div></div>
+ </div>
+</section>
+<section class="menu">
+ <h2 class="rv" data-edit="t20" data-edit-label="Title — The short menu">The short menu</h2>
+ <p class="sub rv" data-edit="t21" data-edit-label="Text — Short on purpose · prices on WhatsApp …">Short on purpose · prices on WhatsApp &amp; at the counter</p>
+ <div class="rv">
+  <div class="mrow"><span class="n" data-edit="t22" data-edit-label="Text — Chicken shawarma wrap">Chicken shawarma wrap</span><span class="a" data-edit="t23" data-edit-label="Text — لفّة دجاج">لفّة دجاج</span></div>
+  <div class="mrow"><span class="n" data-edit="t24" data-edit-label="Text — Meat shawarma wrap — the must-try">Meat shawarma wrap — the must-try</span><span class="a" data-edit="t25" data-edit-label="Text — لفّة لحمة">لفّة لحمة</span></div>
+  <div class="mrow"><span class="n" data-edit="t26" data-edit-label="Text — Shawarma box with fries">Shawarma box with fries</span><span class="a" data-edit="t27" data-edit-label="Text — علبة شاورما مع بطاطا">علبة شاورما مع بطاطا</span></div>
+  <div class="mrow"><span class="n" data-edit="t28" data-edit-label="Text — Fries · garlic · pickles">Fries · garlic · pickles</span><span class="a" data-edit="t29" data-edit-label="Text — بطاطا · توم · كبيس">بطاطا · توم · كبيس</span></div>
+  <div class="mrow"><span class="n" data-edit="t30" data-edit-label="Text — Soft drinks">Soft drinks</span><span class="a" data-edit="t31" data-edit-label="Text — مشروبات">مشروبات</span></div>
+ </div>
+ <div class="mnote rv"><b data-edit="t32" data-edit-label="Text — Skip the queue:">Skip the queue:</b> message your order on WhatsApp, it's rolled when you arrive. No-contact delivery too.</div>
+</section>
+<section class="gal">
+ <h2 class="rv" data-edit="t33" data-edit-label="Title — Late-night proof">Late-night proof</h2>
+ <div class="gg rv"><a href="img/03.jpg" target="_blank"><img src="img/03.jpg" alt="" loading="lazy"></a><a href="img/04.jpg" target="_blank"><img src="img/04.jpg" alt="" loading="lazy"></a><a href="img/02.jpg" target="_blank"><img src="img/02.jpg" alt="" loading="lazy"></a></div>
+</section>
+<section class="revs">
+ <div class="in2">
+  <h2 class="rv" data-edit="t34" data-edit-label="Title — Wrap reviews">Wrap reviews</h2>
+  <div class="meta rv" data-edit="t35" data-edit-label="Text — ★ 4.7 · 32 Google reviews">★ 4.7 · 32 Google reviews</div>
+  <div class="rg"><div class="rc rv"><span class="st">★★★★★</span><p data-edit="t36" data-edit-label="Text — The best shawarma in town.">The best shawarma in town.</p><div class="who" data-edit="t37" data-edit-label="Text — Youssef Eslam">Youssef Eslam</div></div><div class="rc rv"><span class="st">★★★★★</span><p data-edit="t38" data-edit-label="Text — The meat one was delicious and a must …">The meat one was delicious and a must try!</p><div class="who" data-edit="t39" data-edit-label="Text — Zeina El Zein">Zeina El Zein</div></div><div class="rc rv"><span class="st">★★★★★</span><p data-edit="t40" data-edit-label="Text — What a lovely service, and a great sha…">What a lovely service, and a great shawarma wrap — the best.</p><div class="who" data-edit="t41" data-edit-label="Text — Jjcuf LB">Jjcuf LB</div></div></div>
+ </div>
+</section>
+<section class="visit">
+ <div class="rv">
+  <h2 data-edit="t42" data-edit-label="Title — Find the glow">Find the glow</h2>
+  <div class="vrow"><b data-edit="t43" data-edit-label="Text — Address">Address</b><span data-edit="t44" data-edit-label="Text — Hamra, Beirut">Hamra, Beirut</span></div>
+  <div class="vrow"><b data-edit="t45" data-edit-label="Text — Phone / WhatsApp">Phone / WhatsApp</b><a href="tel:+96170111330" style="color:var(--org);font-weight:700" data-edit="t46" data-edit-label="Button / link — +961 70 111 330">+961 70 111 330</a></div>
+  <div class="vrow"><b data-edit="t47" data-edit-label="Text — Every day">Every day</b><span class="hrs" data-edit="t48" data-edit-label="Text — 11 AM – 1 AM">11 AM – 1 AM</span></div>
+  <div class="vrow"><b data-edit="t49" data-edit-label="Text — Orders">Orders</b><span data-edit="t50" data-edit-label="Text — WhatsApp · takeout · no-contact delive…">WhatsApp · takeout · no-contact delivery</span></div>
+  <a class="btn wa" href="https://wa.me/96170111330" target="_blank" rel="noopener" data-edit="t51" data-edit-label="Button / link — Message on WhatsApp">Message on WhatsApp</a>
+ </div>
+ <div class="map rv"><iframe src="https://www.google.com/maps?cid=12975842237661845777&output=embed" loading="lazy" title="Map"></iframe></div>
+</section>
+<footer>LEFFET SHAWARMA · لفّة شاورما · Hamra</footer>
+<div class="bar"><a class="w" href="https://wa.me/96170111330" target="_blank" rel="noopener" data-edit="t52" data-edit-label="Button / link — WhatsApp">WhatsApp</a><a class="c" href="tel:+96170111330"><span data-edit="t53" data-edit-label="Text — ☎ CALL">☎ CALL</span></a><a class="m" href="https://maps.google.com/?cid=12975842237661845777" target="_blank" rel="noopener"><span data-edit="t54" data-edit-label="Text — ➤ MAP">➤ MAP</span></a></div>
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+setTimeout(function(){document.querySelectorAll('.rv:not(.in)').forEach(function(el){el.classList.add('in')})},1100);
+</script>
+</body></html>

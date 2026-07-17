@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>حلويات الوسام — القصاع، دمشق · بالسمن الحيواني</title>
+<meta name="description" content="حلويات الوسام في القصاع — كنافة نابلسية ومدلوقة وحلاوة بالجبن، كل المنتجات بالسمن الحيواني.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&family=Almarai:wght@400;700&family=Marcellus&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{overflow-x:clip}
+:root{--cream:#f7f1e3;--cream2:#efe5cd;--pist:#6e8c4a;--pist2:#3f5429;--brass:#b08d3e;--brass2:#8a6a25;--ink:#2c2a20;--mut:#6f6a58;--line:#dcd2b6}
+body{background:var(--cream);color:var(--ink);font:16px/1.85 'Almarai',sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 5vw}
+.disp{font-family:'Cairo',sans-serif;font-weight:900}
+.lat{font-family:'Marcellus',serif}
+.k{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass2);font-weight:700}
+.rev{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rev.on{opacity:1;transform:none}
+html.en .ar{display:none!important}
+html:not(.en) .tr{display:none!important}
+.tr{direction:ltr;unicode-bidi:isolate}
+/* hero — pistachio platter full-bleed + brass medallion */
+header{position:relative;min-height:96svh;display:flex;align-items:flex-end}
+header .bg{position:absolute;inset:0;background:url('img/07.jpg') center 55%/cover no-repeat}
+header .bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(44,42,32,.30),rgba(38,44,26,.55) 55%,rgba(38,44,26,.9))}
+.medal{position:absolute;top:calc(26px + env(safe-area-inset-top));right:5vw;width:118px;height:118px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;background:radial-gradient(circle at 34% 30%,#d8b96b,var(--brass) 55%,var(--brass2));color:#fff;box-shadow:0 12px 30px rgba(0,0,0,.35),inset 0 0 0 4px rgba(255,255,255,.28),inset 0 0 0 9px rgba(90,66,18,.45);animation:spinin 1.1s cubic-bezier(.2,.8,.3,1.1) both .2s;z-index:3;text-align:center}
+.medal b{font-family:'Cairo',sans-serif;font-weight:900;font-size:26px;line-height:1.1;text-shadow:0 1px 2px rgba(90,66,18,.6)}
+.medal span{font-family:'Marcellus',serif;font-size:8.5px;letter-spacing:.22em}
+@keyframes spinin{from{transform:rotate(-140deg) scale(.2);opacity:0}to{transform:rotate(0) scale(1);opacity:1}}
+.hero-in{position:relative;padding:0 5vw 70px;width:100%;max-width:1120px;margin:0 auto;color:#f6f0dd}
+.since{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--brass);color:#e8cf90;border-radius:30px;padding:8px 18px;font-size:12.5px;letter-spacing:.12em;font-weight:700;margin-bottom:20px;background:rgba(38,44,26,.55)}
+.since i{width:8px;height:8px;border-radius:50%;background:var(--brass);display:inline-block}
+h1{font-family:'Cairo',sans-serif;font-size:clamp(46px,8.5vw,92px);line-height:1.15;font-weight:900}
+.hero-sub{margin-top:10px;font-size:clamp(15px,2vw,19.5px);color:#ded5b8;max-width:58ch}
+.hero-meta{margin-top:22px;display:flex;gap:22px;flex-wrap:wrap;font-size:13.5px;color:#bdb392}
+.hero-meta b{color:#f6f0dd}
+/* story */
+.story{display:grid;grid-template-columns:1.05fr .95fr;gap:6vw;align-items:center;padding:96px 0 70px}
+.story img{border-radius:12px;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--line);box-shadow:0 22px 44px -22px rgba(44,42,32,.4)}
+.story h2{font-size:clamp(28px,4.3vw,44px);line-height:1.5;margin:12px 0 18px}
+.story p{color:var(--mut);margin-bottom:14px}
+.ghee{display:inline-flex;align-items:center;gap:10px;margin-top:6px;background:linear-gradient(120deg,#d8b96b,var(--brass));color:#3a2c08;font-weight:700;border-radius:8px;padding:11px 18px;font-size:14px;box-shadow:0 10px 24px -12px rgba(138,106,37,.7)}
+/* highlights */
+.high{padding:30px 0 10px}
+.high h2{font-size:clamp(26px,3.8vw,40px);margin:10px 0 30px}
+.hgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.hcard{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 16px 34px -22px rgba(44,42,32,.35)}
+.hcard img{height:220px;width:100%;object-fit:cover}
+.hcard .hb{padding:18px 20px 24px}
+.hcard h3{font-family:'Cairo',sans-serif;font-weight:900;font-size:20px;margin-bottom:6px;color:var(--pist2)}
+.hcard p{font-size:13.8px;color:var(--mut)}
+/* specialty board — the brass-tray menu */
+.menu{margin:90px 0 70px;background:var(--pist2);border-radius:18px;padding:clamp(26px,5vw,60px);position:relative;color:#eef0dc;box-shadow:inset 0 0 80px rgba(0,0,0,.35)}
+.menu::before{content:'';position:absolute;inset:12px;border:2px solid var(--brass);border-radius:12px;pointer-events:none;opacity:.7}
+.menu h2{font-family:'Cairo',sans-serif;font-weight:900;font-size:clamp(30px,4.6vw,48px);text-align:center;margin-bottom:8px}
+.menu .note{text-align:center;color:#c9cfa4;font-size:13.5px;margin-bottom:8px}
+.menu .gheebar{display:block;width:max-content;max-width:100%;margin:18px auto 34px;background:linear-gradient(120deg,#d8b96b,var(--brass));color:#3a2c08;font-weight:700;border-radius:999px;padding:11px 24px;font-size:14.5px;text-align:center}
+.mlist{max-width:780px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:0 46px}
+.mi{display:flex;align-items:baseline;gap:12px;margin-bottom:13px;font-size:15.5px;border-bottom:1px dashed rgba(238,240,220,.25);padding-bottom:10px}
+.mi::before{content:'◉';color:var(--brass);font-size:10px}
+.mfoot{text-align:center;margin-top:28px;color:#c9cfa4;font-size:13.5px}
+/* gallery */
+.gal{padding:20px 0 60px}
+.gal h2{font-size:clamp(26px,3.8vw,40px);margin:10px 0 26px}
+.ggrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ggrid img{width:100%;height:240px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}
+/* reviews */
+.revs{padding:40px 0 70px}
+.revs h2{font-size:clamp(26px,3.8vw,40px);margin-bottom:30px}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;box-shadow:0 16px 34px -24px rgba(44,42,32,.35)}
+.stars-row{color:var(--brass);letter-spacing:2px;font-size:14px}
+.rcard p{font-size:14.5px;color:var(--mut);margin:12px 0 14px;font-style:italic}
+.rcard .who{font-size:13px;color:var(--ink);font-weight:700}
+.gbadge{margin-top:26px;text-align:center;color:var(--mut);font-size:14px}
+.gbadge b{color:var(--ink)}
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:6vw;padding:20px 0 130px;align-items:start}
+.visit h2{font-size:clamp(26px,3.8vw,40px);margin:8px 0 20px}
+.hours{width:100%;border-collapse:collapse;font-size:14.5px}
+.hours td{padding:10px 0;border-bottom:1px dashed var(--line);color:var(--mut)}
+.hours td:last-child{text-align:left;color:var(--ink);font-weight:700}
+.vinfo p{margin-bottom:14px;color:var(--mut)}
+.vinfo .adr{font-size:20px;font-family:'Cairo',sans-serif;font-weight:900;color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--pist2);color:#eef0dc;font-weight:700;border-radius:999px;padding:14px 26px;text-decoration:none;margin:6px 0 0 10px;font-size:14.5px}
+.btn.o{background:transparent;color:var(--ink);border:1.5px solid var(--brass)}
+.btn svg{width:16px;height:16px}
+footer{padding:40px 5vw 150px;text-align:center;color:#8d8570;font-size:12.5px;border-top:1px solid var(--line)}
+@media(max-width:860px){
+ .story{grid-template-columns:1fr;gap:26px;padding-top:60px}
+ .hgrid,.rgrid{grid-template-columns:1fr}
+ .mlist{grid-template-columns:1fr}
+ .ggrid{grid-template-columns:1fr}
+ .ggrid img{height:56vw}
+ .visit{grid-template-columns:1fr}
+ .medal{width:92px;height:92px}
+ .medal b{font-size:20px}
+ .wrap{padding-left:5vw!important;padding-right:5vw!important}
+}
+/* brass tray bar — coin buttons on a tray */
+.bar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:flex;align-items:center;gap:14px;padding:12px 22px 14px;background:linear-gradient(180deg,#4a4234,#332d22);border-radius:60px/34px;border:2.5px solid var(--brass);box-shadow:0 18px 44px -14px rgba(0,0,0,.55),inset 0 3px 10px rgba(216,185,107,.25),inset 0 -6px 14px rgba(0,0,0,.5);animation:trayup .8s cubic-bezier(.2,.9,.3,1.12) both .3s}
+@keyframes trayup{from{transform:translateX(-50%) translateY(110px) rotate(2deg)}to{transform:translateX(-50%) translateY(0) rotate(0)}}
+.bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;width:64px;height:64px;border-radius:50%;text-decoration:none;font-family:'Cairo',sans-serif;font-weight:900;font-size:11.5px;line-height:1.25;background:radial-gradient(circle at 34% 28%,#d8b96b,var(--brass) 58%,var(--brass2));color:#3a2c08;box-shadow:0 6px 14px rgba(0,0,0,.45),inset 0 0 0 2px rgba(255,255,255,.3),inset 0 0 0 5px rgba(90,66,18,.35);transition:transform .25s ease}
+.bar a:hover{transform:translateY(-4px) rotate(-3deg)}
+.bar a.tel{width:74px;height:74px;font-size:12.5px;background:radial-gradient(circle at 34% 28%,#e5cd8b,#c9a24b 58%,var(--brass2))}
+.bar a.fb svg{width:19px;height:19px;display:block}
+.bar a i{font-style:normal;font-size:15px}
+/* toggle chip — small coin */
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));left:12px;z-index:80;cursor:pointer;border:none;font-weight:900;font-size:11px;letter-spacing:.1em;width:44px;height:44px;border-radius:50%;line-height:1;background:radial-gradient(circle at 34% 28%,#d8b96b,var(--brass) 58%,var(--brass2));color:#3a2c08;font-family:'Cairo',sans-serif;box-shadow:0 6px 14px rgba(0,0,0,.3),inset 0 0 0 2px rgba(255,255,255,.3)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+<style>.medal{overflow:hidden}
+.medal::after{content:'';position:absolute;top:-20%;left:-70%;width:42%;height:140%;
+ background:linear-gradient(105deg,transparent,rgba(255,250,240,.5),transparent);transform:skewX(-18deg);
+ animation:fxglint 14s ease-in-out infinite}
+@keyframes fxglint{0%,86%{left:-70%}97%,100%{left:140%}}
+@media (prefers-reduced-motion: reduce){.medal::after{animation:none}}</style></head>
+<body>
+
+<button class="lgx" onclick="document.documentElement.classList.toggle('en')" aria-label="English / العربية"><span class="ar" data-edit="t1" data-edit-label="Text — EN">EN</span><span class="tr" data-edit="t2" data-edit-label="Text — ع">ع</span></button>
+
+<header>
+ <div class="bg"></div>
+ <div class="medal" aria-hidden="true"><b data-edit="t3" data-edit-label="Text — الوسام">الوسام</b><span data-edit="t4" data-edit-label="Text — AL WESAM · DAMAS">AL WESAM · DAMAS</span></div>
+ <div class="hero-in">
+  <span class="since"><i></i> <span class="ar" data-edit="t5" data-edit-label="Text — بيت حلويات القصاع — بإدارة أبو علاء وأ…">بيت حلويات القصاع — بإدارة أبو علاء وأولاده</span><span class="tr lat" data-edit="t6" data-edit-label="Text — The Qassaa sweets house — Abu Alaa &am…">The Qassaa sweets house — Abu Alaa &amp; Sons</span></span>
+  <h1 class="disp"><span class="ar" data-edit="t7" data-edit-label="Text — حلويات الوسام">حلويات الوسام</span><span class="tr lat" data-edit="t8" data-edit-label="Text — Al Wesam Sweets">Al Wesam Sweets</span></h1>
+  <p class="hero-sub"><span class="ar" data-edit="t9" data-edit-label="Text — صواني الفستق الحلبي تخرج من المطبخ على…">صواني الفستق الحلبي تخرج من المطبخ على مدار اليوم، وكل صينية منها وسامٌ على صدر هذا الشارع — حلوياتٌ شامية بالسمن الحيواني، لا غير.</span><span class="tr lat"><em data-edit="t10" data-edit-label="Text — Trays of Aleppo pistachio leave the ki…">Trays of Aleppo pistachio leave the kitchen all day long — Damascene sweets made with real animal ghee, and nothing else.</em></span></p>
+  <div class="hero-meta">
+   <span>★ <b data-edit="rating">4.5</b> <span class="ar" data-edit="t11" data-edit-label="Text — على غوغل ·">على غوغل ·</span><span class="tr" data-edit="t12" data-edit-label="Text — on Google ·">on Google ·</span> <span data-edit="revcount">148</span> <span class="ar" data-edit="t13" data-edit-label="Text — تقييم">تقييم</span><span class="tr" data-edit="t14" data-edit-label="Text — reviews">reviews</span></span>
+   <span data-edit="addr">شارع حلب — القصاع، دمشق</span>
+  </div>
+ </div>
+</header>
+
+<section class="story wrap">
+ <div class="rev">
+  <span class="k"><span class="ar" data-edit="t15" data-edit-label="Text — حكايتنا">حكايتنا</span><span class="tr" data-edit="t16" data-edit-label="Text — Our story">Our story</span></span>
+  <h2 class="disp"><span class="ar">مطبخ وحلويات،<br>واسمٌ يليق بالوسام.</span><span class="tr lat">A kitchen and a sweets house,<br>worthy of its medal.</span></h2>
+  <p><span class="ar" data-edit="story1">على شارع حلب في القصاع، تحت اللافتة الذهبية وختم «أبو علاء وأولاده»، يعمل مطبخ الوسام كما تعمل بيوت الحلو الشامية العريقة: كنافة تُمَدّ على الصاج، مدلوقة تُدلَق على الرخام، وحلاوة جبنٍ تُرَقّ حتى الشفافية. مئة وثمانية وأربعون تقييماً على غوغل تشهد للجودة قبل أي كلام منا.</span><span class="tr" data-edit="story1en"><em data-edit="t17" data-edit-label="Text — On Halab Avenue in Qassaa, under the g…">On Halab Avenue in Qassaa, under the golden sign and the "Abu Alaa &amp; Sons" seal, Al Wesam's kitchen works the way the old Damascene sweets houses always have: kunafa stretched on the griddle, madlouqa poured over marble, halawet el-jibn rolled until translucent. 148 Google reviews vouch for the quality before we say a word.</em></span></p>
+  <p><span class="ar" data-edit="story2">القاعدة عندنا واحدة ومكتوبة على لوحة المحل: كل منتجاتنا مصنوعة بالسمن الحيواني. لا بدائل ولا اختصارات — فالطعم الذي تعرفه من ضيافات أهل الشام يبدأ من هنا، من السمن العربي والفستق الحلبي والقشطة الطازجة.</span><span class="tr" data-edit="story2en"><em data-edit="t18" data-edit-label="Text — Our one rule is written on the shop's …">Our one rule is written on the shop's own board: everything we make is made with real animal ghee. No substitutes, no shortcuts — the taste you know from Damascene hospitality starts here, with real ghee, Aleppo pistachio and fresh cream.</em></span></p>
+  <span class="ghee">۞ <span class="ar" data-edit="t19" data-edit-label="Text — كل منتجاتنا مصنوعة بالسمن الحيواني">كل منتجاتنا مصنوعة بالسمن الحيواني</span><span class="tr" data-edit="t20" data-edit-label="Text — All our sweets are made with real anim…">All our sweets are made with real animal ghee</span></span>
+ </div>
+ <img class="rev" src="img/06.jpg" alt="واجهة حلويات الوسام ليلاً — مطبخ وحلويات الوسام">
+</section>
+
+<section class="high wrap">
+ <span class="k"><span class="ar" data-edit="t21" data-edit-label="Text — من الصواني">من الصواني</span><span class="tr" data-edit="t22" data-edit-label="Text — From the trays">From the trays</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t23" data-edit-label="Text — ثلاثة أوسمة لا تفوتكم">ثلاثة أوسمة لا تفوتكم</span><span class="tr lat" data-edit="t24" data-edit-label="Text — Three medals not to miss">Three medals not to miss</span></h2>
+ <div class="hgrid">
+  <div class="hcard rev"><img src="img/02.jpg" alt="عش البلبل بالفستق الحلبي على صينية نحاس"><div class="hb"><h3><span class="ar" data-edit="t25" data-edit-label="Text — عش البلبل بالفستق">عش البلبل بالفستق</span><span class="tr lat" data-edit="t26" data-edit-label="Text — Osh el-bulbul">Osh el-bulbul</span></h3><p><span class="ar" data-edit="t27" data-edit-label="Text — أعشاش الكنافة المحمّصة تُملأ فستقاً حل…">أعشاش الكنافة المحمّصة تُملأ فستقاً حلبياً وتُسقى قطراً خفيفاً — هشّة من بره، غنية من جوّه.</span><span class="tr" data-edit="t28" data-edit-label="Text — Toasted kunafa nests filled with Alepp…">Toasted kunafa nests filled with Aleppo pistachio and a light syrup — crisp outside, rich inside.</span></p></div></div>
+  <div class="hcard rev"><img src="img/04.jpg" alt="صينية كنافة نابلسية ساخنة"><div class="hb"><h3><span class="ar" data-edit="t29" data-edit-label="Text — الكنافة النابلسية">الكنافة النابلسية</span><span class="tr lat" data-edit="t30" data-edit-label="Text — Kunafa nabulsiyah">Kunafa nabulsiyah</span></h3><p><span class="ar" data-edit="t31" data-edit-label="Text — تُقطَع من الصينية الساخنة أمامك — جبنة…">تُقطَع من الصينية الساخنة أمامك — جبنة تمطّ وقطر يلمع ووجه محمّر على السمن العربي.</span><span class="tr" data-edit="t32" data-edit-label="Text — Cut for you straight from the hot tray…">Cut for you straight from the hot tray — stretching cheese, glistening syrup, a crust browned in real ghee.</span></p></div></div>
+  <div class="hcard rev"><img src="img/03.jpg" alt="صواني نحاسية مزخرفة عليها حلويات"><div class="hb"><h3><span class="ar" data-edit="t33" data-edit-label="Text — صواني النحاس">صواني النحاس</span><span class="tr lat" data-edit="t34" data-edit-label="Text — The brass trays">The brass trays</span></h3><p><span class="ar" data-edit="t35" data-edit-label="Text — غريبة وبرازق ومبرومة تُصَفّ على صواني …">غريبة وبرازق ومبرومة تُصَفّ على صواني النحاس المنقوشة كما كانت تُصَفّ منذ عقود.</span><span class="tr" data-edit="t36" data-edit-label="Text — Ghraybeh, barazek and mabroumeh lined …">Ghraybeh, barazek and mabroumeh lined up on engraved brass trays, the way they have been for decades.</span></p></div></div>
+ </div>
+</section>
+
+<div class="wrap">
+<section class="menu rev">
+ <h2><span class="ar" data-edit="t37" data-edit-label="Text — تشكيلة المحل">تشكيلة المحل</span><span class="tr lat" data-edit="t38" data-edit-label="Text — The house selection">The house selection</span></h2>
+ <p class="note"><span class="ar" data-edit="t39" data-edit-label="Text — تشكيلتنا الدائمة — اسألوا عن حلو الموس…">تشكيلتنا الدائمة — اسألوا عن حلو الموسم عند زيارتكم</span><span class="tr"><em data-edit="t40" data-edit-label="Text — Our standing selection — ask about the…">Our standing selection — ask about the season's sweet when you visit</em></span></p>
+ <span class="gheebar">۞ <span class="ar" data-edit="t41" data-edit-label="Text — كل منتجاتنا مصنوعة بالسمن الحيواني">كل منتجاتنا مصنوعة بالسمن الحيواني</span><span class="tr" data-edit="t42" data-edit-label="Text — All made with real animal ghee">All made with real animal ghee</span></span>
+ <div class="mlist">
+  <div class="mi"><span>كنافة نابلسية <span class="lat" data-edit="t43" data-edit-label="Text — · Kunafa nabulsiyah">· Kunafa nabulsiyah</span></span></div>
+  <div class="mi"><span>كنافة خشنة بالجبن <span class="lat" data-edit="t44" data-edit-label="Text — · Coarse kunafa, cheese">· Coarse kunafa, cheese</span></span></div>
+  <div class="mi"><span>مدلوقة بالقشطة <span class="lat" data-edit="t45" data-edit-label="Text — · Madlouqa">· Madlouqa</span></span></div>
+  <div class="mi"><span>حلاوة بالجبن <span class="lat" data-edit="t46" data-edit-label="Text — · Halawet el-jibn">· Halawet el-jibn</span></span></div>
+  <div class="mi"><span>نمورة بالقشطة <span class="lat" data-edit="t47" data-edit-label="Text — · Nammoura">· Nammoura</span></span></div>
+  <div class="mi"><span>مفروكة بالقشطة <span class="lat" data-edit="t48" data-edit-label="Text — · Mafrouka">· Mafrouka</span></span></div>
+  <div class="mi"><span>عصملية بالقشطة <span class="lat" data-edit="t49" data-edit-label="Text — · Osmaliyah">· Osmaliyah</span></span></div>
+  <div class="mi"><span>هريسة بالسمن العربي <span class="lat" data-edit="t50" data-edit-label="Text — · Harisa, real ghee">· Harisa, real ghee</span></span></div>
+  <div class="mi"><span>غريبة <span class="lat" data-edit="t51" data-edit-label="Text — · Ghraybeh">· Ghraybeh</span></span></div>
+  <div class="mi"><span>راحة بالقشطة <span class="lat" data-edit="t52" data-edit-label="Text — · Raha with cream">· Raha with cream</span></span></div>
+  <div class="mi"><span>وربات تركية بالفستق <span class="lat" data-edit="t53" data-edit-label="Text — · Warbat, pistachio">· Warbat, pistachio</span></span></div>
+  <div class="mi"><span>اسطنبولية بالفستق <span class="lat" data-edit="t54" data-edit-label="Text — · Istanbuliyah">· Istanbuliyah</span></span></div>
+  <div class="mi"><span>عوامة وأصابع <span class="lat" data-edit="t55" data-edit-label="Text — · Awameh &amp; asabe'">· Awameh &amp; asabe'</span></span></div>
+  <div class="mi"><span>شعيبيات بالقشطة والجوز <span class="lat" data-edit="t56" data-edit-label="Text — · Shaaibiyat">· Shaaibiyat</span></span></div>
+ </div>
+ <p class="mfoot"><span class="ar" data-edit="menu-note">الأسعار اليومية داخل المحل — والعلب المذهّبة جاهزة للضيافة والسفر.</span><span class="tr"><em data-edit="t57" data-edit-label="Text — Daily prices at the counter — gift box…">Daily prices at the counter — gift boxes ready for hosting and travel.</em></span></p>
+</section>
+</div>
+
+<section class="gal wrap">
+ <span class="k"><span class="ar" data-edit="t58" data-edit-label="Text — من المحل">من المحل</span><span class="tr" data-edit="t59" data-edit-label="Text — From the shop">From the shop</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t60" data-edit-label="Text — جولة على الواجهات">جولة على الواجهات</span><span class="tr lat" data-edit="t61" data-edit-label="Text — Along the counters">Along the counters</span></h2>
+ <div class="ggrid rev">
+  <img src="img/01.jpg" alt="واجهة الوسام باتيسري">
+  <img src="img/08.jpg" alt="واجهة العرض والصواني داخل المحل">
+  <img src="img/05.jpg" alt="علبة بيتي فور بختم الوسام">
+ </div>
+</section>
+
+<section class="revs wrap">
+ <span class="k"><span class="ar" data-edit="t62" data-edit-label="Text — قالوا عنا">قالوا عنا</span><span class="tr" data-edit="t63" data-edit-label="Text — What they say">What they say</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t64" data-edit-label="Text — من تقييمات غوغل">من تقييمات غوغل</span><span class="tr lat" data-edit="t65" data-edit-label="Text — From Google reviews">From Google reviews</span></h2>
+ <div class="rgrid">
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p dir="ltr" data-edit="t66" data-edit-label="Text — 'Amazing traditional Syrian sweets! My…">"Amazing traditional Syrian sweets! My family loved them. Very fresh and they used excellent quality pistachios."</p><div class="who" data-edit="t67" data-edit-label="Text — alfahad91 · Google">alfahad91 · Google</div></div>
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p dir="ltr" data-edit="t68" data-edit-label="Text — 'Amazing sweets and good service.'">"Amazing sweets and good service."</p><div class="who" data-edit="t69" data-edit-label="Text — Fadi Bakhos · Google">Fadi Bakhos · Google</div></div>
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p dir="ltr" data-edit="t70" data-edit-label="Text — 'Nice great Syrian sweet shop.'">"Nice great Syrian sweet shop."</p><div class="who" data-edit="t71" data-edit-label="Text — Ghazzy Sheikh Debs · Google">Ghazzy Sheikh Debs · Google</div></div>
+ </div>
+ <p class="gbadge">★ <b data-edit="t72" data-edit-label="Text — 4.5 / 5">4.5 / 5</b> — <span data-edit="revcount2">148</span> <span class="ar" data-edit="t73" data-edit-label="Text — تقييم على غوغل">تقييم على غوغل</span><span class="tr" data-edit="t74" data-edit-label="Text — Google reviews">Google reviews</span></p>
+</section>
+
+<section class="visit wrap">
+ <div class="rev">
+  <span class="k"><span class="ar" data-edit="t75" data-edit-label="Text — الدوام">الدوام</span><span class="tr" data-edit="t76" data-edit-label="Text — Hours">Hours</span></span>
+  <h2 class="disp"><span class="ar" data-edit="t77" data-edit-label="Text — متى تلاقونا">متى تلاقونا</span><span class="tr lat" data-edit="t78" data-edit-label="Text — When to find us">When to find us</span></h2>
+  <table class="hours">
+   <tr><td><span class="ar" data-edit="t79" data-edit-label="Text — يومياً">يومياً</span><span class="tr" data-edit="t80" data-edit-label="Text — Daily">Daily</span></td><td data-edit="h-all">8:00 — 23:00</td></tr>
+  </table>
+  <p style="margin-top:16px;color:#6f6a58;font-size:13.5px"><span class="ar" data-edit="h-note">مفتوح كل أيام الأسبوع — من قهوة الصباح حتى سهرة الليل.</span><span class="tr" data-edit="t81" data-edit-label="Text — Open every day — from morning coffee t…">Open every day — from morning coffee to the late evening.</span></p>
+ </div>
+ <div class="vinfo rev">
+  <span class="k"><span class="ar" data-edit="t82" data-edit-label="Text — العنوان">العنوان</span><span class="tr" data-edit="t83" data-edit-label="Text — Find us">Find us</span></span>
+  <h2 class="disp"><span class="ar" data-edit="t84" data-edit-label="Text — على شارع حلب">على شارع حلب</span><span class="tr lat" data-edit="t85" data-edit-label="Text — On Halab Avenue">On Halab Avenue</span></h2>
+  <p class="adr" data-edit="addr2">شارع حلب — القصاع، دمشق</p>
+  <p><span class="ar">للطلبات والضيافات اتصلوا بنا: <b data-edit="phone"><span dir="ltr" style="unicode-bidi:isolate;white-space:nowrap" data-edit="t86" data-edit-label="Text — +963 11 445 2926">+963 11 445 2926</span></b></span><span class="tr"><em>For orders and hosting trays call: <b><span dir="ltr" style="unicode-bidi:isolate;white-space:nowrap" data-edit="t87" data-edit-label="Text — +963 11 445 2926">+963 11 445 2926</span></b></em></span></p>
+  <a class="btn" href="tel:+963114452926">✆ <span class="ar" data-edit="t88" data-edit-label="Text — اتصلوا بنا">اتصلوا بنا</span><span class="tr" data-edit="t89" data-edit-label="Text — Call us">Call us</span></a>
+  <a class="btn o" href="https://www.google.com/maps?cid=12074004996930565864" target="_blank" rel="noopener"><span class="ar" data-edit="t90" data-edit-label="Text — افتحوا الخريطة">افتحوا الخريطة</span><span class="tr" data-edit="t91" data-edit-label="Text — Open in Maps">Open in Maps</span></a>
+  <a class="btn o" href="https://www.facebook.com/alwessamsweets" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg> <span class="ar" data-edit="t92" data-edit-label="Text — فيسبوك">فيسبوك</span><span class="tr" data-edit="t93" data-edit-label="Text — Facebook">Facebook</span></a>
+ </div>
+</section>
+
+<footer><span data-edit="footer">حلويات الوسام · شارع حلب — القصاع، دمشق · ‎<span dir="ltr" style="unicode-bidi:isolate;white-space:nowrap" data-edit="t94" data-edit-label="Text — +963 11 445 2926">+963 11 445 2926</span></span></footer>
+
+<div class="bar">
+ <a class="tel" href="tel:+963114452926"><i>✆</i><span class="ar" data-edit="t95" data-edit-label="Text — اتصال">اتصال</span><span class="tr" data-edit="t96" data-edit-label="Text — Call">Call</span></a>
+ <a class="map" href="https://www.google.com/maps?cid=12074004996930565864" target="_blank" rel="noopener"><i>◈</i><span class="ar" data-edit="t97" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t98" data-edit-label="Text — Map">Map</span></a>
+ <a class="fb" href="https://www.facebook.com/alwessamsweets" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+</div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+setTimeout(()=>document.querySelectorAll('.rev:not(.on)').forEach(el=>el.classList.add('on')),1100);
+</script>
+</body>
+</html>

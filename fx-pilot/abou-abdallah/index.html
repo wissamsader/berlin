@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abou Abdallah — Breakfast restaurant in Dawra, Beirut</title>
+<meta name="description" content="Abou Abdallah, Breakfast restaurant in Dawra. Call +961 1 256 286.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--walnut:#3B2A20;--walnut2:#2C1F17;--brass:#C29B4C;--cream:#F4E9D7;--cream2:#EADFC9;--tom:#B24A2F}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+::selection{background:var(--brass);color:var(--walnut2)}
+body{font-family:'Inter',sans-serif;background:var(--walnut);color:var(--cream);line-height:1.75}
+.mar{font-family:'Marcellus',serif}
+.cor{font-family:'Cormorant Garamond',serif}
+/* wood grain feel */
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(92deg,rgba(0,0,0,.12) 0 3px,transparent 3px 9px);opacity:.25;z-index:0}
+main,nav,section,footer,.mbar{position:relative;z-index:1}
+nav{position:sticky;top:0;z-index:60;display:flex;justify-content:space-between;align-items:center;padding:18px 5vw;background:rgba(44,31,23,.94);backdrop-filter:blur(6px);border-bottom:1px solid rgba(194,155,76,.4)}
+nav .brand{font-family:'Marcellus',serif;font-size:1.25rem;color:var(--brass);text-decoration:none;letter-spacing:.06em}
+nav .links{display:flex;gap:26px;align-items:center}
+nav .links a{color:var(--cream);text-decoration:none;font-weight:500;font-size:.85rem}
+nav .links a:hover{color:var(--brass)}
+nav .call{border:1px solid var(--brass);color:var(--brass) !important;padding:10px 24px;border-radius:2px;letter-spacing:.08em}
+nav .call:hover{background:var(--brass);color:var(--walnut2) !important}
+/* hero */
+.hero{text-align:center;padding:84px 5vw 60px;max-width:1000px;margin:0 auto}
+.hero .rule{display:inline-flex;align-items:center;gap:16px;color:var(--brass);letter-spacing:.34em;text-transform:uppercase;font-size:.74rem;font-weight:600}
+.hero .rule:before,.hero .rule:after{content:"";width:60px;height:1px;background:var(--brass)}
+h1{font-family:'Marcellus',serif;font-size:clamp(3rem,9vw,6.6rem);line-height:1.02;margin:22px 0 4px;letter-spacing:.02em}
+.hero .arb{font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,3.6vw,2.3rem);color:var(--brass);font-style:italic}
+.hero p.tg{font-family:'Cormorant Garamond',serif;font-size:clamp(1.15rem,2.6vw,1.5rem);color:rgba(244,233,215,.85);max-width:56ch;margin:22px auto 0;font-style:italic}
+.hero .stats{display:flex;gap:0;justify-content:center;margin:38px auto 0;border:1px solid rgba(194,155,76,.4);max-width:640px;flex-wrap:wrap}
+.hero .st{flex:1;min-width:150px;padding:18px 10px;border-right:1px solid rgba(194,155,76,.4)}
+.hero .st:last-child{border-right:0}
+.hero .st b{font-family:'Marcellus',serif;font-size:1.35rem;color:var(--brass);display:block}
+.hero .st span{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(244,233,215,.65)}
+.cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:38px}
+.btn{font-weight:600;font-size:.88rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:15px 34px;border:1px solid var(--cream);color:var(--cream);transition:all .2s;background:transparent}
+.btn:hover{background:var(--cream);color:var(--walnut2)}
+.btn.b{background:var(--brass);border-color:var(--brass);color:var(--walnut2)}
+.btn.b:hover{background:var(--cream);border-color:var(--cream)}
+.btn.wa{background:#2f7146;border-color:#2f7146;color:#fff}
+/* hero photo band */
+.band{max-width:1240px;margin:30px auto 0;padding:0 5vw}
+.band .frame{border:1px solid rgba(194,155,76,.5);padding:14px;background:rgba(44,31,23,.6)}
+.band img{width:100%;height:min(60vh,540px);object-fit:cover;display:block}
+.band .cap{text-align:center;font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--brass);padding-top:12px;font-size:1.05rem}
+/* fairuz line */
+.fair{text-align:center;padding:60px 5vw 0;max-width:760px;margin:0 auto}
+.fair p{font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,3vw,1.8rem);font-style:italic;color:rgba(244,233,215,.9)}
+.fair span{display:block;margin-top:10px;color:var(--brass);letter-spacing:.26em;text-transform:uppercase;font-size:.72rem;font-weight:600}
+section{padding:96px 5vw}
+.wrap{max-width:1240px;margin:0 auto}
+.k{color:var(--brass);letter-spacing:.3em;text-transform:uppercase;font-size:.72rem;font-weight:600;display:block;margin-bottom:14px}
+/* story */
+.story{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.story h2{font-family:'Marcellus',serif;font-size:clamp(2rem,4.6vw,3.3rem);line-height:1.08;margin-bottom:18px}
+.story h2 em{font-style:italic;font-family:'Cormorant Garamond',serif;color:var(--brass)}
+.story p{color:rgba(244,233,215,.82);max-width:54ch;margin-bottom:12px}
+.story .ph{position:relative;padding:14px;border:1px solid rgba(194,155,76,.5)}
+.story .ph img{width:100%;height:470px;object-fit:cover;display:block}
+.story .ph .seal{position:absolute;bottom:-26px;right:-20px;width:120px;height:120px;border-radius:50%;background:var(--brass);color:var(--walnut2);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Marcellus',serif;transform:rotate(-8deg);box-shadow:0 14px 30px rgba(0,0,0,.4)}
+.story .ph .seal b{font-size:1.15rem}
+.story .ph .seal span{font-size:.58rem;letter-spacing:.2em;text-transform:uppercase}
+/* morning ritual (highlights) */
+.rit{background:var(--cream);color:var(--walnut2)}
+.rit h2{font-family:'Marcellus',serif;font-size:clamp(2.1rem,4.8vw,3.5rem);text-align:center;line-height:1.04}
+.rit h2 em{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--tom)}
+.rit .sub{text-align:center;color:rgba(59,42,32,.7);margin:12px 0 56px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.15rem}
+.r-grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--walnut)}
+.rt{border-right:1px solid var(--walnut);padding:0 0 30px;background:var(--cream)}
+.rt:last-child{border-right:0}
+.rt img{width:100%;height:240px;object-fit:cover;display:block;border-bottom:1px solid var(--walnut)}
+.rt .no{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--tom);font-size:1.05rem;display:block;padding:20px 26px 4px}
+.rt h3{font-family:'Marcellus',serif;font-size:1.3rem;padding:0 26px 8px}
+.rt p{font-size:.92rem;color:rgba(59,42,32,.8);padding:0 26px;line-height:1.7}
+/* menu */
+.menu .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center;max-width:1240px;margin:0 auto}
+.menu .sheet{border:1px solid rgba(194,155,76,.5);padding:14px;background:rgba(44,31,23,.6)}
+.menu .sheet img{width:100%;display:block}
+.menu h2{font-family:'Marcellus',serif;font-size:clamp(2rem,4.4vw,3.1rem);line-height:1.06;margin-bottom:16px}
+.menu h2 em{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--brass)}
+.menu p{color:rgba(244,233,215,.82);max-width:52ch;margin-bottom:10px}
+.menu ul{list-style:none;margin-top:20px}
+.menu li{display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid rgba(194,155,76,.3);padding:11px 0;font-size:.95rem}
+.menu li span:last-child{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--brass)}
+/* gallery */
+.gal h2{font-family:'Marcellus',serif;font-size:clamp(2.1rem,4.8vw,3.5rem);text-align:center;margin-bottom:10px}
+.gal h2 em{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--brass)}
+.gal .sub{text-align:center;color:rgba(244,233,215,.65);margin-bottom:50px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.1rem}
+.g-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:14px;max-width:1240px;margin:0 auto}
+.g-grid a{display:block;overflow:hidden;border:1px solid rgba(194,155,76,.45);padding:8px;background:rgba(44,31,23,.5)}
+.g-grid a:nth-child(6n+1){grid-row:span 2}
+.g-grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.g-grid a:hover img{transform:scale(1.05)}
+/* reviews */
+.rev h2{font-family:'Marcellus',serif;font-size:clamp(2rem,4.6vw,3.3rem);text-align:center;margin-bottom:52px}
+.rev h2 em{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--brass)}
+.rv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+.rc{border:1px solid rgba(194,155,76,.45);padding:34px 30px;position:relative;background:rgba(44,31,23,.5)}
+.rc:before{content:"❝";font-family:'Cormorant Garamond',serif;font-size:3rem;color:var(--brass);line-height:0;display:block;margin:16px 0 8px}
+.rc p{font-family:'Cormorant Garamond',serif;font-size:1.18rem;line-height:1.7;font-style:italic;color:rgba(244,233,215,.92)}
+.rc .who{margin-top:16px;font-size:.76rem;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);font-weight:600}
+/* visit */
+.visit{text-align:center;background:var(--walnut2);border-top:1px solid rgba(194,155,76,.4);padding:110px 5vw}
+.visit h2{font-family:'Marcellus',serif;font-size:clamp(2.4rem,6.6vw,4.6rem);line-height:1.04}
+.visit h2 em{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--brass)}
+.visit .phone{font-family:'Marcellus',serif;font-size:clamp(1.8rem,4.6vw,2.9rem);color:var(--cream);text-decoration:none;display:inline-block;margin:26px 0 8px;border-bottom:2px solid var(--brass);padding-bottom:4px}
+.visit .meta{color:rgba(244,233,215,.75);max-width:520px;margin:18px auto 36px;line-height:2;font-size:.92rem}
+.visit .cta{justify-content:center}
+footer{text-align:center;padding:26px 5vw 110px;font-size:.78rem;color:rgba(244,233,215,.5);background:var(--walnut2)}
+.mbar{display:none;position:fixed;z-index:70;gap:8px;left:0;right:0;bottom:0;background:#2C1F17;border-top:2px solid #C29B4C;padding:9px 10px calc(9px + env(safe-area-inset-bottom))}
+.mbar a{flex:1;text-align:center;padding:12px 4px;border-radius:3px;font-weight:600;font-size:.85rem;letter-spacing:.06em;text-decoration:none;color:var(--cream);border:1px solid rgba(244,233,215,.3)}
+.mbar .c{background:var(--brass);color:var(--walnut2);border-color:var(--brass)}
+.mbar .w{background:#2f7146;color:#fff;border-color:#2f7146}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+@media(max-width:940px){
+ nav .links a:not(.call){display:none}
+ .story,.menu .grid{grid-template-columns:1fr;gap:44px}
+ .r-grid3{grid-template-columns:1fr}
+ .rt{border-right:0;border-bottom:1px solid var(--walnut)}
+ .g-grid{grid-template-columns:1fr 1fr;grid-auto-rows:180px}
+ .mbar{display:flex}
+ footer{padding-bottom:150px}
+}
+.mbar a{border-radius:0;background:transparent;color:#F4E9D7;border:1px solid rgba(194,155,76,.5)}.mbar a.c{background:#C29B4C;color:#2C1F17;border:0}.mbar a+a{position:relative}.mbar a+a::before{content:'●';position:absolute;left:-8px;top:50%;transform:translate(-50%,-50%);color:#C29B4C;font-size:6px}
+*{-webkit-tap-highlight-color:transparent}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/*igbtn*/.bar a.g,.mbar a.g{display:inline-flex;align-items:center;justify-content:center;padding:10px 12px}.bar a.g svg,.mbar a.g svg{width:17px;height:17px;display:block}
+</style>
+<style>.seal{overflow:hidden}
+.seal::after{content:'';position:absolute;top:-20%;left:-70%;width:42%;height:140%;
+ background:linear-gradient(105deg,transparent,rgba(255,250,235,.55),transparent);transform:skewX(-18deg);
+ animation:fxglint 13s ease-in-out infinite}
+@keyframes fxglint{0%,86%{left:-70%}97%,100%{left:140%}}
+@media (prefers-reduced-motion: reduce){.seal::after{animation:none}}</style></head>
+<body>
+
+<nav>
+ <a class="brand" href="#" data-edit="t1" data-edit-label="Button / link — ABOU ABDALLAH">ABOU ABDALLAH</a>
+ <div class="links">
+  <a href="#story" data-edit="t2" data-edit-label="Button / link — The house">The house</a><a href="#ritual" data-edit="t3" data-edit-label="Button / link — The ritual">The ritual</a><a href="#menu" data-edit="t4" data-edit-label="Button / link — Menu">Menu</a><a href="#visit" data-edit="t5" data-edit-label="Button / link — Visit">Visit</a>
+  <a class="call" href="tel:+9611256286" data-edit="t6" data-edit-label="Button / link — Call">Call</a>
+ </div>
+</nav>
+
+<header class="hero">
+ <span class="rule" data-edit="t7" data-edit-label="Text — Dawra · Since the old days">Dawra · Since the old days</span>
+ <h1 data-edit="t8" data-edit-label="Big title — Abou Abdallah">Abou Abdallah</h1>
+ <p class="arb" data-edit="t9" data-edit-label="Text — أبو عبد الله">أبو عبد الله</p>
+ <p class="tg" data-edit="t10" data-edit-label="Text — Foul, fetteh and Fairuz — the Dawra br…">Foul, fetteh and Fairuz — the Dawra breakfast house that feels like a different Lebanon.</p>
+ <div class="stats">
+  <div class="st"><b data-edit="t11" data-edit-label="Text — 6:00 AM">6:00 AM</b><span data-edit="t12" data-edit-label="Text — doors open">doors open</span></div>
+  <div class="st"><b data-edit="t13" data-edit-label="Text — ★ 4.5">★ 4.5</b><span data-edit="t14" data-edit-label="Text — 526 reviews">526 reviews</span></div>
+  <div class="st"><b data-edit="t15" data-edit-label="Text — Foul &amp; Fetteh">Foul &amp; Fetteh</b><span data-edit="t16" data-edit-label="Text — the calling">the calling</span></div>
+ </div>
+ <div class="cta">
+  <a class="btn b" href="tel:+9611256286" data-edit="t17" data-edit-label="Button / link — Call +961 1 256 286">Call +961 1 256 286</a>
+  <a class="btn" href="https://maps.google.com/?cid=8635420213454485809" target="_blank" rel="noopener" data-edit="t18" data-edit-label="Button / link — Directions">Directions</a>
+ </div>
+</header>
+
+<div class="band rv">
+ <div class="frame">
+  <img src="img/06.jpg" alt="Abou Abdallah breakfast table">
+  <p class="cap" data-edit="t19" data-edit-label="Text — The morning table, as it has always be…">The morning table, as it has always been set.</p>
+ </div>
+</div>
+
+<div class="fair">
+ <p data-edit="t20" data-edit-label="Text — “The furniture, the decor, and Fairuz …">“The furniture, the decor, and Fairuz playing softly in the background — it transports you to a different Lebanon.”</p>
+ <span data-edit="t21" data-edit-label="Text — A regular, writing home">A regular, writing home</span>
+</div>
+
+<section id="story">
+ <div class="wrap story">
+  <div class="rv">
+   <span class="k" data-edit="t22" data-edit-label="Text — The house">The house</span>
+   <h2>Breakfast before the <em data-edit="t23" data-edit-label="Text — city wakes">city wakes</em></h2>
+   <p data-edit="t24" data-edit-label="Text — Abou Abdallah opens at six because Daw…">Abou Abdallah opens at six because Dawra wakes up hungry. Inside, the furniture and decor carry you back decades, Fairuz plays softly, and clay bowls of foul and fetteh land steaming on wooden tables. Reviewers call it the best foul and fetteh in Lebanon; the regulars just call it morning.</p>
+   <p data-edit="t25" data-edit-label="Text — Everything is slow-cooked the way it w…">Everything is slow-cooked the way it was taught — and finished before mid-afternoon, when the pots are empty and the doors close until tomorrow's dawn.</p>
+  </div>
+  <div class="ph rv">
+   <img src="img/08.jpg" alt="Abou Abdallah fatteh">
+   <div class="seal"><b data-edit="t26" data-edit-label="Text — 6 AM">6 AM</b><span data-edit="t27" data-edit-label="Text — ritual">ritual</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="rit" id="ritual">
+ <div class="wrap">
+  <h2 class="rv">The morning <em data-edit="t28" data-edit-label="Text — ritual">ritual</em></h2>
+  <p class="sub" data-edit="t29" data-edit-label="Text — Three movements, performed daily">Three movements, performed daily</p>
+  <div class="r-grid3"><div class="rt rv"><img src="img/05.jpg" alt="Fatteh, drowning in ghee" loading="lazy"><span class="no" data-edit="t30" data-edit-label="Text — movement 1">movement 1</span><h3 data-edit="t31" data-edit-label="Heading — Fatteh, drowning in ghee">Fatteh, drowning in ghee</h3><p data-edit="t32" data-edit-label="Text — Toasted bread, warm chickpeas, yogurt,…">Toasted bread, warm chickpeas, yogurt, and the golden pour that makes it famous.</p></div><div class="rt rv"><img src="img/03.jpg" alt="Eggs in the clay dish" loading="lazy"><span class="no" data-edit="t33" data-edit-label="Text — movement 2">movement 2</span><h3 data-edit="t34" data-edit-label="Heading — Eggs in the clay dish">Eggs in the clay dish</h3><p data-edit="t35" data-edit-label="Text — Egg pottery with kawarma or sausages —…">Egg pottery with kawarma or sausages — served bubbling.</p></div><div class="rt rv"><img src="img/09.jpg" alt="Msabaha & balila" loading="lazy"><span class="no" data-edit="t36" data-edit-label="Text — movement 3">movement 3</span><h3 data-edit="t37" data-edit-label="Heading — Msabaha & balila">Msabaha & balila</h3><p data-edit="t38" data-edit-label="Text — Slow-simmered, generous, finished with…">Slow-simmered, generous, finished with the good olive oil.</p></div></div>
+ </div>
+</section>
+
+<section class="menu" id="menu">
+ <div class="grid">
+  <div class="sheet rv"><img src="img/02.jpg" alt="Abou Abdallah menu"></div>
+  <div class="rv">
+   <span class="k" data-edit="t39" data-edit-label="Text — The menu">The menu</span>
+   <h2>A single page, <em data-edit="t40" data-edit-label="Text — perfected">perfected</em></h2>
+   <p data-edit="t41" data-edit-label="Text — Balila, fatteh in every register, eggs…">Balila, fatteh in every register, eggs in clay, labneh with kawarma — the printed card barely changes, because it never needed to.</p>
+   <ul>
+    <li><span data-edit="t42" data-edit-label="Text — Fatteh with eggplant &amp; kawarma">Fatteh with eggplant &amp; kawarma</span><span data-edit="t43" data-edit-label="Text — the connoisseur's order">the connoisseur's order</span></li>
+    <li><span data-edit="t44" data-edit-label="Text — Balila &amp; msabbaha">Balila &amp; msabbaha</span><span data-edit="t45" data-edit-label="Text — steaming, always">steaming, always</span></li>
+    <li><span data-edit="t46" data-edit-label="Text — Egg pottery with sausages">Egg pottery with sausages</span><span data-edit="t47" data-edit-label="Text — in the clay dish">in the clay dish</span></li>
+    <li><span data-edit="t48" data-edit-label="Text — Debes &amp; tahini, custard, mhalabiye">Debes &amp; tahini, custard, mhalabiye</span><span data-edit="t49" data-edit-label="Text — to finish sweetly">to finish sweetly</span></li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section class="gal" id="gallery">
+ <h2 class="rv">From the <em data-edit="t50" data-edit-label="Text — dining room">dining room</em></h2>
+ <p class="sub" data-edit="t51" data-edit-label="Text — Clay bowls, copper trays, morning ligh…">Clay bowls, copper trays, morning light</p>
+ <div class="g-grid"><a href="img/10.jpg" target="_blank"><img src="img/10.jpg" alt="" loading="lazy"></a><a href="img/08.jpg" target="_blank"><img src="img/08.jpg" alt="" loading="lazy"></a><a href="img/05.jpg" target="_blank"><img src="img/05.jpg" alt="" loading="lazy"></a><a href="img/03.jpg" target="_blank"><img src="img/03.jpg" alt="" loading="lazy"></a><a href="img/04.jpg" target="_blank"><img src="img/04.jpg" alt="" loading="lazy"></a><a href="img/09.jpg" target="_blank"><img src="img/09.jpg" alt="" loading="lazy"></a><a href="img/01.jpg" target="_blank"><img src="img/01.jpg" alt="" loading="lazy"></a><a href="img/07.jpg" target="_blank"><img src="img/07.jpg" alt="" loading="lazy"></a></div>
+</section>
+
+<section class="rev">
+ <div class="wrap">
+  <h2 class="rv">Letters from the <em data-edit="t52" data-edit-label="Text — regulars">regulars</em></h2>
+  <div class="rv-grid"><div class="rc rv"><p data-edit="t53" data-edit-label="Text — Best foul and fetteh in Lebanon! The v…">Best foul and fetteh in Lebanon! The vibe inside transports you to a different Lebanon. The furniture, decor, and Fairuz playing softly in the background made it an instant classic.</p><div class="who" data-edit="t54" data-edit-label="Text — Rashad Khoury">Rashad Khoury</div></div><div class="rc rv"><p data-edit="t55" data-edit-label="Text — An excellent Lebanese breakfast. A bre…">An excellent Lebanese breakfast. A breakfast at Abou Abdallah keeps you satiated all day long. It's healthy food at its best.</p><div class="who" data-edit="t56" data-edit-label="Text — Tony Reaidi">Tony Reaidi</div></div><div class="rc rv"><p data-edit="t57" data-edit-label="Text — From the outside it smells like a popu…">From the outside it smells like a popular restaurant where the locals gather in a hidden corner. Before I try it I can smell something special.</p><div class="who" data-edit="t58" data-edit-label="Text — T. GeBrim">T. GeBrim</div></div></div>
+ </div>
+</section>
+
+<section class="visit" id="visit">
+ <h2 class="rv">Come at <em data-edit="t59" data-edit-label="Text — dawn.">dawn.</em></h2>
+ <a class="phone" href="tel:+9611256286" data-edit="t60" data-edit-label="Button / link — +961 1 256 286">+961 1 256 286</a>
+ <p class="meta">Pierre Gemayel Street, Dawra (behind Khoury Home), Bouchrieh, Lebanon<br>Mon-Fri 6 AM - 2:45 PM; Sat 6 AM - 2:30 PM; Sun closed</p>
+ <div class="cta">
+  <a class="btn" href="tel:+9611256286" data-edit="t61" data-edit-label="Button / link — Call +961 1 256 286">Call +961 1 256 286</a> <a class="btn ig" href="https://instagram.com/abou.abdalla" target="_blank" rel="noopener" data-edit="t62" data-edit-label="Button / link — Instagram">Instagram</a>
+  <a class="btn" href="https://maps.google.com/?cid=8635420213454485809" target="_blank" rel="noopener" data-edit="t63" data-edit-label="Button / link — Google Maps">Google Maps</a>
+ </div>
+</section>
+
+<div class="mbar">
+ <a class="c" href="tel:+9611256286" data-edit="t64" data-edit-label="Button / link — Call">Call</a>
+ <a class="g" href="https://instagram.com/abou.abdalla" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.4"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+ <a class="m" href="https://maps.google.com/?cid=8635420213454485809" target="_blank" rel="noopener" data-edit="t65" data-edit-label="Button / link — Map">Map</a>
+</div>
+
+<footer>© Abou Abdallah · Dawra, Beirut</footer>
+
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+setTimeout(function(){document.querySelectorAll('.rv:not(.in)').forEach(function(el){el.classList.add('in')})},1100);
+</script>
+</body>
+</html>

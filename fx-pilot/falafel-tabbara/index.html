@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Falafel Tabbara — Falafel restaurant in Beirut</title>
+<meta name="description" content="Falafel Tabbara, Falafel restaurant in Beirut, Lebanon. Call +961 1 350 821.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#F7EFDF;--paper:#FDF8EC;--olive:#4A5324;--olive2:#67722F;--brass:#A8842C;--ink:#241F14;--tomato:#C24B23}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+::selection{background:var(--olive);color:var(--cream)}
+body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);line-height:1.7}
+.serif{font-family:'Fraunces',serif}
+/* top strip */
+.strip{background:var(--olive);color:var(--cream);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;text-align:center;padding:9px 4vw;font-weight:600}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 5vw;border-bottom:1px solid rgba(36,31,20,.16)}
+nav .brand{font-family:'Fraunces',serif;font-weight:900;font-size:1.3rem;color:var(--ink);text-decoration:none}
+nav .brand em{font-style:italic;font-weight:500;color:var(--brass)}
+nav .links{display:flex;gap:26px;align-items:center}
+nav .links a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.85rem}
+nav .links a:hover{color:var(--tomato)}
+nav .call{background:var(--ink);color:var(--cream) !important;padding:11px 24px;border-radius:3px;font-size:.83rem;letter-spacing:.04em}
+/* masthead hero: giant serif logotype OVER the frying photo */
+.mast{position:relative;padding:64px 5vw 0;text-align:center}
+.mast .est{display:inline-flex;align-items:center;gap:14px;font-size:.8rem;letter-spacing:.3em;text-transform:uppercase;font-weight:700;color:var(--olive)}
+.mast .est:before,.mast .est:after{content:"";width:56px;height:1px;background:var(--brass)}
+h1{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(3.4rem,12.5vw,10rem);line-height:.92;letter-spacing:-.015em;margin:18px 0 6px;color:var(--ink)}
+h1 .th{color:var(--tomato)}
+.mast .sub{font-family:'Fraunces',serif;font-style:italic;font-size:clamp(1.05rem,2.4vw,1.5rem);color:var(--olive2)}
+.mast .arb{font-size:clamp(1.4rem,3.4vw,2.2rem);color:var(--brass);margin-top:10px;font-weight:600}
+.heroimg{position:relative;max-width:1180px;margin:-16px auto 0;padding:0 5vw}
+.heroimg .frame{position:relative;border:10px solid var(--paper);outline:1px solid rgba(36,31,20,.25);box-shadow:0 30px 60px -30px rgba(36,31,20,.45)}
+.heroimg img{width:100%;height:min(62vh,560px);object-fit:cover;display:block}
+.heroimg .cap{position:absolute;left:18px;bottom:14px;background:var(--paper);padding:8px 16px;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--olive)}
+.heroimg .seal{position:absolute;top:-34px;right:4vw;width:118px;height:118px;border-radius:50%;background:var(--olive);color:var(--cream);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Fraunces',serif;transform:rotate(8deg);box-shadow:0 10px 24px rgba(36,31,20,.35)}
+.heroimg .seal b{font-size:1.7rem;font-weight:900;line-height:1}
+.heroimg .seal span{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;margin-top:4px}
+.ctarow{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;padding:36px 5vw 8px}
+.btn{font-weight:700;font-size:.92rem;text-decoration:none;padding:15px 34px;border-radius:3px;letter-spacing:.05em;transition:all .18s;border:1.5px solid var(--ink);color:var(--ink);background:transparent}
+.btn:hover{background:var(--ink);color:var(--cream)}
+.btn.fill{background:var(--tomato);border-color:var(--tomato);color:#fff}
+.btn.fill:hover{background:var(--ink);border-color:var(--ink)}
+.btn.wa{background:#2e7d43;border-color:#2e7d43;color:#fff}
+.btn.wa:hover{background:var(--ink);border-color:var(--ink)}
+/* timeline band */
+.years{max-width:1180px;margin:70px auto 0;padding:0 5vw}
+.years .band{display:flex;justify-content:space-between;align-items:flex-start;border-top:2px solid var(--ink);padding-top:18px;gap:10px;flex-wrap:wrap}
+.years .yr{flex:1;min-width:130px}
+.years .yr b{font-family:'Fraunces',serif;font-weight:900;font-size:1.6rem;color:var(--olive)}
+.years .yr p{font-size:.82rem;color:rgba(36,31,20,.75);margin-top:4px;max-width:22ch}
+/* story split with heritage frame */
+section{padding:96px 5vw}
+.wrap{max-width:1180px;margin:0 auto}
+.k{font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;font-weight:700;color:var(--tomato);display:block;margin-bottom:14px}
+.story{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.story h2{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(2.1rem,4.6vw,3.4rem);line-height:1.04;margin-bottom:20px}
+.story h2 em{font-style:italic;color:var(--olive2);font-weight:500}
+.story p{color:rgba(36,31,20,.85);max-width:56ch;margin-bottom:14px}
+.story .ph{position:relative}
+.story .ph img{width:100%;display:block;border:10px solid #fff;outline:1px solid rgba(36,31,20,.25);box-shadow:14px 18px 0 var(--olive)}
+.story .ph .tag{position:absolute;top:-16px;left:-10px;background:var(--brass);color:#fff;font-family:'Fraunces',serif;font-style:italic;padding:8px 18px;transform:rotate(-4deg);box-shadow:0 6px 16px rgba(36,31,20,.3)}
+/* counter dishes */
+.counter{background:var(--olive);color:var(--cream)}
+.counter h2{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(2.1rem,4.6vw,3.4rem);text-align:center}
+.counter h2 em{font-style:italic;color:#D8C98F;font-weight:500}
+.counter .sub{text-align:center;color:rgba(247,239,223,.75);margin:10px 0 54px}
+.h-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(247,239,223,.28);border:1px solid rgba(247,239,223,.28)}
+.hc{background:var(--olive);padding:0 0 26px}
+.hc img{width:100%;height:230px;object-fit:cover;display:block;filter:none}
+.hc .no{font-family:'Fraunces',serif;font-style:italic;color:#D8C98F;font-size:.95rem;display:block;padding:18px 24px 6px}
+.hc h3{font-family:'Fraunces',serif;font-weight:700;font-size:1.35rem;padding:0 24px 8px}
+.hc p{font-size:.9rem;color:rgba(247,239,223,.8);padding:0 24px;line-height:1.65}
+/* menu (real board) */
+.menuq{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.menuq .board{position:relative}
+.menuq .board img{width:100%;display:block;border:10px solid #fff;outline:1px solid rgba(36,31,20,.25);box-shadow:-14px 18px 0 var(--brass)}
+.menuq h2{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(2rem,4.2vw,3rem);line-height:1.05;margin-bottom:16px}
+.menuq h2 em{font-style:italic;color:var(--tomato);font-weight:500}
+.menuq p{color:rgba(36,31,20,.85);max-width:52ch;margin-bottom:12px}
+.menuq ul{list-style:none;margin-top:18px}
+.menuq li{display:flex;justify-content:space-between;gap:18px;border-bottom:1px dashed rgba(36,31,20,.35);padding:10px 0;font-weight:600;font-size:.95rem}
+.menuq li span:last-child{font-family:'Fraunces',serif;font-style:italic;color:var(--olive2);white-space:nowrap}
+/* gallery: archive wall */
+.gal h2{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(2.1rem,4.6vw,3.4rem);text-align:center;margin-bottom:8px}
+.gal h2 em{font-style:italic;color:var(--olive2);font-weight:500}
+.gal .sub{text-align:center;color:rgba(36,31,20,.7);margin-bottom:48px}
+.g-grid{columns:3;column-gap:22px;max-width:1180px;margin:0 auto}
+.g-grid a{display:block;margin-bottom:22px;break-inside:avoid;background:#fff;padding:9px 9px 12px;outline:1px solid rgba(36,31,20,.22);box-shadow:0 14px 30px -18px rgba(36,31,20,.4);transition:transform .18s}
+.g-grid a:hover{transform:translateY(-5px) rotate(.4deg)}
+.g-grid img{width:100%;display:block}
+/* reviews: ledger entries */
+.led{background:var(--paper);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.led h2{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(2.1rem,4.6vw,3.2rem);margin-bottom:44px}
+.led h2 em{font-style:italic;color:var(--tomato);font-weight:500}
+.l-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0;border-left:1px solid rgba(36,31,20,.2)}
+.entry{border-right:1px solid rgba(36,31,20,.2);padding:30px 30px 34px;position:relative}
+.entry .st{color:var(--brass);letter-spacing:4px;font-size:.8rem;margin-bottom:14px;display:block}
+.entry p{font-family:'Fraunces',serif;font-size:1.06rem;line-height:1.75;font-weight:400}
+.entry .who{margin-top:16px;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--olive)}
+/* visit */
+.visit{text-align:center;padding:110px 5vw}
+.visit .est2{display:inline-flex;align-items:center;gap:14px;font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;font-weight:700;color:var(--olive);margin-bottom:16px}
+.visit .est2:before,.visit .est2:after{content:"";width:46px;height:1px;background:var(--brass)}
+.visit h2{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(2.6rem,7vw,5rem);line-height:1}
+.visit h2 em{font-style:italic;font-weight:500;color:var(--tomato)}
+.visit .phone{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(1.9rem,4.6vw,3rem);color:var(--ink);text-decoration:none;display:inline-block;margin:26px 0 6px;border-bottom:3px solid var(--brass)}
+.visit .meta{color:rgba(36,31,20,.78);max-width:460px;margin:16px auto 34px;line-height:2}
+.visit .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+footer{text-align:center;padding:0 5vw 110px;font-size:.8rem;color:rgba(36,31,20,.6)}
+/* mobile bar */
+.mbar{display:none;position:fixed;z-index:70;gap:8px;left:0;right:0;bottom:0;background:repeating-linear-gradient(90deg,#F7EFDF 0 26px,#F1E6CE 26px 52px);border-top:2px solid #4A5324;padding:10px 12px calc(10px + env(safe-area-inset-bottom))}
+.mbar a{flex:1;text-align:center;padding:12px 4px;border-radius:5px;font-weight:700;font-size:.88rem;text-decoration:none;color:var(--ink);border:1px solid rgba(36,31,20,.3)}
+.mbar .c{background:var(--tomato);color:#fff;border-color:var(--tomato)}
+.mbar .w{background:#2e7d43;color:#fff;border-color:#2e7d43}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media(max-width:900px){
+ nav .links a:not(.call){display:none}
+ .story,.menuq{grid-template-columns:1fr;gap:40px}
+ .h-grid{grid-template-columns:1fr}
+ .g-grid{columns:2}
+ .mbar{display:flex}
+ footer{padding-bottom:150px}
+}
+@media(max-width:560px){.g-grid{columns:1}}
+.mbar a{background:#FDF8EC;border:1.5px solid #4A5324;border-radius:2px;color:#241F14}.mbar a.c{background:#A8842C;color:#FDF8EC;border-color:#A8842C}.mbar a.w{border-color:#67722F}
+*{-webkit-tap-highlight-color:transparent}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/*igbtn*/.bar a.g,.mbar a.g{display:inline-flex;align-items:center;justify-content:center;padding:10px 12px}.bar a.g svg,.mbar a.g svg{width:17px;height:17px;display:block}
+</style>
+<style>.seal{overflow:hidden}
+.seal::after{content:'';position:absolute;top:-20%;left:-70%;width:42%;height:140%;
+ background:linear-gradient(105deg,transparent,rgba(250,246,230,.45),transparent);transform:skewX(-18deg);
+ animation:fxglint 14s ease-in-out infinite}
+@keyframes fxglint{0%,86%{left:-70%}97%,100%{left:140%}}
+@media (prefers-reduced-motion: reduce){.seal::after{animation:none}}</style></head>
+<body>
+
+<div class="strip" data-edit="t1" data-edit-label="Text — Since 1966 · The same corner · The sam…">Since 1966 · The same corner · The same family · Tallet El Khayat</div>
+<nav>
+ <a class="brand" href="#">Falafel <em data-edit="t2" data-edit-label="Text — Tabbara">Tabbara</em></a>
+ <div class="links">
+  <a href="#story" data-edit="t3" data-edit-label="Button / link — The story">The story</a><a href="#counter" data-edit="t4" data-edit-label="Button / link — The counter">The counter</a><a href="#menu" data-edit="t5" data-edit-label="Button / link — Menu">Menu</a><a href="#visit" data-edit="t6" data-edit-label="Button / link — Visit">Visit</a>
+  <a class="call" href="tel:+9611350821" data-edit="t7" data-edit-label="Button / link — Call the shop">Call the shop</a>
+ </div>
+</nav>
+
+<header class="mast">
+ <span class="est" data-edit="t8" data-edit-label="Text — Est. 1966 · Beirut">Est. 1966 · Beirut</span>
+ <h1>FALAFEL<br><span class="th" data-edit="t9" data-edit-label="Text — TABBARA">TABBARA</span></h1>
+ <p class="sub" data-edit="t10" data-edit-label="Text — Falafel fried to order on the same cor…">Falafel fried to order on the same corner since 1966 — by the same hands.</p>
+ <p class="arb serif" data-edit="t11" data-edit-label="Text — فلافل طبارة">فلافل طبارة</p>
+</header>
+
+<div class="heroimg">
+ <div class="frame rv">
+  <img src="img/04.jpg" alt="Falafel frying at Falafel Tabbara">
+  <span class="cap" data-edit="t12" data-edit-label="Text — Fig. 01 — the pan, mid-service">Fig. 01 — the pan, mid-service</span>
+ </div>
+ <div class="seal"><b data-edit="t13" data-edit-label="Text — 58">58</b><span data-edit="t14" data-edit-label="Text — years frying">years frying</span></div>
+</div>
+
+<div class="ctarow">
+ <a class="btn fill" href="tel:+9611350821" data-edit="t15" data-edit-label="Button / link — Call +961 1 350 821">Call +961 1 350 821</a>
+ <a class="btn" href="https://maps.google.com/?cid=10043178635628059090" target="_blank" rel="noopener" data-edit="t16" data-edit-label="Button / link — Find the corner ↗">Find the corner ↗</a>
+</div>
+
+<div class="years rv">
+ <div class="band">
+  <div class="yr"><b data-edit="t17" data-edit-label="Text — 1966">1966</b><p data-edit="t18" data-edit-label="Text — The first falafel comes out of the oil…">The first falafel comes out of the oil on this corner.</p></div>
+  <div class="yr"><b data-edit="t19" data-edit-label="Text — 1980s">1980s</b><p data-edit="t20" data-edit-label="Text — The hajj takes the pan. He has not put…">The hajj takes the pan. He has not put it down since.</p></div>
+  <div class="yr"><b data-edit="t21" data-edit-label="Text — 2024">2024</b><p data-edit="t22" data-edit-label="Text — The framed photos go up — same man, sa…">The framed photos go up — same man, same counter.</p></div>
+  <div class="yr"><b data-edit="t23" data-edit-label="Text — Today">Today</b><p data-edit="t24" data-edit-label="Text — A crowd at any hour, ★ 4.7 from 160 re…">A crowd at any hour, ★ 4.7 from 160 regulars.</p></div>
+ </div>
+</div>
+
+<section id="story">
+ <div class="wrap story">
+  <div class="rv">
+   <span class="k" data-edit="t25" data-edit-label="Text — The story">The story</span>
+   <h2>One corner. One family. <em data-edit="t26" data-edit-label="Text — Six decades.">Six decades.</em></h2>
+   <p data-edit="t27" data-edit-label="Text — Since 1966, Falafel Tabbara has done e…">Since 1966, Falafel Tabbara has done exactly one thing on this Tallet El Khayat corner: falafel, fried to order, wrapped with tarator, pickles and fresh vegetables. The hajj has stood behind the counter for sixty years; the framed photos on the wall show the same man, the same pan, two different centuries.</p>
+   <p data-edit="t28" data-edit-label="Text — Order the sandwich, watch it fried to …">Order the sandwich, watch it fried to order, and eat it standing on the pavement like everyone before you — this is how falafel has always been done.</p>
+  </div>
+  <div class="ph rv">
+   <img src="img/05.jpg" alt="Heritage frame — 1966 to 2024">
+   <span class="tag" data-edit="t29" data-edit-label="Text — 1966 → 2024, framed on the wall">1966 → 2024, framed on the wall</span>
+  </div>
+ </div>
+</section>
+
+<section class="counter" id="counter">
+ <div class="wrap">
+  <h2 class="rv">What leaves <em data-edit="t30" data-edit-label="Text — the counter">the counter</em></h2>
+  <p class="sub" data-edit="t31" data-edit-label="Text — Three things. Perfected over six decad…">Three things. Perfected over six decades.</p>
+  <div class="h-grid"><div class="hc rv"><img src="img/04.jpg" alt="Fried to order" loading="lazy"><span class="no" data-edit="t32" data-edit-label="Text — fig. 01">fig. 01</span><h3 data-edit="t33" data-edit-label="Heading — Fried to order">Fried to order</h3><p data-edit="t34" data-edit-label="Text — Nothing waits under a lamp — the batte…">Nothing waits under a lamp — the batter hits the oil when you order.</p></div><div class="hc rv"><img src="img/06.jpg" alt="The full wrap" loading="lazy"><span class="no" data-edit="t35" data-edit-label="Text — fig. 02">fig. 02</span><h3 data-edit="t36" data-edit-label="Heading — The full wrap">The full wrap</h3><p data-edit="t37" data-edit-label="Text — Tarator, mint, pickles, tomatoes — bal…">Tarator, mint, pickles, tomatoes — balanced like six decades of practice.</p></div><div class="hc rv"><img src="img/08.jpg" alt="By the dozen" loading="lazy"><span class="no" data-edit="t38" data-edit-label="Text — fig. 03">fig. 03</span><h3 data-edit="t39" data-edit-label="Heading — By the dozen">By the dozen</h3><p data-edit="t40" data-edit-label="Text — Locals carry them home in paper — the …">Locals carry them home in paper — the Sunday ritual.</p></div></div>
+ </div>
+</section>
+
+<section id="menu">
+ <div class="wrap menuq">
+  <div class="board rv">
+   <img src="img/02.jpg" alt="Falafel Tabbara price board">
+  </div>
+  <div class="rv">
+   <span class="k" data-edit="t41" data-edit-label="Text — The menu">The menu</span>
+   <h2>Short. <em data-edit="t42" data-edit-label="Text — Honest.">Honest.</em> Unchanged.</h2>
+   <p data-edit="t43" data-edit-label="Text — The board on the wall says it all — sa…">The board on the wall says it all — sandwiches, falafel by the dozen, tarator and pickles. Prices in Lebanese pounds, updated by hand.</p>
+   <ul>
+    <li><span data-edit="t44" data-edit-label="Text — Falafel sandwich">Falafel sandwich</span><span data-edit="t45" data-edit-label="Text — the classic">the classic</span></li>
+    <li><span data-edit="t46" data-edit-label="Text — Large falafel sandwich">Large falafel sandwich</span><span data-edit="t47" data-edit-label="Text — for the hungry">for the hungry</span></li>
+    <li><span data-edit="t48" data-edit-label="Text — A dozen falafel">A dozen falafel</span><span data-edit="t49" data-edit-label="Text — for the table">for the table</span></li>
+    <li><span data-edit="t50" data-edit-label="Text — Falafel with pickles, vegetables &amp;…">Falafel with pickles, vegetables &amp; taratour</span><span data-edit="t51" data-edit-label="Text — the full ritual">the full ritual</span></li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section class="gal" id="gallery">
+ <h2 class="rv">From the <em data-edit="t52" data-edit-label="Text — archive">archive</em></h2>
+ <p class="sub" data-edit="t53" data-edit-label="Text — All photographs from the shop and its …">All photographs from the shop and its regulars</p>
+ <div class="g-grid"><a href="img/03.jpg" target="_blank"><img src="img/03.jpg" alt="" loading="lazy"></a><a href="img/06.jpg" target="_blank"><img src="img/06.jpg" alt="" loading="lazy"></a><a href="img/08.jpg" target="_blank"><img src="img/08.jpg" alt="" loading="lazy"></a><a href="img/09.jpg" target="_blank"><img src="img/09.jpg" alt="" loading="lazy"></a><a href="img/01.jpg" target="_blank"><img src="img/01.jpg" alt="" loading="lazy"></a><a href="img/10.jpg" target="_blank"><img src="img/10.jpg" alt="" loading="lazy"></a></div>
+</section>
+
+<section class="led">
+ <div class="wrap">
+  <h2 class="rv">Entries from the <em data-edit="t54" data-edit-label="Text — ledger">ledger</em></h2>
+  <div class="l-grid"><div class="entry rv"><span class="st">★★★★★</span><p data-edit="t55" data-edit-label="Text — The best falafel in the world. The haj…">The best falafel in the world. The hajj has been in this shop for more than 60 years. You can always see a crowd any time of the day. They are generous and clean. The very authentic taste of his falafel is unique.</p><div class="who" data-edit="t56" data-edit-label="Text — May Simaan">May Simaan</div></div><div class="entry rv"><span class="st">★★★★★</span><p data-edit="t57" data-edit-label="Text — In the restaurant business, where fort…">In the restaurant business, where fortunes can rise and fall very quickly, I was curious to find out what the secret was to this restaurant's survival for over 100 years.</p><div class="who" data-edit="t58" data-edit-label="Text — T. GeBrim">T. GeBrim</div></div><div class="entry rv"><span class="st">★★★★★</span><p data-edit="t59" data-edit-label="Text — It was fresh and absolutely delicious!…">It was fresh and absolutely delicious! The staff were extremely nice and welcoming. The falafels were made on the spot and everything tasted so fresh!</p><div class="who" data-edit="t60" data-edit-label="Text — Rosalie S">Rosalie S</div></div></div>
+ </div>
+</section>
+
+<section class="visit" id="visit">
+ <span class="est2" data-edit="t61" data-edit-label="Text — Tallet El Khayat · Beirut">Tallet El Khayat · Beirut</span>
+ <h2>Come stand at<br>the <em data-edit="t62" data-edit-label="Text — counter.">counter.</em></h2>
+ <a class="phone" href="tel:+9611350821" data-edit="t63" data-edit-label="Button / link — +961 1 350 821">+961 1 350 821</a>
+ <p class="meta">Tallet El Khayat / Mar Elias area, Beirut, Lebanon (VFVM+64F)<br>Mon-Fri 12 - 6 PM; Sat 8 AM - 4 PM; Sun closed</p>
+ <div class="cta">
+  <a class="btn" href="tel:+9611350821" data-edit="t64" data-edit-label="Button / link — Call +961 1 350 821">Call +961 1 350 821</a>
+  <a class="btn" href="https://maps.google.com/?cid=10043178635628059090" target="_blank" rel="noopener" data-edit="t65" data-edit-label="Button / link — Google Maps ↗">Google Maps ↗</a>
+ </div>
+</section>
+
+<div class="mbar">
+ <a class="c" href="tel:+9611350821" data-edit="t66" data-edit-label="Button / link — Call">Call</a>
+ 
+ <a class="m" href="https://maps.google.com/?cid=10043178635628059090" target="_blank" rel="noopener" data-edit="t67" data-edit-label="Button / link — Map">Map</a>
+</div>
+
+<footer>© Falafel Tabbara · Beirut, Lebanon</footer>
+
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+setTimeout(function(){document.querySelectorAll('.rv:not(.in)').forEach(function(el){el.classList.add('in')})},1100);
+</script>
+</body>
+</html>

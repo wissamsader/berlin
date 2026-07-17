@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Falafel Baydoun Al Fakhira — one man, one pan, decades</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;900&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-x:clip}
+:root{--sun:#F4C21F;--ink:#141310;--paper:#FFFDF4}
+body{font-family:'Inter',sans-serif;background:var(--sun);color:var(--ink)}
+h1,h2,.blk{font-family:'Archivo Black',sans-serif;font-weight:400}
+/* hero — statement poster */
+.hero{min-height:96vh;display:flex;flex-direction:column;justify-content:center;padding:8vh 6vw;position:relative;overflow:hidden}
+.hero .seal{position:absolute;top:6vh;right:6vw;width:130px;height:130px;border:4px solid var(--ink);border-radius:50%;display:grid;place-items:center;text-align:center;font-weight:900;font-size:.8rem;line-height:1.3;transform:rotate(10deg);background:var(--paper)}
+h1{font-size:clamp(3rem,9vw,7.4rem);line-height:.96;text-transform:uppercase;max-width:12ch}
+h1 .st{color:transparent;-webkit-text-stroke:3px var(--ink)}
+.sub{margin-top:30px;font-size:1.2rem;font-weight:600;max-width:52ch;line-height:1.75}
+.gfy{margin-top:36px;display:inline-block;background:var(--ink);color:var(--sun);font-family:'Archivo Black';font-size:clamp(1rem,2.4vw,1.5rem);padding:16px 30px;transform:rotate(-2deg);box-shadow:8px 8px 0 var(--paper)}
+.gfy small{display:block;font-family:'Inter';font-weight:600;font-size:.62rem;letter-spacing:.18em;margin-top:6px;color:#cbb26a}
+.meta{margin-top:34px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;font-size:.85rem}
+/* hero photo band */
+.band{display:grid;grid-template-columns:2fr 1fr;gap:0;border-top:5px solid var(--ink);border-bottom:5px solid var(--ink)}
+.band img{width:100%;height:56vh;object-fit:cover;display:block}
+.band .b2{border-left:5px solid var(--ink)}
+/* story */
+.story{background:var(--paper);padding:100px 5vw}
+.story .in2{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1fr .85fr;gap:6vw;align-items:center}
+.story h2{font-size:clamp(1.9rem,4vw,3rem);line-height:1.02;text-transform:uppercase;margin-bottom:24px}
+.story h2 em{font-style:normal;color:transparent;-webkit-text-stroke:2px var(--ink)}
+.story p{line-height:1.95;font-size:1.05rem;margin-bottom:18px;color:#3a382f}
+.story .im img{width:100%;min-height:430px;object-fit:cover;border:5px solid var(--ink);box-shadow:16px 16px 0 var(--sun)}
+/* highlights */
+.hl{background:var(--ink);color:var(--paper);padding:96px 5vw}
+.hl .in2{max-width:1080px;margin:0 auto}
+.hl h2{font-size:clamp(1.8rem,3.8vw,2.8rem);text-transform:uppercase;margin-bottom:44px;color:var(--sun)}
+.hlg{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px}
+.hc{background:#221f18;border:2px solid var(--sun)}
+.hc img{width:100%;height:225px;object-fit:cover;display:block;border-bottom:2px solid var(--sun)}
+.hc .bd{padding:22px}
+.hc .no{color:var(--sun);font-size:1.2rem}
+.hc h3{font-family:'Archivo Black';font-size:1.1rem;margin:8px 0;text-transform:uppercase}
+.hc p{font-size:.94rem;line-height:1.7;color:rgba(255,253,244,.72)}
+/* menu — REAL board */
+.menu{background:var(--paper);padding:100px 5vw}
+.menu .in2{max-width:920px;margin:0 auto}
+.menu h2{font-size:clamp(1.8rem,3.8vw,2.8rem);text-transform:uppercase;margin-bottom:8px}
+.menu .sub{color:#7a7250;font-weight:600;margin-bottom:44px}
+.mrow{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 4px;border-bottom:3px solid var(--sun);font-size:1.04rem;font-weight:600}
+.mrow .a{font-family:'Cairo';color:#8a8260;font-weight:400}
+.mrow .pr{font-family:'Archivo Black';white-space:nowrap}
+.mnote{margin-top:36px;background:var(--sun);border:4px solid var(--ink);padding:18px 24px;text-align:center;font-weight:900;text-transform:uppercase;letter-spacing:.06em}
+/* gallery */
+.gal{background:var(--paper);padding:0 5vw 100px}
+.gal .in2{max-width:1080px;margin:0 auto}
+.gal h2{text-transform:uppercase;font-size:1.6rem;margin-bottom:26px}
+.gg{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.gg a{display:block;border:4px solid var(--ink)}
+.gg img{width:100%;height:240px;object-fit:cover;display:block}
+/* reviews */
+.revs{background:var(--sun);padding:96px 5vw;border-top:5px solid var(--ink)}
+.revs .in2{max-width:1040px;margin:0 auto}
+.revs h2{font-size:clamp(1.8rem,3.8vw,2.7rem);text-transform:uppercase;margin-bottom:8px}
+.revs .meta2{margin-bottom:42px;font-weight:900}
+.rg{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.rc{background:var(--paper);padding:26px;border:4px solid var(--ink);box-shadow:8px 8px 0 var(--ink)}
+.rc .st{letter-spacing:.18em;font-size:.85rem;font-weight:900}
+.rc p{margin:13px 0 15px;line-height:1.8;font-size:.97rem}
+.rc .who{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:#7a7250;font-weight:900}
+/* visit */
+.visit{background:var(--paper);padding:100px 5vw}
+.visit .in2{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:6vw}
+.visit h2{font-size:clamp(1.8rem,3.8vw,2.8rem);text-transform:uppercase;margin-bottom:24px}
+.vrow{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:2px solid #e8e0be;font-size:.98rem;font-weight:600}
+.hrs{font-weight:900}
+.btn{display:inline-block;background:var(--ink);color:var(--sun);padding:18px 36px;font-family:'Archivo Black';font-size:.95rem;text-transform:uppercase;text-decoration:none;margin-top:28px;box-shadow:8px 8px 0 var(--sun);border:3px solid var(--ink)}
+.btn.wa{background:#1FA855;color:#fff;box-shadow:8px 8px 0 var(--ink)}
+.map{border:5px solid var(--ink);min-height:340px;background:#eee}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+footer{background:var(--ink);color:rgba(255,253,244,.5);text-align:center;padding:34px 5vw 110px;font-size:.82rem}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+@media(max-width:880px){.story .in2,.visit .in2{grid-template-columns:1fr}.band{grid-template-columns:1fr}.band .b2{border-left:0;border-top:5px solid var(--ink)}.hero .seal{width:100px;height:100px;font-size:.68rem}}
+
+/* the yellow board */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:#141310;display:flex;align-items:center;justify-content:center;gap:16px;padding:10px 10px calc(10px + env(safe-area-inset-bottom))}
+.bar a.c{text-decoration:none;font-family:'Archivo Black',sans-serif;font-size:15px;letter-spacing:.04em;color:#141310;background:#F4C21F;padding:14px 30px;border-radius:3px;box-shadow:4px 4px 0 #FFFDF4;position:relative}
+.bar a.c::after{content:'➔';position:absolute;right:-2px;top:-14px;transform:rotate(-24deg);color:#F4C21F;font-size:18px}
+.bar a.m{text-decoration:none;font-family:'Inter',sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:#F4C21F;border-bottom:2px solid #F4C21F;padding-bottom:2px}
+.bar a.w{text-decoration:none;font-family:'Inter',sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:#F4C21F;border-bottom:2px solid #F4C21F;padding-bottom:2px;text-transform:uppercase}
+
+*{-webkit-tap-highlight-color:transparent}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/*igbtn*/.bar a.g,.mbar a.g{display:inline-flex;align-items:center;justify-content:center;padding:10px 12px}.bar a.g svg,.mbar a.g svg{width:17px;height:17px;display:block}
+</style><style>.seal{animation:fxsealtilt 14s ease-in-out infinite}
+@keyframes fxsealtilt{0%,90%,100%{transform:rotate(0deg)}94%{transform:rotate(1.4deg)}98%{transform:rotate(-.8deg)}}
+@media (prefers-reduced-motion: reduce){.seal{animation:none}}</style></head><body>
+<section class="hero">
+ <div class="seal">الفاخرة<br>AL FAKHIRA<br>★ 4.9</div>
+ <h1>ONE MAN.<br>ONE PAN.<br><span class="st" data-edit="t1" data-edit-label="Text — DECADES.">DECADES.</span></h1>
+ <p class="sub" data-edit="t2" data-edit-label="Text — Falafel fried to order by the same han…">Falafel fried to order by the same hands for decades — crispy shell, tender heart, 4.9 stars.</p>
+ <div class="gfy">“GO FALAFEL YOURSELF.”<small data-edit="t3" data-edit-label="Text — — IT'S ON HIS BOARD. HE MEANS IT KINDL…">— IT'S ON HIS BOARD. HE MEANS IT KINDLY.</small></div>
+ <div class="meta" data-edit="t4" data-edit-label="Text — ★ 4.9 · 38 reviews · Rue 68 · Ghabi">★ 4.9 · 38 reviews · Rue 68 · Ghabi</div>
+</section>
+<div class="band"><img src="img/03.jpg" alt="the wrap"><img class="b2" src="img/01.jpg" alt="Falafel Baydoun Al Fakhira storefront"></div>
+<section class="story">
+ <div class="in2">
+  <div class="rv">
+   <h2>He does one thing. <em data-edit="t5" data-edit-label="Text — Only.">Only.</em></h2>
+   <p data-edit="t6" data-edit-label="Text — The owner of Falafel Baydoun has stood…">The owner of Falafel Baydoun has stood over the same pan for decades, frying falafel to order and nothing else. 'He does one thing and one thing only,' as one review puts it — crispy outside, tender inside, 'rare to find falafel this good outside a home kitchen.' The yellow board says the rest: Go Falafel Yourself. He means it kindly.</p>
+  </div>
+  <div class="im rv"><img src="img/04.jpg" alt="the counter garden" loading="lazy"></div>
+ </div>
+</section>
+<section class="hl">
+ <div class="in2">
+  <h2 class="rv" data-edit="t7" data-edit-label="Title — The craft">The craft</h2>
+  <div class="hlg"><div class="hc rv"><img src="img/03.jpg" alt="Fried when you order" loading="lazy"><div class="bd"><span class="no">★</span><h3 data-edit="t8" data-edit-label="Heading — Fried when you order">Fried when you order</h3><p data-edit="t9" data-edit-label="Text — Never from a pile — the batter hits th…">Never from a pile — the batter hits the oil after you speak.</p></div></div><div class="hc rv"><img src="img/05.jpg" alt="The spicy one" loading="lazy"><div class="bd"><span class="no">★</span><h3 data-edit="t10" data-edit-label="Heading — The spicy one">The spicy one</h3><p data-edit="t11" data-edit-label="Text — The unique spicy flavour regulars orde…">The unique spicy flavour regulars order by default.</p></div></div><div class="hc rv"><img src="img/04.jpg" alt="The counter garden" loading="lazy"><div class="bd"><span class="no">★</span><h3 data-edit="t12" data-edit-label="Heading — The counter garden">The counter garden</h3><p data-edit="t13" data-edit-label="Text — Tomatoes, parsley, peppers — cut fresh…">Tomatoes, parsley, peppers — cut fresh through the day.</p></div></div></div>
+ </div>
+</section>
+<section class="menu">
+ <div class="in2">
+  <h2 class="rv" data-edit="t14" data-edit-label="Title — The yellow board — real prices">The yellow board — real prices</h2>
+  <p class="sub rv" data-edit="t15" data-edit-label="Text — As chalked on the board (LBP) · Mon–Sa…">As chalked on the board (LBP) · Mon–Sat 10 AM – 11 PM</p>
+  <div class="rv">
+   <div class="mrow"><span data-edit="t16" data-edit-label="Text — Falafel sandwich">Falafel sandwich</span><span class="a" data-edit="t17" data-edit-label="Text — سندويش فلافل">سندويش فلافل</span><b class="pr" data-edit="t18" data-edit-label="Text — 200,000 LL">200,000 LL</b></div>
+   <div class="mrow"><span data-edit="t19" data-edit-label="Text — Falafel extra sandwich">Falafel extra sandwich</span><span class="a" data-edit="t20" data-edit-label="Text — سندويش فلافل اكسترا">سندويش فلافل اكسترا</span><b class="pr" data-edit="t21" data-edit-label="Text — 250,000 LL">250,000 LL</b></div>
+   <div class="mrow"><span data-edit="t22" data-edit-label="Text — A dozen falafel">A dozen falafel</span><span class="a" data-edit="t23" data-edit-label="Text — درزينة فلافل ساده">درزينة فلافل ساده</span><b class="pr" data-edit="t24" data-edit-label="Text — 300,000 LL">300,000 LL</b></div>
+   <div class="mrow"><span data-edit="t25" data-edit-label="Text — A dozen with vegetables">A dozen with vegetables</span><span class="a" data-edit="t26" data-edit-label="Text — درزينة فلافل مع خضرة">درزينة فلافل مع خضرة</span><b class="pr" data-edit="t27" data-edit-label="Text — 600,000 LL">600,000 LL</b></div>
+   <div class="mrow"><span data-edit="t28" data-edit-label="Text — Tahini cup — S / M / L">Tahini cup — S / M / L</span><span class="a" data-edit="t29" data-edit-label="Text — كباية طرطور">كباية طرطور</span><b class="pr" data-edit="t30" data-edit-label="Text — 100 / 200 / 300 K">100 / 200 / 300 K</b></div>
+   <div class="mrow"><span data-edit="t31" data-edit-label="Text — Raw falafel tray (fry at home)">Raw falafel tray (fry at home)</span><span class="a" data-edit="t32" data-edit-label="Text — علبة فلافل نيئة">علبة فلافل نيئة</span><b class="pr" data-edit="t33" data-edit-label="Text — 300,000 LL">300,000 LL</b></div>
+   <div class="mrow"><span data-edit="t34" data-edit-label="Text — Laban · soft drinks">Laban · soft drinks</span><span class="a" data-edit="t35" data-edit-label="Text — لبن · مرطبات">لبن · مرطبات</span><b class="pr" data-edit="t36" data-edit-label="Text — 70,000 LL">70,000 LL</b></div>
+   <div class="mrow"><span data-edit="t37" data-edit-label="Text — Water — L / S">Water — L / S</span><span class="a" data-edit="t38" data-edit-label="Text — مياه">مياه</span><b class="pr" data-edit="t39" data-edit-label="Text — 50 / 30 K">50 / 30 K</b></div>
+  </div>
+  <div class="mnote rv" data-edit="t40" data-edit-label="Text — Closed Sundays. The pan rests.">Closed Sundays. The pan rests.</div>
+ </div>
+</section>
+<section class="gal">
+ <div class="in2">
+  <h2 class="rv" data-edit="t41" data-edit-label="Title — The proof">The proof</h2>
+  <div class="gg rv"><a href="img/04.jpg" target="_blank"><img src="img/04.jpg" alt="" loading="lazy"></a><a href="img/05.jpg" target="_blank"><img src="img/05.jpg" alt="" loading="lazy"></a><a href="img/06.jpg" target="_blank"><img src="img/06.jpg" alt="" loading="lazy"></a><a href="img/03.jpg" target="_blank"><img src="img/03.jpg" alt="" loading="lazy"></a></div>
+ </div>
+</section>
+<section class="revs">
+ <div class="in2">
+  <h2 class="rv" data-edit="t42" data-edit-label="Title — 4.9 stars of witnesses">4.9 stars of witnesses</h2>
+  <div class="meta2 rv" data-edit="t43" data-edit-label="Text — ★ 4.9 · 38 Google reviews">★ 4.9 · 38 Google reviews</div>
+  <div class="rg"><div class="rc rv"><span class="st">★★★★★</span><p data-edit="t44" data-edit-label="Text — The falafel was made fresh right in fr…">The falafel was made fresh right in front of me, perfectly crispy on the outside and tender inside. Honestly, it's rare to find falafel this good outside of a home kitchen.</p><div class="who" data-edit="t45" data-edit-label="Text — Karam J. Al-Ghossein">Karam J. Al-Ghossein</div></div><div class="rc rv"><span class="st">★★★★★</span><p data-edit="t46" data-edit-label="Text — The best falafel of my life!! This sho…">The best falafel of my life!! This shop owner has been doing it for decades. He does one thing and one thing only — a local staple.</p><div class="who" data-edit="t47" data-edit-label="Text — Mrkamraman Photography">Mrkamraman Photography</div></div><div class="rc rv"><span class="st">★★★★★</span><p data-edit="t48" data-edit-label="Text — I found this delicious falafel shop wi…">I found this delicious falafel shop with reasonable prices. The spicy flavour I ordered was unique and delicious, as were the fresh vegetables.</p><div class="who" data-edit="t49" data-edit-label="Text — T. GeBrim">T. GeBrim</div></div></div>
+ </div>
+</section>
+<section class="visit">
+ <div class="in2">
+  <div class="rv">
+   <h2 data-edit="t50" data-edit-label="Title — Find the pan">Find the pan</h2>
+   <div class="vrow"><b data-edit="t51" data-edit-label="Text — Address">Address</b><span data-edit="t52" data-edit-label="Text — Rue 68, Ghabi/Geitawi, Beirut">Rue 68, Ghabi/Geitawi, Beirut</span></div>
+   <div class="vrow"><b data-edit="t53" data-edit-label="Text — Phone / WhatsApp">Phone / WhatsApp</b><a href="tel:+96170608542" style="color:var(--ink);font-weight:900" data-edit="t54" data-edit-label="Button / link — +961 70 608 542">+961 70 608 542</a></div>
+   <div class="vrow"><b data-edit="t55" data-edit-label="Text — Mon – Sat">Mon – Sat</b><span class="hrs" data-edit="t56" data-edit-label="Text — 10 AM – 11 PM">10 AM – 11 PM</span></div>
+   <div class="vrow"><b data-edit="t57" data-edit-label="Text — Sunday">Sunday</b><span class="hrs" data-edit="t58" data-edit-label="Text — closed">closed</span></div>
+   <a class="btn wa" href="https://wa.me/96170608542" target="_blank" rel="noopener" data-edit="t59" data-edit-label="Button / link — Message on WhatsApp">Message on WhatsApp</a>
+  </div>
+  <div class="map rv"><iframe src="https://www.google.com/maps?cid=9056253350759779030&output=embed" loading="lazy" title="Map"></iframe></div>
+ </div>
+</section>
+<footer>FALAFEL BAYDOUN AL FAKHIRA</footer>
+<div class="bar"><a class="w" href="https://wa.me/96170608542" target="_blank" rel="noopener" data-edit="t60" data-edit-label="Button / link — WhatsApp">WhatsApp</a><a class="c" href="tel:+96170608542" data-edit="t61" data-edit-label="Button / link — GO CALL YOURSELF">GO CALL YOURSELF</a><a class="m" href="https://maps.google.com/?cid=9056253350759779030" target="_blank" rel="noopener" data-edit="t62" data-edit-label="Button / link — MAP">MAP</a></div>
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+setTimeout(function(){document.querySelectorAll('.rv:not(.in)').forEach(function(el){el.classList.add('in')})},1100);
+</script>
+</body></html>

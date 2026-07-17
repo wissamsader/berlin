@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>بيت جبري — بيت دمشقي من عام ١٧٣٧ · دمشق القديمة</title>
+<meta name="description" content="مطعم بيت جبري في دمشق القديمة — بيت دمشقي من عام 1737، حوش وبحرة وخشب عجمي، وفتّة صيتها سبق البيت.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@400;500;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{overflow-x:clip}
+:root{--parch:#F4EBD9;--parch2:#ecdfc5;--aj:#22403A;--aj2:#1a332e;--ox:#8A2E1F;--oxd:#701f12;--gold:#B08D3E;--ink:#2A2419;--mut:#7c6f58;--mutl:#c8bfa4;--linel:#d9cba9}
+body{background:var(--parch);color:var(--ink);font:16px/1.85 'Tajawal',sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 5vw}
+.disp{font-family:'Amiri',serif}
+.lat{font-family:'Cormorant Garamond',serif}
+.k{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ox);font-weight:800;display:block;margin-bottom:6px}
+.rev{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rev.on{opacity:1;transform:none}
+html.en .ar{display:none!important}
+html:not(.en) .tr{display:none!important}
+.tr{direction:ltr;unicode-bidi:isolate}
+/* hero — split: ajami panel + tall courtyard photo */
+.hero{display:grid;grid-template-columns:1.02fr .98fr;min-height:90svh}
+.hpanel{background:var(--aj);color:var(--parch);position:relative;display:flex;align-items:center;padding:96px 5vw 72px}
+.hpanel::before{content:'';position:absolute;inset:14px;border:1px solid rgba(176,141,62,.55);pointer-events:none}
+.hpanel::after{content:'';position:absolute;inset:22px;border:1px dashed rgba(244,235,217,.28);pointer-events:none}
+.hpanel .in{position:relative;max-width:520px;margin:0 auto}
+.seal{width:96px;height:96px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#a1402d,var(--oxd) 75%);color:var(--parch);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;transform:rotate(-7deg);box-shadow:0 10px 24px -10px rgba(42,36,25,.7),inset 0 0 0 3px rgba(244,235,217,.25);margin-bottom:26px;font-weight:800;font-size:13px;line-height:1.3;text-align:center;animation:sealin .8s cubic-bezier(.2,.9,.3,1.2) both .3s}
+@keyframes sealin{from{opacity:0;transform:rotate(-7deg) scale(1.6)}to{opacity:1;transform:rotate(-7deg) scale(1)}}
+.seal small{font-size:10px;letter-spacing:.14em;font-weight:700;opacity:.85}
+h1{font-family:'Amiri',serif;font-size:clamp(52px,8.5vw,96px);line-height:1.12;font-weight:700}
+.hero-sub{margin-top:12px;font-size:clamp(15px,1.9vw,18.5px);color:#e7ddc4;max-width:52ch}
+.hero-meta{margin-top:24px;display:flex;gap:18px;flex-wrap:wrap;font-size:13.5px;color:var(--mutl)}
+.hero-meta b{color:var(--parch)}
+.hphoto{background:url('img/01.jpg') center/cover no-repeat;min-height:100%}
+/* story — the deed */
+.story{display:grid;grid-template-columns:1.08fr .92fr;gap:6vw;align-items:center;padding:96px 0 80px}
+.story .ph{position:relative;transform:rotate(1.6deg)}
+.story .ph::before{content:'';position:absolute;inset:-12px;border:1px solid var(--gold);pointer-events:none}
+.story img{aspect-ratio:4/5;object-fit:cover;border:8px solid #fff;box-shadow:0 22px 44px -20px rgba(42,36,25,.5)}
+.story h2{font-size:clamp(30px,4.6vw,50px);line-height:1.3;margin:10px 0 18px;color:var(--aj)}
+.story p{color:#544a37;margin-bottom:14px}
+/* highlights — ajami green course */
+.grn{background:var(--aj);color:var(--parch)}
+.grn .k{color:var(--gold)}
+.high{padding:84px 0 92px}
+.high h2{font-size:clamp(26px,3.8vw,42px);margin:8px 0 30px}
+.hgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.hcard{background:var(--aj2);border:1px solid rgba(176,141,62,.4);overflow:hidden;transition:transform .35s ease}
+.hcard:hover{transform:translateY(-6px)}
+.hcard img{height:212px;width:100%;object-fit:cover}
+.hcard .hb{padding:16px 18px 20px;border-top:2px solid var(--gold)}
+.hcard h3{font-family:'Amiri',serif;font-size:22px;margin-bottom:6px;color:var(--gold)}
+.hcard p{font-size:13.8px;color:#cfc6ab}
+/* menu — the framed real menu + signature list */
+.menu{padding:92px 0 40px}
+.menu h2{font-family:'Amiri',serif;font-size:clamp(32px,5vw,52px);text-align:center;color:var(--aj);margin-bottom:8px}
+.menu .note{text-align:center;color:var(--mut);font-size:13.5px;max-width:60ch;margin:0 auto 40px}
+.mwrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:5vw;align-items:start}
+.mframe{background:#3f2c1c;padding:14px;box-shadow:0 26px 50px -22px rgba(42,36,25,.6);transform:rotate(-1.2deg)}
+.mframe .mat{background:#fbf5e8;padding:12px}
+.mframe img{display:block}
+.mframe figcaption{text-align:center;font-size:12.5px;color:#cbb488;padding-top:10px}
+.mlist{padding-top:6px}
+.mi{display:flex;justify-content:space-between;gap:14px;align-items:baseline;margin-bottom:12px;font-size:16px;border-bottom:1px dashed var(--linel);padding-bottom:10px}
+.mi .nm{font-family:'Amiri',serif;font-size:18.5px;color:var(--ink)}
+.mi em{font-style:normal;color:var(--ox);font-size:12px;letter-spacing:.06em;white-space:nowrap}
+.mfoot{margin-top:20px;color:var(--mut);font-size:13.5px}
+/* gallery — diptych */
+.gal{padding:60px 0 90px}
+.gal h2{font-size:clamp(26px,3.8vw,42px);margin:8px 0 26px;color:var(--aj)}
+.duo{display:grid;grid-template-columns:1.35fr .65fr;gap:16px}
+.duo figure{position:relative;margin:0}
+.duo img{width:100%;height:420px;object-fit:cover;border:6px solid #fff;box-shadow:0 20px 40px -20px rgba(42,36,25,.45)}
+.duo figcaption{position:absolute;bottom:14px;right:14px;background:rgba(34,64,58,.88);color:var(--parch);font-size:12.5px;font-weight:700;padding:6px 14px}
+/* reviews */
+.revs{padding:10px 0 92px}
+.revs h2{font-size:clamp(26px,3.8vw,42px);margin-bottom:28px;color:var(--aj)}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rcard{background:#faf3e3;border:1px solid var(--linel);padding:22px;position:relative}
+.rcard::before{content:'❝';position:absolute;top:10px;left:14px;font-size:34px;color:var(--ox);opacity:.35;font-family:'Cormorant Garamond',serif}
+.stars-row{color:var(--gold);letter-spacing:2px;font-size:14px}
+.rcard p{font-size:14.5px;color:#544a37;margin:12px 0 14px;font-style:italic}
+.rcard .who{font-size:13px;color:var(--mut)}
+.gbadge{margin-top:26px;text-align:center;color:var(--mut);font-size:14px}
+.gbadge b{color:var(--ink)}
+/* visit — green course */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:6vw;padding:84px 0 120px;align-items:start}
+.visit h2{font-size:clamp(26px,3.8vw,42px);margin:6px 0 20px}
+.hours{width:100%;border-collapse:collapse;font-size:14.5px}
+.hours td{padding:10px 0;border-bottom:1px dashed rgba(244,235,217,.25);color:#d8cfb4}
+.hours td:last-child{text-align:left;color:var(--parch);font-weight:700}
+.vinfo p{margin-bottom:14px;color:#d8cfb4}
+.vinfo .adr{font-size:21px;font-family:'Amiri',serif;color:var(--parch)}
+.vinfo .tel a{font-weight:800;color:var(--gold);text-decoration:none;font-size:17px}
+.btn{display:inline-block;background:var(--ox);color:var(--parch);font-weight:800;border-radius:3px;padding:14px 26px;text-decoration:none;margin:6px 0 0 10px;font-size:15px}
+.btn.o{background:transparent;color:var(--parch);border:1.5px solid rgba(244,235,217,.4)}
+footer{padding:40px 5vw 130px;text-align:center;color:var(--mut);font-size:12.5px;border-top:1px solid var(--linel)}
+/* manuscript-scroll bar — unique: parchment scroll w/ rolled ends + seal-stamp buttons */
+.bar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom));z-index:60;display:flex;align-items:center;gap:4px;background:linear-gradient(180deg,#f9f1dd,#eee0c2);border:1px solid #c9b78f;border-radius:6px;box-shadow:0 16px 40px -12px rgba(42,36,25,.55);padding:9px 26px;animation:unroll .8s cubic-bezier(.2,.9,.3,1.1) both .25s}
+.bar::before,.bar::after{content:'';position:absolute;top:-7px;bottom:-7px;width:17px;border-radius:9px;background:linear-gradient(90deg,#b89a66,#e4d2a8 45%,#a3854f);box-shadow:0 6px 14px -4px rgba(42,36,25,.5)}
+.bar::before{right:-9px}
+.bar::after{left:-9px}
+@keyframes unroll{from{transform:translateX(-50%) translateY(90px) scaleX(.55)}to{transform:translateX(-50%) translateY(0) scaleX(1)}}
+.bar a{text-decoration:none;display:flex;align-items:center;justify-content:center}
+.bar a.wax{width:52px;height:52px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#a1402d,var(--oxd) 75%);color:var(--parch);box-shadow:inset 0 0 0 3px rgba(244,235,217,.25),0 8px 16px -6px rgba(42,36,25,.5);margin-left:8px}
+.bar a.wax svg{width:20px;height:20px}
+.bar a.stmp{gap:7px;padding:11px 14px;border:1.5px solid var(--aj);border-radius:3px;color:var(--aj);font-weight:800;font-size:13.5px;margin:0 3px;background:rgba(255,255,255,.35)}
+.bar a.stmp svg{width:16px;height:16px;display:block}
+/* toggle chip — mini wax seal */
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));left:12px;z-index:80;cursor:pointer;width:44px;height:44px;border-radius:50%;border:none;background:radial-gradient(circle at 35% 30%,#a1402d,var(--oxd) 75%);color:var(--parch);font-weight:800;font-size:11.5px;letter-spacing:.1em;line-height:1;box-shadow:inset 0 0 0 2px rgba(244,235,217,.3),0 6px 14px -6px rgba(42,36,25,.6);font-family:'Tajawal',sans-serif}
+@media(max-width:860px){
+ .hero{grid-template-columns:1fr}
+ .hphoto{min-height:52svh;order:2}
+ .hpanel{padding:88px 8vw 56px}
+ .hpanel::after{inset:14px}
+ .story{grid-template-columns:1fr;gap:34px;padding-top:64px}
+ .story .ph{transform:none}
+ .hgrid,.rgrid{grid-template-columns:1fr}
+ .mwrap{grid-template-columns:1fr;gap:40px}
+ .mframe{transform:none}
+ .duo{grid-template-columns:1fr}
+ .duo img{height:300px}
+ .visit{grid-template-columns:1fr;gap:40px}
+ .wrap{padding-left:5vw!important;padding-right:5vw!important}
+ .bar{padding:8px 20px}
+ .bar a.stmp{padding:10px 11px;font-size:12.5px}
+ .bar a.wax{width:46px;height:46px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+<style>.seal{overflow:hidden}
+.seal::after{content:'';position:absolute;top:-20%;left:-70%;width:42%;height:140%;
+ background:linear-gradient(105deg,transparent,rgba(240,225,200,.4),transparent);transform:skewX(-18deg);
+ animation:fxglint 14s ease-in-out infinite}
+@keyframes fxglint{0%,86%{left:-70%}97%,100%{left:140%}}
+@media (prefers-reduced-motion: reduce){.seal::after{animation:none}}</style></head>
+<body>
+
+<button class="lgx" onclick="document.documentElement.classList.toggle('en')" aria-label="English / العربية"><span class="ar" data-edit="t1" data-edit-label="Text — EN">EN</span><span class="tr" data-edit="t2" data-edit-label="Text — ع">ع</span></button>
+
+<header class="hero">
+ <div class="hpanel">
+  <div class="in">
+   <div class="seal"><span class="ar">منذ<br>١٧٣٧</span><span class="tr">EST.<br><small data-edit="t3" data-edit-label="Text — 1737">1737</small></span></div>
+   <h1><span class="ar" data-edit="t4" data-edit-label="Text — بيت جبري">بيت جبري</span><span class="tr lat" data-edit="t5" data-edit-label="Text — Beit Jabri">Beit Jabri</span></h1>
+   <p class="hero-sub"><span class="ar" data-edit="t6" data-edit-label="Text — بيت دمشقي واقف من عام ١٧٣٧ — حوش مسقوف…">بيت دمشقي واقف من عام ١٧٣٧ — حوش مسقوف بالسما، خشب عجمي مرسوم بإيد الصنّاع، وفتّة صيتها وصل قبل ما توصلوا.</span><span class="tr lat"><em data-edit="t7" data-edit-label="Text — A Damascene house standing since 1737 …">A Damascene house standing since 1737 — an open-sky courtyard, hand-painted ajami wood, and a fatteh whose fame arrives before you do.</em></span></p>
+   <div class="hero-meta">
+    <span>★ <b data-edit="rating">4.3</b> <span class="ar" data-edit="t8" data-edit-label="Text — على غوغل ·">على غوغل ·</span><span class="tr" data-edit="t9" data-edit-label="Text — on Google ·">on Google ·</span> <span data-edit="revcount">301</span> <span class="ar" data-edit="t10" data-edit-label="Text — تقييم">تقييم</span><span class="tr" data-edit="t11" data-edit-label="Text — reviews">reviews</span></span>
+    <span data-edit="addr">١٤ السواف — دمشق القديمة</span>
+   </div>
+  </div>
+ </div>
+ <div class="hphoto" role="img" aria-label="حوش بيت جبري"></div>
+</header>
+
+<section class="story wrap">
+ <div class="rev">
+  <span class="k"><span class="ar" data-edit="t12" data-edit-label="Text — حكاية البيت">حكاية البيت</span><span class="tr" data-edit="t13" data-edit-label="Text — The house's story">The house's story</span></span>
+  <h2 class="disp"><span class="ar" data-edit="t14" data-edit-label="Text — بيتٌ كُتِبَ سنة ١٧٣٧">بيتٌ كُتِبَ سنة ١٧٣٧</span><span class="tr lat" data-edit="t15" data-edit-label="Text — A house deeded in 1737">A house deeded in 1737</span></h2>
+  <p><span class="ar" data-edit="story1">بين حارات دمشق القديمة، وعلى خطوات من سوق الحرير، بيقعد بيت جبري متل ما هو من قرابة ثلاثة قرون: حوش مبلّط أبيض وأسود، بحرة بنصّ الدار، شجر مظلّل، وغرف مكسيّة بالخشب العجمي المرسوم اللي كان زينة بيوت الشام الكبيرة.</span><span class="tr" data-edit="story1en"><em data-edit="t16" data-edit-label="Text — Among the lanes of Old Damascus, Beit …">Among the lanes of Old Damascus, Beit Jabri sits much as it has for nearly three centuries: a chequered courtyard of black and white stone, a fountain at its centre, shading trees, and rooms lined with the hand-painted ajami woodwork that once adorned the grand houses of Damascus.</em></span></p>
+  <p><span class="ar" data-edit="story2">صارت الدار مطعماً، وصار اسمها مقروناً بالفتّة: فتة بيت جبري اللي بيقصدها الناس من كل الدنيا، تتاكل عالحوش بين خرير البحرة وضحك الطاولات. من أهل الحي لضيوف مرقوا مرة وما نسيوا — كل واحد إلو بهالبيت قعدة وذكرى.</span><span class="tr" data-edit="story2en"><em data-edit="t17" data-edit-label="Text — The house became a restaurant, and its…">The house became a restaurant, and its name became inseparable from fatteh: the Beit Jabri fatteh people cross the world for, eaten in the courtyard between the fountain's murmur and the laughter of the tables. From neighbours to guests who passed once and never forgot — everyone keeps a seat and a memory in this house.</em></span></p>
+ </div>
+ <div class="ph rev"><img src="img/08.jpg" alt="حوش بيت جبري من فوق — البحرة والبلاط المشطرنج"></div>
+</section>
+
+<div class="grn">
+ <section class="high wrap">
+  <span class="k"><span class="ar" data-edit="t18" data-edit-label="Text — من المطبخ">من المطبخ</span><span class="tr" data-edit="t19" data-edit-label="Text — From the kitchen">From the kitchen</span></span>
+  <h2 class="disp rev"><span class="ar" data-edit="t20" data-edit-label="Text — أطباق البيت">أطباق البيت</span><span class="tr lat" data-edit="t21" data-edit-label="Text — Plates of the house">Plates of the house</span></h2>
+  <div class="hgrid">
+   <div class="hcard rev"><img src="img/04.jpg" alt="فتة بيت جبري"><div class="hb"><h3><span class="ar" data-edit="t22" data-edit-label="Text — فتة بيت جبري">فتة بيت جبري</span><span class="tr lat" data-edit="t23" data-edit-label="Text — The Beit Jabri fatteh">The Beit Jabri fatteh</span></h3><p><span class="ar" data-edit="t24" data-edit-label="Text — الطبق اللي بيحمل اسم البيت — خبز محمّص…">الطبق اللي بيحمل اسم البيت — خبز محمّص ولبن وسمنة عربية، عالسخن وعالحوش.</span><span class="tr" data-edit="t25" data-edit-label="Text — The plate that carries the house's nam…">The plate that carries the house's name — toasted bread, yogurt and clarified butter, served hot in the courtyard.</span></p></div></div>
+   <div class="hcard rev"><img src="img/07.jpg" alt="من مشاوي بيت جبري"><div class="hb"><h3><span class="ar" data-edit="t26" data-edit-label="Text — من الفرن والمنقل">من الفرن والمنقل</span><span class="tr lat" data-edit="t27" data-edit-label="Text — From oven & grill">From oven & grill</span></h3><p><span class="ar" data-edit="t28" data-edit-label="Text — شرحات بيت جبري، كباب ومشاوي مشكلة عالط…">شرحات بيت جبري، كباب ومشاوي مشكلة عالطريقة الشامية — سفرة غدا بتليق بالدار.</span><span class="tr" data-edit="t29" data-edit-label="Text — Beit Jabri cutlets, kebab and mixed gr…">Beit Jabri cutlets, kebab and mixed grill the Damascene way — a lunch worthy of the house.</span></p></div></div>
+   <div class="hcard rev"><img src="img/03.jpg" alt="كاسة بيت جبري"><div class="hb"><h3><span class="ar" data-edit="t30" data-edit-label="Text — كاسة عالبحرة">كاسة عالبحرة</span><span class="tr lat" data-edit="t31" data-edit-label="Text — A cup by the fountain">A cup by the fountain</span></h3><p><span class="ar" data-edit="t32" data-edit-label="Text — شاي أو قهوة بكاسة بتحمل اسم البيت — ال…">شاي أو قهوة بكاسة بتحمل اسم البيت — الضيافة هون جزء من العمارة.</span><span class="tr" data-edit="t33" data-edit-label="Text — Tea or coffee in a cup bearing the hou…">Tea or coffee in a cup bearing the house's name — hospitality here is part of the architecture.</span></p></div></div>
+  </div>
+ </section>
+</div>
+
+<section class="menu wrap">
+ <h2><span class="ar" data-edit="t34" data-edit-label="Text — منيو البيت">منيو البيت</span><span class="tr lat" data-edit="t35" data-edit-label="Text — The house menu">The house menu</span></h2>
+ <p class="note"><span class="ar" data-edit="t36" data-edit-label="Text — هي صورة منيو البيت نفسه — والقائمة الك…">هي صورة منيو البيت نفسه — والقائمة الكاملة بالأسعار الحالية داخل المطعم.</span><span class="tr"><em data-edit="t37" data-edit-label="Text — This is the house menu itself — the fu…">This is the house menu itself — the full list with current prices is at the restaurant.</em></span></p>
+ <div class="mwrap">
+  <figure class="mframe rev">
+   <div class="mat"><img src="img/02.jpg" alt="منيو بيت جبري المطبوع بالعربي والإنكليزي"></div>
+   <figcaption><span class="ar" data-edit="t38" data-edit-label="Text — منيو بيت جبري — عربي وإنكليزي">منيو بيت جبري — عربي وإنكليزي</span><span class="tr" data-edit="t39" data-edit-label="Text — The Beit Jabri menu — Arabic & English">The Beit Jabri menu — Arabic & English</span></figcaption>
+  </figure>
+  <div class="mlist rev">
+   <div class="mi"><span class="nm" data-edit="t40" data-edit-label="Text — منقوشة زعتر">منقوشة زعتر</span><em><span class="ar" data-edit="t41" data-edit-label="Text — من الفرن">من الفرن</span><span class="tr" data-edit="t42" data-edit-label="Text — za'atar manousheh">za'atar manousheh</span></em></div>
+   <div class="mi"><span class="nm" data-edit="t43" data-edit-label="Text — فتة دجاج">فتة دجاج</span><em><span class="ar" data-edit="t44" data-edit-label="Text — طبق البيت">طبق البيت</span><span class="tr" data-edit="t45" data-edit-label="Text — chicken fatteh">chicken fatteh</span></em></div>
+   <div class="mi"><span class="nm" data-edit="t46" data-edit-label="Text — فتوش">فتوش</span><em><span class="ar" data-edit="t47" data-edit-label="Text — سلطات">سلطات</span><span class="tr" data-edit="t48" data-edit-label="Text — fattoush">fattoush</span></em></div>
+   <div class="mi"><span class="nm" data-edit="t49" data-edit-label="Text — شرحات بيت جبري">شرحات بيت جبري</span><em><span class="ar" data-edit="t50" data-edit-label="Text — عالاسم">عالاسم</span><span class="tr" data-edit="t51" data-edit-label="Text — Beit Jabri cutlets">Beit Jabri cutlets</span></em></div>
+   <div class="mi"><span class="nm" data-edit="t52" data-edit-label="Text — وجبة كباب">وجبة كباب</span><em><span class="ar" data-edit="t53" data-edit-label="Text — من المنقل">من المنقل</span><span class="tr" data-edit="t54" data-edit-label="Text — kebab platter">kebab platter</span></em></div>
+   <div class="mi"><span class="nm" data-edit="t55" data-edit-label="Text — وجبة مشاوي مشكلة">وجبة مشاوي مشكلة</span><em><span class="ar" data-edit="t56" data-edit-label="Text — من المنقل">من المنقل</span><span class="tr" data-edit="t57" data-edit-label="Text — mixed grill">mixed grill</span></em></div>
+   <div class="mi"><span class="nm" data-edit="t58" data-edit-label="Text — كبة نية">كبة نية</span><em><span class="ar" data-edit="t59" data-edit-label="Text — طبق الشام">طبق الشام</span><span class="tr" data-edit="t60" data-edit-label="Text — kibbeh nayyeh">kibbeh nayyeh</span></em></div>
+   <div class="mi"><span class="nm" data-edit="t61" data-edit-label="Text — بيتزا مارغريتا">بيتزا مارغريتا</span><em><span class="ar" data-edit="t62" data-edit-label="Text — للصغار والكبار">للصغار والكبار</span><span class="tr" data-edit="t63" data-edit-label="Text — pizza Margherita">pizza Margherita</span></em></div>
+   <p class="mfoot"><span class="ar" data-edit="t64" data-edit-label="Text — الأسعار حسب اللائحة المعتمدة داخل المط…">الأسعار حسب اللائحة المعتمدة داخل المطعم.</span><span class="tr"><em data-edit="t65" data-edit-label="Text — Prices follow the current list at the …">Prices follow the current list at the restaurant.</em></span></p>
+  </div>
+ </div>
+</section>
+
+<section class="gal wrap">
+ <span class="k"><span class="ar" data-edit="t66" data-edit-label="Text — عدسة عالدار">عدسة عالدار</span><span class="tr" data-edit="t67" data-edit-label="Text — Through the house">Through the house</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t68" data-edit-label="Text — من قلب البيت">من قلب البيت</span><span class="tr lat" data-edit="t69" data-edit-label="Text — From the heart of the house">From the heart of the house</span></h2>
+ <div class="duo rev">
+  <figure><img src="img/05.jpg" alt="سفرة عامرة في بيت جبري"><figcaption><span class="ar" data-edit="t70" data-edit-label="Text — سفرة عامرة">سفرة عامرة</span><span class="tr" data-edit="t71" data-edit-label="Text — A table in full spread">A table in full spread</span></figcaption></figure>
+  <figure><img src="img/06.jpg" alt="داخل بيت جبري والعرايش"><figcaption><span class="ar" data-edit="t72" data-edit-label="Text — زوايا الدار">زوايا الدار</span><span class="tr" data-edit="t73" data-edit-label="Text — Corners of the house">Corners of the house</span></figcaption></figure>
+ </div>
+</section>
+
+<section class="revs wrap">
+ <span class="k"><span class="ar" data-edit="t74" data-edit-label="Text — قالوا عنا">قالوا عنا</span><span class="tr" data-edit="t75" data-edit-label="Text — What they say">What they say</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t76" data-edit-label="Text — من تقييمات غوغل">من تقييمات غوغل</span><span class="tr lat" data-edit="t77" data-edit-label="Text — From Google reviews">From Google reviews</span></h2>
+ <div class="rgrid">
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p dir="ltr" data-edit="t78" data-edit-label="Text — 'What a place! A true find. Started at…">"What a place! A true find. Started at midnight with a late reservation after a trade show. Our party of 12 arrived by golf cart after a 10 minute ride up through the old town from one of the Gates of Damascus."</p><div class="who" data-edit="t79" data-edit-label="Text — simon edge · Google">simon edge · Google</div></div>
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p dir="ltr" data-edit="t80" data-edit-label="Text — 'Amazing! The service, ambience, and f…">"Amazing! The service, ambience, and food are just wonderful. Everyone is courteous and welcoming, exemplifying the true spirit of Damascus generosity."</p><div class="who" data-edit="t81" data-edit-label="Text — Sahar Halabi · Google">Sahar Halabi · Google</div></div>
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p dir="ltr" data-edit="t82" data-edit-label="Text — 'The restaurant (old Syrian house) was…">"The restaurant (old Syrian house) was super cool."</p><div class="who" data-edit="t83" data-edit-label="Text — Honra Taliqat · Google">Honra Taliqat · Google</div></div>
+ </div>
+ <p class="gbadge">★ <b data-edit="t84" data-edit-label="Text — 4.3 / 5">4.3 / 5</b> — <span data-edit="revcount2">301</span> <span class="ar" data-edit="t85" data-edit-label="Text — تقييم على غوغل">تقييم على غوغل</span><span class="tr" data-edit="t86" data-edit-label="Text — Google reviews">Google reviews</span></p>
+</section>
+
+<div class="grn">
+<section class="visit wrap">
+ <div class="rev">
+  <span class="k"><span class="ar" data-edit="t87" data-edit-label="Text — الدوام">الدوام</span><span class="tr" data-edit="t88" data-edit-label="Text — Hours">Hours</span></span>
+  <h2 class="disp"><span class="ar" data-edit="t89" data-edit-label="Text — متى تلاقونا">متى تلاقونا</span><span class="tr lat" data-edit="t90" data-edit-label="Text — When to find us">When to find us</span></h2>
+  <table class="hours">
+   <tr><td><span class="ar" data-edit="t91" data-edit-label="Text — يومياً">يومياً</span><span class="tr" data-edit="t92" data-edit-label="Text — Daily">Daily</span></td><td><span class="ar" data-edit="h-all">10:00 – 24:00</span><span class="tr" data-edit="h-all-en">10:00 – 24:00</span></td></tr>
+  </table>
+  <p style="margin-top:16px;font-size:13.5px;color:#c8bfa4"><span class="ar" data-edit="h-note">الدوام من لائحة غوغل — للمناسبات والطاولات الكبيرة اتصلوا قبل.</span><span class="tr" data-edit="t93" data-edit-label="Text — Hours as listed on Google — for occasi…">Hours as listed on Google — for occasions and large tables, call ahead.</span></p>
+ </div>
+ <div class="vinfo rev">
+  <span class="k"><span class="ar" data-edit="t94" data-edit-label="Text — الموقع">الموقع</span><span class="tr" data-edit="t95" data-edit-label="Text — Find us">Find us</span></span>
+  <h2 class="disp"><span class="ar" data-edit="t96" data-edit-label="Text — بحارة السواف">بحارة السواف</span><span class="tr lat" data-edit="t97" data-edit-label="Text — In As-Sawwaf lane">In As-Sawwaf lane</span></h2>
+  <p class="adr" data-edit="addr2">١٤ السواف — دمشق القديمة</p>
+  <p class="tel"><span class="ar" data-edit="t98" data-edit-label="Text — للحجز:">للحجز:</span><span class="tr" data-edit="t99" data-edit-label="Text — For bookings:">For bookings:</span> <a href="tel:+963115443200" data-edit="phone"><span dir="ltr" style="unicode-bidi:isolate;white-space:nowrap" data-edit="t100" data-edit-label="Text — +963 11 544 3200">+963 11 544 3200</span></a></p>
+  <a class="btn" href="tel:+963115443200"><span class="ar" data-edit="t101" data-edit-label="Text — اتصلوا فينا">اتصلوا فينا</span><span class="tr" data-edit="t102" data-edit-label="Text — Call us">Call us</span></a>
+  <a class="btn o" href="https://www.google.com/maps?cid=6677437145117665113" target="_blank" rel="noopener"><span class="ar" data-edit="t103" data-edit-label="Text — افتحوا الخريطة">افتحوا الخريطة</span><span class="tr" data-edit="t104" data-edit-label="Text — Open in Maps">Open in Maps</span></a>
+  <a class="btn o" href="https://www.instagram.com/beit.jabri.restaurant/" target="_blank" rel="noopener"><span class="ar" data-edit="t105" data-edit-label="Text — إنستغرام">إنستغرام</span><span class="tr" data-edit="t106" data-edit-label="Text — Instagram">Instagram</span></a>
+ </div>
+</section>
+</div>
+
+<footer><span data-edit="footer">بيت جبري · ١٤ السواف — دمشق القديمة · ‎<span dir="ltr" style="unicode-bidi:isolate;white-space:nowrap" data-edit="t107" data-edit-label="Text — +963 11 544 3200">+963 11 544 3200</span></span></footer>
+
+<div class="bar">
+ <a class="wax" href="tel:+963115443200" aria-label="اتصلوا ببيت جبري"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+ <a class="stmp" href="https://www.google.com/maps?cid=6677437145117665113" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><b><span class="ar" data-edit="t108" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t109" data-edit-label="Text — Map">Map</span></b></a>
+ <a class="stmp" href="https://www.instagram.com/beit.jabri.restaurant/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+</div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+setTimeout(()=>document.querySelectorAll('.rev:not(.on)').forEach(el=>el.classList.add('on')),1100);
+</script>
+</body>
+</html>
