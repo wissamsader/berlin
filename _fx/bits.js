@@ -86,14 +86,22 @@
       /* background-clip:text won't paint through transformed child spans (Chrome) — animate whole */
       var cs = getComputedStyle(el);
       if ((cs.webkitBackgroundClip || cs.backgroundClip || '').indexOf('text') > -1) { whole.push(el); return; }
-      var words = el.textContent.trim().split(/\s+/); el.textContent = '';
-      words.forEach(function (w, i) {
-        var wrap = document.createElement('span'); wrap.className = 'fxw'; wrap.style.overflow = 'hidden'; wrap.style.verticalAlign = 'top';
-        if (AR.test(w)) { var s = document.createElement('span'); s.className = 'fxchar'; s.textContent = w; wrap.appendChild(s); }
-        else w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'fxchar'; s.textContent = c; wrap.appendChild(s); });
-        el.appendChild(wrap);
-        if (i < words.length - 1) el.appendChild(document.createTextNode(' '));
-      });
+      (function split(node) {                     /* childNode-aware: keeps <br> and nested spans (styling, data-edit) */
+        Array.prototype.slice.call(node.childNodes).forEach(function (ch) {
+          if (ch.nodeType === 3) {
+            var frag = document.createDocumentFragment();
+            ch.textContent.split(/(\s+)/).forEach(function (w) {
+              if (!w) return;
+              if (/^\s+$/.test(w)) { frag.appendChild(document.createTextNode(' ')); return; }
+              var wrap = document.createElement('span'); wrap.className = 'fxw'; wrap.style.overflow = 'hidden'; wrap.style.verticalAlign = 'top';
+              if (AR.test(w)) { var s = document.createElement('span'); s.className = 'fxchar'; s.textContent = w; wrap.appendChild(s); }
+              else w.split('').forEach(function (c) { var s = document.createElement('span'); s.className = 'fxchar'; s.textContent = c; wrap.appendChild(s); });
+              frag.appendChild(wrap);
+            });
+            node.replaceChild(frag, ch);
+          } else if (ch.nodeType === 1 && ch.tagName !== 'BR' && !ch.classList.contains('fxw')) split(ch);
+        });
+      })(el);
       targets.push(el);
     });
     return function (delay) {
