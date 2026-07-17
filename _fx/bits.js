@@ -262,4 +262,97 @@
       onEnter: function (b) { gsap.from(b, { autoAlpha: 0, y: y || 34, duration: .8, ease: 'power3.out', stagger: .1 }); }
     });
   };
+
+  /* ---------- v3: vendored heavy tools, lazy + desktop-only ---------- */
+  FX.lazyVanta = function (effect, sel, opts) {    /* three.js + vanta load AFTER the page, desktop only */
+    if (FX.off || !FINE || !DESK) return;
+    var el = document.querySelector(sel); if (!el) return;
+    var base = (document.querySelector('script[src*="_fx/bits.js"]') || {}).src || '';
+    base = base.slice(0, base.lastIndexOf('/') + 1);
+    function load(src) {
+      return new Promise(function (res) {
+        if (document.querySelector('script[data-fx="' + src + '"]')) return res();
+        var sc = document.createElement('script');
+        sc.src = base + src; sc.dataset.fx = src; sc.onload = res; sc.onerror = res;
+        document.head.appendChild(sc);
+      });
+    }
+    var go = function () {
+      load('three.min.js').then(function () { return load('vanta.' + effect + '.min.js'); }).then(function () {
+        if (!window.VANTA || !VANTA[effect.toUpperCase()]) return;
+        el.style.position = 'relative';
+        Array.prototype.forEach.call(el.children, function (c) {
+          if (getComputedStyle(c).position === 'static') c.style.position = 'relative';
+          c.style.zIndex = c.style.zIndex || 1;
+        });
+        VANTA[effect.toUpperCase()](Object.assign({
+          el: el, mouseControls: true, touchControls: false, gyroControls: false,
+          minHeight: 200, scale: 1, scaleMobile: 1
+        }, opts));
+      });
+    };
+    if (document.readyState === 'complete') setTimeout(go, 350); else addEventListener('load', function () { setTimeout(go, 350); });
+  };
+
+  FX.imageTrail = function (sel, srcs, size) {     /* react-bits ImageTrail port — photos chase the cursor */
+    if (FX.off || !FINE) return;
+    var host = document.querySelector(sel); if (!host || !srcs.length) return;
+    host.style.position = host.style.position || 'relative';
+    var i = 0, lastX = 0, lastY = 0, alive = 0;
+    host.addEventListener('pointermove', function (e) {
+      if (Math.hypot(e.clientX - lastX, e.clientY - lastY) < 90 || alive > 9) return;
+      lastX = e.clientX; lastY = e.clientY; alive++;
+      var r = host.getBoundingClientRect();
+      var img = document.createElement('img');
+      img.src = srcs[i++ % srcs.length]; img.alt = '';
+      img.style.cssText = 'position:absolute;width:' + (size || 150) + 'px;height:' + (size || 190) +
+        'px;object-fit:cover;border-radius:10px;pointer-events:none;z-index:5;left:0;top:0;box-shadow:0 18px 44px rgba(0,0,0,.35)';
+      img.style.transform = 'translate(' + (e.clientX - r.left - (size || 150) / 2) + 'px,' + (e.clientY - r.top - (size || 190) / 2) + 'px)';
+      host.appendChild(img);
+      gsap.fromTo(img, { scale: .3, autoAlpha: 0, rotation: gsap.utils.random(-14, 14) },
+        { scale: 1, autoAlpha: 1, duration: .35, ease: 'power3.out' });
+      gsap.to(img, {
+        autoAlpha: 0, scale: .9, y: '+=36', duration: .6, delay: .45, ease: 'power2.in',
+        onComplete: function () { img.remove(); alive--; }
+      });
+    });
+  };
+
+  FX.lightSweep = function (sel, color, every) {   /* runway light beam across the hero */
+    if (FX.off) return;
+    q(sel).forEach(function (el) {
+      if (getComputedStyle(el).position === 'static') el.style.position = 'relative';
+      var b = document.createElement('div');
+      b.style.cssText = 'position:absolute;inset:0;pointer-events:none;z-index:2;opacity:0;background:linear-gradient(105deg,transparent 42%,' +
+        (color || 'rgba(255,244,214,.20)') + ' 50%,transparent 58%);transform:translateX(-70%)';
+      el.appendChild(b);
+      var sweep = function () {
+        gsap.fromTo(b, { xPercent: -70, opacity: 0 },
+          { xPercent: 70, opacity: 1, duration: 2.4, ease: 'power2.inOut',
+            onComplete: function () { gsap.set(b, { opacity: 0 }); } });
+      };
+      sweep(); setInterval(sweep, (every || 7) * 1000);
+    });
+  };
+
+  FX.conicBorder = function (sel, color) {         /* react-bits ElectricBorder port — running gold edge */
+    if (FX.off) return;
+    if (!FX._cb) {
+      FX._cb = 1;
+      var s2 = document.createElement('style');
+      s2.textContent = '@property --fxa{syntax:"<angle>";initial-value:0deg;inherits:false}' +
+        '.fxcb{position:relative}' +
+        '.fxcb::before{content:"";position:absolute;inset:-1.5px;border-radius:14px;padding:1.5px;' +
+        'background:conic-gradient(from var(--fxa),transparent 0deg 288deg,var(--fxcbc,#E7C77E) 322deg,transparent 360deg);' +
+        '-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;' +
+        'animation:fxcb 3.6s linear infinite;pointer-events:none}' +
+        '@keyframes fxcb{to{--fxa:360deg}}';
+      document.head.appendChild(s2);
+    }
+    q(sel).forEach(function (el, i) {
+      el.classList.add('fxcb');
+      if (color) el.style.setProperty('--fxcbc', color);
+      el.style.setProperty('--fxa', (i * 67) + 'deg');
+    });
+  };
 })();

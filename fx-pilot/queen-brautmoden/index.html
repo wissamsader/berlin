@@ -267,6 +267,7 @@ setTimeout(()=>document.querySelectorAll('.rev:not(.on)').forEach(el=>el.classLi
  FX.heroIntro(['header .since','header .h1sub','header .hero-sub','header .hero-meta'],{photo:'header .bg',delay:1.0,at:.35});
  play(1.1);
  FX.parallax('header .bg',8);
+ FX.lightSweep('header',null,8);
  FX.clipReveal('.kol .kcard img','x');
  FX.clipReveal('.story figure img');
  FX.pinRow('.gal','.gal .ggrid');
@@ -275,6 +276,7 @@ setTimeout(()=>document.querySelectorAll('.rev:not(.on)').forEach(el=>el.classLi
  FX.countUp('b[data-edit=rating]');
  FX.tilt('.kol .kcard',4);
  FX.spotlight('.why .wcard','rgba(217,190,143,.14)');
+ FX.lazyVanta('halo','.why',{baseColor:0x12121A,backgroundColor:0x1A1A22,amplitudeFactor:1.4,size:1.1});
 });</script>
 </body>
 </html>
