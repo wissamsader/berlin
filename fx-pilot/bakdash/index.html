@@ -223,17 +223,16 @@ setTimeout(()=>document.querySelectorAll('.rev:not(.on)').forEach(el=>el.classLi
 <script src="../../_fx/gsap.min.js"></script><script src="../../_fx/ScrollTrigger.min.js"></script><script src="../../_fx/lenis.min.js"></script><script src="../../_fx/bits.js"></script>
 <script>FX.ready(function(){
  FX.lenis();
- var play=FX.chars('header h1 .ar, header h1 .tr');
- FX.curtain('#1c1d22','بوظة بكداش','#c9a35a');
- FX.heroIntro(['header .since','header .stars','header .hero-sub','header .hero-meta'],{photo:'header .bg',delay:1.0,at:.35});
- play(1.1);
- FX.parallax('header .bg',8);
- FX.lightSweep('header','rgba(201,163,90,.14)',9);
- FX.clipReveal('.story img','x');
- FX.clipReveal('.high img');
+ FX.iris('#1c1d22',1.0);
+ FX.stamp('header h1', .75);
+ FX.heroIntro(['header .since','header .stars','header .hero-sub','header .hero-meta'],{photo:'header .bg',delay:1.05,at:.3});
+ FX.parallax('header .bg',10);
+ FX.clipReveal('.story img','r');
+ FX.clipReveal('.high img','r');
+ FX.punch('.menu .pr');
+ FX.punch('.stars');
  FX.pinRow('.gal','.gal .ggrid');
- FX.batch('section h2',22);
- FX.marquee('.menu','بوظة عربية · قشطة · فستق حلبي · بكداش','#c9a35a');
+ FX.batch('section h2',20);
  FX.countUp('b[data-edit=rating]');
 });</script>
 </body>

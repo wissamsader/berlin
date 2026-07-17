@@ -7,7 +7,7 @@
 <title>Osteria Mercede — Cucina di mare a Palermo · Via Sammartino 1</title>
 <meta name="description" content="Osteria Mercede, Palermo. Il pescato del giorno scritto in lavagna. Segnalata dalla Guida MICHELIN. Via Sammartino 1 — 091 332243.">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=Caveat:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>.rev{opacity:1!important;transform:none!important;transition:none!important}@media(min-width:900px){.gal .ggrid{display:flex;gap:14px;width:max-content}.gal .ggrid img{height:62vh;width:auto;max-width:none}}
+<style>.rev{opacity:1!important;transform:none!important;transition:none!important}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{overflow-x:clip}
 :root{--navy:#101c26;--slate:#18262f;--chalk:#f2f0e9;--chalk2:#c8cdc9;--mut:#8a97a0;--sea:#7fb3c8;--line:#2a3a44}
@@ -254,18 +254,15 @@ setTimeout(()=>document.querySelectorAll('.rev:not(.on)').forEach(el=>el.classLi
 <script>FX.ready(function(){
  FX.lenis();
  FX.grain(.04);
- var play=FX.chars('header h1');
- FX.curtain('#101c26','OSTERIA MERCEDE','#f2f0e9');
- FX.heroIntro(['header .mich','header .hero-sub','header .hero-meta'],{photo:'header .bg',delay:1.0,at:.35});
- play(1.1);
- FX.parallax('header .bg',8);
- FX.lightSweep('header','rgba(242,240,233,.12)',9);
- FX.clipReveal('.story img','x');
- FX.clipReveal('.high img');
- FX.pinRow('.gal','.gal .ggrid');
- FX.batch('section h2',22);
- FX.marquee('.menu','OSTERIA · MERCATO · SICILIA · PALERMO','#7fb3c8');
- FX.countUp('b[data-edit=rating]');
+ FX.tideIn('#f2f0e9');
+ FX.chars('header h1');
+ gsap.fromTo('header h1 .fxchar',{yPercent:135,opacity:0},{yPercent:0,opacity:1,duration:1.15,ease:'elastic.out(1,0.62)',stagger:.05,delay:.85});
+ FX.heroIntro(['header .mich','header .hero-sub','header .hero-meta'],{photo:'header .bg',delay:.9,at:.35});
+ FX.parallax('header .bg',6);
+ FX.bob('header .mich',5);
+ FX.waveIn('.story img, .high img, .gal img');
+ FX.bob('.gal .ggrid img',6);
+ FX.underline('section h2','#7fb3c8');
 });</script>
 </body>
 </html>

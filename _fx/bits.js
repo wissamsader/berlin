@@ -119,7 +119,7 @@
 
   FX.clipReveal = function (sel, dir) {           /* awwwards wipe: clip-path + inner counter-scale */
     q(sel).forEach(function (el, i) {
-      var from = dir === 'x' ? 'inset(0 100% 0 0)' : 'inset(100% 0 0 0)';
+      var from = dir === 'r' ? 'inset(0 0 0 100%)' : dir === 'x' ? 'inset(0 100% 0 0)' : 'inset(100% 0 0 0)';
       gsap.set(el, { clipPath: from, webkitClipPath: from });
       var img = el.tagName === 'IMG' ? el : el.querySelector('img');
       if (img) gsap.set(img, { scale: 1.25 });
@@ -361,6 +361,142 @@
       el.classList.add('fxcb');
       if (color) el.style.setProperty('--fxcbc', color);
       el.style.setProperty('--fxa', (i * 67) + 'deg');
+    });
+  };
+
+  /* ---------- v5: per-site motion identities ---------- */
+  FX.iris = function (bg, dur) {                   /* scoop/iris opener — page revealed through a growing circle */
+    if (FX.off) return { then: function (f) { f(); } };
+    var d = document.createElement('div');
+    d.style.cssText = 'position:fixed;inset:0;z-index:999;background:' + bg + ';pointer-events:none';
+    document.body.appendChild(d);
+    var R = Math.hypot(innerWidth, innerHeight);
+    var o = { r: 0 };
+    return gsap.to(o, {
+      r: R, duration: dur || 1.1, ease: 'power3.inOut', delay: .15,
+      onUpdate: function () {
+        var m = 'radial-gradient(circle at 50% 44%, transparent ' + o.r + 'px, #000 ' + (o.r + 1) + 'px)';
+        d.style.webkitMaskImage = m; d.style.maskImage = m;
+      },
+      onComplete: function () { d.remove(); }
+    });
+  };
+
+  FX.tideIn = function (color) {                   /* single skewed wave panel sweeps across once */
+    if (FX.off) return;
+    var d = document.createElement('div');
+    d.style.cssText = 'position:fixed;top:-10%;bottom:-10%;left:-20%;width:150%;z-index:999;background:' + color +
+      ';transform:translateX(-120%) skewX(-14deg);pointer-events:none';
+    document.body.appendChild(d);
+    gsap.to(d, { xPercent: 240, duration: 1.15, ease: 'power3.inOut', delay: .1, onComplete: function () { d.remove(); } });
+  };
+
+  FX.stamp = function (sel, delay) {               /* pestle THUD: slams in, page flinches */
+    q(sel).forEach(function (el) {
+      gsap.fromTo(el, { scale: 1.75, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: .38, ease: 'power4.in', delay: delay || 0 });
+      gsap.to(el, {
+        keyframes: [{ x: -4, duration: .05 }, { x: 3, duration: .05 }, { x: -2, duration: .05 }, { x: 0, duration: .05 }],
+        delay: (delay || 0) + .38
+      });
+    });
+  };
+
+  FX.bob = function (sel, amp) {                   /* idle buoy float, staggered phases */
+    q(sel).forEach(function (el, i) {
+      gsap.to(el, { y: (amp || 6) * (i % 2 ? 1 : -1), duration: 2.2 + (i % 3) * .5, ease: 'sine.inOut', yoyo: true, repeat: -1, delay: i * .3 });
+    });
+  };
+
+  FX.waveIn = function (sel) {                     /* rises with boat-rock + water focus (blur -> sharp) */
+    q(sel).forEach(function (el, i) {
+      gsap.set(el, { autoAlpha: 0 });
+      ScrollTrigger.create({
+        trigger: el, start: 'top 88%', once: true,
+        onEnter: function () {
+          gsap.fromTo(el, { autoAlpha: 0, y: 44, rotation: i % 2 ? 2 : -2, filter: 'blur(7px)' },
+            { autoAlpha: 1, y: 0, rotation: 0, filter: 'blur(0px)', duration: 1.1, ease: 'power2.out', delay: (i % 3) * .1 });
+        }
+      });
+    });
+  };
+
+  FX.underline = function (sel, color) {           /* chalk line draws itself under headings */
+    q(sel).forEach(function (el) {
+      var u = document.createElement('i');
+      u.style.cssText = 'display:block;height:3px;width:min(120px,60%);margin-top:10px;border-radius:3px;background:' +
+        color + ';transform:scaleX(0);transform-origin:left center;';
+      el.appendChild(u);
+      ScrollTrigger.create({
+        trigger: el, start: 'top 88%', once: true,
+        onEnter: function () { gsap.to(u, { scaleX: 1, duration: .7, ease: 'power3.out', delay: .15 }); }
+      });
+    });
+  };
+
+  FX.decrypt = function (sel) {                    /* mono labels resolve from scramble, left to right */
+    var GLYPH = '#$/\\|=+*<>[]0123456789';
+    q(sel).forEach(function (el) {
+      var orig = el.textContent; if (!orig.trim() || AR.test(orig)) return;
+      ScrollTrigger.create({
+        trigger: el, start: 'top 92%', once: true,
+        onEnter: function () {
+          var n = 0, iv = setInterval(function () {
+            n++;
+            el.textContent = orig.slice(0, n) + orig.slice(n).replace(/[^\s]/g, function () {
+              return GLYPH[Math.floor(Math.random() * GLYPH.length)];
+            });
+            if (n >= orig.length) { clearInterval(iv); el.textContent = orig; }
+          }, 26);
+        }
+      });
+    });
+  };
+
+  FX.stepReveal = function (sel) {                 /* editorial hard cuts — three snap frames, no easing softness */
+    q(sel).forEach(function (el, i) {
+      gsap.set(el, { clipPath: 'inset(0 0 100% 0)', webkitClipPath: 'inset(0 0 100% 0)' });
+      ScrollTrigger.create({
+        trigger: el, start: 'top 87%', once: true,
+        onEnter: function () {
+          gsap.to(el, {
+            keyframes: [
+              { clipPath: 'inset(0 0 62% 0)', webkitClipPath: 'inset(0 0 62% 0)', duration: .001, delay: .12 * (i % 3) },
+              { clipPath: 'inset(0 0 28% 0)', webkitClipPath: 'inset(0 0 28% 0)', duration: .001, delay: .09 },
+              { clipPath: 'inset(0 0 0% 0)', webkitClipPath: 'inset(0 0 0% 0)', duration: .001, delay: .09 }
+            ]
+          });
+        }
+      });
+    });
+  };
+
+  FX.assemble = function (sel, delay) {            /* DECONSTRUCT -> REBUILD: letters fly in from scatter */
+    var play = FX.chars(sel);                      /* reuse the safe splitter */
+    q(sel).forEach(function (el) {
+      el.querySelectorAll('.fxw').forEach(function (w) { w.style.overflow = 'visible'; });
+      gsap.set(el.querySelectorAll('.fxchar'), {
+        x: function () { return gsap.utils.random(-90, 90); },
+        y: function () { return gsap.utils.random(-70, 50); },
+        rotation: function () { return gsap.utils.random(-45, 45); },
+        opacity: 0
+      });
+      gsap.to(el.querySelectorAll('.fxchar'), {
+        x: 0, y: 0, rotation: 0, opacity: 1, duration: .9, ease: 'power3.out',
+        stagger: { each: .02, from: 'random' }, delay: delay || .2
+      });
+    });
+    return play;
+  };
+
+  FX.punch = function (sel, y) {                   /* percussive pop-in for prices/badges */
+    var els = q(sel); if (!els.length) return;
+    els.forEach(function (el) { gsap.set(el, { autoAlpha: 0 }); });
+    ScrollTrigger.batch(els, {
+      start: 'top 90%', once: true,
+      onEnter: function (b) {
+        gsap.fromTo(b, { scale: 1.5, autoAlpha: 0, rotation: function () { return gsap.utils.random(-6, 6); } },
+          { scale: 1, autoAlpha: 1, rotation: 0, duration: .34, ease: 'back.out(2.2)', stagger: .09 });
+      }
     });
   };
 })();
