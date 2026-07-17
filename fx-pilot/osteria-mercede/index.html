@@ -253,16 +253,11 @@ setTimeout(()=>document.querySelectorAll('.rev:not(.on)').forEach(el=>el.classLi
 <script src="../../_fx/gsap.min.js"></script><script src="../../_fx/ScrollTrigger.min.js"></script><script src="../../_fx/lenis.min.js"></script><script src="../../_fx/bits.js"></script>
 <script>FX.ready(function(){
  FX.lenis();
- FX.grain(.04);
- FX.tideIn('#f2f0e9');
- FX.chars('header h1');
- gsap.fromTo('header h1 .fxchar',{yPercent:135,opacity:0},{yPercent:0,opacity:1,duration:1.15,ease:'elastic.out(1,0.62)',stagger:.05,delay:.85});
- FX.heroIntro(['header .mich','header .hero-sub','header .hero-meta'],{photo:'header .bg',delay:.9,at:.35});
- FX.parallax('header .bg',6);
- FX.bob('header .mich',5);
- FX.waveIn('.story img, .high img, .gal img');
- FX.bob('.gal .ggrid img',6);
- FX.underline('section h2','#7fb3c8');
+ FX.heroIntro(['header .mich','header h1','header .hero-sub','header .hero-meta'],{photo:'header .bg',at:.15});
+ FX.parallax('header .bg',5);
+ FX.bob('header .mich',3);
+ FX.reveal('.story img, .high img, .gal img, section h2');
+ FX.hoverLift('.visit a, header a');
 });</script>
 </body>
 </html>

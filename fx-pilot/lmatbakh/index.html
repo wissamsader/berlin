@@ -184,11 +184,10 @@ setTimeout(function(){document.querySelectorAll('.rv:not(.in)').forEach(function
 <script src="../../_fx/gsap.min.js"></script><script src="../../_fx/ScrollTrigger.min.js"></script><script src="../../_fx/lenis.min.js"></script><script src="../../_fx/bits.js"></script>
 <script>FX.ready(function(){
  FX.lenis();
- FX.assemble('.hero h1', .25);
- FX.decrypt('.tag, [class*=mono]');
- FX.heroIntro(['.hero .seatings'],{delay:.5,at:.35});
- FX.stepReveal('.hero .hp img, .story img, .hl img, .gal img, .menu img');
- FX.batch('section h2',18);
+ FX.heroIntro(['.hero .tag','.hero h1','.hero .mono-line','.hero .seatings'],{photo:'.hero .hp img',at:.15});
+ FX.parallax('.hero .hp img',4);
+ FX.reveal('.story img, .hl img, .gal img, .menu img, section h2');
+ FX.hoverLift('.visit a, .hero a');
 });</script>
 </body>
 </html>

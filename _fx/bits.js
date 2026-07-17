@@ -499,4 +499,32 @@
       }
     });
   };
+
+  /* ---------- v6: minimal-alive kit ---------- */
+  FX.reveal = function (sel, y) {                  /* soft fade-rise of existing elements, batched */
+    var els = q(sel); if (!els.length) return;
+    els.forEach(function (el) { gsap.set(el, { autoAlpha: 0, y: y || 24 }); });
+    ScrollTrigger.batch(els, {
+      start: 'top 90%', once: true,
+      onEnter: function (b) { gsap.to(b, { autoAlpha: 1, y: 0, duration: .9, ease: 'power2.out', stagger: .09 }); }
+    });
+  };
+
+  FX.kenburns = function (sel) {                   /* imperceptible slow breath on a hero photo */
+    q(sel).forEach(function (el) {
+      gsap.fromTo(el, { scale: 1.02 }, { scale: 1.07, duration: 16, ease: 'sine.inOut', yoyo: true, repeat: -1 });
+    });
+  };
+
+  FX.hoverLift = function (sel) {                  /* existing buttons/cards answer the cursor */
+    if (!FINE) return;
+    if (!FX._hl) {
+      FX._hl = 1;
+      var s3 = document.createElement('style');
+      s3.textContent = '.fxlift{transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s !important}' +
+        '.fxlift:hover{transform:translateY(-3px)!important;box-shadow:0 12px 28px rgba(0,0,0,.14)!important}';
+      document.head.appendChild(s3);
+    }
+    q(sel).forEach(function (el) { el.classList.add('fxlift'); });
+  };
 })();

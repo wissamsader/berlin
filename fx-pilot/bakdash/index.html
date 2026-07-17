@@ -8,7 +8,7 @@
 <meta name="description" content="بوظة بكداش في سوق الحميدية — البوظة العربية المدقوقة بالقشطة والفستق الحلبي منذ عام 1885.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@700;800&family=Tajawal:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-<style>.rev{opacity:1!important;transform:none!important;transition:none!important}@media(min-width:900px){.gal .ggrid{display:flex;gap:14px;width:max-content}.gal .ggrid img{height:62vh;width:auto;max-width:none}}
+<style>.rev{opacity:1!important;transform:none!important;transition:none!important}
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{overflow-x:clip}
 :root{--iron:#1c1d22;--iron2:#24262d;--star:#f5edd8;--mut:#9a948a;--pist:#93b47a;--brass:#c9a35a;--line:#34363f}
@@ -223,17 +223,12 @@ setTimeout(()=>document.querySelectorAll('.rev:not(.on)').forEach(el=>el.classLi
 <script src="../../_fx/gsap.min.js"></script><script src="../../_fx/ScrollTrigger.min.js"></script><script src="../../_fx/lenis.min.js"></script><script src="../../_fx/bits.js"></script>
 <script>FX.ready(function(){
  FX.lenis();
- FX.iris('#1c1d22',1.0);
- FX.stamp('header h1', .75);
- FX.heroIntro(['header .since','header .stars','header .hero-sub','header .hero-meta'],{photo:'header .bg',delay:1.05,at:.3});
- FX.parallax('header .bg',10);
- FX.clipReveal('.story img','r');
- FX.clipReveal('.high img','r');
- FX.punch('.menu .pr');
- FX.punch('.stars');
- FX.pinRow('.gal','.gal .ggrid');
- FX.batch('section h2',20);
+ FX.heroIntro(['header .since','header h1','header .stars','header .hero-sub','header .hero-meta'],{photo:'header .bg',at:.15});
+ FX.kenburns('header .bg');
+ FX.parallax('header .bg',5);
+ FX.reveal('.story img, .high img, .gal img, section h2');
  FX.countUp('b[data-edit=rating]');
+ FX.hoverLift('.menu .mcard, .visit a, header a');
 });</script>
 </body>
 </html>
