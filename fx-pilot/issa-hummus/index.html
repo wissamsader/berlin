@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Issa Restaurant — Hummus — Breakfast restaurant · Hummus & foul in Beirut</title>
+<meta name="description" content="Issa Restaurant — Hummus, Breakfast restaurant · Hummus & foul in Beirut, Lebanon. Call +961 1 706 268.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo:wght@400;600;800&family=Cairo:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#F7F0DC;--ink:#33210E;--orange:#DF7112;--deep:#B34E0B;--sun:#F2B33D}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+::selection{background:var(--orange);color:#fff}
+html,body{overflow-x:clip}
+body{font-family:'Archivo',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65}
+.arabic{font-family:'Cairo',sans-serif}
+/* awning */
+.awning{height:34px;background:repeating-linear-gradient(90deg,var(--orange) 0 46px,var(--cream) 46px 92px);position:relative}
+.awning:after{content:"";position:absolute;left:0;right:0;top:100%;height:17px;background-image:radial-gradient(circle at 23px -2px,var(--orange) 16px,transparent 17px),radial-gradient(circle at 69px -2px,var(--cream) 16px,transparent 17px);background-size:92px 17px;filter:drop-shadow(0 3px 6px rgba(51,33,14,.18))}
+/* topbar */
+.top{display:flex;justify-content:space-between;align-items:center;padding:22px 5vw 6px;font-weight:800;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+.top a{color:var(--deep);text-decoration:none}
+/* poster hero */
+.poster{text-align:center;padding:40px 5vw 30px;position:relative}
+.sunrise{width:min(420px,74vw);height:calc(min(420px,74vw)/2);margin:0 auto;border-radius:999px 999px 0 0;background:radial-gradient(circle at 50% 100%,var(--sun) 0 38%,transparent 39%),repeating-conic-gradient(from -90deg at 50% 100%,var(--orange) 0deg 9deg,transparent 9deg 18deg);position:relative;opacity:.92}
+.sunrise b{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);font-family:'Alfa Slab One';font-size:clamp(1.6rem,5vw,2.6rem);color:var(--ink)}
+.poster h1{font-family:'Alfa Slab One';font-size:clamp(3rem,11vw,8.4rem);line-height:.98;color:var(--ink);margin-top:18px;text-transform:uppercase}
+.poster h1 span{display:inline-block}
+.poster h1 .t1{transform:rotate(-2.2deg) translateY(-6px);color:var(--orange);text-shadow:4px 4px 0 var(--ink)}
+.poster h1 .t2{transform:rotate(1.4deg);}
+.poster .ar{font-family:'Cairo';font-weight:900;color:var(--deep);font-size:clamp(1.2rem,3vw,2rem);margin-top:12px}
+.poster .tag{max-width:560px;margin:18px auto 0;font-size:1.05rem;font-weight:600}
+.badges{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.badge{border:3px solid var(--ink);background:#fff;padding:10px 18px;font-weight:800;letter-spacing:.06em;font-size:.85rem;box-shadow:5px 5px 0 var(--ink);text-transform:uppercase}
+.badge.o{background:var(--orange);color:#fff}
+.cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.btn{font-family:'Archivo';font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.95rem;text-decoration:none;padding:16px 32px;border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink);transition:transform .15s,box-shadow .15s;background:#fff;color:var(--ink)}
+.btn:hover{transform:translate(3px,3px);box-shadow:3px 3px 0 var(--ink)}
+.btn.o{background:var(--orange);color:#fff}
+.btn.wa{background:#1fce5f;color:#052b12}
+/* word row divider */
+.words{overflow:hidden;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);background:var(--cream);padding:12px 0}
+.words .tt{display:flex;width:max-content;animation:mq 28s linear infinite;font-family:'Alfa Slab One';font-size:1.05rem;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;color:var(--ink)}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* story signage */
+section{padding:90px 5vw}
+.wrap{max-width:1080px;margin:0 auto}
+.sign{border:3px solid var(--ink);background:#fff;box-shadow:10px 10px 0 rgba(51,33,14,.15);padding:56px clamp(24px,5vw,64px);position:relative}
+.sign:before,.sign:after{content:"✦";position:absolute;top:10px;font-size:1.1rem;color:var(--orange)}
+.sign:before{left:14px}.sign:after{right:14px}
+.sign .k{font-weight:800;letter-spacing:.3em;text-transform:uppercase;font-size:.72rem;color:var(--deep);display:block;text-align:center;margin-bottom:16px}
+.sign h2{font-family:'Alfa Slab One';font-size:clamp(1.8rem,4.6vw,3rem);text-align:center;line-height:1.1;margin-bottom:24px}
+.sign h2 em{font-style:normal;color:var(--orange)}
+.sign p.lead{font-size:1.1rem;max-width:60ch;margin:0 auto;text-align:center;line-height:1.9}
+.sign .row{display:flex;justify-content:center;gap:40px;margin-top:36px;flex-wrap:wrap;text-align:center}
+.sign .row b{font-family:'Alfa Slab One';font-size:2rem;color:var(--orange);display:block;line-height:1.1}
+.sign .row span{font-weight:600;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase}
+/* crates */
+.crates h2{font-family:'Alfa Slab One';font-size:clamp(2rem,5.4vw,3.4rem);text-align:center;margin-bottom:10px;text-transform:uppercase}
+.crates h2 em{font-style:normal;color:var(--orange)}
+.crates .sub{text-align:center;font-weight:600;margin-bottom:48px}
+.crate-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.crate{position:relative;border:3px solid var(--ink);background:#fff;box-shadow:8px 8px 0 var(--ink);transition:transform .18s}
+.crate:hover{transform:translate(-3px,-3px)}
+.crate:nth-child(2){transform:rotate(1deg)}.crate:nth-child(2):hover{transform:rotate(0) translate(-3px,-3px)}
+.crate:nth-child(3){transform:rotate(-1deg)}.crate:nth-child(3):hover{transform:rotate(0) translate(-3px,-3px)}
+.crate img{width:100%;height:240px;object-fit:cover;display:block;border-bottom:3px solid var(--ink)}
+.crate .tagp{position:absolute;top:-16px;right:-12px;background:var(--sun);border:3px solid var(--ink);font-family:'Alfa Slab One';padding:6px 14px;transform:rotate(6deg);font-size:.95rem;box-shadow:4px 4px 0 var(--ink)}
+.crate .bd{padding:22px 22px 26px}
+.crate h3{font-family:'Alfa Slab One';font-size:1.3rem;margin-bottom:8px;text-transform:uppercase}
+.crate p{font-size:.95rem;font-weight:500}
+/* market gallery */
+.market{background:var(--ink);color:var(--cream)}
+.market h2{font-family:'Alfa Slab One';font-size:clamp(2rem,5.4vw,3.4rem);text-align:center;margin-bottom:10px;color:var(--cream);text-transform:uppercase}
+.market h2 em{font-style:normal;color:var(--sun)}
+.market .sub{text-align:center;font-weight:600;margin-bottom:48px;color:rgba(247,240,220,.7)}
+.mgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.mgrid a{display:block;border:3px solid var(--cream);overflow:hidden;position:relative}
+.mgrid a:nth-child(4n+1){transform:rotate(-.8deg)}
+.mgrid a:nth-child(4n+3){transform:rotate(.8deg)}
+.mgrid img{width:100%;height:230px;object-fit:cover;display:block;transition:transform .4s}
+.mgrid a:hover img{transform:scale(1.07)}
+/* receipts */
+.receipts{padding-bottom:110px}
+.receipts h2{font-family:'Alfa Slab One';font-size:clamp(2rem,5.4vw,3.4rem);text-align:center;margin-bottom:48px;text-transform:uppercase}
+.receipts h2 em{font-style:normal;color:var(--orange)}
+.r-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:30px;max-width:1080px;margin:0 auto}
+.rcpt{background:#fff;padding:30px 26px 34px;font-family:'Archivo';border:1px solid rgba(51,33,14,.15);box-shadow:0 14px 34px rgba(51,33,14,.14);clip-path:polygon(0 0,100% 0,100% calc(100% - 8px),96% 100%,92% calc(100% - 8px),88% 100%,84% calc(100% - 8px),80% 100%,76% calc(100% - 8px),72% 100%,68% calc(100% - 8px),64% 100%,60% calc(100% - 8px),56% 100%,52% calc(100% - 8px),48% 100%,44% calc(100% - 8px),40% 100%,36% calc(100% - 8px),32% 100%,28% calc(100% - 8px),24% 100%,20% calc(100% - 8px),16% 100%,12% calc(100% - 8px),8% 100%,4% calc(100% - 8px),0 100%)}
+.rcpt:nth-child(odd){transform:rotate(-.9deg)}
+.rcpt:nth-child(even){transform:rotate(.7deg)}
+.rcpt .hd{text-align:center;border-bottom:2px dashed rgba(51,33,14,.3);padding-bottom:12px;margin-bottom:16px;font-weight:800;letter-spacing:.18em;font-size:.72rem;text-transform:uppercase;color:var(--deep)}
+.rcpt p{font-size:.98rem;line-height:1.75}
+.rcpt .who{margin-top:16px;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--deep);display:flex;justify-content:space-between}
+/* the big receipt (real menu) */
+.bigr{padding-top:0}
+.bigr h2{font-family:'Alfa Slab One';font-size:clamp(2rem,5.4vw,3.4rem);text-align:center;margin-bottom:10px;text-transform:uppercase}
+.bigr h2 em{font-style:normal;color:var(--orange)}
+.bigr .sub{text-align:center;font-weight:600;margin-bottom:44px}
+.rcpt.big{max-width:760px;margin:0 auto;transform:none;padding:44px clamp(22px,5vw,56px) 58px}
+.msec{font-family:'Alfa Slab One';letter-spacing:.1em;text-transform:uppercase;color:var(--orange);margin:28px 0 8px;font-size:1.05rem;display:flex;align-items:baseline;gap:12px}
+.msec .arabic{font-size:.9rem;color:var(--deep)}
+.msec:after{content:"";flex:1;border-bottom:2px dashed rgba(51,33,14,.3)}
+.mrow{display:flex;align-items:baseline;gap:10px;padding:9px 0;font-size:1.02rem;font-weight:600}
+.mrow .ld{flex:1;border-bottom:2px dotted rgba(51,33,14,.35);transform:translateY(-4px);min-width:20px}
+.mrow .ar{font-family:'Cairo';font-weight:700;color:var(--deep);font-size:.95rem}
+.rcpt .total{border-top:2px dashed rgba(51,33,14,.3);margin-top:30px;padding-top:16px;text-align:center;font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:.76rem;color:var(--deep);line-height:2}
+/* visit awning panel */
+.visit{background:var(--orange);color:#fff;text-align:center;position:relative;padding:100px 5vw 110px}
+.visit:before{content:"";position:absolute;left:0;right:0;top:0;height:17px;background-image:radial-gradient(circle at 23px 0,var(--cream) 15px,transparent 16px);background-size:92px 17px}
+.visit .k{font-weight:800;letter-spacing:.3em;text-transform:uppercase;font-size:.75rem;display:block;margin-bottom:16px;color:#FFE2B8}
+.visit h2{font-family:'Alfa Slab One';font-size:clamp(2.4rem,7vw,4.6rem);line-height:1.02;text-transform:uppercase}
+.visit .phone{font-family:'Alfa Slab One';font-size:clamp(2rem,6vw,3.8rem);color:#fff;text-decoration:none;display:inline-block;margin:28px 0 10px;border-bottom:5px solid var(--ink);padding-bottom:6px}
+.visit .phone:hover{color:var(--ink)}
+.visit .meta{max-width:520px;margin:16px auto 34px;font-weight:600;line-height:1.9}
+.visit .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.visit .btn{box-shadow:6px 6px 0 var(--ink)}
+footer{text-align:center;padding:28px 5vw 110px;font-weight:600;font-size:.8rem;color:var(--deep)}
+/* mobile bar */
+.mbar{display:none;position:fixed;z-index:70;gap:8px;left:10px;right:10px;bottom:10px;background:#F7F0DC;border:2px solid #33210E;border-radius:999px;padding:7px}
+.mbar a{flex:1;text-align:center;padding:13px 4px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:.82rem;text-decoration:none;border:2px solid var(--ink)}
+.mbar .c{background:var(--orange);color:#fff}
+.mbar .w{background:#1fce5f;color:#052b12}
+.mbar .m{background:var(--cream);color:var(--ink)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media(max-width:880px){
+ .crate-grid{grid-template-columns:1fr}
+ .mgrid{grid-template-columns:1fr 1fr}
+ .mbar{display:flex}
+ footer{padding-bottom:130px}
+}
+.mbar::before{content:'';position:absolute;top:-3px;left:18%;right:18%;height:3px;border-radius:3px;background:linear-gradient(90deg,transparent,#DF7112,transparent)}.mbar a{border-radius:999px;background:transparent;color:#33210E}.mbar a.c{background:#DF7112;color:#F7F0DC;position:relative}.mbar a.c::after{content:'◠';position:absolute;top:2px;right:10px;color:#F2B33D;font-size:11px}.mbar a.m{border:1.5px dashed #B34E0B}
+*{-webkit-tap-highlight-color:transparent}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/*igbtn*/.bar a.g,.mbar a.g{display:inline-flex;align-items:center;justify-content:center;padding:10px 12px}.bar a.g svg,.mbar a.g svg{width:17px;height:17px;display:block}
+
+/* living sunrise — rays turn slowly around the sun; everything else untouched */
+.sunrise{overflow:hidden;background:none}
+.sunrise::before{content:'';position:absolute;left:0;top:0;width:100%;height:200%;z-index:0;
+ background:repeating-conic-gradient(from -90deg at 50% 50%,var(--orange) 0deg 9deg,transparent 9deg 18deg);
+ animation:sunrays 26s linear infinite}
+.sunrise::after{content:'';position:absolute;inset:0;z-index:1;
+ background:radial-gradient(circle at 50% 100%,var(--sun) 0 38%,transparent 39%)}
+.sunrise b{z-index:2}
+@keyframes sunrays{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion: reduce){.sunrise::before{animation:none}}
+</style>
+</head>
+<body>
+<div class="awning"></div>
+<div class="top">
+ <span data-edit="t1" data-edit-label="Text — Beiruti breakfast house">Beiruti breakfast house</span>
+ <a href="tel:+9611706268" data-edit="t2" data-edit-label="Button / link — +961 1 706 268">+961 1 706 268</a>
+</div>
+
+<header class="poster" id="top">
+ <div class="sunrise rv"><b data-edit="t3" data-edit-label="Text — 7 AM">7 AM</b></div>
+ <h1><span class="t1" data-edit="t4" data-edit-label="Text — ISSA">ISSA</span><br><span class="t2" data-edit="t5" data-edit-label="Text — HUMMUS">HUMMUS</span></h1>
+ <div class="ar arabic" data-edit="t6" data-edit-label="Text — مطعم عيسى وأولاده">مطعم عيسى وأولاده</div>
+ <p class="tag" data-edit="t7" data-edit-label="Text — Hajj Issa's foul, fatteh & hummus — Be…">Hajj Issa's foul, fatteh & hummus — Beirut's traditional Lebanese breakfast, done right since forever</p>
+ <div class="badges">
+  <span class="badge o" data-edit="t8" data-edit-label="Text — ★ 4.2 ON GOOGLE">★ 4.2 ON GOOGLE</span>
+  <span class="badge" data-edit="t9" data-edit-label="Text — 389 REVIEWS">389 REVIEWS</span>
+  <span class="badge" data-edit="t10" data-edit-label="Text — SUNDAYS = PACKED">SUNDAYS = PACKED</span>
+ </div>
+ <div class="cta-row">
+  <a class="btn o" href="tel:+9611706268" data-edit="t11" data-edit-label="Button / link — Call ahead">Call ahead</a>
+  
+  <a class="btn" href="https://maps.google.com/?cid=9201529888211975576" target="_blank" rel="noopener" data-edit="t12" data-edit-label="Button / link — Directions ↗">Directions ↗</a>
+ </div>
+</header>
+
+<div class="words"><div class="tt"><span data-edit="t13" data-edit-label="Text — FOUL ✦ FATTEH ✦ HUMMUS ✦ MSABBAHA ✦ SI…">FOUL ✦ FATTEH ✦ HUMMUS ✦ MSABBAHA ✦ SINCE FOREVER ✦ 7AM — 2PM ✦ SUNDAYS PACKED ✦ FOUL ✦ FATTEH ✦ HUMMUS ✦ MSABBAHA ✦ SINCE FOREVER ✦ 7AM — 2PM ✦ SUNDAYS PACKED ✦ </span></div></div>
+
+<section id="story">
+ <div class="wrap">
+  <div class="sign rv">
+   <span class="k" data-edit="t14" data-edit-label="Text — The house of Hajj Issa">The house of Hajj Issa</span>
+   <h2>Breakfast the way Beirut <em data-edit="t15" data-edit-label="Text — remembers it">remembers it</em></h2>
+   <p class="lead" data-edit="t16" data-edit-label="Text — Every Beirut morning has an address. A…">Every Beirut morning has an address. At Hajj Issa's, the foul simmers before sunrise, the fatteh comes drowning in golden ghee, and on Sundays the tables are packed shoulder to shoulder. This is traditional Lebanese breakfast — no shortcuts, no fuss, exactly as your grandfather had it.</p>
+   <div class="row">
+    <div><b data-edit="t17" data-edit-label="Text — ★ 4.2">★ 4.2</b><span data-edit="t18" data-edit-label="Text — on Google">on Google</span></div>
+    <div><b data-edit="t19" data-edit-label="Text — 389">389</b><span data-edit="t20" data-edit-label="Text — reviews">reviews</span></div>
+    <div><b data-edit="t21" data-edit-label="Text — 7–2">7–2</b><span data-edit="t22" data-edit-label="Text — morning hours">morning hours</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="crates" id="menu" style="padding-top:0">
+ <div class="wrap">
+  <h2 class="rv">Off the <em data-edit="t23" data-edit-label="Text — morning">morning</em> stove</h2>
+  <p class="sub" data-edit="t24" data-edit-label="Text — Three things people cross the city for">Three things people cross the city for</p>
+  <div class="crate-grid"><div class="crate rv"><span class="tagp" data-edit="t25" data-edit-label="Text — THE GLORY">THE GLORY</span><img src="img/07.jpg" alt="Fatteh" loading="lazy"><div class="bd"><h3 data-edit="t26" data-edit-label="Heading — Fatteh">Fatteh</h3><p data-edit="t27" data-edit-label="Text — Warm chickpeas, yogurt, toasted bread …">Warm chickpeas, yogurt, toasted bread and sizzling ghee. The house glory.</p></div></div><div class="crate rv"><span class="tagp" data-edit="t28" data-edit-label="Text — NO SHORTCUTS">NO SHORTCUTS</span><img src="img/04.jpg" alt="Foul & Hummus" loading="lazy"><div class="bd"><h3 data-edit="t29" data-edit-label="Heading — Foul & Hummus">Foul & Hummus</h3><p data-edit="t30" data-edit-label="Text — Slow-cooked, hand-mashed, finished wit…">Slow-cooked, hand-mashed, finished with good olive oil.</p></div></div><div class="crate rv"><span class="tagp" data-edit="t31" data-edit-label="Text — 7 AM SHARP">7 AM SHARP</span><img src="img/06.jpg" alt="Sunrise Hours" loading="lazy"><div class="bd"><h3 data-edit="t32" data-edit-label="Heading — Sunrise Hours">Sunrise Hours</h3><p data-edit="t33" data-edit-label="Text — Open 7 AM – 2 PM. Come early — Sundays…">Open 7 AM – 2 PM. Come early — Sundays are jam-packed.</p></div></div></div>
+ </div>
+</section>
+
+<section class="bigr" id="carte">
+ <h2 class="rv">The <em data-edit="t34" data-edit-label="Text — whole">whole</em> board</h2>
+ <p class="sub" data-edit="t35" data-edit-label="Text — Everything the hall serves — rung up l…">Everything the hall serves — rung up like a Sunday morning</p>
+ <div class="rcpt big rv">
+  <div class="hd" data-edit="t36" data-edit-label="Text — ISSA &amp; SONS — BEIRUT · الصالة · DA…">ISSA &amp; SONS — BEIRUT · الصالة · DAILY 7 AM – 2 PM</div>
+  <div class="msec">From the pot <span class="arabic" data-edit="t37" data-edit-label="Text — من التنجرة">من التنجرة</span></div>
+  <div class="mrow"><span data-edit="t38" data-edit-label="Text — Foul — the classic">Foul — the classic</span><span class="ld"></span><span class="ar arabic" data-edit="t39" data-edit-label="Text — صحن فول">صحن فول</span></div>
+  <div class="mrow"><span data-edit="t40" data-edit-label="Text — Foul Issa — the house special">Foul Issa — the house special</span><span class="ld"></span><span class="ar arabic" data-edit="t41" data-edit-label="Text — فول عيسى">فول عيسى</span></div>
+  <div class="mrow"><span data-edit="t42" data-edit-label="Text — Foul with butter">Foul with butter</span><span class="ld"></span><span class="ar arabic" data-edit="t43" data-edit-label="Text — فول بالزبدة">فول بالزبدة</span></div>
+  <div class="mrow"><span data-edit="t44" data-edit-label="Text — Msabbaha">Msabbaha</span><span class="ld"></span><span class="ar arabic" data-edit="t45" data-edit-label="Text — مسبحة">مسبحة</span></div>
+  <div class="mrow"><span data-edit="t46" data-edit-label="Text — Hummus bi tahini">Hummus bi tahini</span><span class="ld"></span><span class="ar arabic" data-edit="t47" data-edit-label="Text — حمص بطحينة">حمص بطحينة</span></div>
+  <div class="mrow"><span data-edit="t48" data-edit-label="Text — Spiced hummus beans">Spiced hummus beans</span><span class="ld"></span><span class="ar arabic" data-edit="t49" data-edit-label="Text — حمص حب متبل">حمص حب متبل</span></div>
+  <div class="mrow"><span data-edit="t50" data-edit-label="Text — Qudsiyeh">Qudsiyeh</span><span class="ld"></span><span class="ar arabic" data-edit="t51" data-edit-label="Text — قدسية">قدسية</span></div>
+  <div class="msec">Fatteh corner <span class="arabic" data-edit="t52" data-edit-label="Text — ركن الفتة">ركن الفتة</span></div>
+  <div class="mrow"><span data-edit="t53" data-edit-label="Text — Fatteh bi laban">Fatteh bi laban</span><span class="ld"></span><span class="ar arabic" data-edit="t54" data-edit-label="Text — فتة بلبن">فتة بلبن</span></div>
+  <div class="mrow"><span data-edit="t55" data-edit-label="Text — Fatteh bi tahini">Fatteh bi tahini</span><span class="ld"></span><span class="ar arabic" data-edit="t56" data-edit-label="Text — فتة بطحينة">فتة بطحينة</span></div>
+  <div class="mrow"><span data-edit="t57" data-edit-label="Text — Fatteh with meat">Fatteh with meat</span><span class="ld"></span><span class="ar arabic" data-edit="t58" data-edit-label="Text — فتة مع لحمة">فتة مع لحمة</span></div>
+  <div class="mrow"><span data-edit="t59" data-edit-label="Text — The big jat — feeds the table">The big jat — feeds the table</span><span class="ld"></span><span class="ar arabic" data-edit="t60" data-edit-label="Text — جاط فتة">جاط فتة</span></div>
+  <div class="msec">On the side <span class="arabic" data-edit="t61" data-edit-label="Text — عالجنب">عالجنب</span></div>
+  <div class="mrow"><span data-edit="t62" data-edit-label="Text — Fried eggs">Fried eggs</span><span class="ld"></span><span class="ar arabic" data-edit="t63" data-edit-label="Text — بيض مقلي">بيض مقلي</span></div>
+  <div class="mrow"><span data-edit="t64" data-edit-label="Text — Fried eggs with meat">Fried eggs with meat</span><span class="ld"></span><span class="ar arabic" data-edit="t65" data-edit-label="Text — بيض مع لحمة">بيض مع لحمة</span></div>
+  <div class="mrow"><span data-edit="t66" data-edit-label="Text — Labneh">Labneh</span><span class="ld"></span><span class="ar arabic" data-edit="t67" data-edit-label="Text — لبنة">لبنة</span></div>
+  <div class="mrow"><span data-edit="t68" data-edit-label="Text — Fried halloum">Fried halloum</span><span class="ld"></span><span class="ar arabic" data-edit="t69" data-edit-label="Text — حلوم مقلي">حلوم مقلي</span></div>
+  <div class="msec">To go <span class="arabic" data-edit="t70" data-edit-label="Text — جاط للخارج">جاط للخارج</span></div>
+  <div class="mrow"><span data-edit="t71" data-edit-label="Text — Foul, msabbaha &amp; hummus — by the ½…">Foul, msabbaha &amp; hummus — by the ½ kilo &amp; kilo</span><span class="ld"></span><span class="ar arabic" data-edit="t72" data-edit-label="Text — عالوزن">عالوزن</span></div>
+  <div class="mrow"><span data-edit="t73" data-edit-label="Text — Full service trays — small / medium / …">Full service trays — small / medium / large</span><span class="ld"></span><span class="ar arabic" data-edit="t74" data-edit-label="Text — السرفيس">السرفيس</span></div>
+  <div class="total">★ prices at the counter — they move with the market ★<br>thank you · come back Sunday</div>
+ </div>
+</section>
+
+<section class="market" id="gallery">
+ <div class="wrap">
+  <h2 class="rv">The <em data-edit="t75" data-edit-label="Text — morning">morning</em> market</h2>
+  <p class="sub" data-edit="t76" data-edit-label="Text — Straight from the pot — no filters nee…">Straight from the pot — no filters needed</p>
+  <div class="mgrid"><a href="img/03.jpg" target="_blank"><img src="img/03.jpg" alt="" loading="lazy"></a><a href="img/04.jpg" target="_blank"><img src="img/04.jpg" alt="" loading="lazy"></a><a href="img/06.jpg" target="_blank"><img src="img/06.jpg" alt="" loading="lazy"></a><a href="img/02.jpg" target="_blank"><img src="img/02.jpg" alt="" loading="lazy"></a><a href="img/05.jpg" target="_blank"><img src="img/05.jpg" alt="" loading="lazy"></a><a href="img/08.jpg" target="_blank"><img src="img/08.jpg" alt="" loading="lazy"></a></div>
+ </div>
+</section>
+
+<section class="receipts" id="reviews">
+ <h2 class="rv">Paid in <em data-edit="t77" data-edit-label="Text — praise">praise</em></h2>
+ <div class="r-grid"><div class="rcpt rv"><div class="hd" data-edit="t78" data-edit-label="Text — ISSA &amp; SONS — BEIRUT">ISSA &amp; SONS — BEIRUT</div><p data-edit="t79" data-edit-label="Text — Hajj Issa serves delicious foul and fa…">Hajj Issa serves delicious foul and fatteh dishes. If you are a fan of traditional Lebanese breakfast or brunch, it's your must-go destination. Worth the drive — the taste is amazing.</p><div class="who"><span data-edit="t80" data-edit-label="Text — Google review">Google review</span><span>★★★★★</span></div></div><div class="rcpt rv"><div class="hd" data-edit="t81" data-edit-label="Text — ISSA &amp; SONS — BEIRUT">ISSA &amp; SONS — BEIRUT</div><p data-edit="t82" data-edit-label="Text — One of the best places in Beirut to ge…">One of the best places in Beirut to get foul and hommos. Tastes great — Sundays it is absolutely jam-packed.</p><div class="who"><span data-edit="t83" data-edit-label="Text — Google review">Google review</span><span>★★★★★</span></div></div><div class="rcpt rv"><div class="hd" data-edit="t84" data-edit-label="Text — ISSA &amp; SONS — BEIRUT">ISSA &amp; SONS — BEIRUT</div><p data-edit="t85" data-edit-label="Text — Delivery was super fast and the delive…">Delivery was super fast and the delivery man was really good.</p><div class="who"><span data-edit="t86" data-edit-label="Text — Google review">Google review</span><span>★★★★★</span></div></div></div>
+</section>
+
+<section class="visit" id="visit">
+ <span class="k" data-edit="t87" data-edit-label="Text — Come hungry">Come hungry</span>
+ <h2 data-edit="t88" data-edit-label="Title — COME EARLY. SUNDAYS FILL FAST.">COME EARLY. SUNDAYS FILL FAST.</h2>
+ <a class="phone" href="tel:+9611706268" data-edit="t89" data-edit-label="Button / link — +961 1 706 268">+961 1 706 268</a>
+ <p class="meta">Barbour / Tariq el Jdideh area, Beirut, Lebanon (Plus code: VFFW+HHX)<br>Open daily · 7:00 AM – 2:00 PM (mornings only — come early!)</p>
+ <div class="btns">
+  <a class="btn o" href="tel:+9611706268" data-edit="t90" data-edit-label="Button / link — Call +961 1 706 268">Call +961 1 706 268</a> <a class="btn ig" href="https://instagram.com/mataamissa" target="_blank" rel="noopener" data-edit="t91" data-edit-label="Button / link — Instagram">Instagram</a>
+  <a class="btn" href="https://maps.google.com/?cid=9201529888211975576" target="_blank" rel="noopener" data-edit="t92" data-edit-label="Button / link — Open in Google Maps ↗">Open in Google Maps ↗</a>
+ </div>
+</section>
+
+<div class="mbar">
+ <a class="c" href="tel:+9611706268" data-edit="t93" data-edit-label="Button / link — Call">Call</a>
+ <a class="g" href="https://instagram.com/mataamissa" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.4"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+ <a class="m" href="https://maps.google.com/?cid=9201529888211975576" target="_blank" rel="noopener" data-edit="t94" data-edit-label="Button / link — Map">Map</a>
+</div>
+
+<footer>© Issa Restaurant — Hummus · Beirut, Lebanon</footer>
+
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+setTimeout(function(){document.querySelectorAll('.rv:not(.in)').forEach(function(el){el.classList.add('in')})},1100);
+</script>
+</body>
+</html>
